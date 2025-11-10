@@ -30,4 +30,3 @@ D:\Thanatos\Thanatos_app\obj\Debug\Thanatos.589340FC.Up2Date
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.xml
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.pdb
-D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.config

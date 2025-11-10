@@ -25,11 +25,11 @@ Partial Class frm_login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_login))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.btn_entrar = New Guna.UI.WinForms.GunaButton()
         Me.BunifuCustomLabel2 = New ns1.BunifuCustomLabel()
         Me.BunifuCustomLabel1 = New ns1.BunifuCustomLabel()
         Me.txt_senha = New Guna.UI.WinForms.GunaTextBox()
         Me.txt_usuario = New Guna.UI.WinForms.GunaTextBox()
-        Me.btn_entrar = New Guna.UI.WinForms.GunaButton()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -61,12 +61,38 @@ Partial Class frm_login
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(619, 363)
         Me.GunaShadowPanel1.TabIndex = 1
         '
+        'btn_entrar
+        '
+        Me.btn_entrar.AnimationHoverSpeed = 0.07!
+        Me.btn_entrar.AnimationSpeed = 0.03!
+        Me.btn_entrar.BackColor = System.Drawing.Color.Transparent
+        Me.btn_entrar.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(202, Byte), Integer))
+        Me.btn_entrar.BorderColor = System.Drawing.Color.Black
+        Me.btn_entrar.DialogResult = System.Windows.Forms.DialogResult.None
+        Me.btn_entrar.FocusedColor = System.Drawing.Color.Empty
+        Me.btn_entrar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.btn_entrar.ForeColor = System.Drawing.Color.White
+        Me.btn_entrar.Image = Nothing
+        Me.btn_entrar.ImageSize = New System.Drawing.Size(20, 20)
+        Me.btn_entrar.Location = New System.Drawing.Point(220, 285)
+        Me.btn_entrar.Name = "btn_entrar"
+        Me.btn_entrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btn_entrar.OnHoverBorderColor = System.Drawing.Color.Black
+        Me.btn_entrar.OnHoverForeColor = System.Drawing.Color.White
+        Me.btn_entrar.OnHoverImage = Nothing
+        Me.btn_entrar.OnPressedColor = System.Drawing.Color.Black
+        Me.btn_entrar.Radius = 6
+        Me.btn_entrar.Size = New System.Drawing.Size(160, 42)
+        Me.btn_entrar.TabIndex = 4
+        Me.btn_entrar.Text = "Entrar"
+        Me.btn_entrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
         'BunifuCustomLabel2
         '
         Me.BunifuCustomLabel2.AutoSize = True
         Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.White
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(106, 171)
+        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(111, 171)
         Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
         Me.BunifuCustomLabel2.Size = New System.Drawing.Size(74, 25)
         Me.BunifuCustomLabel2.TabIndex = 3
@@ -77,7 +103,7 @@ Partial Class frm_login
         Me.BunifuCustomLabel1.AutoSize = True
         Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.White
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(106, 47)
+        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(111, 47)
         Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
         Me.BunifuCustomLabel1.Size = New System.Drawing.Size(86, 25)
         Me.BunifuCustomLabel1.TabIndex = 2
@@ -118,31 +144,6 @@ Partial Class frm_login
         Me.txt_usuario.SelectedText = ""
         Me.txt_usuario.Size = New System.Drawing.Size(385, 53)
         Me.txt_usuario.TabIndex = 0
-        '
-        'btn_entrar
-        '
-        Me.btn_entrar.AnimationHoverSpeed = 0.07!
-        Me.btn_entrar.AnimationSpeed = 0.03!
-        Me.btn_entrar.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(202, Byte), Integer))
-        Me.btn_entrar.BorderColor = System.Drawing.Color.Black
-        Me.btn_entrar.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btn_entrar.FocusedColor = System.Drawing.Color.Empty
-        Me.btn_entrar.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.btn_entrar.ForeColor = System.Drawing.Color.White
-        Me.btn_entrar.Image = Nothing
-        Me.btn_entrar.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btn_entrar.Location = New System.Drawing.Point(222, 277)
-        Me.btn_entrar.Name = "btn_entrar"
-        Me.btn_entrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btn_entrar.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.btn_entrar.OnHoverForeColor = System.Drawing.Color.White
-        Me.btn_entrar.OnHoverImage = Nothing
-        Me.btn_entrar.OnPressedColor = System.Drawing.Color.Black
-        Me.btn_entrar.Radius = 6
-        Me.btn_entrar.Size = New System.Drawing.Size(160, 42)
-        Me.btn_entrar.TabIndex = 4
-        Me.btn_entrar.Text = "Entrar"
-        Me.btn_entrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'frm_login
         '
