@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Thanatos_app"
+    "\\Thanatos_app",
+    "\\Thanatos_app\\My Project"
   ],
-  "SelectedNode": "\\Thanatos_app\\Thanatos_app.sln",
+  "SelectedNode": "\\Thanatos_app\\My Project\\Application.Designer.vb",
   "PreviewInSolutionExplorer": false
 }

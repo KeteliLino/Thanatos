@@ -9,10 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_login.v||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_login.v||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,20 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frm_login.v",
-              "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\frm_login.v",
-              "RelativeDocumentMoniker": "frm_login.v",
-              "ToolTip": "D:\\Thanatos\\Thanatos_app\\frm_login.v",
-              "RelativeToolTip": "frm_login.v",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-11-08T23:23:55.324Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -56,9 +40,10 @@
               "RelativeDocumentMoniker": "frm_login.vb",
               "ToolTip": "D:\\Thanatos\\Thanatos_app\\frm_login.vb",
               "RelativeToolTip": "frm_login.vb",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAmwCAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwB8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-07T19:15:27.601Z"
+              "WhenOpened": "2025-11-07T19:15:27.601Z",
+              "EditorCaption": ""
             }
           ]
         }

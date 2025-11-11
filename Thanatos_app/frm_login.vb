@@ -2,7 +2,7 @@
 Imports MaterialSkin.Controls
 
 Public Class frm_login
-    ' Se você preferir instanciar uma vez:
+
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
 
     Public Sub New()
@@ -30,6 +30,7 @@ Public Class frm_login
             pb.SizeMode = PictureBoxSizeMode.StretchImage
             pb.BorderStyle = BorderStyle.None
         End If
+
     End Sub
 
     Private Function FindFirstPictureBox(parent As Control) As PictureBox
