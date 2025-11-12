@@ -25,11 +25,11 @@ Partial Class frm_login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_login))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.btn_entrar = New Guna.UI.WinForms.GunaButton()
-        Me.BunifuCustomLabel2 = New ns1.BunifuCustomLabel()
-        Me.BunifuCustomLabel1 = New ns1.BunifuCustomLabel()
-        Me.GunaTextBox1 = New Guna.UI.WinForms.GunaTextBox()
-        Me.GunaTextBox2 = New Guna.UI.WinForms.GunaTextBox()
+        Me.btn_entrar = New MaterialSkin.Controls.MaterialButton()
+        Me.lbl_senha = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_login = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_login = New MaterialSkin.Controls.MaterialTextBox()
+        Me.txt_senha = New MaterialSkin.Controls.MaterialTextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -51,108 +51,109 @@ Partial Class frm_login
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.Gray
-        Me.GunaShadowPanel1.Controls.Add(Me.GunaTextBox2)
-        Me.GunaShadowPanel1.Controls.Add(Me.GunaTextBox1)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_entrar)
-        Me.GunaShadowPanel1.Controls.Add(Me.BunifuCustomLabel2)
-        Me.GunaShadowPanel1.Controls.Add(Me.BunifuCustomLabel1)
-        Me.GunaShadowPanel1.Location = New System.Drawing.Point(936, 173)
+        Me.GunaShadowPanel1.Controls.Add(Me.lbl_senha)
+        Me.GunaShadowPanel1.Controls.Add(Me.lbl_login)
+        Me.GunaShadowPanel1.Controls.Add(Me.txt_login)
+        Me.GunaShadowPanel1.Controls.Add(Me.txt_senha)
+        Me.GunaShadowPanel1.Location = New System.Drawing.Point(626, 259)
         Me.GunaShadowPanel1.Name = "GunaShadowPanel1"
         Me.GunaShadowPanel1.Radius = 6
         Me.GunaShadowPanel1.ShadowColor = System.Drawing.Color.Black
-        Me.GunaShadowPanel1.Size = New System.Drawing.Size(688, 515)
+        Me.GunaShadowPanel1.Size = New System.Drawing.Size(668, 515)
         Me.GunaShadowPanel1.TabIndex = 1
         '
         'btn_entrar
         '
-        Me.btn_entrar.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btn_entrar.AnimationHoverSpeed = 0.07!
-        Me.btn_entrar.AnimationSpeed = 0.03!
-        Me.btn_entrar.BackColor = System.Drawing.Color.Transparent
-        Me.btn_entrar.BaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(117, Byte), Integer), CType(CType(202, Byte), Integer))
-        Me.btn_entrar.BorderColor = System.Drawing.Color.Black
-        Me.btn_entrar.DialogResult = System.Windows.Forms.DialogResult.None
-        Me.btn_entrar.FocusedColor = System.Drawing.Color.Empty
-        Me.btn_entrar.Font = New System.Drawing.Font("Segoe UI", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_entrar.ForeColor = System.Drawing.Color.White
-        Me.btn_entrar.Image = Nothing
-        Me.btn_entrar.ImageSize = New System.Drawing.Size(20, 20)
-        Me.btn_entrar.Location = New System.Drawing.Point(192, 370)
+        Me.btn_entrar.AutoSize = False
+        Me.btn_entrar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_entrar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_entrar.Depth = 0
+        Me.btn_entrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_entrar.ForeColor = System.Drawing.Color.MediumPurple
+        Me.btn_entrar.HighEmphasis = True
+        Me.btn_entrar.Icon = Nothing
+        Me.btn_entrar.Location = New System.Drawing.Point(133, 371)
+        Me.btn_entrar.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_entrar.MouseState = MaterialSkin.MouseState.HOVER
         Me.btn_entrar.Name = "btn_entrar"
-        Me.btn_entrar.OnHoverBaseColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.btn_entrar.OnHoverBorderColor = System.Drawing.Color.Black
-        Me.btn_entrar.OnHoverForeColor = System.Drawing.Color.White
-        Me.btn_entrar.OnHoverImage = Nothing
-        Me.btn_entrar.OnPressedColor = System.Drawing.Color.Black
-        Me.btn_entrar.Radius = 6
-        Me.btn_entrar.Size = New System.Drawing.Size(297, 81)
-        Me.btn_entrar.TabIndex = 4
+        Me.btn_entrar.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_entrar.Size = New System.Drawing.Size(417, 50)
+        Me.btn_entrar.TabIndex = 10
         Me.btn_entrar.Text = "Entrar"
-        Me.btn_entrar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.btn_entrar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_entrar.UseAccentColor = False
+        Me.btn_entrar.UseVisualStyleBackColor = True
         '
-        'BunifuCustomLabel2
+        'lbl_senha
         '
-        Me.BunifuCustomLabel2.AutoSize = True
-        Me.BunifuCustomLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel2.ForeColor = System.Drawing.Color.White
-        Me.BunifuCustomLabel2.Location = New System.Drawing.Point(106, 215)
-        Me.BunifuCustomLabel2.Name = "BunifuCustomLabel2"
-        Me.BunifuCustomLabel2.Size = New System.Drawing.Size(116, 39)
-        Me.BunifuCustomLabel2.TabIndex = 3
-        Me.BunifuCustomLabel2.Text = "Senha"
+        Me.lbl_senha.AutoSize = True
+        Me.lbl_senha.BackColor = System.Drawing.Color.White
+        Me.lbl_senha.Depth = 0
+        Me.lbl_senha.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.lbl_senha.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_senha.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.lbl_senha.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lbl_senha.Location = New System.Drawing.Point(133, 232)
+        Me.lbl_senha.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_senha.Name = "lbl_senha"
+        Me.lbl_senha.Size = New System.Drawing.Size(67, 29)
+        Me.lbl_senha.TabIndex = 9
+        Me.lbl_senha.Text = "Senha"
         '
-        'BunifuCustomLabel1
+        'lbl_login
         '
-        Me.BunifuCustomLabel1.AutoSize = True
-        Me.BunifuCustomLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.BunifuCustomLabel1.ForeColor = System.Drawing.Color.White
-        Me.BunifuCustomLabel1.Location = New System.Drawing.Point(106, 50)
-        Me.BunifuCustomLabel1.Name = "BunifuCustomLabel1"
-        Me.BunifuCustomLabel1.Size = New System.Drawing.Size(137, 39)
-        Me.BunifuCustomLabel1.TabIndex = 2
-        Me.BunifuCustomLabel1.Text = "Usuário"
+        Me.lbl_login.AutoSize = True
+        Me.lbl_login.Depth = 0
+        Me.lbl_login.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.lbl_login.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_login.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.lbl_login.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lbl_login.Location = New System.Drawing.Point(132, 99)
+        Me.lbl_login.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_login.Name = "lbl_login"
+        Me.lbl_login.Size = New System.Drawing.Size(60, 29)
+        Me.lbl_login.TabIndex = 8
+        Me.lbl_login.Text = "Login"
         '
-        'GunaTextBox1
+        'txt_login
         '
-        Me.GunaTextBox1.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox1.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox1.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox1.FocusedBorderColor = System.Drawing.Color.White
-        Me.GunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox1.HideSelection = False
-        Me.GunaTextBox1.Location = New System.Drawing.Point(113, 92)
-        Me.GunaTextBox1.Name = "GunaTextBox1"
-        Me.GunaTextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox1.SelectedText = ""
-        Me.GunaTextBox1.Size = New System.Drawing.Size(471, 74)
-        Me.GunaTextBox1.TabIndex = 5
-        Me.GunaTextBox1.Text = "GunaTextBox1"
+        Me.txt_login.AnimateReadOnly = False
+        Me.txt_login.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txt_login.Depth = 0
+        Me.txt_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_login.LeadingIcon = Nothing
+        Me.txt_login.Location = New System.Drawing.Point(133, 131)
+        Me.txt_login.MaxLength = 50
+        Me.txt_login.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_login.Multiline = False
+        Me.txt_login.Name = "txt_login"
+        Me.txt_login.Size = New System.Drawing.Size(417, 50)
+        Me.txt_login.TabIndex = 7
+        Me.txt_login.Text = ""
+        Me.txt_login.TrailingIcon = Nothing
         '
-        'GunaTextBox2
+        'txt_senha
         '
-        Me.GunaTextBox2.BaseColor = System.Drawing.Color.White
-        Me.GunaTextBox2.BorderColor = System.Drawing.Color.Silver
-        Me.GunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.GunaTextBox2.FocusedBaseColor = System.Drawing.Color.White
-        Me.GunaTextBox2.FocusedBorderColor = System.Drawing.Color.White
-        Me.GunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText
-        Me.GunaTextBox2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.GunaTextBox2.HideSelection = False
-        Me.GunaTextBox2.Location = New System.Drawing.Point(113, 257)
-        Me.GunaTextBox2.Name = "GunaTextBox2"
-        Me.GunaTextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.GunaTextBox2.SelectedText = ""
-        Me.GunaTextBox2.Size = New System.Drawing.Size(471, 74)
-        Me.GunaTextBox2.TabIndex = 6
-        Me.GunaTextBox2.Text = "GunaTextBox2"
+        Me.txt_senha.AnimateReadOnly = False
+        Me.txt_senha.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txt_senha.Depth = 0
+        Me.txt_senha.Font = New System.Drawing.Font("Roboto", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_senha.LeadingIcon = Nothing
+        Me.txt_senha.Location = New System.Drawing.Point(133, 264)
+        Me.txt_senha.MaxLength = 50
+        Me.txt_senha.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_senha.Multiline = False
+        Me.txt_senha.Name = "txt_senha"
+        Me.txt_senha.Size = New System.Drawing.Size(417, 50)
+        Me.txt_senha.TabIndex = 6
+        Me.txt_senha.Text = ""
+        Me.txt_senha.TrailingIcon = Nothing
         '
         'frm_login
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit
-        Me.ClientSize = New System.Drawing.Size(1940, 1100)
+        Me.ClientSize = New System.Drawing.Size(1920, 1032)
         Me.Controls.Add(Me.GunaShadowPanel1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -169,10 +170,10 @@ Partial Class frm_login
     End Sub
 
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents BunifuCustomLabel1 As ns1.BunifuCustomLabel
-    Friend WithEvents BunifuCustomLabel2 As ns1.BunifuCustomLabel
-    Friend WithEvents btn_entrar As Guna.UI.WinForms.GunaButton
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
-    Friend WithEvents GunaTextBox2 As Guna.UI.WinForms.GunaTextBox
-    Friend WithEvents GunaTextBox1 As Guna.UI.WinForms.GunaTextBox
+    Friend WithEvents lbl_senha As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents lbl_login As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents txt_login As MaterialSkin.Controls.MaterialTextBox
+    Friend WithEvents txt_senha As MaterialSkin.Controls.MaterialTextBox
+    Friend WithEvents btn_entrar As MaterialSkin.Controls.MaterialButton
 End Class

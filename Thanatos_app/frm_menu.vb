@@ -1,5 +1,8 @@
-﻿Imports MaterialSkin
-Public Class frm_login
+﻿Imports System.Drawing
+Imports MaterialSkin
+Imports MaterialSkin.Controls
+
+Public Class frm_home
 
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
 
@@ -20,8 +23,7 @@ Public Class frm_login
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
     End Sub
-
-    Private Sub frm_login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub frm_menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim pb As PictureBox = FindFirstPictureBox(Me)
         If pb IsNot Nothing Then
             pb.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
@@ -44,22 +46,4 @@ Public Class frm_login
         Return Nothing
     End Function
 
-    Private Sub btn_entrar_Click(sender As Object, e As EventArgs) Handles btn_entrar.Click
-        'query = $"select * from tb_funcionarios where login= '{txt_login.Text}' and senha ='{txt_senha.Text}'"
-        'rs = db.Execute(query)
-        'If rs.EOF = False Then
-        'frm_menu.Show()
-        'Me.Hide()
-        'Else
-        'MsgBox("Login ou Senha incorretos", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
-        'End If
-        If txt_login.Text = "a" And txt_senha.Text = "a" Then
-            frm_home.Show()
-            Me.Hide()
-        Else
-            MsgBox("Login ou Senha incorretos", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
-        End If
-
-
-    End Sub
 End Class
