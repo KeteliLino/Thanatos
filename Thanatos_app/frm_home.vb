@@ -1,7 +1,6 @@
 ﻿Imports System.Drawing
 Imports MaterialSkin
 Imports MaterialSkin.Controls
-
 Public Class frm_home
 
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
@@ -23,27 +22,28 @@ Public Class frm_home
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
     End Sub
-    Private Sub frm_menu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim pb As PictureBox = FindFirstPictureBox(Me)
-        If pb IsNot Nothing Then
-            pb.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
-            pb.SizeMode = PictureBoxSizeMode.StretchImage
-            pb.BorderStyle = BorderStyle.None
-        End If
 
+    Private Sub frm_home_Load(sender As Object, e As EventArgs) Handles Me.Load
+        ' editando picture box
+        If PictureBox1 IsNot Nothing Then
+            PictureBox1.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
+            PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+            PictureBox1.BorderStyle = BorderStyle.None
+        End If
     End Sub
 
-    Private Function FindFirstPictureBox(parent As Control) As PictureBox
-        For Each c As Control In parent.Controls
-            If TypeOf c Is PictureBox Then
-                Return DirectCast(c, PictureBox)
-            End If
-            If c.HasChildren Then
-                Dim f = FindFirstPictureBox(c)
-                If f IsNot Nothing Then Return f
-            End If
-        Next
-        Return Nothing
-    End Function
+    Private Sub btn_financeiro_Click(sender As Object, e As EventArgs) Handles btn_financeiro.Click
+        frm_financeiro.Show()
+        Me.Hide()
+    End Sub
 
+    Private Sub btn_recepcao_Click(sender As Object, e As EventArgs) Handles btn_recepcao.Click
+        frm_recepcionista.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btn_administracao_Click(sender As Object, e As EventArgs) Handles btn_administracao.Click
+        frm_administrador.Show()
+        Me.Hide()
+    End Sub
 End Class

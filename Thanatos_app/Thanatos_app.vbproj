@@ -103,10 +103,10 @@
     <Compile Include="frm_login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_menu.Designer.vb">
-      <DependentUpon>frm_menu.vb</DependentUpon>
+    <Compile Include="frm_home.Designer.vb">
+      <DependentUpon>frm_home.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm_menu.vb">
+    <Compile Include="frm_home.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_recepcionista.Designer.vb">
@@ -133,11 +133,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_administrador.resx">
+      <DependentUpon>frm_administrador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_financeiro.resx">
+      <DependentUpon>frm_financeiro.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_menu.resx">
-      <DependentUpon>frm_menu.vb</DependentUpon>
+    <EmbeddedResource Include="frm_home.resx">
+      <DependentUpon>frm_home.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_recepcionista.resx">
+      <DependentUpon>frm_recepcionista.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

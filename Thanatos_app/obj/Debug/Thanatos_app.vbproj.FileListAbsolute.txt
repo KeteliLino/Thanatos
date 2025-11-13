@@ -50,3 +50,6 @@ C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Interop.ADOR.dll
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.vbproj.ResolveComReference.cache
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_home.resources
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.config
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_financeiro.resources
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_administrador.resources
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_recepcionista.resources
