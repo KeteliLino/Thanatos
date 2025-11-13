@@ -21,12 +21,12 @@ Public Class frm_recepcionista
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
     End Sub
-    Private Sub frm_recepcionista_Load(sender As Object, e As EventArgs) Handles Me.Load
-        ' editando picture box
-        If PictureBox1 IsNot Nothing Then
-            PictureBox1.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
-            PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-            PictureBox1.BorderStyle = BorderStyle.None
+
+    Private Sub frm_recepcionista_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        If PictureBox5 IsNot Nothing Then
+            PictureBox5.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
+            PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
+            PictureBox5.BorderStyle = BorderStyle.None
         End If
     End Sub
 
@@ -44,4 +44,6 @@ Public Class frm_recepcionista
         frm_administrador.Show()
         Me.Hide()
     End Sub
+
+
 End Class

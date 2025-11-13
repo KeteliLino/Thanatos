@@ -21,15 +21,21 @@ Public Class frm_home
             ColorTranslator.FromHtml("#802790"), ' Light Primary
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
+
+
+    End Sub
+    Private Sub frm_home_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        ' editando picture box
+        If PictureBox2 IsNot Nothing Then
+            PictureBox2.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
+            PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
+            PictureBox2.BorderStyle = BorderStyle.None
+        End If
+
     End Sub
 
     Private Sub frm_home_Load(sender As Object, e As EventArgs) Handles Me.Load
-        ' editando picture box
-        If PictureBox1 IsNot Nothing Then
-            PictureBox1.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
-            PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-            PictureBox1.BorderStyle = BorderStyle.None
-        End If
+        cmb_tabelas.Items.Add("tb_velorios")
     End Sub
 
     Private Sub btn_financeiro_Click(sender As Object, e As EventArgs) Handles btn_financeiro.Click
@@ -46,4 +52,6 @@ Public Class frm_home
         frm_administrador.Show()
         Me.Hide()
     End Sub
+
+
 End Class

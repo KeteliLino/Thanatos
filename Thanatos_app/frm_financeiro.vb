@@ -21,13 +21,12 @@ Public Class frm_financeiro
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
     End Sub
-
-    Private Sub frm_financeiro_Load(sender As Object, e As EventArgs) Handles Me.Load
+    Private Sub frm_financeiro_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         ' editando picture box
-        If PictureBox1 IsNot Nothing Then
-            PictureBox1.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
-            PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
-            PictureBox1.BorderStyle = BorderStyle.None
+        If PictureBox3 IsNot Nothing Then
+            PictureBox3.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
+            PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+            PictureBox3.BorderStyle = BorderStyle.None
         End If
     End Sub
 
@@ -45,6 +44,5 @@ Public Class frm_financeiro
         frm_administrador.Show()
         Me.Hide()
     End Sub
-
 
 End Class

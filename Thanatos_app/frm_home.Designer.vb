@@ -20,27 +20,32 @@ Partial Class frm_home
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_home))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btn_home = New MaterialSkin.Controls.MaterialButton()
         Me.btn_financeiro = New MaterialSkin.Controls.MaterialButton()
         Me.btn_recepcao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_administracao = New MaterialSkin.Controls.MaterialButton()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
         Me.GunaShadowPanel2 = New Guna.UI.WinForms.GunaShadowPanel()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.cmb_tabelas = New MaterialSkin.Controls.MaterialComboBox()
+        Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
+        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'PictureBox2
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 21)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(46, 43)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox2.Location = New System.Drawing.Point(6, 21)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(46, 43)
+        Me.PictureBox2.TabIndex = 1
+        Me.PictureBox2.TabStop = False
         '
         'btn_home
         '
@@ -155,29 +160,82 @@ Partial Class frm_home
         Me.GunaShadowPanel2.Size = New System.Drawing.Size(250, 125)
         Me.GunaShadowPanel2.TabIndex = 3
         '
+        'cmb_tabelas
+        '
+        Me.cmb_tabelas.AutoResize = False
+        Me.cmb_tabelas.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmb_tabelas.Depth = 0
+        Me.cmb_tabelas.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.cmb_tabelas.DropDownHeight = 174
+        Me.cmb_tabelas.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_tabelas.DropDownWidth = 121
+        Me.cmb_tabelas.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.cmb_tabelas.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.cmb_tabelas.FormattingEnabled = True
+        Me.cmb_tabelas.IntegralHeight = False
+        Me.cmb_tabelas.ItemHeight = 43
+        Me.cmb_tabelas.Location = New System.Drawing.Point(375, 101)
+        Me.cmb_tabelas.MaxDropDownItems = 4
+        Me.cmb_tabelas.MouseState = MaterialSkin.MouseState.OUT
+        Me.cmb_tabelas.Name = "cmb_tabelas"
+        Me.cmb_tabelas.Size = New System.Drawing.Size(477, 49)
+        Me.cmb_tabelas.StartIndex = 0
+        Me.cmb_tabelas.TabIndex = 3
+        '
+        'BunifuCustomDataGrid1
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BunifuCustomDataGrid1.DoubleBuffered = True
+        Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
+        Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid1.Location = New System.Drawing.Point(375, 196)
+        Me.BunifuCustomDataGrid1.Name = "BunifuCustomDataGrid1"
+        Me.BunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.BunifuCustomDataGrid1.Size = New System.Drawing.Size(1461, 617)
+        Me.BunifuCustomDataGrid1.TabIndex = 5
+        '
         'frm_home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1920, 1032)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.BunifuCustomDataGrid1)
+        Me.Controls.Add(Me.cmb_tabelas)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.GunaShadowPanel1)
         Me.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_home"
         Me.Text = "           Thanatos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel1.ResumeLayout(False)
+        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btn_home As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_financeiro As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_recepcao As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_administracao As MaterialSkin.Controls.MaterialButton
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents GunaShadowPanel2 As Guna.UI.WinForms.GunaShadowPanel
+    Friend WithEvents cmb_tabelas As MaterialSkin.Controls.MaterialComboBox
+    Friend WithEvents BunifuCustomDataGrid1 As ns1.BunifuCustomDataGrid
 End Class

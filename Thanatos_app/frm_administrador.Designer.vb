@@ -23,27 +23,27 @@ Partial Class frm_administrador
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_administrador))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.btn_administracao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_home = New MaterialSkin.Controls.MaterialButton()
         Me.GunaShadowPanel2 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.btn_administracao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_recepcao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_financeiro = New MaterialSkin.Controls.MaterialButton()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'PictureBox4
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(6, 21)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(46, 43)
-        Me.PictureBox1.TabIndex = 2
-        Me.PictureBox1.TabStop = False
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.BackgroundImage = CType(resources.GetObject("PictureBox4.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox4.Location = New System.Drawing.Point(6, 21)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(46, 43)
+        Me.PictureBox4.TabIndex = 2
+        Me.PictureBox4.TabStop = False
         '
         'GunaShadowPanel1
         '
@@ -61,6 +61,27 @@ Partial Class frm_administrador
         Me.GunaShadowPanel1.ShadowColor = System.Drawing.Color.Black
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(244, 974)
         Me.GunaShadowPanel1.TabIndex = 3
+        '
+        'btn_administracao
+        '
+        Me.btn_administracao.AutoSize = False
+        Me.btn_administracao.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_administracao.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_administracao.Depth = 0
+        Me.btn_administracao.ForeColor = System.Drawing.Color.MediumPurple
+        Me.btn_administracao.HighEmphasis = True
+        Me.btn_administracao.Icon = CType(resources.GetObject("btn_administracao.Icon"), System.Drawing.Image)
+        Me.btn_administracao.Location = New System.Drawing.Point(5, 752)
+        Me.btn_administracao.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_administracao.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_administracao.Name = "btn_administracao"
+        Me.btn_administracao.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_administracao.Size = New System.Drawing.Size(234, 104)
+        Me.btn_administracao.TabIndex = 7
+        Me.btn_administracao.Text = "Administração"
+        Me.btn_administracao.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_administracao.UseAccentColor = False
+        Me.btn_administracao.UseVisualStyleBackColor = True
         '
         'btn_home
         '
@@ -95,27 +116,6 @@ Partial Class frm_administrador
         Me.GunaShadowPanel2.Size = New System.Drawing.Size(250, 125)
         Me.GunaShadowPanel2.TabIndex = 3
         '
-        'btn_administracao
-        '
-        Me.btn_administracao.AutoSize = False
-        Me.btn_administracao.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.btn_administracao.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.btn_administracao.Depth = 0
-        Me.btn_administracao.ForeColor = System.Drawing.Color.MediumPurple
-        Me.btn_administracao.HighEmphasis = True
-        Me.btn_administracao.Icon = CType(resources.GetObject("btn_administracao.Icon"), System.Drawing.Image)
-        Me.btn_administracao.Location = New System.Drawing.Point(5, 752)
-        Me.btn_administracao.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.btn_administracao.MouseState = MaterialSkin.MouseState.HOVER
-        Me.btn_administracao.Name = "btn_administracao"
-        Me.btn_administracao.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.btn_administracao.Size = New System.Drawing.Size(234, 104)
-        Me.btn_administracao.TabIndex = 7
-        Me.btn_administracao.Text = "Administração"
-        Me.btn_administracao.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.btn_administracao.UseAccentColor = False
-        Me.btn_administracao.UseVisualStyleBackColor = True
-        '
         'btn_recepcao
         '
         Me.btn_recepcao.AutoSize = False
@@ -146,6 +146,7 @@ Partial Class frm_administrador
         Me.btn_financeiro.ForeColor = System.Drawing.Color.MediumPurple
         Me.btn_financeiro.HighEmphasis = True
         Me.btn_financeiro.Icon = CType(resources.GetObject("btn_financeiro.Icon"), System.Drawing.Image)
+        Me.btn_financeiro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btn_financeiro.Location = New System.Drawing.Point(5, 324)
         Me.btn_financeiro.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btn_financeiro.MouseState = MaterialSkin.MouseState.HOVER
@@ -164,18 +165,18 @@ Partial Class frm_administrador
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1904, 1041)
         Me.Controls.Add(Me.GunaShadowPanel1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.PictureBox4)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_administrador"
         Me.Text = "           Thanatos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents btn_administracao As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_home As MaterialSkin.Controls.MaterialButton
