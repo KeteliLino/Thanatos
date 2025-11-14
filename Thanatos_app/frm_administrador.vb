@@ -1,53 +1,50 @@
 ﻿Imports System.Drawing
+Imports System.ComponentModel
 Imports MaterialSkin
 Imports MaterialSkin.Controls
+
 Public Class frm_administrador
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
 
     Public Sub New()
         InitializeComponent()
 
-        ' Registra o form no MaterialSkinManager
-        materialSkinManager.AddFormToManage(Me)
+        ' Evita executar quando o Visual Studio está no Designer
+        If LicenseManager.UsageMode = LicenseUsageMode.Runtime Then
+            ' Registra o form no MaterialSkinManager
+            materialSkinManager.AddFormToManage(Me)
 
-        ' Tema: LIGHT ou DARK
-        materialSkinManager.Theme = MaterialSkinManager.Themes.DARK
+            ' Tema: LIGHT ou DARK
+            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK
 
-        ' Exemplo: usando hex diretamente via ColorTranslator.FromHtml
-        materialSkinManager.ColorScheme = New ColorScheme(
-            ColorTranslator.FromHtml("#802790"), ' Primary
-            ColorTranslator.FromHtml("#802790"), ' Dark Primary
-            ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
-            ColorTranslator.FromHtml("#802790"), ' Accent
-            TextShade.WHITE)
-    End Sub
-    Private Sub frm_administrador_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        ' editando picture box
-        If PictureBox4 IsNot Nothing Then
-            PictureBox4.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
-            PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
-            PictureBox4.BorderStyle = BorderStyle.None
+            ' Color scheme (use HEX convertendo para Color)
+            materialSkinManager.ColorScheme = New ColorScheme(
+                ColorTranslator.FromHtml("#802790"), ' Primary
+                ColorTranslator.FromHtml("#802790"), ' Dark Primary
+                ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
+                ColorTranslator.FromHtml("#802790"), ' Accent
+                TextShade.WHITE)
+            ' wire no construtor ou no Load:
+            AddHandler MaterialTabControl1.SelectedIndexChanged, AddressOf TabControl_SelectedIndexChanged
         End If
     End Sub
 
-    Private Sub btn_home_Click(sender As Object, e As EventArgs) Handles btn_home.Click
-        frm_home.Show()
-        Me.Hide()
+
+
+    Private Sub TabControl_SelectedIndexChanged(sender As Object, e As EventArgs)
+        Dim tc = DirectCast(sender, TabControl)
+        If tc.SelectedTab IsNot Nothing AndAlso tc.SelectedTab.Name = "tab_voltar" Then
+            ' Ação quando a aba "tab_voltar" for selecionada
+            frm_home.Show()
+            Me.Hide()
+        End If
     End Sub
 
-    Private Sub btn_recepcao_Click(sender As Object, e As EventArgs) Handles btn_recepcao.Click
-        frm_recepcionista.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub btn_financeiro_Click(sender As Object, e As EventArgs) Handles btn_financeiro.Click
-        frm_financeiro.Show()
-        Me.Hide()
-    End Sub
-
-
-    Private Sub MaterialFloatingActionButton1_Click(sender As Object, e As EventArgs) Handles MaterialFloatingActionButton1.Click
-        frm_manterAdministrador.Show()
-        Me.Hide()
+    Private Sub frm_administrador_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        If PictureBox3 IsNot Nothing Then
+            PictureBox3.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
+            PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
+            PictureBox3.BorderStyle = BorderStyle.None
+        End If
     End Sub
 End Class

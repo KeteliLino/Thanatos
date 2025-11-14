@@ -57,6 +57,9 @@
     <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -85,12 +88,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="banco_dados.vb" />
-    <Compile Include="frm_administrador.Designer.vb">
-      <DependentUpon>frm_administrador.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frm_administrador.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frm_financeiro.Designer.vb">
       <DependentUpon>frm_financeiro.vb</DependentUpon>
     </Compile>
@@ -109,10 +106,10 @@
     <Compile Include="frm_home.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_manterAdministrador.Designer.vb">
-      <DependentUpon>frm_manterAdministrador.vb</DependentUpon>
+    <Compile Include="frm_administrador.Designer.vb">
+      <DependentUpon>frm_administrador.vb</DependentUpon>
     </Compile>
-    <Compile Include="frm_manterAdministrador.vb">
+    <Compile Include="frm_administrador.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_recepcionista.Designer.vb">
@@ -139,9 +136,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frm_administrador.resx">
-      <DependentUpon>frm_administrador.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_financeiro.resx">
       <DependentUpon>frm_financeiro.vb</DependentUpon>
     </EmbeddedResource>
@@ -151,8 +145,8 @@
     <EmbeddedResource Include="frm_home.resx">
       <DependentUpon>frm_home.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_manterAdministrador.resx">
-      <DependentUpon>frm_manterAdministrador.vb</DependentUpon>
+    <EmbeddedResource Include="frm_administrador.resx">
+      <DependentUpon>frm_administrador.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_recepcionista.resx">
       <DependentUpon>frm_recepcionista.vb</DependentUpon>

@@ -20,6 +20,8 @@ Public Class frm_financeiro
             ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
+
+        AddHandler MaterialTabControl1.SelectedIndexChanged, AddressOf TabControl_SelectedIndexChanged
     End Sub
     Private Sub frm_financeiro_Activated(sender As Object, e As EventArgs) Handles Me.Activated
         ' editando picture box
@@ -30,18 +32,26 @@ Public Class frm_financeiro
         End If
     End Sub
 
-    Private Sub btn_home_Click(sender As Object, e As EventArgs) Handles btn_home.Click
+    Private Sub btn_home_Click(sender As Object, e As EventArgs)
         frm_home.Show()
         Me.Hide()
     End Sub
 
-    Private Sub btn_recepcao_Click(sender As Object, e As EventArgs) Handles btn_recepcao.Click
+    Private Sub btn_recepcao_Click(sender As Object, e As EventArgs)
         frm_recepcionista.Show()
         Me.Hide()
     End Sub
 
-    Private Sub btn_administracao_Click(sender As Object, e As EventArgs) Handles btn_administracao.Click
+    Private Sub btn_administracao_Click(sender As Object, e As EventArgs)
         frm_administrador.Show()
         Me.Hide()
+    End Sub
+    Private Sub TabControl_SelectedIndexChanged(sender As Object, e As EventArgs)
+        Dim tc = DirectCast(sender, TabControl)
+        If tc.SelectedTab IsNot Nothing AndAlso tc.SelectedTab.Name = "tab_voltar" Then
+            ' Ação quando a aba "tab_voltar" for selecionada
+            frm_home.Show()
+            Me.Hide()
+        End If
     End Sub
 End Class
