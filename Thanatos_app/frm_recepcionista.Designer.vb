@@ -48,7 +48,7 @@ Partial Class frm_recepcionista
         'GunaShadowPanel1
         '
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.GunaShadowPanel1.Controls.Add(Me.btn_home)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_administracao)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_recepcao)

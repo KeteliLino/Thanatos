@@ -30,7 +30,6 @@ D:\Thanatos\Thanatos_app\obj\Debug\Thanatos.589340FC.Up2Date
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.xml
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.pdb
-D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.config
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\Thanatos_app.exe.config
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\Thanatos_app.exe
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\Thanatos_app.pdb
@@ -53,3 +52,12 @@ C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_administrador.resources
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_recepcionista.resources
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.config
+D:\Thanatos\Thanatos_app\obj\Debug\Interop.ADODB.dll
+D:\Thanatos\Thanatos_app\obj\Debug\Interop.ADOR.dll
+D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.vbproj.ResolveComReference.cache
+D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_administrador.resources
+D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_financeiro.resources
+D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_home.resources
+D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_recepcionista.resources
+D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_manterAdministrador.resources
+D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.config

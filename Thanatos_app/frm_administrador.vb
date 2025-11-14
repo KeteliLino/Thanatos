@@ -44,4 +44,10 @@ Public Class frm_administrador
         frm_financeiro.Show()
         Me.Hide()
     End Sub
+
+
+    Private Sub MaterialFloatingActionButton1_Click(sender As Object, e As EventArgs) Handles MaterialFloatingActionButton1.Click
+        frm_manterAdministrador.Show()
+        Me.Hide()
+    End Sub
 End Class

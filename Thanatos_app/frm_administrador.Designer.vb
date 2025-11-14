@@ -22,6 +22,7 @@ Partial Class frm_administrador
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_administrador))
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
@@ -29,9 +30,33 @@ Partial Class frm_administrador
         Me.btn_administracao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_recepcao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_financeiro = New MaterialSkin.Controls.MaterialButton()
+        Me.MaterialCard1 = New MaterialSkin.Controls.MaterialCard()
+        Me.MaterialFloatingActionButton1 = New MaterialSkin.Controls.MaterialFloatingActionButton()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialFloatingActionButton2 = New MaterialSkin.Controls.MaterialFloatingActionButton()
+        Me.MaterialCard2 = New MaterialSkin.Controls.MaterialCard()
+        Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialFloatingActionButton3 = New MaterialSkin.Controls.MaterialFloatingActionButton()
+        Me.MaterialCard3 = New MaterialSkin.Controls.MaterialCard()
+        Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialFloatingActionButton4 = New MaterialSkin.Controls.MaterialFloatingActionButton()
+        Me.MaterialCard4 = New MaterialSkin.Controls.MaterialCard()
+        Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialFloatingActionButton5 = New MaterialSkin.Controls.MaterialFloatingActionButton()
+        Me.MaterialCard5 = New MaterialSkin.Controls.MaterialCard()
+        Me.MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialFloatingActionButton6 = New MaterialSkin.Controls.MaterialFloatingActionButton()
+        Me.MaterialCard6 = New MaterialSkin.Controls.MaterialCard()
+        Me.MaterialLabel6 = New MaterialSkin.Controls.MaterialLabel()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
+        Me.MaterialCard1.SuspendLayout()
+        Me.MaterialCard2.SuspendLayout()
+        Me.MaterialCard3.SuspendLayout()
+        Me.MaterialCard4.SuspendLayout()
+        Me.MaterialCard5.SuspendLayout()
+        Me.MaterialCard6.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox4
@@ -48,7 +73,7 @@ Partial Class frm_administrador
         'GunaShadowPanel1
         '
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.GunaShadowPanel1.Controls.Add(Me.btn_home)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_administracao)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_recepcao)
@@ -149,24 +174,275 @@ Partial Class frm_administrador
         Me.btn_financeiro.UseAccentColor = False
         Me.btn_financeiro.UseVisualStyleBackColor = True
         '
+        'MaterialCard1
+        '
+        Me.MaterialCard1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard1.Controls.Add(Me.MaterialLabel1)
+        Me.MaterialCard1.Depth = 0
+        Me.MaterialCard1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialCard1.Location = New System.Drawing.Point(337, 174)
+        Me.MaterialCard1.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialCard1.Name = "MaterialCard1"
+        Me.MaterialCard1.Padding = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard1.Size = New System.Drawing.Size(411, 318)
+        Me.MaterialCard1.TabIndex = 4
+        '
+        'MaterialFloatingActionButton1
+        '
+        Me.MaterialFloatingActionButton1.Depth = 0
+        Me.MaterialFloatingActionButton1.Icon = Global.Thanatos_app.My.Resources.Resources.crud
+        Me.MaterialFloatingActionButton1.ImageKey = "crud.png"
+        Me.MaterialFloatingActionButton1.ImageList = Me.ImageList1
+        Me.MaterialFloatingActionButton1.Location = New System.Drawing.Point(724, 295)
+        Me.MaterialFloatingActionButton1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialFloatingActionButton1.Name = "MaterialFloatingActionButton1"
+        Me.MaterialFloatingActionButton1.Size = New System.Drawing.Size(60, 60)
+        Me.MaterialFloatingActionButton1.TabIndex = 5
+        Me.MaterialFloatingActionButton1.Text = "MaterialFloatingActionButton1"
+        Me.MaterialFloatingActionButton1.UseVisualStyleBackColor = True
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        Me.ImageList1.Images.SetKeyName(0, "crud.png")
+        '
         'MaterialLabel1
         '
         Me.MaterialLabel1.AutoSize = True
         Me.MaterialLabel1.Depth = 0
-        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel1.Location = New System.Drawing.Point(462, 216)
+        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 34.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H4
+        Me.MaterialLabel1.Location = New System.Drawing.Point(82, 124)
         Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(33, 19)
-        Me.MaterialLabel1.TabIndex = 4
-        Me.MaterialLabel1.Text = "adm"
+        Me.MaterialLabel1.Size = New System.Drawing.Size(255, 41)
+        Me.MaterialLabel1.TabIndex = 0
+        Me.MaterialLabel1.Text = " MANTER SALAS"
+        '
+        'MaterialFloatingActionButton2
+        '
+        Me.MaterialFloatingActionButton2.Depth = 0
+        Me.MaterialFloatingActionButton2.Icon = Global.Thanatos_app.My.Resources.Resources.crud
+        Me.MaterialFloatingActionButton2.ImageKey = "crud.png"
+        Me.MaterialFloatingActionButton2.ImageList = Me.ImageList1
+        Me.MaterialFloatingActionButton2.Location = New System.Drawing.Point(1264, 295)
+        Me.MaterialFloatingActionButton2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialFloatingActionButton2.Name = "MaterialFloatingActionButton2"
+        Me.MaterialFloatingActionButton2.Size = New System.Drawing.Size(60, 60)
+        Me.MaterialFloatingActionButton2.TabIndex = 7
+        Me.MaterialFloatingActionButton2.Text = "MaterialFloatingActionButton2"
+        Me.MaterialFloatingActionButton2.UseVisualStyleBackColor = True
+        '
+        'MaterialCard2
+        '
+        Me.MaterialCard2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard2.Controls.Add(Me.MaterialLabel2)
+        Me.MaterialCard2.Depth = 0
+        Me.MaterialCard2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialCard2.Location = New System.Drawing.Point(872, 174)
+        Me.MaterialCard2.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialCard2.Name = "MaterialCard2"
+        Me.MaterialCard2.Padding = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard2.Size = New System.Drawing.Size(411, 318)
+        Me.MaterialCard2.TabIndex = 6
+        '
+        'MaterialLabel2
+        '
+        Me.MaterialLabel2.AutoSize = True
+        Me.MaterialLabel2.Depth = 0
+        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 34.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H4
+        Me.MaterialLabel2.Location = New System.Drawing.Point(51, 124)
+        Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel2.Name = "MaterialLabel2"
+        Me.MaterialLabel2.Size = New System.Drawing.Size(309, 41)
+        Me.MaterialLabel2.TabIndex = 0
+        Me.MaterialLabel2.Text = " MANTER SERVIÇOS"
+        '
+        'MaterialFloatingActionButton3
+        '
+        Me.MaterialFloatingActionButton3.Depth = 0
+        Me.MaterialFloatingActionButton3.Icon = Global.Thanatos_app.My.Resources.Resources.crud
+        Me.MaterialFloatingActionButton3.ImageKey = "crud.png"
+        Me.MaterialFloatingActionButton3.ImageList = Me.ImageList1
+        Me.MaterialFloatingActionButton3.Location = New System.Drawing.Point(1817, 295)
+        Me.MaterialFloatingActionButton3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialFloatingActionButton3.Name = "MaterialFloatingActionButton3"
+        Me.MaterialFloatingActionButton3.Size = New System.Drawing.Size(60, 60)
+        Me.MaterialFloatingActionButton3.TabIndex = 9
+        Me.MaterialFloatingActionButton3.Text = "MaterialFloatingActionButton3"
+        Me.MaterialFloatingActionButton3.UseVisualStyleBackColor = True
+        '
+        'MaterialCard3
+        '
+        Me.MaterialCard3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard3.Controls.Add(Me.MaterialLabel3)
+        Me.MaterialCard3.Depth = 0
+        Me.MaterialCard3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialCard3.Location = New System.Drawing.Point(1430, 174)
+        Me.MaterialCard3.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialCard3.Name = "MaterialCard3"
+        Me.MaterialCard3.Padding = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard3.Size = New System.Drawing.Size(411, 318)
+        Me.MaterialCard3.TabIndex = 8
+        '
+        'MaterialLabel3
+        '
+        Me.MaterialLabel3.AutoSize = True
+        Me.MaterialLabel3.Depth = 0
+        Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 34.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H4
+        Me.MaterialLabel3.Location = New System.Drawing.Point(66, 124)
+        Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel3.Name = "MaterialLabel3"
+        Me.MaterialLabel3.Size = New System.Drawing.Size(289, 41)
+        Me.MaterialLabel3.TabIndex = 0
+        Me.MaterialLabel3.Text = " MANTER JAZIGOS"
+        '
+        'MaterialFloatingActionButton4
+        '
+        Me.MaterialFloatingActionButton4.Depth = 0
+        Me.MaterialFloatingActionButton4.Icon = Global.Thanatos_app.My.Resources.Resources.crud
+        Me.MaterialFloatingActionButton4.ImageKey = "crud.png"
+        Me.MaterialFloatingActionButton4.ImageList = Me.ImageList1
+        Me.MaterialFloatingActionButton4.Location = New System.Drawing.Point(724, 723)
+        Me.MaterialFloatingActionButton4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialFloatingActionButton4.Name = "MaterialFloatingActionButton4"
+        Me.MaterialFloatingActionButton4.Size = New System.Drawing.Size(60, 60)
+        Me.MaterialFloatingActionButton4.TabIndex = 11
+        Me.MaterialFloatingActionButton4.Text = "MaterialFloatingActionButton4"
+        Me.MaterialFloatingActionButton4.UseVisualStyleBackColor = True
+        '
+        'MaterialCard4
+        '
+        Me.MaterialCard4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard4.Controls.Add(Me.MaterialLabel4)
+        Me.MaterialCard4.Depth = 0
+        Me.MaterialCard4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialCard4.Location = New System.Drawing.Point(337, 602)
+        Me.MaterialCard4.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialCard4.Name = "MaterialCard4"
+        Me.MaterialCard4.Padding = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard4.Size = New System.Drawing.Size(411, 318)
+        Me.MaterialCard4.TabIndex = 10
+        '
+        'MaterialLabel4
+        '
+        Me.MaterialLabel4.AutoSize = True
+        Me.MaterialLabel4.Depth = 0
+        Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 34.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H4
+        Me.MaterialLabel4.Location = New System.Drawing.Point(82, 124)
+        Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel4.Name = "MaterialLabel4"
+        Me.MaterialLabel4.Size = New System.Drawing.Size(255, 41)
+        Me.MaterialLabel4.TabIndex = 0
+        Me.MaterialLabel4.Text = " MANTER SALAS"
+        '
+        'MaterialFloatingActionButton5
+        '
+        Me.MaterialFloatingActionButton5.Depth = 0
+        Me.MaterialFloatingActionButton5.Icon = Global.Thanatos_app.My.Resources.Resources.crud
+        Me.MaterialFloatingActionButton5.ImageKey = "crud.png"
+        Me.MaterialFloatingActionButton5.ImageList = Me.ImageList1
+        Me.MaterialFloatingActionButton5.Location = New System.Drawing.Point(1259, 723)
+        Me.MaterialFloatingActionButton5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialFloatingActionButton5.Name = "MaterialFloatingActionButton5"
+        Me.MaterialFloatingActionButton5.Size = New System.Drawing.Size(60, 60)
+        Me.MaterialFloatingActionButton5.TabIndex = 13
+        Me.MaterialFloatingActionButton5.Text = "MaterialFloatingActionButton5"
+        Me.MaterialFloatingActionButton5.UseVisualStyleBackColor = True
+        '
+        'MaterialCard5
+        '
+        Me.MaterialCard5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard5.Controls.Add(Me.MaterialLabel5)
+        Me.MaterialCard5.Depth = 0
+        Me.MaterialCard5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialCard5.Location = New System.Drawing.Point(872, 602)
+        Me.MaterialCard5.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialCard5.Name = "MaterialCard5"
+        Me.MaterialCard5.Padding = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard5.Size = New System.Drawing.Size(411, 318)
+        Me.MaterialCard5.TabIndex = 12
+        '
+        'MaterialLabel5
+        '
+        Me.MaterialLabel5.AutoSize = True
+        Me.MaterialLabel5.Depth = 0
+        Me.MaterialLabel5.Font = New System.Drawing.Font("Roboto", 34.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.H4
+        Me.MaterialLabel5.Location = New System.Drawing.Point(82, 124)
+        Me.MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel5.Name = "MaterialLabel5"
+        Me.MaterialLabel5.Size = New System.Drawing.Size(255, 41)
+        Me.MaterialLabel5.TabIndex = 0
+        Me.MaterialLabel5.Text = " MANTER SALAS"
+        '
+        'MaterialFloatingActionButton6
+        '
+        Me.MaterialFloatingActionButton6.Depth = 0
+        Me.MaterialFloatingActionButton6.Icon = Global.Thanatos_app.My.Resources.Resources.crud
+        Me.MaterialFloatingActionButton6.ImageKey = "crud.png"
+        Me.MaterialFloatingActionButton6.ImageList = Me.ImageList1
+        Me.MaterialFloatingActionButton6.Location = New System.Drawing.Point(1817, 723)
+        Me.MaterialFloatingActionButton6.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialFloatingActionButton6.Name = "MaterialFloatingActionButton6"
+        Me.MaterialFloatingActionButton6.Size = New System.Drawing.Size(60, 60)
+        Me.MaterialFloatingActionButton6.TabIndex = 9
+        Me.MaterialFloatingActionButton6.Text = "MaterialFloatingActionButton6"
+        Me.MaterialFloatingActionButton6.UseVisualStyleBackColor = True
+        '
+        'MaterialCard6
+        '
+        Me.MaterialCard6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard6.Controls.Add(Me.MaterialLabel6)
+        Me.MaterialCard6.Depth = 0
+        Me.MaterialCard6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialCard6.Location = New System.Drawing.Point(1430, 602)
+        Me.MaterialCard6.Margin = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard6.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialCard6.Name = "MaterialCard6"
+        Me.MaterialCard6.Padding = New System.Windows.Forms.Padding(14)
+        Me.MaterialCard6.Size = New System.Drawing.Size(411, 318)
+        Me.MaterialCard6.TabIndex = 8
+        '
+        'MaterialLabel6
+        '
+        Me.MaterialLabel6.AutoSize = True
+        Me.MaterialLabel6.Depth = 0
+        Me.MaterialLabel6.Font = New System.Drawing.Font("Roboto", 34.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel6.FontType = MaterialSkin.MaterialSkinManager.fontType.H4
+        Me.MaterialLabel6.Location = New System.Drawing.Point(82, 124)
+        Me.MaterialLabel6.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel6.Name = "MaterialLabel6"
+        Me.MaterialLabel6.Size = New System.Drawing.Size(255, 41)
+        Me.MaterialLabel6.TabIndex = 0
+        Me.MaterialLabel6.Text = " MANTER SALAS"
         '
         'frm_administrador
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1920, 1032)
-        Me.Controls.Add(Me.MaterialLabel1)
+        Me.Controls.Add(Me.MaterialFloatingActionButton6)
+        Me.Controls.Add(Me.MaterialFloatingActionButton5)
+        Me.Controls.Add(Me.MaterialCard6)
+        Me.Controls.Add(Me.MaterialCard5)
+        Me.Controls.Add(Me.MaterialFloatingActionButton4)
+        Me.Controls.Add(Me.MaterialCard4)
+        Me.Controls.Add(Me.MaterialFloatingActionButton3)
+        Me.Controls.Add(Me.MaterialCard3)
+        Me.Controls.Add(Me.MaterialFloatingActionButton2)
+        Me.Controls.Add(Me.MaterialCard2)
+        Me.Controls.Add(Me.MaterialFloatingActionButton1)
+        Me.Controls.Add(Me.MaterialCard1)
         Me.Controls.Add(Me.GunaShadowPanel1)
         Me.Controls.Add(Me.PictureBox4)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -175,8 +451,19 @@ Partial Class frm_administrador
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel1.ResumeLayout(False)
+        Me.MaterialCard1.ResumeLayout(False)
+        Me.MaterialCard1.PerformLayout()
+        Me.MaterialCard2.ResumeLayout(False)
+        Me.MaterialCard2.PerformLayout()
+        Me.MaterialCard3.ResumeLayout(False)
+        Me.MaterialCard3.PerformLayout()
+        Me.MaterialCard4.ResumeLayout(False)
+        Me.MaterialCard4.PerformLayout()
+        Me.MaterialCard5.ResumeLayout(False)
+        Me.MaterialCard5.PerformLayout()
+        Me.MaterialCard6.ResumeLayout(False)
+        Me.MaterialCard6.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
@@ -186,5 +473,23 @@ Partial Class frm_administrador
     Friend WithEvents btn_administracao As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_recepcao As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_financeiro As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents MaterialCard1 As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents MaterialFloatingActionButton1 As MaterialSkin.Controls.MaterialFloatingActionButton
+    Friend WithEvents ImageList1 As ImageList
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialFloatingActionButton2 As MaterialSkin.Controls.MaterialFloatingActionButton
+    Friend WithEvents MaterialCard2 As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialFloatingActionButton3 As MaterialSkin.Controls.MaterialFloatingActionButton
+    Friend WithEvents MaterialCard3 As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialFloatingActionButton4 As MaterialSkin.Controls.MaterialFloatingActionButton
+    Friend WithEvents MaterialCard4 As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialFloatingActionButton5 As MaterialSkin.Controls.MaterialFloatingActionButton
+    Friend WithEvents MaterialCard5 As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialFloatingActionButton6 As MaterialSkin.Controls.MaterialFloatingActionButton
+    Friend WithEvents MaterialCard6 As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents MaterialLabel6 As MaterialSkin.Controls.MaterialLabel
 End Class
