@@ -17,8 +17,8 @@ Public Class frm_login
         materialSkinManager.ColorScheme = New ColorScheme(
             ColorTranslator.FromHtml("#802790"), ' Primary
             ColorTranslator.FromHtml("#802790"), ' Dark Primary
-            ColorTranslator.FromHtml("#802790"), ' Light Primary
-            ColorTranslator.FromHtml("#802790"), ' Accent
+            ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
+            ColorTranslator.FromHtml("#FFFFFF"), ' Accent
             TextShade.WHITE)
     End Sub
 

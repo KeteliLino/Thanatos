@@ -18,14 +18,12 @@ Public Class frm_home
         materialSkinManager.ColorScheme = New ColorScheme(
             ColorTranslator.FromHtml("#802790"), ' Primary
             ColorTranslator.FromHtml("#802790"), ' Dark Primary
-            ColorTranslator.FromHtml("#802790"), ' Light Primary
+            ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
-
-
     End Sub
+
     Private Sub frm_home_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        ' editando picture box
         If PictureBox2 IsNot Nothing Then
             PictureBox2.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
             PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage

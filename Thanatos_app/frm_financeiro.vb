@@ -17,7 +17,7 @@ Public Class frm_financeiro
         materialSkinManager.ColorScheme = New ColorScheme(
             ColorTranslator.FromHtml("#802790"), ' Primary
             ColorTranslator.FromHtml("#802790"), ' Dark Primary
-            ColorTranslator.FromHtml("#802790"), ' Light Primary
+            ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
     End Sub
@@ -44,5 +44,4 @@ Public Class frm_financeiro
         frm_administrador.Show()
         Me.Hide()
     End Sub
-
 End Class

@@ -50,7 +50,7 @@ Partial Class frm_login
         Me.GunaShadowPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.Gray
+        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(31, Byte), Integer), CType(CType(33, Byte), Integer), CType(CType(35, Byte), Integer))
         Me.GunaShadowPanel1.Controls.Add(Me.btn_entrar)
         Me.GunaShadowPanel1.Controls.Add(Me.lbl_senha)
         Me.GunaShadowPanel1.Controls.Add(Me.lbl_login)
@@ -121,7 +121,7 @@ Partial Class frm_login
         Me.txt_login.AnimateReadOnly = False
         Me.txt_login.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txt_login.Depth = 0
-        Me.txt_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_login.Font = New System.Drawing.Font("Roboto", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txt_login.LeadingIcon = Nothing
         Me.txt_login.Location = New System.Drawing.Point(133, 131)
         Me.txt_login.MaxLength = 50

@@ -17,7 +17,7 @@ Public Class frm_recepcionista
         materialSkinManager.ColorScheme = New ColorScheme(
             ColorTranslator.FromHtml("#802790"), ' Primary
             ColorTranslator.FromHtml("#802790"), ' Dark Primary
-            ColorTranslator.FromHtml("#802790"), ' Light Primary
+            ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
     End Sub
@@ -35,15 +35,13 @@ Public Class frm_recepcionista
         Me.Hide()
     End Sub
 
-    Private Sub btn_financeiro_Click(sender As Object, e As EventArgs) Handles btn_financeiro.Click
-        frm_financeiro.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub btn_administracao_Click(sender As Object, e As EventArgs) Handles btn_administracao.Click
         frm_administrador.Show()
         Me.Hide()
     End Sub
 
-
+    Private Sub btn_financeiro_Click(sender As Object, e As EventArgs) Handles btn_financeiro.Click
+        frm_financeiro.Show()
+        Me.Hide()
+    End Sub
 End Class
