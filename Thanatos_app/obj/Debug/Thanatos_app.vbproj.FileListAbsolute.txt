@@ -71,3 +71,5 @@ E:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_financeiro.resources
 E:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_home.resources
 E:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_recepcionista.resources
 E:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.config
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\Newtonsoft.Json.dll
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\Newtonsoft.Json.xml
