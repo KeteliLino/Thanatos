@@ -18,7 +18,7 @@ Public Class frm_login
             ColorTranslator.FromHtml("#802790"), ' Primary
             ColorTranslator.FromHtml("#802790"), ' Dark Primary
             ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
-            ColorTranslator.FromHtml("#FFFFFF"), ' Accent
+            ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
     End Sub
 

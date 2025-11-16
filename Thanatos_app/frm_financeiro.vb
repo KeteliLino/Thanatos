@@ -32,20 +32,6 @@ Public Class frm_financeiro
         End If
     End Sub
 
-    Private Sub btn_home_Click(sender As Object, e As EventArgs)
-        frm_home.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub btn_recepcao_Click(sender As Object, e As EventArgs)
-        frm_recepcionista.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub btn_administracao_Click(sender As Object, e As EventArgs)
-        frm_administrador.Show()
-        Me.Hide()
-    End Sub
     Private Sub TabControl_SelectedIndexChanged(sender As Object, e As EventArgs)
         Dim tc = DirectCast(sender, TabControl)
         If tc.SelectedTab IsNot Nothing AndAlso tc.SelectedTab.Name = "tab_voltar" Then
@@ -54,4 +40,5 @@ Public Class frm_financeiro
             Me.Hide()
         End If
     End Sub
+
 End Class

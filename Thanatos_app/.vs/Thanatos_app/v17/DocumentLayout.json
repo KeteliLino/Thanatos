@@ -1,30 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\",
+  "WorkspaceRootPath": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\keteli\\documents\\github\\thanatos\\thanatos_app\\frm_recepcionista.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_recepcionista.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\keteli\\documents\\github\\thanatos\\thanatos_app\\frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Thanatos_app||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,84 +36,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frm_login.vb",
+              "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_login.vb",
+              "RelativeDocumentMoniker": "frm_login.vb",
+              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_login.vb",
+              "RelativeToolTip": "frm_login.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-16T03:39:41.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Thanatos_app",
+              "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\Thanatos_app.vbproj",
+              "RelativeDocumentMoniker": "Thanatos_app.vbproj",
+              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\Thanatos_app.vbproj",
+              "RelativeToolTip": "Thanatos_app.vbproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-16T03:37:46.45Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frm_recepcionista.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_recepcionista.vb",
-              "RelativeDocumentMoniker": "frm_recepcionista.vb",
-              "ToolTip": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_recepcionista.vb [Design]",
-              "RelativeToolTip": "frm_recepcionista.vb [Design]",
+              "Title": "frm_login.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_login.vb",
+              "RelativeDocumentMoniker": "frm_login.vb",
+              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_login.vb [Design]",
+              "RelativeToolTip": "frm_login.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-16T03:07:31.177Z",
+              "WhenOpened": "2025-11-16T03:31:45.283Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frm_administrador.vb",
-              "DocumentMoniker": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_administrador.vb",
-              "RelativeDocumentMoniker": "frm_administrador.vb",
-              "ToolTip": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_administrador.vb",
-              "RelativeToolTip": "frm_administrador.vb",
-              "ViewState": "AgIAABsAAAAAAAAAAAAUwCgAAAALAAAAAAAAAA==",
+              "Title": "frm_financeiro.vb",
+              "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb",
+              "RelativeDocumentMoniker": "frm_financeiro.vb",
+              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb",
+              "RelativeToolTip": "frm_financeiro.vb",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-14T18:56:57.979Z",
+              "WhenOpened": "2025-11-16T03:28:43.633Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frm_administrador.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_administrador.vb",
-              "RelativeDocumentMoniker": "frm_administrador.vb",
-              "ToolTip": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_administrador.vb [Design]",
-              "RelativeToolTip": "frm_administrador.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-14T18:39:56.564Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frm_financeiro.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb",
-              "RelativeDocumentMoniker": "frm_financeiro.vb",
-              "ToolTip": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb [Design]",
-              "RelativeToolTip": "frm_financeiro.vb [Design]",
+              "Title": "frm_home.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb",
+              "RelativeDocumentMoniker": "frm_home.vb",
+              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb [Design]",
+              "RelativeToolTip": "frm_home.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-14T18:37:47.953Z",
+              "WhenOpened": "2025-11-16T03:02:57.297Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frm_home.vb",
-              "DocumentMoniker": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb",
-              "RelativeDocumentMoniker": "frm_home.vb",
-              "ToolTip": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb",
-              "RelativeToolTip": "frm_home.vb",
-              "ViewState": "AgIAAAgAAAAAAAAAAAApwBoAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-14T18:35:15.649Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "frm_home.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb",
-              "RelativeDocumentMoniker": "frm_home.vb",
-              "ToolTip": "C:\\Users\\Keteli\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb [Design]",
-              "RelativeToolTip": "frm_home.vb [Design]",
+              "Title": "frm_financeiro.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb",
+              "RelativeDocumentMoniker": "frm_financeiro.vb",
+              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb [Design]",
+              "RelativeToolTip": "frm_financeiro.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-14T18:35:09.051Z",
+              "WhenOpened": "2025-11-14T18:37:47.953Z",
               "EditorCaption": " [Design]"
             }
           ]
