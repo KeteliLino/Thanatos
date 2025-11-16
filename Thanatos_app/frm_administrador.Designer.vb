@@ -24,26 +24,64 @@ Partial Class frm_administrador
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_administrador))
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.BunifuCustomDataGrid4 = New ns1.BunifuCustomDataGrid()
+        Me.GunaShadowPanel4 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.txt_idSalaVelorio = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txt_horaVelorio = New MaterialSkin.Controls.MaterialMaskedTextBox()
+        Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_dataVelorio = New MaterialSkin.Controls.MaterialMaskedTextBox()
+        Me.txt_idFalecidoVelorio = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel10 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel11 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel13 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_idVelorio = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel21 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialButton5 = New MaterialSkin.Controls.MaterialButton()
+        Me.MaterialButton6 = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar6 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.BunifuCustomDataGrid6 = New ns1.BunifuCustomDataGrid()
+        Me.GunaShadowPanel6 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.txt_idFalecidoJazigo = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel28 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_fileira = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel22 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_quadrante = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txt_coluna = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel25 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel27 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_idJazigo = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel29 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialButton9 = New MaterialSkin.Controls.MaterialButton()
+        Me.MaterialButton10 = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar5 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.BunifuCustomDataGrid7 = New ns1.BunifuCustomDataGrid()
+        Me.GunaShadowPanel7 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.txt_preco = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel30 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_descricaoServicos = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel31 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_idServico = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel32 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialButton11 = New MaterialSkin.Controls.MaterialButton()
+        Me.MaterialButton12 = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar4 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
@@ -70,10 +108,22 @@ Partial Class frm_administrador
         Me.btn_pesquisar = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar3 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.BunifuCustomDataGrid5 = New ns1.BunifuCustomDataGrid()
+        Me.GunaShadowPanel5 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.MaterialComboBox1 = New MaterialSkin.Controls.MaterialComboBox()
+        Me.txt_nomeFalecido = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel23 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel24 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_idFalecido = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel26 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialButton7 = New MaterialSkin.Controls.MaterialButton()
+        Me.MaterialButton8 = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar2 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid3 = New ns1.BunifuCustomDataGrid()
         Me.GunaShadowPanel3 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.txt_idSalaCremacao = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txt_horaCremacao = New MaterialSkin.Controls.MaterialMaskedTextBox()
         Me.MaterialLabel19 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_dataCremacao = New MaterialSkin.Controls.MaterialMaskedTextBox()
         Me.txt_idFalecidoCremacao = New MaterialSkin.Controls.MaterialTextBox2()
@@ -99,63 +149,21 @@ Partial Class frm_administrador
         Me.btn_voltar = New MaterialSkin.Controls.MaterialButton()
         Me.MaterialTabControl1 = New MaterialSkin.Controls.MaterialTabControl()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.txt_horaCremacao = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.txt_idSalaCremacao = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.BunifuCustomDataGrid4 = New ns1.BunifuCustomDataGrid()
-        Me.GunaShadowPanel4 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.txt_idSalaVelorio = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.txt_horaVelorio = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_dataVelorio = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.txt_idFalecidoVelorio = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel10 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel11 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel13 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_idVelorio = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel21 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton5 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton6 = New MaterialSkin.Controls.MaterialButton()
-        Me.BunifuCustomDataGrid5 = New ns1.BunifuCustomDataGrid()
-        Me.GunaShadowPanel5 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.txt_nomeFalecido = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel23 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel24 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_idFalecido = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel26 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton7 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton8 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialComboBox1 = New MaterialSkin.Controls.MaterialComboBox()
-        Me.BunifuCustomDataGrid6 = New ns1.BunifuCustomDataGrid()
-        Me.GunaShadowPanel6 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.txt_quadrante = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.txt_coluna = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel25 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel27 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_idJazigo = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel29 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton9 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton10 = New MaterialSkin.Controls.MaterialButton()
-        Me.txt_fileira = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel22 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_idFalecidoJazigo = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel28 = New MaterialSkin.Controls.MaterialLabel()
-        Me.BunifuCustomDataGrid7 = New ns1.BunifuCustomDataGrid()
-        Me.GunaShadowPanel7 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.MaterialLabel30 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_descricaoServicos = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel31 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_idServico = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel32 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton11 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton12 = New MaterialSkin.Controls.MaterialButton()
-        Me.txt_preco = New MaterialSkin.Controls.MaterialTextBox2()
         Me.TabPage7.SuspendLayout()
+        CType(Me.BunifuCustomDataGrid4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaShadowPanel4.SuspendLayout()
         Me.TabPage6.SuspendLayout()
+        CType(Me.BunifuCustomDataGrid6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaShadowPanel6.SuspendLayout()
         Me.TabPage5.SuspendLayout()
+        CType(Me.BunifuCustomDataGrid7, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaShadowPanel7.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        CType(Me.BunifuCustomDataGrid5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GunaShadowPanel5.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         CType(Me.BunifuCustomDataGrid3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel3.SuspendLayout()
@@ -164,14 +172,6 @@ Partial Class frm_administrador
         Me.GunaShadowPanel2.SuspendLayout()
         Me.MaterialTabControl1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.BunifuCustomDataGrid4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GunaShadowPanel4.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid5, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GunaShadowPanel5.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid6, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GunaShadowPanel6.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid7, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GunaShadowPanel7.SuspendLayout()
         Me.SuspendLayout()
         '
         'ImageList1
@@ -199,6 +199,339 @@ Partial Class frm_administrador
         Me.TabPage7.TabIndex = 6
         Me.TabPage7.Text = "Velórios"
         Me.TabPage7.UseVisualStyleBackColor = True
+        '
+        'BunifuCustomDataGrid4
+        '
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        Me.BunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.BunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.BunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        Me.BunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BunifuCustomDataGrid4.DoubleBuffered = True
+        Me.BunifuCustomDataGrid4.EnableHeadersVisualStyles = False
+        Me.BunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid4.Location = New System.Drawing.Point(57, 180)
+        Me.BunifuCustomDataGrid4.Name = "BunifuCustomDataGrid4"
+        Me.BunifuCustomDataGrid4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.BunifuCustomDataGrid4.Size = New System.Drawing.Size(1755, 705)
+        Me.BunifuCustomDataGrid4.TabIndex = 23
+        '
+        'GunaShadowPanel4
+        '
+        Me.GunaShadowPanel4.BackColor = System.Drawing.Color.Transparent
+        Me.GunaShadowPanel4.BaseColor = System.Drawing.Color.DimGray
+        Me.GunaShadowPanel4.Controls.Add(Me.txt_idSalaVelorio)
+        Me.GunaShadowPanel4.Controls.Add(Me.txt_horaVelorio)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel8)
+        Me.GunaShadowPanel4.Controls.Add(Me.txt_dataVelorio)
+        Me.GunaShadowPanel4.Controls.Add(Me.txt_idFalecidoVelorio)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel10)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel11)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel13)
+        Me.GunaShadowPanel4.Controls.Add(Me.txt_idVelorio)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel21)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialButton5)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialButton6)
+        Me.GunaShadowPanel4.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.GunaShadowPanel4.Location = New System.Drawing.Point(57, 63)
+        Me.GunaShadowPanel4.Name = "GunaShadowPanel4"
+        Me.GunaShadowPanel4.Radius = 6
+        Me.GunaShadowPanel4.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel4.ShadowDepth = 255
+        Me.GunaShadowPanel4.Size = New System.Drawing.Size(1755, 110)
+        Me.GunaShadowPanel4.TabIndex = 22
+        '
+        'txt_idSalaVelorio
+        '
+        Me.txt_idSalaVelorio.AnimateReadOnly = False
+        Me.txt_idSalaVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idSalaVelorio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idSalaVelorio.Depth = 0
+        Me.txt_idSalaVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idSalaVelorio.HideSelection = True
+        Me.txt_idSalaVelorio.LeadingIcon = Nothing
+        Me.txt_idSalaVelorio.Location = New System.Drawing.Point(849, 47)
+        Me.txt_idSalaVelorio.MaxLength = 32767
+        Me.txt_idSalaVelorio.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idSalaVelorio.Name = "txt_idSalaVelorio"
+        Me.txt_idSalaVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idSalaVelorio.PrefixSuffixText = Nothing
+        Me.txt_idSalaVelorio.ReadOnly = False
+        Me.txt_idSalaVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idSalaVelorio.SelectedText = ""
+        Me.txt_idSalaVelorio.SelectionLength = 0
+        Me.txt_idSalaVelorio.SelectionStart = 0
+        Me.txt_idSalaVelorio.ShortcutsEnabled = True
+        Me.txt_idSalaVelorio.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idSalaVelorio.TabIndex = 37
+        Me.txt_idSalaVelorio.TabStop = False
+        Me.txt_idSalaVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idSalaVelorio.TrailingIcon = Nothing
+        Me.txt_idSalaVelorio.UseSystemPasswordChar = False
+        '
+        'txt_horaVelorio
+        '
+        Me.txt_horaVelorio.AllowPromptAsInput = True
+        Me.txt_horaVelorio.AnimateReadOnly = False
+        Me.txt_horaVelorio.AsciiOnly = False
+        Me.txt_horaVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_horaVelorio.BeepOnError = False
+        Me.txt_horaVelorio.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
+        Me.txt_horaVelorio.Depth = 0
+        Me.txt_horaVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_horaVelorio.HidePromptOnLeave = False
+        Me.txt_horaVelorio.HideSelection = True
+        Me.txt_horaVelorio.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
+        Me.txt_horaVelorio.LeadingIcon = Nothing
+        Me.txt_horaVelorio.Location = New System.Drawing.Point(302, 47)
+        Me.txt_horaVelorio.Mask = "00:00"
+        Me.txt_horaVelorio.MaxLength = 32767
+        Me.txt_horaVelorio.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_horaVelorio.Name = "txt_horaVelorio"
+        Me.txt_horaVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_horaVelorio.PrefixSuffixText = Nothing
+        Me.txt_horaVelorio.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
+        Me.txt_horaVelorio.ReadOnly = False
+        Me.txt_horaVelorio.RejectInputOnFirstFailure = False
+        Me.txt_horaVelorio.ResetOnPrompt = True
+        Me.txt_horaVelorio.ResetOnSpace = True
+        Me.txt_horaVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_horaVelorio.SelectedText = ""
+        Me.txt_horaVelorio.SelectionLength = 0
+        Me.txt_horaVelorio.SelectionStart = 0
+        Me.txt_horaVelorio.ShortcutsEnabled = True
+        Me.txt_horaVelorio.Size = New System.Drawing.Size(250, 48)
+        Me.txt_horaVelorio.SkipLiterals = True
+        Me.txt_horaVelorio.TabIndex = 36
+        Me.txt_horaVelorio.TabStop = False
+        Me.txt_horaVelorio.Text = "  :"
+        Me.txt_horaVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_horaVelorio.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
+        Me.txt_horaVelorio.TrailingIcon = Nothing
+        Me.txt_horaVelorio.UseSystemPasswordChar = False
+        Me.txt_horaVelorio.ValidatingType = Nothing
+        '
+        'MaterialLabel8
+        '
+        Me.MaterialLabel8.AutoSize = True
+        Me.MaterialLabel8.Depth = 0
+        Me.MaterialLabel8.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel8.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel8.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel8.Location = New System.Drawing.Point(576, 15)
+        Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel8.Name = "MaterialLabel8"
+        Me.MaterialLabel8.Size = New System.Drawing.Size(164, 29)
+        Me.MaterialLabel8.TabIndex = 35
+        Me.MaterialLabel8.Text = "Data do velório"
+        '
+        'txt_dataVelorio
+        '
+        Me.txt_dataVelorio.AllowPromptAsInput = True
+        Me.txt_dataVelorio.AnimateReadOnly = False
+        Me.txt_dataVelorio.AsciiOnly = False
+        Me.txt_dataVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_dataVelorio.BeepOnError = False
+        Me.txt_dataVelorio.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
+        Me.txt_dataVelorio.Depth = 0
+        Me.txt_dataVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_dataVelorio.HidePromptOnLeave = False
+        Me.txt_dataVelorio.HideSelection = True
+        Me.txt_dataVelorio.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
+        Me.txt_dataVelorio.LeadingIcon = Nothing
+        Me.txt_dataVelorio.Location = New System.Drawing.Point(576, 47)
+        Me.txt_dataVelorio.Mask = "00/00/0000"
+        Me.txt_dataVelorio.MaxLength = 32767
+        Me.txt_dataVelorio.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_dataVelorio.Name = "txt_dataVelorio"
+        Me.txt_dataVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_dataVelorio.PrefixSuffixText = Nothing
+        Me.txt_dataVelorio.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
+        Me.txt_dataVelorio.ReadOnly = False
+        Me.txt_dataVelorio.RejectInputOnFirstFailure = False
+        Me.txt_dataVelorio.ResetOnPrompt = True
+        Me.txt_dataVelorio.ResetOnSpace = True
+        Me.txt_dataVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_dataVelorio.SelectedText = ""
+        Me.txt_dataVelorio.SelectionLength = 0
+        Me.txt_dataVelorio.SelectionStart = 0
+        Me.txt_dataVelorio.ShortcutsEnabled = True
+        Me.txt_dataVelorio.Size = New System.Drawing.Size(250, 48)
+        Me.txt_dataVelorio.SkipLiterals = True
+        Me.txt_dataVelorio.TabIndex = 34
+        Me.txt_dataVelorio.TabStop = False
+        Me.txt_dataVelorio.Text = "  /  /"
+        Me.txt_dataVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_dataVelorio.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
+        Me.txt_dataVelorio.TrailingIcon = Nothing
+        Me.txt_dataVelorio.UseSystemPasswordChar = False
+        Me.txt_dataVelorio.ValidatingType = Nothing
+        '
+        'txt_idFalecidoVelorio
+        '
+        Me.txt_idFalecidoVelorio.AnimateReadOnly = False
+        Me.txt_idFalecidoVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idFalecidoVelorio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idFalecidoVelorio.Depth = 0
+        Me.txt_idFalecidoVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idFalecidoVelorio.HideSelection = True
+        Me.txt_idFalecidoVelorio.LeadingIcon = Nothing
+        Me.txt_idFalecidoVelorio.Location = New System.Drawing.Point(1126, 47)
+        Me.txt_idFalecidoVelorio.MaxLength = 32767
+        Me.txt_idFalecidoVelorio.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idFalecidoVelorio.Name = "txt_idFalecidoVelorio"
+        Me.txt_idFalecidoVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idFalecidoVelorio.PrefixSuffixText = Nothing
+        Me.txt_idFalecidoVelorio.ReadOnly = False
+        Me.txt_idFalecidoVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idFalecidoVelorio.SelectedText = ""
+        Me.txt_idFalecidoVelorio.SelectionLength = 0
+        Me.txt_idFalecidoVelorio.SelectionStart = 0
+        Me.txt_idFalecidoVelorio.ShortcutsEnabled = True
+        Me.txt_idFalecidoVelorio.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idFalecidoVelorio.TabIndex = 26
+        Me.txt_idFalecidoVelorio.TabStop = False
+        Me.txt_idFalecidoVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idFalecidoVelorio.TrailingIcon = Nothing
+        Me.txt_idFalecidoVelorio.UseSystemPasswordChar = False
+        '
+        'MaterialLabel10
+        '
+        Me.MaterialLabel10.AutoSize = True
+        Me.MaterialLabel10.Depth = 0
+        Me.MaterialLabel10.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel10.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel10.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel10.Location = New System.Drawing.Point(1126, 15)
+        Me.MaterialLabel10.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel10.Name = "MaterialLabel10"
+        Me.MaterialLabel10.Size = New System.Drawing.Size(151, 29)
+        Me.MaterialLabel10.TabIndex = 25
+        Me.MaterialLabel10.Text = "ID do falecido"
+        '
+        'MaterialLabel11
+        '
+        Me.MaterialLabel11.AutoSize = True
+        Me.MaterialLabel11.Depth = 0
+        Me.MaterialLabel11.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel11.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel11.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel11.Location = New System.Drawing.Point(849, 14)
+        Me.MaterialLabel11.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel11.Name = "MaterialLabel11"
+        Me.MaterialLabel11.Size = New System.Drawing.Size(107, 29)
+        Me.MaterialLabel11.TabIndex = 21
+        Me.MaterialLabel11.Text = "ID da sala"
+        '
+        'MaterialLabel13
+        '
+        Me.MaterialLabel13.Depth = 0
+        Me.MaterialLabel13.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel13.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel13.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel13.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel13.Location = New System.Drawing.Point(302, 15)
+        Me.MaterialLabel13.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel13.Name = "MaterialLabel13"
+        Me.MaterialLabel13.Size = New System.Drawing.Size(173, 29)
+        Me.MaterialLabel13.TabIndex = 19
+        Me.MaterialLabel13.Text = "Hora do velório"
+        '
+        'txt_idVelorio
+        '
+        Me.txt_idVelorio.AnimateReadOnly = False
+        Me.txt_idVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idVelorio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idVelorio.Depth = 0
+        Me.txt_idVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idVelorio.HideSelection = True
+        Me.txt_idVelorio.LeadingIcon = Nothing
+        Me.txt_idVelorio.Location = New System.Drawing.Point(24, 47)
+        Me.txt_idVelorio.MaxLength = 32767
+        Me.txt_idVelorio.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idVelorio.Name = "txt_idVelorio"
+        Me.txt_idVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idVelorio.PrefixSuffixText = Nothing
+        Me.txt_idVelorio.ReadOnly = False
+        Me.txt_idVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idVelorio.SelectedText = ""
+        Me.txt_idVelorio.SelectionLength = 0
+        Me.txt_idVelorio.SelectionStart = 0
+        Me.txt_idVelorio.ShortcutsEnabled = True
+        Me.txt_idVelorio.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idVelorio.TabIndex = 18
+        Me.txt_idVelorio.TabStop = False
+        Me.txt_idVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idVelorio.TrailingIcon = Nothing
+        Me.txt_idVelorio.UseSystemPasswordChar = False
+        '
+        'MaterialLabel21
+        '
+        Me.MaterialLabel21.AutoSize = True
+        Me.MaterialLabel21.Depth = 0
+        Me.MaterialLabel21.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel21.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel21.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel21.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel21.Location = New System.Drawing.Point(24, 15)
+        Me.MaterialLabel21.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel21.Name = "MaterialLabel21"
+        Me.MaterialLabel21.Size = New System.Drawing.Size(137, 29)
+        Me.MaterialLabel21.TabIndex = 9
+        Me.MaterialLabel21.Text = "ID do velório"
+        '
+        'MaterialButton5
+        '
+        Me.MaterialButton5.AutoSize = False
+        Me.MaterialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.MaterialButton5.Depth = 0
+        Me.MaterialButton5.HighEmphasis = True
+        Me.MaterialButton5.Icon = CType(resources.GetObject("MaterialButton5.Icon"), System.Drawing.Image)
+        Me.MaterialButton5.Location = New System.Drawing.Point(1607, 17)
+        Me.MaterialButton5.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialButton5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialButton5.Name = "MaterialButton5"
+        Me.MaterialButton5.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.MaterialButton5.Size = New System.Drawing.Size(131, 36)
+        Me.MaterialButton5.TabIndex = 3
+        Me.MaterialButton5.Text = "Incluir"
+        Me.MaterialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.MaterialButton5.UseAccentColor = False
+        Me.MaterialButton5.UseVisualStyleBackColor = True
+        '
+        'MaterialButton6
+        '
+        Me.MaterialButton6.AutoSize = False
+        Me.MaterialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.MaterialButton6.Depth = 0
+        Me.MaterialButton6.HighEmphasis = True
+        Me.MaterialButton6.Icon = CType(resources.GetObject("MaterialButton6.Icon"), System.Drawing.Image)
+        Me.MaterialButton6.Location = New System.Drawing.Point(1457, 17)
+        Me.MaterialButton6.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialButton6.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialButton6.Name = "MaterialButton6"
+        Me.MaterialButton6.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.MaterialButton6.Size = New System.Drawing.Size(131, 36)
+        Me.MaterialButton6.TabIndex = 0
+        Me.MaterialButton6.Text = "Pesquisar"
+        Me.MaterialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.MaterialButton6.UseAccentColor = False
+        Me.MaterialButton6.UseVisualStyleBackColor = True
         '
         'btn_voltar6
         '
@@ -233,6 +566,312 @@ Partial Class frm_administrador
         Me.TabPage6.Text = "Jazigos"
         Me.TabPage6.UseVisualStyleBackColor = True
         '
+        'BunifuCustomDataGrid6
+        '
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid6.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.BunifuCustomDataGrid6.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.BunifuCustomDataGrid6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.BunifuCustomDataGrid6.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid6.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        Me.BunifuCustomDataGrid6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BunifuCustomDataGrid6.DoubleBuffered = True
+        Me.BunifuCustomDataGrid6.EnableHeadersVisualStyles = False
+        Me.BunifuCustomDataGrid6.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid6.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid6.Location = New System.Drawing.Point(57, 180)
+        Me.BunifuCustomDataGrid6.Name = "BunifuCustomDataGrid6"
+        Me.BunifuCustomDataGrid6.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.BunifuCustomDataGrid6.Size = New System.Drawing.Size(1755, 705)
+        Me.BunifuCustomDataGrid6.TabIndex = 25
+        '
+        'GunaShadowPanel6
+        '
+        Me.GunaShadowPanel6.BackColor = System.Drawing.Color.Transparent
+        Me.GunaShadowPanel6.BaseColor = System.Drawing.Color.DimGray
+        Me.GunaShadowPanel6.Controls.Add(Me.txt_idFalecidoJazigo)
+        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel28)
+        Me.GunaShadowPanel6.Controls.Add(Me.txt_fileira)
+        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel22)
+        Me.GunaShadowPanel6.Controls.Add(Me.txt_quadrante)
+        Me.GunaShadowPanel6.Controls.Add(Me.txt_coluna)
+        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel25)
+        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel27)
+        Me.GunaShadowPanel6.Controls.Add(Me.txt_idJazigo)
+        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel29)
+        Me.GunaShadowPanel6.Controls.Add(Me.MaterialButton9)
+        Me.GunaShadowPanel6.Controls.Add(Me.MaterialButton10)
+        Me.GunaShadowPanel6.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.GunaShadowPanel6.Location = New System.Drawing.Point(57, 63)
+        Me.GunaShadowPanel6.Name = "GunaShadowPanel6"
+        Me.GunaShadowPanel6.Radius = 6
+        Me.GunaShadowPanel6.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel6.ShadowDepth = 255
+        Me.GunaShadowPanel6.Size = New System.Drawing.Size(1755, 110)
+        Me.GunaShadowPanel6.TabIndex = 24
+        '
+        'txt_idFalecidoJazigo
+        '
+        Me.txt_idFalecidoJazigo.AnimateReadOnly = False
+        Me.txt_idFalecidoJazigo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idFalecidoJazigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idFalecidoJazigo.Depth = 0
+        Me.txt_idFalecidoJazigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idFalecidoJazigo.HideSelection = True
+        Me.txt_idFalecidoJazigo.LeadingIcon = Nothing
+        Me.txt_idFalecidoJazigo.Location = New System.Drawing.Point(1139, 47)
+        Me.txt_idFalecidoJazigo.MaxLength = 32767
+        Me.txt_idFalecidoJazigo.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idFalecidoJazigo.Name = "txt_idFalecidoJazigo"
+        Me.txt_idFalecidoJazigo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idFalecidoJazigo.PrefixSuffixText = Nothing
+        Me.txt_idFalecidoJazigo.ReadOnly = False
+        Me.txt_idFalecidoJazigo.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idFalecidoJazigo.SelectedText = ""
+        Me.txt_idFalecidoJazigo.SelectionLength = 0
+        Me.txt_idFalecidoJazigo.SelectionStart = 0
+        Me.txt_idFalecidoJazigo.ShortcutsEnabled = True
+        Me.txt_idFalecidoJazigo.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idFalecidoJazigo.TabIndex = 41
+        Me.txt_idFalecidoJazigo.TabStop = False
+        Me.txt_idFalecidoJazigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idFalecidoJazigo.TrailingIcon = Nothing
+        Me.txt_idFalecidoJazigo.UseSystemPasswordChar = False
+        '
+        'MaterialLabel28
+        '
+        Me.MaterialLabel28.AutoSize = True
+        Me.MaterialLabel28.Depth = 0
+        Me.MaterialLabel28.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel28.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel28.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel28.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel28.Location = New System.Drawing.Point(1139, 15)
+        Me.MaterialLabel28.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel28.Name = "MaterialLabel28"
+        Me.MaterialLabel28.Size = New System.Drawing.Size(151, 29)
+        Me.MaterialLabel28.TabIndex = 40
+        Me.MaterialLabel28.Text = "ID do falecido"
+        '
+        'txt_fileira
+        '
+        Me.txt_fileira.AnimateReadOnly = False
+        Me.txt_fileira.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_fileira.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_fileira.Depth = 0
+        Me.txt_fileira.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_fileira.HideSelection = True
+        Me.txt_fileira.LeadingIcon = Nothing
+        Me.txt_fileira.Location = New System.Drawing.Point(582, 47)
+        Me.txt_fileira.MaxLength = 32767
+        Me.txt_fileira.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_fileira.Name = "txt_fileira"
+        Me.txt_fileira.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_fileira.PrefixSuffixText = Nothing
+        Me.txt_fileira.ReadOnly = False
+        Me.txt_fileira.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_fileira.SelectedText = ""
+        Me.txt_fileira.SelectionLength = 0
+        Me.txt_fileira.SelectionStart = 0
+        Me.txt_fileira.ShortcutsEnabled = True
+        Me.txt_fileira.Size = New System.Drawing.Size(250, 48)
+        Me.txt_fileira.TabIndex = 39
+        Me.txt_fileira.TabStop = False
+        Me.txt_fileira.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_fileira.TrailingIcon = Nothing
+        Me.txt_fileira.UseSystemPasswordChar = False
+        '
+        'MaterialLabel22
+        '
+        Me.MaterialLabel22.AutoSize = True
+        Me.MaterialLabel22.Depth = 0
+        Me.MaterialLabel22.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel22.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel22.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel22.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel22.Location = New System.Drawing.Point(582, 14)
+        Me.MaterialLabel22.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel22.Name = "MaterialLabel22"
+        Me.MaterialLabel22.Size = New System.Drawing.Size(66, 29)
+        Me.MaterialLabel22.TabIndex = 38
+        Me.MaterialLabel22.Text = "Fileira"
+        '
+        'txt_quadrante
+        '
+        Me.txt_quadrante.AnimateReadOnly = False
+        Me.txt_quadrante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_quadrante.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_quadrante.Depth = 0
+        Me.txt_quadrante.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_quadrante.HideSelection = True
+        Me.txt_quadrante.LeadingIcon = Nothing
+        Me.txt_quadrante.Location = New System.Drawing.Point(304, 47)
+        Me.txt_quadrante.MaxLength = 32767
+        Me.txt_quadrante.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_quadrante.Name = "txt_quadrante"
+        Me.txt_quadrante.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_quadrante.PrefixSuffixText = Nothing
+        Me.txt_quadrante.ReadOnly = False
+        Me.txt_quadrante.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_quadrante.SelectedText = ""
+        Me.txt_quadrante.SelectionLength = 0
+        Me.txt_quadrante.SelectionStart = 0
+        Me.txt_quadrante.ShortcutsEnabled = True
+        Me.txt_quadrante.Size = New System.Drawing.Size(250, 48)
+        Me.txt_quadrante.TabIndex = 37
+        Me.txt_quadrante.TabStop = False
+        Me.txt_quadrante.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_quadrante.TrailingIcon = Nothing
+        Me.txt_quadrante.UseSystemPasswordChar = False
+        '
+        'txt_coluna
+        '
+        Me.txt_coluna.AnimateReadOnly = False
+        Me.txt_coluna.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_coluna.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_coluna.Depth = 0
+        Me.txt_coluna.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_coluna.HideSelection = True
+        Me.txt_coluna.LeadingIcon = Nothing
+        Me.txt_coluna.Location = New System.Drawing.Point(864, 47)
+        Me.txt_coluna.MaxLength = 32767
+        Me.txt_coluna.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_coluna.Name = "txt_coluna"
+        Me.txt_coluna.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_coluna.PrefixSuffixText = Nothing
+        Me.txt_coluna.ReadOnly = False
+        Me.txt_coluna.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_coluna.SelectedText = ""
+        Me.txt_coluna.SelectionLength = 0
+        Me.txt_coluna.SelectionStart = 0
+        Me.txt_coluna.ShortcutsEnabled = True
+        Me.txt_coluna.Size = New System.Drawing.Size(250, 48)
+        Me.txt_coluna.TabIndex = 26
+        Me.txt_coluna.TabStop = False
+        Me.txt_coluna.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_coluna.TrailingIcon = Nothing
+        Me.txt_coluna.UseSystemPasswordChar = False
+        '
+        'MaterialLabel25
+        '
+        Me.MaterialLabel25.AutoSize = True
+        Me.MaterialLabel25.Depth = 0
+        Me.MaterialLabel25.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel25.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel25.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel25.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel25.Location = New System.Drawing.Point(864, 15)
+        Me.MaterialLabel25.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel25.Name = "MaterialLabel25"
+        Me.MaterialLabel25.Size = New System.Drawing.Size(76, 29)
+        Me.MaterialLabel25.TabIndex = 25
+        Me.MaterialLabel25.Text = "Coluna"
+        '
+        'MaterialLabel27
+        '
+        Me.MaterialLabel27.AutoSize = True
+        Me.MaterialLabel27.Depth = 0
+        Me.MaterialLabel27.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel27.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel27.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel27.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel27.Location = New System.Drawing.Point(304, 14)
+        Me.MaterialLabel27.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel27.Name = "MaterialLabel27"
+        Me.MaterialLabel27.Size = New System.Drawing.Size(113, 29)
+        Me.MaterialLabel27.TabIndex = 21
+        Me.MaterialLabel27.Text = "Quadrante"
+        '
+        'txt_idJazigo
+        '
+        Me.txt_idJazigo.AnimateReadOnly = False
+        Me.txt_idJazigo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idJazigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idJazigo.Depth = 0
+        Me.txt_idJazigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idJazigo.HideSelection = True
+        Me.txt_idJazigo.LeadingIcon = Nothing
+        Me.txt_idJazigo.Location = New System.Drawing.Point(24, 47)
+        Me.txt_idJazigo.MaxLength = 32767
+        Me.txt_idJazigo.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idJazigo.Name = "txt_idJazigo"
+        Me.txt_idJazigo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idJazigo.PrefixSuffixText = Nothing
+        Me.txt_idJazigo.ReadOnly = False
+        Me.txt_idJazigo.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idJazigo.SelectedText = ""
+        Me.txt_idJazigo.SelectionLength = 0
+        Me.txt_idJazigo.SelectionStart = 0
+        Me.txt_idJazigo.ShortcutsEnabled = True
+        Me.txt_idJazigo.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idJazigo.TabIndex = 18
+        Me.txt_idJazigo.TabStop = False
+        Me.txt_idJazigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idJazigo.TrailingIcon = Nothing
+        Me.txt_idJazigo.UseSystemPasswordChar = False
+        '
+        'MaterialLabel29
+        '
+        Me.MaterialLabel29.AutoSize = True
+        Me.MaterialLabel29.Depth = 0
+        Me.MaterialLabel29.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel29.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel29.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel29.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel29.Location = New System.Drawing.Point(24, 15)
+        Me.MaterialLabel29.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel29.Name = "MaterialLabel29"
+        Me.MaterialLabel29.Size = New System.Drawing.Size(128, 29)
+        Me.MaterialLabel29.TabIndex = 9
+        Me.MaterialLabel29.Text = "ID do jazigo"
+        '
+        'MaterialButton9
+        '
+        Me.MaterialButton9.AutoSize = False
+        Me.MaterialButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialButton9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.MaterialButton9.Depth = 0
+        Me.MaterialButton9.HighEmphasis = True
+        Me.MaterialButton9.Icon = CType(resources.GetObject("MaterialButton9.Icon"), System.Drawing.Image)
+        Me.MaterialButton9.Location = New System.Drawing.Point(1607, 17)
+        Me.MaterialButton9.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialButton9.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialButton9.Name = "MaterialButton9"
+        Me.MaterialButton9.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.MaterialButton9.Size = New System.Drawing.Size(131, 36)
+        Me.MaterialButton9.TabIndex = 3
+        Me.MaterialButton9.Text = "Incluir"
+        Me.MaterialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.MaterialButton9.UseAccentColor = False
+        Me.MaterialButton9.UseVisualStyleBackColor = True
+        '
+        'MaterialButton10
+        '
+        Me.MaterialButton10.AutoSize = False
+        Me.MaterialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialButton10.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.MaterialButton10.Depth = 0
+        Me.MaterialButton10.HighEmphasis = True
+        Me.MaterialButton10.Icon = CType(resources.GetObject("MaterialButton10.Icon"), System.Drawing.Image)
+        Me.MaterialButton10.Location = New System.Drawing.Point(1457, 17)
+        Me.MaterialButton10.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialButton10.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialButton10.Name = "MaterialButton10"
+        Me.MaterialButton10.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.MaterialButton10.Size = New System.Drawing.Size(131, 36)
+        Me.MaterialButton10.TabIndex = 0
+        Me.MaterialButton10.Text = "Pesquisar"
+        Me.MaterialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.MaterialButton10.UseAccentColor = False
+        Me.MaterialButton10.UseVisualStyleBackColor = True
+        '
         'btn_voltar5
         '
         Me.btn_voltar5.AutoSize = False
@@ -265,6 +904,221 @@ Partial Class frm_administrador
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Serviços"
         Me.TabPage5.UseVisualStyleBackColor = True
+        '
+        'BunifuCustomDataGrid7
+        '
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid7.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        Me.BunifuCustomDataGrid7.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.BunifuCustomDataGrid7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.BunifuCustomDataGrid7.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid7.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        Me.BunifuCustomDataGrid7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BunifuCustomDataGrid7.DoubleBuffered = True
+        Me.BunifuCustomDataGrid7.EnableHeadersVisualStyles = False
+        Me.BunifuCustomDataGrid7.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid7.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid7.Location = New System.Drawing.Point(57, 180)
+        Me.BunifuCustomDataGrid7.Name = "BunifuCustomDataGrid7"
+        Me.BunifuCustomDataGrid7.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.BunifuCustomDataGrid7.Size = New System.Drawing.Size(1755, 705)
+        Me.BunifuCustomDataGrid7.TabIndex = 22
+        '
+        'GunaShadowPanel7
+        '
+        Me.GunaShadowPanel7.BackColor = System.Drawing.Color.Transparent
+        Me.GunaShadowPanel7.BaseColor = System.Drawing.Color.DimGray
+        Me.GunaShadowPanel7.Controls.Add(Me.txt_preco)
+        Me.GunaShadowPanel7.Controls.Add(Me.MaterialLabel30)
+        Me.GunaShadowPanel7.Controls.Add(Me.txt_descricaoServicos)
+        Me.GunaShadowPanel7.Controls.Add(Me.MaterialLabel31)
+        Me.GunaShadowPanel7.Controls.Add(Me.txt_idServico)
+        Me.GunaShadowPanel7.Controls.Add(Me.MaterialLabel32)
+        Me.GunaShadowPanel7.Controls.Add(Me.MaterialButton11)
+        Me.GunaShadowPanel7.Controls.Add(Me.MaterialButton12)
+        Me.GunaShadowPanel7.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.GunaShadowPanel7.Location = New System.Drawing.Point(57, 63)
+        Me.GunaShadowPanel7.Name = "GunaShadowPanel7"
+        Me.GunaShadowPanel7.Radius = 6
+        Me.GunaShadowPanel7.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel7.ShadowDepth = 255
+        Me.GunaShadowPanel7.Size = New System.Drawing.Size(1755, 110)
+        Me.GunaShadowPanel7.TabIndex = 21
+        '
+        'txt_preco
+        '
+        Me.txt_preco.AnimateReadOnly = False
+        Me.txt_preco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_preco.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_preco.Depth = 0
+        Me.txt_preco.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_preco.HideSelection = True
+        Me.txt_preco.LeadingIcon = Nothing
+        Me.txt_preco.Location = New System.Drawing.Point(570, 49)
+        Me.txt_preco.MaxLength = 32767
+        Me.txt_preco.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_preco.Name = "txt_preco"
+        Me.txt_preco.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_preco.PrefixSuffixText = Nothing
+        Me.txt_preco.ReadOnly = False
+        Me.txt_preco.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_preco.SelectedText = ""
+        Me.txt_preco.SelectionLength = 0
+        Me.txt_preco.SelectionStart = 0
+        Me.txt_preco.ShortcutsEnabled = True
+        Me.txt_preco.Size = New System.Drawing.Size(250, 48)
+        Me.txt_preco.TabIndex = 22
+        Me.txt_preco.TabStop = False
+        Me.txt_preco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_preco.TrailingIcon = Nothing
+        Me.txt_preco.UseSystemPasswordChar = False
+        '
+        'MaterialLabel30
+        '
+        Me.MaterialLabel30.Depth = 0
+        Me.MaterialLabel30.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel30.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel30.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel30.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel30.Location = New System.Drawing.Point(571, 17)
+        Me.MaterialLabel30.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel30.Name = "MaterialLabel30"
+        Me.MaterialLabel30.Size = New System.Drawing.Size(132, 29)
+        Me.MaterialLabel30.TabIndex = 21
+        Me.MaterialLabel30.Text = "Preço"
+        '
+        'txt_descricaoServicos
+        '
+        Me.txt_descricaoServicos.AnimateReadOnly = False
+        Me.txt_descricaoServicos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_descricaoServicos.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_descricaoServicos.Depth = 0
+        Me.txt_descricaoServicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_descricaoServicos.HideSelection = True
+        Me.txt_descricaoServicos.LeadingIcon = Nothing
+        Me.txt_descricaoServicos.Location = New System.Drawing.Point(305, 49)
+        Me.txt_descricaoServicos.MaxLength = 32767
+        Me.txt_descricaoServicos.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_descricaoServicos.Name = "txt_descricaoServicos"
+        Me.txt_descricaoServicos.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_descricaoServicos.PrefixSuffixText = Nothing
+        Me.txt_descricaoServicos.ReadOnly = False
+        Me.txt_descricaoServicos.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_descricaoServicos.SelectedText = ""
+        Me.txt_descricaoServicos.SelectionLength = 0
+        Me.txt_descricaoServicos.SelectionStart = 0
+        Me.txt_descricaoServicos.ShortcutsEnabled = True
+        Me.txt_descricaoServicos.Size = New System.Drawing.Size(250, 48)
+        Me.txt_descricaoServicos.TabIndex = 20
+        Me.txt_descricaoServicos.TabStop = False
+        Me.txt_descricaoServicos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_descricaoServicos.TrailingIcon = Nothing
+        Me.txt_descricaoServicos.UseSystemPasswordChar = False
+        '
+        'MaterialLabel31
+        '
+        Me.MaterialLabel31.AutoSize = True
+        Me.MaterialLabel31.Depth = 0
+        Me.MaterialLabel31.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel31.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel31.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel31.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel31.Location = New System.Drawing.Point(305, 17)
+        Me.MaterialLabel31.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel31.Name = "MaterialLabel31"
+        Me.MaterialLabel31.Size = New System.Drawing.Size(109, 29)
+        Me.MaterialLabel31.TabIndex = 19
+        Me.MaterialLabel31.Text = "Descrição"
+        '
+        'txt_idServico
+        '
+        Me.txt_idServico.AnimateReadOnly = False
+        Me.txt_idServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idServico.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idServico.Depth = 0
+        Me.txt_idServico.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idServico.HideSelection = True
+        Me.txt_idServico.LeadingIcon = Nothing
+        Me.txt_idServico.Location = New System.Drawing.Point(29, 49)
+        Me.txt_idServico.MaxLength = 32767
+        Me.txt_idServico.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idServico.Name = "txt_idServico"
+        Me.txt_idServico.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idServico.PrefixSuffixText = Nothing
+        Me.txt_idServico.ReadOnly = False
+        Me.txt_idServico.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idServico.SelectedText = ""
+        Me.txt_idServico.SelectionLength = 0
+        Me.txt_idServico.SelectionStart = 0
+        Me.txt_idServico.ShortcutsEnabled = True
+        Me.txt_idServico.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idServico.TabIndex = 18
+        Me.txt_idServico.TabStop = False
+        Me.txt_idServico.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idServico.TrailingIcon = Nothing
+        Me.txt_idServico.UseSystemPasswordChar = False
+        '
+        'MaterialLabel32
+        '
+        Me.MaterialLabel32.AutoSize = True
+        Me.MaterialLabel32.Depth = 0
+        Me.MaterialLabel32.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel32.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel32.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel32.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel32.Location = New System.Drawing.Point(29, 17)
+        Me.MaterialLabel32.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel32.Name = "MaterialLabel32"
+        Me.MaterialLabel32.Size = New System.Drawing.Size(142, 29)
+        Me.MaterialLabel32.TabIndex = 9
+        Me.MaterialLabel32.Text = "ID do serviço"
+        '
+        'MaterialButton11
+        '
+        Me.MaterialButton11.AutoSize = False
+        Me.MaterialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialButton11.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.MaterialButton11.Depth = 0
+        Me.MaterialButton11.HighEmphasis = True
+        Me.MaterialButton11.Icon = CType(resources.GetObject("MaterialButton11.Icon"), System.Drawing.Image)
+        Me.MaterialButton11.Location = New System.Drawing.Point(1607, 17)
+        Me.MaterialButton11.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialButton11.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialButton11.Name = "MaterialButton11"
+        Me.MaterialButton11.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.MaterialButton11.Size = New System.Drawing.Size(131, 36)
+        Me.MaterialButton11.TabIndex = 3
+        Me.MaterialButton11.Text = "Incluir"
+        Me.MaterialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.MaterialButton11.UseAccentColor = False
+        Me.MaterialButton11.UseVisualStyleBackColor = True
+        '
+        'MaterialButton12
+        '
+        Me.MaterialButton12.AutoSize = False
+        Me.MaterialButton12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialButton12.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.MaterialButton12.Depth = 0
+        Me.MaterialButton12.HighEmphasis = True
+        Me.MaterialButton12.Icon = CType(resources.GetObject("MaterialButton12.Icon"), System.Drawing.Image)
+        Me.MaterialButton12.Location = New System.Drawing.Point(1457, 17)
+        Me.MaterialButton12.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialButton12.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialButton12.Name = "MaterialButton12"
+        Me.MaterialButton12.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.MaterialButton12.Size = New System.Drawing.Size(131, 36)
+        Me.MaterialButton12.TabIndex = 0
+        Me.MaterialButton12.Text = "Pesquisar"
+        Me.MaterialButton12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.MaterialButton12.UseAccentColor = False
+        Me.MaterialButton12.UseVisualStyleBackColor = True
         '
         'btn_voltar4
         '
@@ -583,6 +1437,7 @@ Partial Class frm_administrador
         '
         'MaterialLabel7
         '
+        Me.MaterialLabel7.AutoSize = True
         Me.MaterialLabel7.Depth = 0
         Me.MaterialLabel7.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.MaterialLabel7.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
@@ -591,9 +1446,9 @@ Partial Class frm_administrador
         Me.MaterialLabel7.Location = New System.Drawing.Point(616, 100)
         Me.MaterialLabel7.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel7.Name = "MaterialLabel7"
-        Me.MaterialLabel7.Size = New System.Drawing.Size(232, 29)
+        Me.MaterialLabel7.Size = New System.Drawing.Size(212, 29)
         Me.MaterialLabel7.TabIndex = 23
-        Me.MaterialLabel7.Text = "CEP do funcionário"
+        Me.MaterialLabel7.Text = "CEP do Funcionário"
         '
         'MaterialLabel6
         '
@@ -712,7 +1567,7 @@ Partial Class frm_administrador
         Me.txt_cpfFuncionario.SelectionLength = 0
         Me.txt_cpfFuncionario.SelectionStart = 0
         Me.txt_cpfFuncionario.ShortcutsEnabled = True
-        Me.txt_cpfFuncionario.Size = New System.Drawing.Size(250, 48)
+        Me.txt_cpfFuncionario.Size = New System.Drawing.Size(250, 36)
         Me.txt_cpfFuncionario.SkipLiterals = True
         Me.txt_cpfFuncionario.TabIndex = 17
         Me.txt_cpfFuncionario.TabStop = False
@@ -721,10 +1576,12 @@ Partial Class frm_administrador
         Me.txt_cpfFuncionario.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
         Me.txt_cpfFuncionario.TrailingIcon = Nothing
         Me.txt_cpfFuncionario.UseSystemPasswordChar = False
+        Me.txt_cpfFuncionario.UseTallSize = False
         Me.txt_cpfFuncionario.ValidatingType = Nothing
         '
         'MaterialLabel3
         '
+        Me.MaterialLabel3.AutoSize = True
         Me.MaterialLabel3.Depth = 0
         Me.MaterialLabel3.FlatStyle = System.Windows.Forms.FlatStyle.System
         Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
@@ -733,9 +1590,9 @@ Partial Class frm_administrador
         Me.MaterialLabel3.Location = New System.Drawing.Point(34, 14)
         Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel3.Name = "MaterialLabel3"
-        Me.MaterialLabel3.Size = New System.Drawing.Size(217, 29)
+        Me.MaterialLabel3.Size = New System.Drawing.Size(211, 29)
         Me.MaterialLabel3.TabIndex = 12
-        Me.MaterialLabel3.Text = "CPF do funcionário"
+        Me.MaterialLabel3.Text = "CPF do Funcionário"
         '
         'lbl_login
         '
@@ -825,6 +1682,216 @@ Partial Class frm_administrador
         Me.TabPage3.Text = "Falecidos"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'BunifuCustomDataGrid5
+        '
+        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid5.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        Me.BunifuCustomDataGrid5.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.BunifuCustomDataGrid5.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.BunifuCustomDataGrid5.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid5.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        Me.BunifuCustomDataGrid5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.BunifuCustomDataGrid5.DoubleBuffered = True
+        Me.BunifuCustomDataGrid5.EnableHeadersVisualStyles = False
+        Me.BunifuCustomDataGrid5.HeaderBgColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid5.HeaderForeColor = System.Drawing.Color.SeaGreen
+        Me.BunifuCustomDataGrid5.Location = New System.Drawing.Point(57, 180)
+        Me.BunifuCustomDataGrid5.Name = "BunifuCustomDataGrid5"
+        Me.BunifuCustomDataGrid5.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.BunifuCustomDataGrid5.Size = New System.Drawing.Size(1755, 705)
+        Me.BunifuCustomDataGrid5.TabIndex = 25
+        '
+        'GunaShadowPanel5
+        '
+        Me.GunaShadowPanel5.BackColor = System.Drawing.Color.Transparent
+        Me.GunaShadowPanel5.BaseColor = System.Drawing.Color.DimGray
+        Me.GunaShadowPanel5.Controls.Add(Me.MaterialComboBox1)
+        Me.GunaShadowPanel5.Controls.Add(Me.txt_nomeFalecido)
+        Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel23)
+        Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel24)
+        Me.GunaShadowPanel5.Controls.Add(Me.txt_idFalecido)
+        Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel26)
+        Me.GunaShadowPanel5.Controls.Add(Me.MaterialButton7)
+        Me.GunaShadowPanel5.Controls.Add(Me.MaterialButton8)
+        Me.GunaShadowPanel5.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.GunaShadowPanel5.Location = New System.Drawing.Point(57, 63)
+        Me.GunaShadowPanel5.Name = "GunaShadowPanel5"
+        Me.GunaShadowPanel5.Radius = 6
+        Me.GunaShadowPanel5.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel5.ShadowDepth = 255
+        Me.GunaShadowPanel5.Size = New System.Drawing.Size(1755, 110)
+        Me.GunaShadowPanel5.TabIndex = 24
+        '
+        'MaterialComboBox1
+        '
+        Me.MaterialComboBox1.AutoResize = False
+        Me.MaterialComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialComboBox1.Depth = 0
+        Me.MaterialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.MaterialComboBox1.DropDownHeight = 174
+        Me.MaterialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.MaterialComboBox1.DropDownWidth = 121
+        Me.MaterialComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialComboBox1.FormattingEnabled = True
+        Me.MaterialComboBox1.IntegralHeight = False
+        Me.MaterialComboBox1.ItemHeight = 43
+        Me.MaterialComboBox1.Items.AddRange(New Object() {"sepultado" & Global.Microsoft.VisualBasic.ChrW(9), "cremado"})
+        Me.MaterialComboBox1.Location = New System.Drawing.Point(566, 47)
+        Me.MaterialComboBox1.MaxDropDownItems = 4
+        Me.MaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT
+        Me.MaterialComboBox1.Name = "MaterialComboBox1"
+        Me.MaterialComboBox1.Size = New System.Drawing.Size(250, 49)
+        Me.MaterialComboBox1.StartIndex = 0
+        Me.MaterialComboBox1.TabIndex = 38
+        '
+        'txt_nomeFalecido
+        '
+        Me.txt_nomeFalecido.AnimateReadOnly = False
+        Me.txt_nomeFalecido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_nomeFalecido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_nomeFalecido.Depth = 0
+        Me.txt_nomeFalecido.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_nomeFalecido.HideSelection = True
+        Me.txt_nomeFalecido.LeadingIcon = Nothing
+        Me.txt_nomeFalecido.Location = New System.Drawing.Point(298, 47)
+        Me.txt_nomeFalecido.MaxLength = 32767
+        Me.txt_nomeFalecido.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_nomeFalecido.Name = "txt_nomeFalecido"
+        Me.txt_nomeFalecido.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_nomeFalecido.PrefixSuffixText = Nothing
+        Me.txt_nomeFalecido.ReadOnly = False
+        Me.txt_nomeFalecido.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_nomeFalecido.SelectedText = ""
+        Me.txt_nomeFalecido.SelectionLength = 0
+        Me.txt_nomeFalecido.SelectionStart = 0
+        Me.txt_nomeFalecido.ShortcutsEnabled = True
+        Me.txt_nomeFalecido.Size = New System.Drawing.Size(250, 48)
+        Me.txt_nomeFalecido.TabIndex = 37
+        Me.txt_nomeFalecido.TabStop = False
+        Me.txt_nomeFalecido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_nomeFalecido.TrailingIcon = Nothing
+        Me.txt_nomeFalecido.UseSystemPasswordChar = False
+        '
+        'MaterialLabel23
+        '
+        Me.MaterialLabel23.Depth = 0
+        Me.MaterialLabel23.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel23.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel23.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel23.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel23.Location = New System.Drawing.Point(567, 14)
+        Me.MaterialLabel23.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel23.Name = "MaterialLabel23"
+        Me.MaterialLabel23.Size = New System.Drawing.Size(203, 29)
+        Me.MaterialLabel23.TabIndex = 25
+        Me.MaterialLabel23.Text = "Status do falecido"
+        '
+        'MaterialLabel24
+        '
+        Me.MaterialLabel24.AutoSize = True
+        Me.MaterialLabel24.Depth = 0
+        Me.MaterialLabel24.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel24.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel24.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel24.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel24.Location = New System.Drawing.Point(298, 14)
+        Me.MaterialLabel24.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel24.Name = "MaterialLabel24"
+        Me.MaterialLabel24.Size = New System.Drawing.Size(193, 29)
+        Me.MaterialLabel24.TabIndex = 21
+        Me.MaterialLabel24.Text = "Nome do falecido"
+        '
+        'txt_idFalecido
+        '
+        Me.txt_idFalecido.AnimateReadOnly = False
+        Me.txt_idFalecido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idFalecido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idFalecido.Depth = 0
+        Me.txt_idFalecido.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idFalecido.HideSelection = True
+        Me.txt_idFalecido.LeadingIcon = Nothing
+        Me.txt_idFalecido.Location = New System.Drawing.Point(24, 47)
+        Me.txt_idFalecido.MaxLength = 32767
+        Me.txt_idFalecido.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idFalecido.Name = "txt_idFalecido"
+        Me.txt_idFalecido.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idFalecido.PrefixSuffixText = Nothing
+        Me.txt_idFalecido.ReadOnly = False
+        Me.txt_idFalecido.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idFalecido.SelectedText = ""
+        Me.txt_idFalecido.SelectionLength = 0
+        Me.txt_idFalecido.SelectionStart = 0
+        Me.txt_idFalecido.ShortcutsEnabled = True
+        Me.txt_idFalecido.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idFalecido.TabIndex = 18
+        Me.txt_idFalecido.TabStop = False
+        Me.txt_idFalecido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idFalecido.TrailingIcon = Nothing
+        Me.txt_idFalecido.UseSystemPasswordChar = False
+        '
+        'MaterialLabel26
+        '
+        Me.MaterialLabel26.AutoSize = True
+        Me.MaterialLabel26.Depth = 0
+        Me.MaterialLabel26.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel26.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel26.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel26.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel26.Location = New System.Drawing.Point(24, 15)
+        Me.MaterialLabel26.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel26.Name = "MaterialLabel26"
+        Me.MaterialLabel26.Size = New System.Drawing.Size(151, 29)
+        Me.MaterialLabel26.TabIndex = 9
+        Me.MaterialLabel26.Text = "ID do falecido"
+        '
+        'MaterialButton7
+        '
+        Me.MaterialButton7.AutoSize = False
+        Me.MaterialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.MaterialButton7.Depth = 0
+        Me.MaterialButton7.HighEmphasis = True
+        Me.MaterialButton7.Icon = CType(resources.GetObject("MaterialButton7.Icon"), System.Drawing.Image)
+        Me.MaterialButton7.Location = New System.Drawing.Point(1607, 17)
+        Me.MaterialButton7.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialButton7.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialButton7.Name = "MaterialButton7"
+        Me.MaterialButton7.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.MaterialButton7.Size = New System.Drawing.Size(131, 36)
+        Me.MaterialButton7.TabIndex = 3
+        Me.MaterialButton7.Text = "Incluir"
+        Me.MaterialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.MaterialButton7.UseAccentColor = False
+        Me.MaterialButton7.UseVisualStyleBackColor = True
+        '
+        'MaterialButton8
+        '
+        Me.MaterialButton8.AutoSize = False
+        Me.MaterialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialButton8.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.MaterialButton8.Depth = 0
+        Me.MaterialButton8.HighEmphasis = True
+        Me.MaterialButton8.Icon = CType(resources.GetObject("MaterialButton8.Icon"), System.Drawing.Image)
+        Me.MaterialButton8.Location = New System.Drawing.Point(1457, 17)
+        Me.MaterialButton8.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialButton8.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialButton8.Name = "MaterialButton8"
+        Me.MaterialButton8.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.MaterialButton8.Size = New System.Drawing.Size(131, 36)
+        Me.MaterialButton8.TabIndex = 0
+        Me.MaterialButton8.Text = "Pesquisar"
+        Me.MaterialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.MaterialButton8.UseAccentColor = False
+        Me.MaterialButton8.UseVisualStyleBackColor = True
+        '
         'btn_voltar2
         '
         Me.btn_voltar2.AutoSize = False
@@ -909,6 +1976,76 @@ Partial Class frm_administrador
         Me.GunaShadowPanel3.ShadowDepth = 255
         Me.GunaShadowPanel3.Size = New System.Drawing.Size(1755, 110)
         Me.GunaShadowPanel3.TabIndex = 20
+        '
+        'txt_idSalaCremacao
+        '
+        Me.txt_idSalaCremacao.AnimateReadOnly = False
+        Me.txt_idSalaCremacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idSalaCremacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idSalaCremacao.Depth = 0
+        Me.txt_idSalaCremacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idSalaCremacao.HideSelection = True
+        Me.txt_idSalaCremacao.LeadingIcon = Nothing
+        Me.txt_idSalaCremacao.Location = New System.Drawing.Point(849, 47)
+        Me.txt_idSalaCremacao.MaxLength = 32767
+        Me.txt_idSalaCremacao.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idSalaCremacao.Name = "txt_idSalaCremacao"
+        Me.txt_idSalaCremacao.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idSalaCremacao.PrefixSuffixText = Nothing
+        Me.txt_idSalaCremacao.ReadOnly = False
+        Me.txt_idSalaCremacao.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idSalaCremacao.SelectedText = ""
+        Me.txt_idSalaCremacao.SelectionLength = 0
+        Me.txt_idSalaCremacao.SelectionStart = 0
+        Me.txt_idSalaCremacao.ShortcutsEnabled = True
+        Me.txt_idSalaCremacao.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idSalaCremacao.TabIndex = 37
+        Me.txt_idSalaCremacao.TabStop = False
+        Me.txt_idSalaCremacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idSalaCremacao.TrailingIcon = Nothing
+        Me.txt_idSalaCremacao.UseSystemPasswordChar = False
+        '
+        'txt_horaCremacao
+        '
+        Me.txt_horaCremacao.AllowPromptAsInput = True
+        Me.txt_horaCremacao.AnimateReadOnly = False
+        Me.txt_horaCremacao.AsciiOnly = False
+        Me.txt_horaCremacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_horaCremacao.BeepOnError = False
+        Me.txt_horaCremacao.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
+        Me.txt_horaCremacao.Depth = 0
+        Me.txt_horaCremacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_horaCremacao.HidePromptOnLeave = False
+        Me.txt_horaCremacao.HideSelection = True
+        Me.txt_horaCremacao.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
+        Me.txt_horaCremacao.LeadingIcon = Nothing
+        Me.txt_horaCremacao.Location = New System.Drawing.Point(302, 47)
+        Me.txt_horaCremacao.Mask = "00:00"
+        Me.txt_horaCremacao.MaxLength = 32767
+        Me.txt_horaCremacao.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_horaCremacao.Name = "txt_horaCremacao"
+        Me.txt_horaCremacao.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_horaCremacao.PrefixSuffixText = Nothing
+        Me.txt_horaCremacao.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
+        Me.txt_horaCremacao.ReadOnly = False
+        Me.txt_horaCremacao.RejectInputOnFirstFailure = False
+        Me.txt_horaCremacao.ResetOnPrompt = True
+        Me.txt_horaCremacao.ResetOnSpace = True
+        Me.txt_horaCremacao.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_horaCremacao.SelectedText = ""
+        Me.txt_horaCremacao.SelectionLength = 0
+        Me.txt_horaCremacao.SelectionStart = 0
+        Me.txt_horaCremacao.ShortcutsEnabled = True
+        Me.txt_horaCremacao.Size = New System.Drawing.Size(250, 48)
+        Me.txt_horaCremacao.SkipLiterals = True
+        Me.txt_horaCremacao.TabIndex = 36
+        Me.txt_horaCremacao.TabStop = False
+        Me.txt_horaCremacao.Text = "  :"
+        Me.txt_horaCremacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_horaCremacao.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
+        Me.txt_horaCremacao.TrailingIcon = Nothing
+        Me.txt_horaCremacao.UseSystemPasswordChar = False
+        Me.txt_horaCremacao.ValidatingType = Nothing
         '
         'MaterialLabel19
         '
@@ -1417,1140 +2554,6 @@ Partial Class frm_administrador
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
-        'txt_horaCremacao
-        '
-        Me.txt_horaCremacao.AllowPromptAsInput = True
-        Me.txt_horaCremacao.AnimateReadOnly = False
-        Me.txt_horaCremacao.AsciiOnly = False
-        Me.txt_horaCremacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_horaCremacao.BeepOnError = False
-        Me.txt_horaCremacao.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.txt_horaCremacao.Depth = 0
-        Me.txt_horaCremacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_horaCremacao.HidePromptOnLeave = False
-        Me.txt_horaCremacao.HideSelection = True
-        Me.txt_horaCremacao.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
-        Me.txt_horaCremacao.LeadingIcon = Nothing
-        Me.txt_horaCremacao.Location = New System.Drawing.Point(302, 47)
-        Me.txt_horaCremacao.Mask = "00:00"
-        Me.txt_horaCremacao.MaxLength = 32767
-        Me.txt_horaCremacao.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_horaCremacao.Name = "txt_horaCremacao"
-        Me.txt_horaCremacao.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_horaCremacao.PrefixSuffixText = Nothing
-        Me.txt_horaCremacao.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
-        Me.txt_horaCremacao.ReadOnly = False
-        Me.txt_horaCremacao.RejectInputOnFirstFailure = False
-        Me.txt_horaCremacao.ResetOnPrompt = True
-        Me.txt_horaCremacao.ResetOnSpace = True
-        Me.txt_horaCremacao.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_horaCremacao.SelectedText = ""
-        Me.txt_horaCremacao.SelectionLength = 0
-        Me.txt_horaCremacao.SelectionStart = 0
-        Me.txt_horaCremacao.ShortcutsEnabled = True
-        Me.txt_horaCremacao.Size = New System.Drawing.Size(250, 48)
-        Me.txt_horaCremacao.SkipLiterals = True
-        Me.txt_horaCremacao.TabIndex = 36
-        Me.txt_horaCremacao.TabStop = False
-        Me.txt_horaCremacao.Text = "  :"
-        Me.txt_horaCremacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_horaCremacao.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.txt_horaCremacao.TrailingIcon = Nothing
-        Me.txt_horaCremacao.UseSystemPasswordChar = False
-        Me.txt_horaCremacao.ValidatingType = Nothing
-        '
-        'txt_idSalaCremacao
-        '
-        Me.txt_idSalaCremacao.AnimateReadOnly = False
-        Me.txt_idSalaCremacao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_idSalaCremacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_idSalaCremacao.Depth = 0
-        Me.txt_idSalaCremacao.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_idSalaCremacao.HideSelection = True
-        Me.txt_idSalaCremacao.LeadingIcon = Nothing
-        Me.txt_idSalaCremacao.Location = New System.Drawing.Point(849, 47)
-        Me.txt_idSalaCremacao.MaxLength = 32767
-        Me.txt_idSalaCremacao.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_idSalaCremacao.Name = "txt_idSalaCremacao"
-        Me.txt_idSalaCremacao.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_idSalaCremacao.PrefixSuffixText = Nothing
-        Me.txt_idSalaCremacao.ReadOnly = False
-        Me.txt_idSalaCremacao.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_idSalaCremacao.SelectedText = ""
-        Me.txt_idSalaCremacao.SelectionLength = 0
-        Me.txt_idSalaCremacao.SelectionStart = 0
-        Me.txt_idSalaCremacao.ShortcutsEnabled = True
-        Me.txt_idSalaCremacao.Size = New System.Drawing.Size(250, 48)
-        Me.txt_idSalaCremacao.TabIndex = 37
-        Me.txt_idSalaCremacao.TabStop = False
-        Me.txt_idSalaCremacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_idSalaCremacao.TrailingIcon = Nothing
-        Me.txt_idSalaCremacao.UseSystemPasswordChar = False
-        '
-        'BunifuCustomDataGrid4
-        '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.BunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.BunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid4.DoubleBuffered = True
-        Me.BunifuCustomDataGrid4.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid4.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid4.Name = "BunifuCustomDataGrid4"
-        Me.BunifuCustomDataGrid4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid4.Size = New System.Drawing.Size(1755, 705)
-        Me.BunifuCustomDataGrid4.TabIndex = 23
-        '
-        'GunaShadowPanel4
-        '
-        Me.GunaShadowPanel4.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel4.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel4.Controls.Add(Me.txt_idSalaVelorio)
-        Me.GunaShadowPanel4.Controls.Add(Me.txt_horaVelorio)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel8)
-        Me.GunaShadowPanel4.Controls.Add(Me.txt_dataVelorio)
-        Me.GunaShadowPanel4.Controls.Add(Me.txt_idFalecidoVelorio)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel10)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel11)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel13)
-        Me.GunaShadowPanel4.Controls.Add(Me.txt_idVelorio)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel21)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialButton5)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialButton6)
-        Me.GunaShadowPanel4.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.GunaShadowPanel4.Location = New System.Drawing.Point(57, 63)
-        Me.GunaShadowPanel4.Name = "GunaShadowPanel4"
-        Me.GunaShadowPanel4.Radius = 6
-        Me.GunaShadowPanel4.ShadowColor = System.Drawing.Color.Black
-        Me.GunaShadowPanel4.ShadowDepth = 255
-        Me.GunaShadowPanel4.Size = New System.Drawing.Size(1755, 110)
-        Me.GunaShadowPanel4.TabIndex = 22
-        '
-        'txt_idSalaVelorio
-        '
-        Me.txt_idSalaVelorio.AnimateReadOnly = False
-        Me.txt_idSalaVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_idSalaVelorio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_idSalaVelorio.Depth = 0
-        Me.txt_idSalaVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_idSalaVelorio.HideSelection = True
-        Me.txt_idSalaVelorio.LeadingIcon = Nothing
-        Me.txt_idSalaVelorio.Location = New System.Drawing.Point(849, 47)
-        Me.txt_idSalaVelorio.MaxLength = 32767
-        Me.txt_idSalaVelorio.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_idSalaVelorio.Name = "txt_idSalaVelorio"
-        Me.txt_idSalaVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_idSalaVelorio.PrefixSuffixText = Nothing
-        Me.txt_idSalaVelorio.ReadOnly = False
-        Me.txt_idSalaVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_idSalaVelorio.SelectedText = ""
-        Me.txt_idSalaVelorio.SelectionLength = 0
-        Me.txt_idSalaVelorio.SelectionStart = 0
-        Me.txt_idSalaVelorio.ShortcutsEnabled = True
-        Me.txt_idSalaVelorio.Size = New System.Drawing.Size(250, 48)
-        Me.txt_idSalaVelorio.TabIndex = 37
-        Me.txt_idSalaVelorio.TabStop = False
-        Me.txt_idSalaVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_idSalaVelorio.TrailingIcon = Nothing
-        Me.txt_idSalaVelorio.UseSystemPasswordChar = False
-        '
-        'txt_horaVelorio
-        '
-        Me.txt_horaVelorio.AllowPromptAsInput = True
-        Me.txt_horaVelorio.AnimateReadOnly = False
-        Me.txt_horaVelorio.AsciiOnly = False
-        Me.txt_horaVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_horaVelorio.BeepOnError = False
-        Me.txt_horaVelorio.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.txt_horaVelorio.Depth = 0
-        Me.txt_horaVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_horaVelorio.HidePromptOnLeave = False
-        Me.txt_horaVelorio.HideSelection = True
-        Me.txt_horaVelorio.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
-        Me.txt_horaVelorio.LeadingIcon = Nothing
-        Me.txt_horaVelorio.Location = New System.Drawing.Point(302, 47)
-        Me.txt_horaVelorio.Mask = "00:00"
-        Me.txt_horaVelorio.MaxLength = 32767
-        Me.txt_horaVelorio.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_horaVelorio.Name = "txt_horaVelorio"
-        Me.txt_horaVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_horaVelorio.PrefixSuffixText = Nothing
-        Me.txt_horaVelorio.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
-        Me.txt_horaVelorio.ReadOnly = False
-        Me.txt_horaVelorio.RejectInputOnFirstFailure = False
-        Me.txt_horaVelorio.ResetOnPrompt = True
-        Me.txt_horaVelorio.ResetOnSpace = True
-        Me.txt_horaVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_horaVelorio.SelectedText = ""
-        Me.txt_horaVelorio.SelectionLength = 0
-        Me.txt_horaVelorio.SelectionStart = 0
-        Me.txt_horaVelorio.ShortcutsEnabled = True
-        Me.txt_horaVelorio.Size = New System.Drawing.Size(250, 48)
-        Me.txt_horaVelorio.SkipLiterals = True
-        Me.txt_horaVelorio.TabIndex = 36
-        Me.txt_horaVelorio.TabStop = False
-        Me.txt_horaVelorio.Text = "  :"
-        Me.txt_horaVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_horaVelorio.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.txt_horaVelorio.TrailingIcon = Nothing
-        Me.txt_horaVelorio.UseSystemPasswordChar = False
-        Me.txt_horaVelorio.ValidatingType = Nothing
-        '
-        'MaterialLabel8
-        '
-        Me.MaterialLabel8.AutoSize = True
-        Me.MaterialLabel8.Depth = 0
-        Me.MaterialLabel8.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel8.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel8.Location = New System.Drawing.Point(576, 15)
-        Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel8.Name = "MaterialLabel8"
-        Me.MaterialLabel8.Size = New System.Drawing.Size(164, 29)
-        Me.MaterialLabel8.TabIndex = 35
-        Me.MaterialLabel8.Text = "Data do velório"
-        '
-        'txt_dataVelorio
-        '
-        Me.txt_dataVelorio.AllowPromptAsInput = True
-        Me.txt_dataVelorio.AnimateReadOnly = False
-        Me.txt_dataVelorio.AsciiOnly = False
-        Me.txt_dataVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_dataVelorio.BeepOnError = False
-        Me.txt_dataVelorio.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.txt_dataVelorio.Depth = 0
-        Me.txt_dataVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_dataVelorio.HidePromptOnLeave = False
-        Me.txt_dataVelorio.HideSelection = True
-        Me.txt_dataVelorio.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
-        Me.txt_dataVelorio.LeadingIcon = Nothing
-        Me.txt_dataVelorio.Location = New System.Drawing.Point(576, 47)
-        Me.txt_dataVelorio.Mask = "00/00/0000"
-        Me.txt_dataVelorio.MaxLength = 32767
-        Me.txt_dataVelorio.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_dataVelorio.Name = "txt_dataVelorio"
-        Me.txt_dataVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_dataVelorio.PrefixSuffixText = Nothing
-        Me.txt_dataVelorio.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
-        Me.txt_dataVelorio.ReadOnly = False
-        Me.txt_dataVelorio.RejectInputOnFirstFailure = False
-        Me.txt_dataVelorio.ResetOnPrompt = True
-        Me.txt_dataVelorio.ResetOnSpace = True
-        Me.txt_dataVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_dataVelorio.SelectedText = ""
-        Me.txt_dataVelorio.SelectionLength = 0
-        Me.txt_dataVelorio.SelectionStart = 0
-        Me.txt_dataVelorio.ShortcutsEnabled = True
-        Me.txt_dataVelorio.Size = New System.Drawing.Size(250, 48)
-        Me.txt_dataVelorio.SkipLiterals = True
-        Me.txt_dataVelorio.TabIndex = 34
-        Me.txt_dataVelorio.TabStop = False
-        Me.txt_dataVelorio.Text = "  /  /"
-        Me.txt_dataVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_dataVelorio.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.txt_dataVelorio.TrailingIcon = Nothing
-        Me.txt_dataVelorio.UseSystemPasswordChar = False
-        Me.txt_dataVelorio.ValidatingType = Nothing
-        '
-        'txt_idFalecidoVelorio
-        '
-        Me.txt_idFalecidoVelorio.AnimateReadOnly = False
-        Me.txt_idFalecidoVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_idFalecidoVelorio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_idFalecidoVelorio.Depth = 0
-        Me.txt_idFalecidoVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_idFalecidoVelorio.HideSelection = True
-        Me.txt_idFalecidoVelorio.LeadingIcon = Nothing
-        Me.txt_idFalecidoVelorio.Location = New System.Drawing.Point(1126, 47)
-        Me.txt_idFalecidoVelorio.MaxLength = 32767
-        Me.txt_idFalecidoVelorio.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_idFalecidoVelorio.Name = "txt_idFalecidoVelorio"
-        Me.txt_idFalecidoVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_idFalecidoVelorio.PrefixSuffixText = Nothing
-        Me.txt_idFalecidoVelorio.ReadOnly = False
-        Me.txt_idFalecidoVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_idFalecidoVelorio.SelectedText = ""
-        Me.txt_idFalecidoVelorio.SelectionLength = 0
-        Me.txt_idFalecidoVelorio.SelectionStart = 0
-        Me.txt_idFalecidoVelorio.ShortcutsEnabled = True
-        Me.txt_idFalecidoVelorio.Size = New System.Drawing.Size(250, 48)
-        Me.txt_idFalecidoVelorio.TabIndex = 26
-        Me.txt_idFalecidoVelorio.TabStop = False
-        Me.txt_idFalecidoVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_idFalecidoVelorio.TrailingIcon = Nothing
-        Me.txt_idFalecidoVelorio.UseSystemPasswordChar = False
-        '
-        'MaterialLabel10
-        '
-        Me.MaterialLabel10.AutoSize = True
-        Me.MaterialLabel10.Depth = 0
-        Me.MaterialLabel10.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel10.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel10.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel10.Location = New System.Drawing.Point(1126, 15)
-        Me.MaterialLabel10.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel10.Name = "MaterialLabel10"
-        Me.MaterialLabel10.Size = New System.Drawing.Size(151, 29)
-        Me.MaterialLabel10.TabIndex = 25
-        Me.MaterialLabel10.Text = "ID do falecido"
-        '
-        'MaterialLabel11
-        '
-        Me.MaterialLabel11.AutoSize = True
-        Me.MaterialLabel11.Depth = 0
-        Me.MaterialLabel11.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel11.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel11.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel11.Location = New System.Drawing.Point(849, 14)
-        Me.MaterialLabel11.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel11.Name = "MaterialLabel11"
-        Me.MaterialLabel11.Size = New System.Drawing.Size(107, 29)
-        Me.MaterialLabel11.TabIndex = 21
-        Me.MaterialLabel11.Text = "ID da sala"
-        '
-        'MaterialLabel13
-        '
-        Me.MaterialLabel13.Depth = 0
-        Me.MaterialLabel13.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel13.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel13.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel13.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel13.Location = New System.Drawing.Point(302, 15)
-        Me.MaterialLabel13.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel13.Name = "MaterialLabel13"
-        Me.MaterialLabel13.Size = New System.Drawing.Size(173, 29)
-        Me.MaterialLabel13.TabIndex = 19
-        Me.MaterialLabel13.Text = "Hora do velório"
-        '
-        'txt_idVelorio
-        '
-        Me.txt_idVelorio.AnimateReadOnly = False
-        Me.txt_idVelorio.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_idVelorio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_idVelorio.Depth = 0
-        Me.txt_idVelorio.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_idVelorio.HideSelection = True
-        Me.txt_idVelorio.LeadingIcon = Nothing
-        Me.txt_idVelorio.Location = New System.Drawing.Point(24, 47)
-        Me.txt_idVelorio.MaxLength = 32767
-        Me.txt_idVelorio.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_idVelorio.Name = "txt_idVelorio"
-        Me.txt_idVelorio.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_idVelorio.PrefixSuffixText = Nothing
-        Me.txt_idVelorio.ReadOnly = False
-        Me.txt_idVelorio.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_idVelorio.SelectedText = ""
-        Me.txt_idVelorio.SelectionLength = 0
-        Me.txt_idVelorio.SelectionStart = 0
-        Me.txt_idVelorio.ShortcutsEnabled = True
-        Me.txt_idVelorio.Size = New System.Drawing.Size(250, 48)
-        Me.txt_idVelorio.TabIndex = 18
-        Me.txt_idVelorio.TabStop = False
-        Me.txt_idVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_idVelorio.TrailingIcon = Nothing
-        Me.txt_idVelorio.UseSystemPasswordChar = False
-        '
-        'MaterialLabel21
-        '
-        Me.MaterialLabel21.AutoSize = True
-        Me.MaterialLabel21.Depth = 0
-        Me.MaterialLabel21.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel21.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel21.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel21.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel21.Location = New System.Drawing.Point(24, 15)
-        Me.MaterialLabel21.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel21.Name = "MaterialLabel21"
-        Me.MaterialLabel21.Size = New System.Drawing.Size(137, 29)
-        Me.MaterialLabel21.TabIndex = 9
-        Me.MaterialLabel21.Text = "ID do velório"
-        '
-        'MaterialButton5
-        '
-        Me.MaterialButton5.AutoSize = False
-        Me.MaterialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton5.Depth = 0
-        Me.MaterialButton5.HighEmphasis = True
-        Me.MaterialButton5.Icon = CType(resources.GetObject("MaterialButton5.Icon"), System.Drawing.Image)
-        Me.MaterialButton5.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton5.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton5.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton5.Name = "MaterialButton5"
-        Me.MaterialButton5.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton5.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton5.TabIndex = 3
-        Me.MaterialButton5.Text = "Incluir"
-        Me.MaterialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton5.UseAccentColor = False
-        Me.MaterialButton5.UseVisualStyleBackColor = True
-        '
-        'MaterialButton6
-        '
-        Me.MaterialButton6.AutoSize = False
-        Me.MaterialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton6.Depth = 0
-        Me.MaterialButton6.HighEmphasis = True
-        Me.MaterialButton6.Icon = CType(resources.GetObject("MaterialButton6.Icon"), System.Drawing.Image)
-        Me.MaterialButton6.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton6.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton6.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton6.Name = "MaterialButton6"
-        Me.MaterialButton6.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton6.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton6.TabIndex = 0
-        Me.MaterialButton6.Text = "Pesquisar"
-        Me.MaterialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton6.UseAccentColor = False
-        Me.MaterialButton6.UseVisualStyleBackColor = True
-        '
-        'BunifuCustomDataGrid5
-        '
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid5.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
-        Me.BunifuCustomDataGrid5.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid5.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid5.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
-        Me.BunifuCustomDataGrid5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid5.DoubleBuffered = True
-        Me.BunifuCustomDataGrid5.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid5.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid5.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid5.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid5.Name = "BunifuCustomDataGrid5"
-        Me.BunifuCustomDataGrid5.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid5.Size = New System.Drawing.Size(1755, 705)
-        Me.BunifuCustomDataGrid5.TabIndex = 25
-        '
-        'GunaShadowPanel5
-        '
-        Me.GunaShadowPanel5.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel5.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialComboBox1)
-        Me.GunaShadowPanel5.Controls.Add(Me.txt_nomeFalecido)
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel23)
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel24)
-        Me.GunaShadowPanel5.Controls.Add(Me.txt_idFalecido)
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel26)
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialButton7)
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialButton8)
-        Me.GunaShadowPanel5.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.GunaShadowPanel5.Location = New System.Drawing.Point(57, 63)
-        Me.GunaShadowPanel5.Name = "GunaShadowPanel5"
-        Me.GunaShadowPanel5.Radius = 6
-        Me.GunaShadowPanel5.ShadowColor = System.Drawing.Color.Black
-        Me.GunaShadowPanel5.ShadowDepth = 255
-        Me.GunaShadowPanel5.Size = New System.Drawing.Size(1755, 110)
-        Me.GunaShadowPanel5.TabIndex = 24
-        '
-        'txt_nomeFalecido
-        '
-        Me.txt_nomeFalecido.AnimateReadOnly = False
-        Me.txt_nomeFalecido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_nomeFalecido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_nomeFalecido.Depth = 0
-        Me.txt_nomeFalecido.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_nomeFalecido.HideSelection = True
-        Me.txt_nomeFalecido.LeadingIcon = Nothing
-        Me.txt_nomeFalecido.Location = New System.Drawing.Point(298, 47)
-        Me.txt_nomeFalecido.MaxLength = 32767
-        Me.txt_nomeFalecido.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_nomeFalecido.Name = "txt_nomeFalecido"
-        Me.txt_nomeFalecido.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_nomeFalecido.PrefixSuffixText = Nothing
-        Me.txt_nomeFalecido.ReadOnly = False
-        Me.txt_nomeFalecido.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_nomeFalecido.SelectedText = ""
-        Me.txt_nomeFalecido.SelectionLength = 0
-        Me.txt_nomeFalecido.SelectionStart = 0
-        Me.txt_nomeFalecido.ShortcutsEnabled = True
-        Me.txt_nomeFalecido.Size = New System.Drawing.Size(250, 48)
-        Me.txt_nomeFalecido.TabIndex = 37
-        Me.txt_nomeFalecido.TabStop = False
-        Me.txt_nomeFalecido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_nomeFalecido.TrailingIcon = Nothing
-        Me.txt_nomeFalecido.UseSystemPasswordChar = False
-        '
-        'MaterialLabel23
-        '
-        Me.MaterialLabel23.Depth = 0
-        Me.MaterialLabel23.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel23.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel23.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel23.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel23.Location = New System.Drawing.Point(567, 14)
-        Me.MaterialLabel23.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel23.Name = "MaterialLabel23"
-        Me.MaterialLabel23.Size = New System.Drawing.Size(203, 29)
-        Me.MaterialLabel23.TabIndex = 25
-        Me.MaterialLabel23.Text = "Status do falecido"
-        '
-        'MaterialLabel24
-        '
-        Me.MaterialLabel24.AutoSize = True
-        Me.MaterialLabel24.Depth = 0
-        Me.MaterialLabel24.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel24.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel24.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel24.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel24.Location = New System.Drawing.Point(298, 14)
-        Me.MaterialLabel24.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel24.Name = "MaterialLabel24"
-        Me.MaterialLabel24.Size = New System.Drawing.Size(193, 29)
-        Me.MaterialLabel24.TabIndex = 21
-        Me.MaterialLabel24.Text = "Nome do falecido"
-        '
-        'txt_idFalecido
-        '
-        Me.txt_idFalecido.AnimateReadOnly = False
-        Me.txt_idFalecido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_idFalecido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_idFalecido.Depth = 0
-        Me.txt_idFalecido.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_idFalecido.HideSelection = True
-        Me.txt_idFalecido.LeadingIcon = Nothing
-        Me.txt_idFalecido.Location = New System.Drawing.Point(24, 47)
-        Me.txt_idFalecido.MaxLength = 32767
-        Me.txt_idFalecido.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_idFalecido.Name = "txt_idFalecido"
-        Me.txt_idFalecido.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_idFalecido.PrefixSuffixText = Nothing
-        Me.txt_idFalecido.ReadOnly = False
-        Me.txt_idFalecido.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_idFalecido.SelectedText = ""
-        Me.txt_idFalecido.SelectionLength = 0
-        Me.txt_idFalecido.SelectionStart = 0
-        Me.txt_idFalecido.ShortcutsEnabled = True
-        Me.txt_idFalecido.Size = New System.Drawing.Size(250, 48)
-        Me.txt_idFalecido.TabIndex = 18
-        Me.txt_idFalecido.TabStop = False
-        Me.txt_idFalecido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_idFalecido.TrailingIcon = Nothing
-        Me.txt_idFalecido.UseSystemPasswordChar = False
-        '
-        'MaterialLabel26
-        '
-        Me.MaterialLabel26.AutoSize = True
-        Me.MaterialLabel26.Depth = 0
-        Me.MaterialLabel26.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel26.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel26.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel26.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel26.Location = New System.Drawing.Point(24, 15)
-        Me.MaterialLabel26.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel26.Name = "MaterialLabel26"
-        Me.MaterialLabel26.Size = New System.Drawing.Size(151, 29)
-        Me.MaterialLabel26.TabIndex = 9
-        Me.MaterialLabel26.Text = "ID do falecido"
-        '
-        'MaterialButton7
-        '
-        Me.MaterialButton7.AutoSize = False
-        Me.MaterialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton7.Depth = 0
-        Me.MaterialButton7.HighEmphasis = True
-        Me.MaterialButton7.Icon = CType(resources.GetObject("MaterialButton7.Icon"), System.Drawing.Image)
-        Me.MaterialButton7.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton7.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton7.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton7.Name = "MaterialButton7"
-        Me.MaterialButton7.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton7.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton7.TabIndex = 3
-        Me.MaterialButton7.Text = "Incluir"
-        Me.MaterialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton7.UseAccentColor = False
-        Me.MaterialButton7.UseVisualStyleBackColor = True
-        '
-        'MaterialButton8
-        '
-        Me.MaterialButton8.AutoSize = False
-        Me.MaterialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton8.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton8.Depth = 0
-        Me.MaterialButton8.HighEmphasis = True
-        Me.MaterialButton8.Icon = CType(resources.GetObject("MaterialButton8.Icon"), System.Drawing.Image)
-        Me.MaterialButton8.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton8.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton8.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton8.Name = "MaterialButton8"
-        Me.MaterialButton8.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton8.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton8.TabIndex = 0
-        Me.MaterialButton8.Text = "Pesquisar"
-        Me.MaterialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton8.UseAccentColor = False
-        Me.MaterialButton8.UseVisualStyleBackColor = True
-        '
-        'MaterialComboBox1
-        '
-        Me.MaterialComboBox1.AutoResize = False
-        Me.MaterialComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.MaterialComboBox1.Depth = 0
-        Me.MaterialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
-        Me.MaterialComboBox1.DropDownHeight = 174
-        Me.MaterialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.MaterialComboBox1.DropDownWidth = 121
-        Me.MaterialComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialComboBox1.FormattingEnabled = True
-        Me.MaterialComboBox1.IntegralHeight = False
-        Me.MaterialComboBox1.ItemHeight = 43
-        Me.MaterialComboBox1.Items.AddRange(New Object() {"sepultado" & Global.Microsoft.VisualBasic.ChrW(9), "cremado"})
-        Me.MaterialComboBox1.Location = New System.Drawing.Point(566, 47)
-        Me.MaterialComboBox1.MaxDropDownItems = 4
-        Me.MaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialComboBox1.Name = "MaterialComboBox1"
-        Me.MaterialComboBox1.Size = New System.Drawing.Size(250, 49)
-        Me.MaterialComboBox1.StartIndex = 0
-        Me.MaterialComboBox1.TabIndex = 38
-        '
-        'BunifuCustomDataGrid6
-        '
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid6.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
-        Me.BunifuCustomDataGrid6.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid6.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid6.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
-        Me.BunifuCustomDataGrid6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid6.DoubleBuffered = True
-        Me.BunifuCustomDataGrid6.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid6.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid6.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid6.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid6.Name = "BunifuCustomDataGrid6"
-        Me.BunifuCustomDataGrid6.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid6.Size = New System.Drawing.Size(1755, 705)
-        Me.BunifuCustomDataGrid6.TabIndex = 25
-        '
-        'GunaShadowPanel6
-        '
-        Me.GunaShadowPanel6.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel6.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel6.Controls.Add(Me.txt_idFalecidoJazigo)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel28)
-        Me.GunaShadowPanel6.Controls.Add(Me.txt_fileira)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel22)
-        Me.GunaShadowPanel6.Controls.Add(Me.txt_quadrante)
-        Me.GunaShadowPanel6.Controls.Add(Me.txt_coluna)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel25)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel27)
-        Me.GunaShadowPanel6.Controls.Add(Me.txt_idJazigo)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel29)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialButton9)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialButton10)
-        Me.GunaShadowPanel6.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.GunaShadowPanel6.Location = New System.Drawing.Point(57, 63)
-        Me.GunaShadowPanel6.Name = "GunaShadowPanel6"
-        Me.GunaShadowPanel6.Radius = 6
-        Me.GunaShadowPanel6.ShadowColor = System.Drawing.Color.Black
-        Me.GunaShadowPanel6.ShadowDepth = 255
-        Me.GunaShadowPanel6.Size = New System.Drawing.Size(1755, 110)
-        Me.GunaShadowPanel6.TabIndex = 24
-        '
-        'txt_quadrante
-        '
-        Me.txt_quadrante.AnimateReadOnly = False
-        Me.txt_quadrante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_quadrante.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_quadrante.Depth = 0
-        Me.txt_quadrante.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_quadrante.HideSelection = True
-        Me.txt_quadrante.LeadingIcon = Nothing
-        Me.txt_quadrante.Location = New System.Drawing.Point(304, 47)
-        Me.txt_quadrante.MaxLength = 32767
-        Me.txt_quadrante.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_quadrante.Name = "txt_quadrante"
-        Me.txt_quadrante.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_quadrante.PrefixSuffixText = Nothing
-        Me.txt_quadrante.ReadOnly = False
-        Me.txt_quadrante.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_quadrante.SelectedText = ""
-        Me.txt_quadrante.SelectionLength = 0
-        Me.txt_quadrante.SelectionStart = 0
-        Me.txt_quadrante.ShortcutsEnabled = True
-        Me.txt_quadrante.Size = New System.Drawing.Size(250, 48)
-        Me.txt_quadrante.TabIndex = 37
-        Me.txt_quadrante.TabStop = False
-        Me.txt_quadrante.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_quadrante.TrailingIcon = Nothing
-        Me.txt_quadrante.UseSystemPasswordChar = False
-        '
-        'txt_coluna
-        '
-        Me.txt_coluna.AnimateReadOnly = False
-        Me.txt_coluna.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_coluna.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_coluna.Depth = 0
-        Me.txt_coluna.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_coluna.HideSelection = True
-        Me.txt_coluna.LeadingIcon = Nothing
-        Me.txt_coluna.Location = New System.Drawing.Point(864, 47)
-        Me.txt_coluna.MaxLength = 32767
-        Me.txt_coluna.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_coluna.Name = "txt_coluna"
-        Me.txt_coluna.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_coluna.PrefixSuffixText = Nothing
-        Me.txt_coluna.ReadOnly = False
-        Me.txt_coluna.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_coluna.SelectedText = ""
-        Me.txt_coluna.SelectionLength = 0
-        Me.txt_coluna.SelectionStart = 0
-        Me.txt_coluna.ShortcutsEnabled = True
-        Me.txt_coluna.Size = New System.Drawing.Size(250, 48)
-        Me.txt_coluna.TabIndex = 26
-        Me.txt_coluna.TabStop = False
-        Me.txt_coluna.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_coluna.TrailingIcon = Nothing
-        Me.txt_coluna.UseSystemPasswordChar = False
-        '
-        'MaterialLabel25
-        '
-        Me.MaterialLabel25.AutoSize = True
-        Me.MaterialLabel25.Depth = 0
-        Me.MaterialLabel25.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel25.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel25.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel25.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel25.Location = New System.Drawing.Point(864, 15)
-        Me.MaterialLabel25.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel25.Name = "MaterialLabel25"
-        Me.MaterialLabel25.Size = New System.Drawing.Size(76, 29)
-        Me.MaterialLabel25.TabIndex = 25
-        Me.MaterialLabel25.Text = "Coluna"
-        '
-        'MaterialLabel27
-        '
-        Me.MaterialLabel27.AutoSize = True
-        Me.MaterialLabel27.Depth = 0
-        Me.MaterialLabel27.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel27.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel27.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel27.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel27.Location = New System.Drawing.Point(304, 14)
-        Me.MaterialLabel27.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel27.Name = "MaterialLabel27"
-        Me.MaterialLabel27.Size = New System.Drawing.Size(113, 29)
-        Me.MaterialLabel27.TabIndex = 21
-        Me.MaterialLabel27.Text = "Quadrante"
-        '
-        'txt_idJazigo
-        '
-        Me.txt_idJazigo.AnimateReadOnly = False
-        Me.txt_idJazigo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_idJazigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_idJazigo.Depth = 0
-        Me.txt_idJazigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_idJazigo.HideSelection = True
-        Me.txt_idJazigo.LeadingIcon = Nothing
-        Me.txt_idJazigo.Location = New System.Drawing.Point(24, 47)
-        Me.txt_idJazigo.MaxLength = 32767
-        Me.txt_idJazigo.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_idJazigo.Name = "txt_idJazigo"
-        Me.txt_idJazigo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_idJazigo.PrefixSuffixText = Nothing
-        Me.txt_idJazigo.ReadOnly = False
-        Me.txt_idJazigo.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_idJazigo.SelectedText = ""
-        Me.txt_idJazigo.SelectionLength = 0
-        Me.txt_idJazigo.SelectionStart = 0
-        Me.txt_idJazigo.ShortcutsEnabled = True
-        Me.txt_idJazigo.Size = New System.Drawing.Size(250, 48)
-        Me.txt_idJazigo.TabIndex = 18
-        Me.txt_idJazigo.TabStop = False
-        Me.txt_idJazigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_idJazigo.TrailingIcon = Nothing
-        Me.txt_idJazigo.UseSystemPasswordChar = False
-        '
-        'MaterialLabel29
-        '
-        Me.MaterialLabel29.AutoSize = True
-        Me.MaterialLabel29.Depth = 0
-        Me.MaterialLabel29.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel29.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel29.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel29.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel29.Location = New System.Drawing.Point(24, 15)
-        Me.MaterialLabel29.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel29.Name = "MaterialLabel29"
-        Me.MaterialLabel29.Size = New System.Drawing.Size(128, 29)
-        Me.MaterialLabel29.TabIndex = 9
-        Me.MaterialLabel29.Text = "ID do jazigo"
-        '
-        'MaterialButton9
-        '
-        Me.MaterialButton9.AutoSize = False
-        Me.MaterialButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton9.Depth = 0
-        Me.MaterialButton9.HighEmphasis = True
-        Me.MaterialButton9.Icon = CType(resources.GetObject("MaterialButton9.Icon"), System.Drawing.Image)
-        Me.MaterialButton9.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton9.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton9.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton9.Name = "MaterialButton9"
-        Me.MaterialButton9.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton9.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton9.TabIndex = 3
-        Me.MaterialButton9.Text = "Incluir"
-        Me.MaterialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton9.UseAccentColor = False
-        Me.MaterialButton9.UseVisualStyleBackColor = True
-        '
-        'MaterialButton10
-        '
-        Me.MaterialButton10.AutoSize = False
-        Me.MaterialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton10.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton10.Depth = 0
-        Me.MaterialButton10.HighEmphasis = True
-        Me.MaterialButton10.Icon = CType(resources.GetObject("MaterialButton10.Icon"), System.Drawing.Image)
-        Me.MaterialButton10.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton10.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton10.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton10.Name = "MaterialButton10"
-        Me.MaterialButton10.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton10.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton10.TabIndex = 0
-        Me.MaterialButton10.Text = "Pesquisar"
-        Me.MaterialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton10.UseAccentColor = False
-        Me.MaterialButton10.UseVisualStyleBackColor = True
-        '
-        'txt_fileira
-        '
-        Me.txt_fileira.AnimateReadOnly = False
-        Me.txt_fileira.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_fileira.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_fileira.Depth = 0
-        Me.txt_fileira.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_fileira.HideSelection = True
-        Me.txt_fileira.LeadingIcon = Nothing
-        Me.txt_fileira.Location = New System.Drawing.Point(582, 47)
-        Me.txt_fileira.MaxLength = 32767
-        Me.txt_fileira.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_fileira.Name = "txt_fileira"
-        Me.txt_fileira.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_fileira.PrefixSuffixText = Nothing
-        Me.txt_fileira.ReadOnly = False
-        Me.txt_fileira.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_fileira.SelectedText = ""
-        Me.txt_fileira.SelectionLength = 0
-        Me.txt_fileira.SelectionStart = 0
-        Me.txt_fileira.ShortcutsEnabled = True
-        Me.txt_fileira.Size = New System.Drawing.Size(250, 48)
-        Me.txt_fileira.TabIndex = 39
-        Me.txt_fileira.TabStop = False
-        Me.txt_fileira.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_fileira.TrailingIcon = Nothing
-        Me.txt_fileira.UseSystemPasswordChar = False
-        '
-        'MaterialLabel22
-        '
-        Me.MaterialLabel22.AutoSize = True
-        Me.MaterialLabel22.Depth = 0
-        Me.MaterialLabel22.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel22.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel22.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel22.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel22.Location = New System.Drawing.Point(582, 14)
-        Me.MaterialLabel22.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel22.Name = "MaterialLabel22"
-        Me.MaterialLabel22.Size = New System.Drawing.Size(66, 29)
-        Me.MaterialLabel22.TabIndex = 38
-        Me.MaterialLabel22.Text = "Fileira"
-        '
-        'txt_idFalecidoJazigo
-        '
-        Me.txt_idFalecidoJazigo.AnimateReadOnly = False
-        Me.txt_idFalecidoJazigo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_idFalecidoJazigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_idFalecidoJazigo.Depth = 0
-        Me.txt_idFalecidoJazigo.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_idFalecidoJazigo.HideSelection = True
-        Me.txt_idFalecidoJazigo.LeadingIcon = Nothing
-        Me.txt_idFalecidoJazigo.Location = New System.Drawing.Point(1139, 47)
-        Me.txt_idFalecidoJazigo.MaxLength = 32767
-        Me.txt_idFalecidoJazigo.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_idFalecidoJazigo.Name = "txt_idFalecidoJazigo"
-        Me.txt_idFalecidoJazigo.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_idFalecidoJazigo.PrefixSuffixText = Nothing
-        Me.txt_idFalecidoJazigo.ReadOnly = False
-        Me.txt_idFalecidoJazigo.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_idFalecidoJazigo.SelectedText = ""
-        Me.txt_idFalecidoJazigo.SelectionLength = 0
-        Me.txt_idFalecidoJazigo.SelectionStart = 0
-        Me.txt_idFalecidoJazigo.ShortcutsEnabled = True
-        Me.txt_idFalecidoJazigo.Size = New System.Drawing.Size(250, 48)
-        Me.txt_idFalecidoJazigo.TabIndex = 41
-        Me.txt_idFalecidoJazigo.TabStop = False
-        Me.txt_idFalecidoJazigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_idFalecidoJazigo.TrailingIcon = Nothing
-        Me.txt_idFalecidoJazigo.UseSystemPasswordChar = False
-        '
-        'MaterialLabel28
-        '
-        Me.MaterialLabel28.AutoSize = True
-        Me.MaterialLabel28.Depth = 0
-        Me.MaterialLabel28.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel28.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel28.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel28.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel28.Location = New System.Drawing.Point(1139, 15)
-        Me.MaterialLabel28.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel28.Name = "MaterialLabel28"
-        Me.MaterialLabel28.Size = New System.Drawing.Size(151, 29)
-        Me.MaterialLabel28.TabIndex = 40
-        Me.MaterialLabel28.Text = "ID do falecido"
-        '
-        'BunifuCustomDataGrid7
-        '
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid7.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
-        Me.BunifuCustomDataGrid7.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid7.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid7.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid7.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
-        Me.BunifuCustomDataGrid7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid7.DoubleBuffered = True
-        Me.BunifuCustomDataGrid7.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid7.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid7.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid7.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid7.Name = "BunifuCustomDataGrid7"
-        Me.BunifuCustomDataGrid7.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid7.Size = New System.Drawing.Size(1755, 705)
-        Me.BunifuCustomDataGrid7.TabIndex = 22
-        '
-        'GunaShadowPanel7
-        '
-        Me.GunaShadowPanel7.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel7.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel7.Controls.Add(Me.txt_preco)
-        Me.GunaShadowPanel7.Controls.Add(Me.MaterialLabel30)
-        Me.GunaShadowPanel7.Controls.Add(Me.txt_descricaoServicos)
-        Me.GunaShadowPanel7.Controls.Add(Me.MaterialLabel31)
-        Me.GunaShadowPanel7.Controls.Add(Me.txt_idServico)
-        Me.GunaShadowPanel7.Controls.Add(Me.MaterialLabel32)
-        Me.GunaShadowPanel7.Controls.Add(Me.MaterialButton11)
-        Me.GunaShadowPanel7.Controls.Add(Me.MaterialButton12)
-        Me.GunaShadowPanel7.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.GunaShadowPanel7.Location = New System.Drawing.Point(57, 63)
-        Me.GunaShadowPanel7.Name = "GunaShadowPanel7"
-        Me.GunaShadowPanel7.Radius = 6
-        Me.GunaShadowPanel7.ShadowColor = System.Drawing.Color.Black
-        Me.GunaShadowPanel7.ShadowDepth = 255
-        Me.GunaShadowPanel7.Size = New System.Drawing.Size(1755, 110)
-        Me.GunaShadowPanel7.TabIndex = 21
-        '
-        'MaterialLabel30
-        '
-        Me.MaterialLabel30.Depth = 0
-        Me.MaterialLabel30.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel30.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel30.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel30.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel30.Location = New System.Drawing.Point(571, 17)
-        Me.MaterialLabel30.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel30.Name = "MaterialLabel30"
-        Me.MaterialLabel30.Size = New System.Drawing.Size(132, 29)
-        Me.MaterialLabel30.TabIndex = 21
-        Me.MaterialLabel30.Text = "Preço"
-        '
-        'txt_descricaoServicos
-        '
-        Me.txt_descricaoServicos.AnimateReadOnly = False
-        Me.txt_descricaoServicos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_descricaoServicos.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_descricaoServicos.Depth = 0
-        Me.txt_descricaoServicos.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_descricaoServicos.HideSelection = True
-        Me.txt_descricaoServicos.LeadingIcon = Nothing
-        Me.txt_descricaoServicos.Location = New System.Drawing.Point(305, 49)
-        Me.txt_descricaoServicos.MaxLength = 32767
-        Me.txt_descricaoServicos.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_descricaoServicos.Name = "txt_descricaoServicos"
-        Me.txt_descricaoServicos.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_descricaoServicos.PrefixSuffixText = Nothing
-        Me.txt_descricaoServicos.ReadOnly = False
-        Me.txt_descricaoServicos.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_descricaoServicos.SelectedText = ""
-        Me.txt_descricaoServicos.SelectionLength = 0
-        Me.txt_descricaoServicos.SelectionStart = 0
-        Me.txt_descricaoServicos.ShortcutsEnabled = True
-        Me.txt_descricaoServicos.Size = New System.Drawing.Size(250, 48)
-        Me.txt_descricaoServicos.TabIndex = 20
-        Me.txt_descricaoServicos.TabStop = False
-        Me.txt_descricaoServicos.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_descricaoServicos.TrailingIcon = Nothing
-        Me.txt_descricaoServicos.UseSystemPasswordChar = False
-        '
-        'MaterialLabel31
-        '
-        Me.MaterialLabel31.AutoSize = True
-        Me.MaterialLabel31.Depth = 0
-        Me.MaterialLabel31.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel31.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel31.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel31.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel31.Location = New System.Drawing.Point(305, 17)
-        Me.MaterialLabel31.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel31.Name = "MaterialLabel31"
-        Me.MaterialLabel31.Size = New System.Drawing.Size(109, 29)
-        Me.MaterialLabel31.TabIndex = 19
-        Me.MaterialLabel31.Text = "Descrição"
-        '
-        'txt_idServico
-        '
-        Me.txt_idServico.AnimateReadOnly = False
-        Me.txt_idServico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_idServico.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_idServico.Depth = 0
-        Me.txt_idServico.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_idServico.HideSelection = True
-        Me.txt_idServico.LeadingIcon = Nothing
-        Me.txt_idServico.Location = New System.Drawing.Point(29, 49)
-        Me.txt_idServico.MaxLength = 32767
-        Me.txt_idServico.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_idServico.Name = "txt_idServico"
-        Me.txt_idServico.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_idServico.PrefixSuffixText = Nothing
-        Me.txt_idServico.ReadOnly = False
-        Me.txt_idServico.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_idServico.SelectedText = ""
-        Me.txt_idServico.SelectionLength = 0
-        Me.txt_idServico.SelectionStart = 0
-        Me.txt_idServico.ShortcutsEnabled = True
-        Me.txt_idServico.Size = New System.Drawing.Size(250, 48)
-        Me.txt_idServico.TabIndex = 18
-        Me.txt_idServico.TabStop = False
-        Me.txt_idServico.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_idServico.TrailingIcon = Nothing
-        Me.txt_idServico.UseSystemPasswordChar = False
-        '
-        'MaterialLabel32
-        '
-        Me.MaterialLabel32.AutoSize = True
-        Me.MaterialLabel32.Depth = 0
-        Me.MaterialLabel32.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel32.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel32.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel32.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel32.Location = New System.Drawing.Point(29, 17)
-        Me.MaterialLabel32.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel32.Name = "MaterialLabel32"
-        Me.MaterialLabel32.Size = New System.Drawing.Size(142, 29)
-        Me.MaterialLabel32.TabIndex = 9
-        Me.MaterialLabel32.Text = "ID do serviço"
-        '
-        'MaterialButton11
-        '
-        Me.MaterialButton11.AutoSize = False
-        Me.MaterialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton11.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton11.Depth = 0
-        Me.MaterialButton11.HighEmphasis = True
-        Me.MaterialButton11.Icon = CType(resources.GetObject("MaterialButton11.Icon"), System.Drawing.Image)
-        Me.MaterialButton11.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton11.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton11.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton11.Name = "MaterialButton11"
-        Me.MaterialButton11.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton11.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton11.TabIndex = 3
-        Me.MaterialButton11.Text = "Incluir"
-        Me.MaterialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton11.UseAccentColor = False
-        Me.MaterialButton11.UseVisualStyleBackColor = True
-        '
-        'MaterialButton12
-        '
-        Me.MaterialButton12.AutoSize = False
-        Me.MaterialButton12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton12.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton12.Depth = 0
-        Me.MaterialButton12.HighEmphasis = True
-        Me.MaterialButton12.Icon = CType(resources.GetObject("MaterialButton12.Icon"), System.Drawing.Image)
-        Me.MaterialButton12.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton12.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton12.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton12.Name = "MaterialButton12"
-        Me.MaterialButton12.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton12.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton12.TabIndex = 0
-        Me.MaterialButton12.Text = "Pesquisar"
-        Me.MaterialButton12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton12.UseAccentColor = False
-        Me.MaterialButton12.UseVisualStyleBackColor = True
-        '
-        'txt_preco
-        '
-        Me.txt_preco.AnimateReadOnly = False
-        Me.txt_preco.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_preco.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_preco.Depth = 0
-        Me.txt_preco.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_preco.HideSelection = True
-        Me.txt_preco.LeadingIcon = Nothing
-        Me.txt_preco.Location = New System.Drawing.Point(570, 49)
-        Me.txt_preco.MaxLength = 32767
-        Me.txt_preco.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_preco.Name = "txt_preco"
-        Me.txt_preco.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_preco.PrefixSuffixText = Nothing
-        Me.txt_preco.ReadOnly = False
-        Me.txt_preco.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_preco.SelectedText = ""
-        Me.txt_preco.SelectionLength = 0
-        Me.txt_preco.SelectionStart = 0
-        Me.txt_preco.ShortcutsEnabled = True
-        Me.txt_preco.Size = New System.Drawing.Size(250, 48)
-        Me.txt_preco.TabIndex = 22
-        Me.txt_preco.TabStop = False
-        Me.txt_preco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_preco.TrailingIcon = Nothing
-        Me.txt_preco.UseSystemPasswordChar = False
-        '
         'frm_administrador
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2564,13 +2567,25 @@ Partial Class frm_administrador
         Me.Text = "           Thanatos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.TabPage7.ResumeLayout(False)
+        CType(Me.BunifuCustomDataGrid4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaShadowPanel4.ResumeLayout(False)
+        Me.GunaShadowPanel4.PerformLayout()
         Me.TabPage6.ResumeLayout(False)
+        CType(Me.BunifuCustomDataGrid6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaShadowPanel6.ResumeLayout(False)
+        Me.GunaShadowPanel6.PerformLayout()
         Me.TabPage5.ResumeLayout(False)
+        CType(Me.BunifuCustomDataGrid7, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaShadowPanel7.ResumeLayout(False)
+        Me.GunaShadowPanel7.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel1.ResumeLayout(False)
         Me.GunaShadowPanel1.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
+        CType(Me.BunifuCustomDataGrid5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GunaShadowPanel5.ResumeLayout(False)
+        Me.GunaShadowPanel5.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         CType(Me.BunifuCustomDataGrid3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel3.ResumeLayout(False)
@@ -2581,18 +2596,6 @@ Partial Class frm_administrador
         Me.GunaShadowPanel2.PerformLayout()
         Me.MaterialTabControl1.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.BunifuCustomDataGrid4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GunaShadowPanel4.ResumeLayout(False)
-        Me.GunaShadowPanel4.PerformLayout()
-        CType(Me.BunifuCustomDataGrid5, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GunaShadowPanel5.ResumeLayout(False)
-        Me.GunaShadowPanel5.PerformLayout()
-        CType(Me.BunifuCustomDataGrid6, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GunaShadowPanel6.ResumeLayout(False)
-        Me.GunaShadowPanel6.PerformLayout()
-        CType(Me.BunifuCustomDataGrid7, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GunaShadowPanel7.ResumeLayout(False)
-        Me.GunaShadowPanel7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

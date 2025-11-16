@@ -6,9 +6,10 @@ Imports LiveCharts
 Imports LiveCharts.Wpf
 Imports LiveCharts.Defaults
 Imports LiveCharts.WinForms
+Imports System.Runtime.Remoting.Messaging
 
 Public Class frm_home
-
+    Dim resp
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
 
     Public Sub New()
@@ -30,15 +31,40 @@ Public Class frm_home
     End Sub
 
     Private Sub frm_home_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        If PictureBox2 IsNot Nothing Then
-            PictureBox2.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
-            PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
-            PictureBox2.BorderStyle = BorderStyle.None
+        If PictureBox1 IsNot Nothing Then
+            PictureBox1.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
+            PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
+            PictureBox1.BorderStyle = BorderStyle.None
         End If
     End Sub
 
     Private Sub frm_home_Load(sender As Object, e As EventArgs) Handles Me.Load
-
+        lbl_nome.Text = "Bem-vindo, " + frm_login.nomeFuncionario
+        If frm_login.idSetor = "1" Then
+            With Me
+                .btn_administracao.Enabled = True
+                .btn_financeiro.Enabled = False
+                .btn_recepcao.Enabled = False
+            End With
+        ElseIf frm_login.idSetor = "2" Then
+            With Me
+                .btn_administracao.Enabled = False
+                .btn_financeiro.Enabled = True
+                .btn_recepcao.Enabled = False
+            End With
+        ElseIf frm_login.idSetor = "3" Then
+            With Me
+                .btn_administracao.Enabled = False
+                .btn_financeiro.Enabled = False
+                .btn_recepcao.Enabled = True
+            End With
+        Else
+            With Me
+                .btn_administracao.Enabled = True
+                .btn_financeiro.Enabled = True
+                .btn_recepcao.Enabled = True
+            End With
+        End If
         ' Inicializa e popula o gráfico (garanta que o controle se chame cartesianChart1 no Designer)
         SetupLineChart()
 
@@ -134,4 +160,18 @@ Public Class frm_home
         Me.Hide()
     End Sub
 
+    Private Sub lbl_logout_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_logout.LinkClicked
+        resp = MsgBox("Tem certeza que deseja deslogar? ", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
+        If resp = MsgBoxResult.Yes Then
+            frm_login.Show()
+            Me.Hide()
+        End If
+    End Sub
+
+    Private Sub lbl_sair_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_sair.LinkClicked
+        resp = MsgBox("Deseja Sair do Sistema?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
+        If resp = MsgBoxResult.Yes Then
+            Application.Exit()
+        End If
+    End Sub
 End Class

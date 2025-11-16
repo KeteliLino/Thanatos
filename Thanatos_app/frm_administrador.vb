@@ -70,8 +70,4 @@ Public Class frm_administrador
     Private Sub btn_voltar6_Click(sender As Object, e As EventArgs) Handles btn_voltar6.Click
         Voltar()
     End Sub
-
-    Private Sub frm_administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 End Class

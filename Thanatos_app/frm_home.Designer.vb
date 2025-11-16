@@ -19,10 +19,9 @@ Partial Class frm_home
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_home))
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.cmb_tabelas = New MaterialSkin.Controls.MaterialComboBox()
         Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
@@ -33,23 +32,16 @@ Partial Class frm_home
         Me.MaterialCard2 = New MaterialSkin.Controls.MaterialCard()
         Me.MaterialCard3 = New MaterialSkin.Controls.MaterialCard()
         Me.MaterialCard4 = New MaterialSkin.Controls.MaterialCard()
+        Me.lbl_nome = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_sair = New System.Windows.Forms.LinkLabel()
+        Me.lbl_logout = New System.Windows.Forms.LinkLabel()
         Me.CartesianChart1 = New LiveCharts.WinForms.CartesianChart()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
         Me.MaterialCard4.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.BackgroundImage = CType(resources.GetObject("PictureBox2.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox2.Location = New System.Drawing.Point(6, 21)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(46, 43)
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
         '
         'cmb_tabelas
         '
@@ -76,19 +68,19 @@ Partial Class frm_home
         '
         'BunifuCustomDataGrid1
         '
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle17
         Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle18
         Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid1.DoubleBuffered = True
         Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
@@ -104,6 +96,8 @@ Partial Class frm_home
         '
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.GunaShadowPanel1.Controls.Add(Me.lbl_sair)
+        Me.GunaShadowPanel1.Controls.Add(Me.lbl_logout)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_administracao)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_recepcao)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_financeiro)
@@ -233,6 +227,45 @@ Partial Class frm_home
         Me.MaterialCard4.Size = New System.Drawing.Size(926, 325)
         Me.MaterialCard4.TabIndex = 10
         '
+        'lbl_nome
+        '
+        Me.lbl_nome.AutoSize = True
+        Me.lbl_nome.Depth = 0
+        Me.lbl_nome.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_nome.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.lbl_nome.Location = New System.Drawing.Point(303, 75)
+        Me.lbl_nome.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_nome.Name = "lbl_nome"
+        Me.lbl_nome.Size = New System.Drawing.Size(223, 29)
+        Me.lbl_nome.TabIndex = 11
+        Me.lbl_nome.Text = "nome do funcionario"
+        '
+        'lbl_sair
+        '
+        Me.lbl_sair.ActiveLinkColor = System.Drawing.Color.White
+        Me.lbl_sair.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_sair.LinkColor = System.Drawing.Color.DarkViolet
+        Me.lbl_sair.Location = New System.Drawing.Point(125, 907)
+        Me.lbl_sair.Name = "lbl_sair"
+        Me.lbl_sair.Size = New System.Drawing.Size(62, 31)
+        Me.lbl_sair.TabIndex = 9
+        Me.lbl_sair.TabStop = True
+        Me.lbl_sair.Text = "Sair"
+        Me.lbl_sair.VisitedLinkColor = System.Drawing.Color.White
+        '
+        'lbl_logout
+        '
+        Me.lbl_logout.ActiveLinkColor = System.Drawing.Color.White
+        Me.lbl_logout.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_logout.LinkColor = System.Drawing.Color.DarkViolet
+        Me.lbl_logout.Location = New System.Drawing.Point(25, 907)
+        Me.lbl_logout.Name = "lbl_logout"
+        Me.lbl_logout.Size = New System.Drawing.Size(106, 31)
+        Me.lbl_logout.TabIndex = 8
+        Me.lbl_logout.TabStop = True
+        Me.lbl_logout.Text = "Log-out"
+        Me.lbl_logout.VisitedLinkColor = System.Drawing.Color.White
+        '
         'CartesianChart1
         '
         Me.CartesianChart1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -242,11 +275,24 @@ Partial Class frm_home
         Me.CartesianChart1.TabIndex = 0
         Me.CartesianChart1.Text = "CartesianChart1"
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 21)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(46, 43)
+        Me.PictureBox1.TabIndex = 12
+        Me.PictureBox1.TabStop = False
+        '
         'frm_home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1920, 1032)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.lbl_nome)
         Me.Controls.Add(Me.MaterialCard4)
         Me.Controls.Add(Me.MaterialCard3)
         Me.Controls.Add(Me.MaterialCard2)
@@ -254,21 +300,19 @@ Partial Class frm_home
         Me.Controls.Add(Me.GunaShadowPanel1)
         Me.Controls.Add(Me.BunifuCustomDataGrid1)
         Me.Controls.Add(Me.cmb_tabelas)
-        Me.Controls.Add(Me.PictureBox2)
         Me.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_home"
         Me.Text = "           Thanatos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel1.ResumeLayout(False)
         Me.MaterialCard4.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents cmb_tabelas As MaterialSkin.Controls.MaterialComboBox
     Friend WithEvents BunifuCustomDataGrid1 As ns1.BunifuCustomDataGrid
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
@@ -279,5 +323,9 @@ Partial Class frm_home
     Friend WithEvents MaterialCard2 As MaterialSkin.Controls.MaterialCard
     Friend WithEvents MaterialCard3 As MaterialSkin.Controls.MaterialCard
     Friend WithEvents MaterialCard4 As MaterialSkin.Controls.MaterialCard
+    Friend WithEvents lbl_sair As LinkLabel
+    Friend WithEvents lbl_logout As LinkLabel
+    Friend WithEvents lbl_nome As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents CartesianChart1 As LiveCharts.WinForms.CartesianChart
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
