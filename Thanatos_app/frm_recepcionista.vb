@@ -24,6 +24,8 @@ Public Class frm_recepcionista
     End Sub
 
     Private Sub frm_recepcionista_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        txt_data.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        txt_data1.Text = DateTime.Now.ToString("dd/MM/yyyy")
         If PictureBox5 IsNot Nothing Then
             PictureBox5.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
             PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
@@ -50,4 +52,5 @@ Public Class frm_recepcionista
     Private Sub btn_voltar3_Click(sender As Object, e As EventArgs) Handles btn_voltar3.Click
         Voltar()
     End Sub
+
 End Class

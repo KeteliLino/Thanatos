@@ -31,7 +31,8 @@ Public Class frm_administrador
     End Sub
 
     Private Sub frm_administrador_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-
+        txt_dataCremacao.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        txt_dataVelorio.Text = DateTime.Now.ToString("dd/MM/yyyy")
         If PictureBox3 IsNot Nothing Then
             PictureBox3.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
             PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
@@ -68,5 +69,9 @@ Public Class frm_administrador
 
     Private Sub btn_voltar6_Click(sender As Object, e As EventArgs) Handles btn_voltar6.Click
         Voltar()
+    End Sub
+
+    Private Sub frm_administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

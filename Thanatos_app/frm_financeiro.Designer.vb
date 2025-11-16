@@ -24,18 +24,20 @@ Partial Class frm_financeiro
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_financeiro))
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.btn_pesquisar2 = New MaterialSkin.Controls.MaterialTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.btn_voltar = New MaterialSkin.Controls.MaterialButton()
         Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_data = New MaterialSkin.Controls.MaterialMaskedTextBox()
         Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_idfalecido = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
@@ -67,8 +69,6 @@ Partial Class frm_financeiro
         Me.MaterialTextBox25 = New MaterialSkin.Controls.MaterialTextBox2()
         Me.btn_voltar2 = New MaterialSkin.Controls.MaterialButton()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.txt_data = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.btn_pesquisar2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -145,19 +145,19 @@ Partial Class frm_financeiro
         '
         'BunifuCustomDataGrid1
         '
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid1.DoubleBuffered = True
         Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
@@ -195,6 +195,63 @@ Partial Class frm_financeiro
         Me.GunaShadowPanel1.ShadowDepth = 255
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(1755, 284)
         Me.GunaShadowPanel1.TabIndex = 7
+        '
+        'MaterialLabel8
+        '
+        Me.MaterialLabel8.AutoSize = True
+        Me.MaterialLabel8.Depth = 0
+        Me.MaterialLabel8.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel8.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel8.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel8.Location = New System.Drawing.Point(960, 99)
+        Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel8.Name = "MaterialLabel8"
+        Me.MaterialLabel8.Size = New System.Drawing.Size(173, 29)
+        Me.MaterialLabel8.TabIndex = 16
+        Me.MaterialLabel8.Text = "Data de Criação"
+        '
+        'txt_data
+        '
+        Me.txt_data.AllowPromptAsInput = True
+        Me.txt_data.AnimateReadOnly = False
+        Me.txt_data.AsciiOnly = False
+        Me.txt_data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_data.BeepOnError = False
+        Me.txt_data.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
+        Me.txt_data.Depth = 0
+        Me.txt_data.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_data.HidePromptOnLeave = False
+        Me.txt_data.HideSelection = True
+        Me.txt_data.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
+        Me.txt_data.LeadingIcon = Nothing
+        Me.txt_data.Location = New System.Drawing.Point(960, 131)
+        Me.txt_data.Mask = "00/00/0000"
+        Me.txt_data.MaxLength = 32767
+        Me.txt_data.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_data.Name = "txt_data"
+        Me.txt_data.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_data.PrefixSuffixText = Nothing
+        Me.txt_data.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
+        Me.txt_data.ReadOnly = False
+        Me.txt_data.RejectInputOnFirstFailure = False
+        Me.txt_data.ResetOnPrompt = True
+        Me.txt_data.ResetOnSpace = True
+        Me.txt_data.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_data.SelectedText = ""
+        Me.txt_data.SelectionLength = 0
+        Me.txt_data.SelectionStart = 0
+        Me.txt_data.ShortcutsEnabled = True
+        Me.txt_data.Size = New System.Drawing.Size(250, 48)
+        Me.txt_data.SkipLiterals = True
+        Me.txt_data.TabIndex = 15
+        Me.txt_data.TabStop = False
+        Me.txt_data.Text = "  /  /"
+        Me.txt_data.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_data.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
+        Me.txt_data.TrailingIcon = Nothing
+        Me.txt_data.UseSystemPasswordChar = False
+        Me.txt_data.ValidatingType = Nothing
         '
         'MaterialLabel4
         '
@@ -479,28 +536,28 @@ Partial Class frm_financeiro
         '
         'BunifuCustomDataGrid2
         '
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.BunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.BunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid2.DoubleBuffered = True
         Me.BunifuCustomDataGrid2.EnableHeadersVisualStyles = False
         Me.BunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.SeaGreen
         Me.BunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid2.Location = New System.Drawing.Point(57, 353)
+        Me.BunifuCustomDataGrid2.Location = New System.Drawing.Point(57, 180)
         Me.BunifuCustomDataGrid2.Name = "BunifuCustomDataGrid2"
         Me.BunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid2.Size = New System.Drawing.Size(1755, 555)
+        Me.BunifuCustomDataGrid2.Size = New System.Drawing.Size(1755, 705)
         Me.BunifuCustomDataGrid2.TabIndex = 9
         '
         'GunaShadowPanel2
@@ -513,12 +570,12 @@ Partial Class frm_financeiro
         Me.GunaShadowPanel2.Controls.Add(Me.btn_pesquisar1)
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialTextBox23)
         Me.GunaShadowPanel2.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.GunaShadowPanel2.Location = New System.Drawing.Point(57, 38)
+        Me.GunaShadowPanel2.Location = New System.Drawing.Point(57, 63)
         Me.GunaShadowPanel2.Name = "GunaShadowPanel2"
         Me.GunaShadowPanel2.Radius = 6
         Me.GunaShadowPanel2.ShadowColor = System.Drawing.Color.Black
         Me.GunaShadowPanel2.ShadowDepth = 255
-        Me.GunaShadowPanel2.Size = New System.Drawing.Size(1755, 284)
+        Me.GunaShadowPanel2.Size = New System.Drawing.Size(1755, 110)
         Me.GunaShadowPanel2.TabIndex = 8
         '
         'MaterialTextBox21
@@ -559,7 +616,7 @@ Partial Class frm_financeiro
         Me.MaterialLabel6.Location = New System.Drawing.Point(34, 14)
         Me.MaterialLabel6.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel6.Name = "MaterialLabel6"
-        Me.MaterialLabel6.Size = New System.Drawing.Size(149, 29)
+        Me.MaterialLabel6.Size = New System.Drawing.Size(148, 29)
         Me.MaterialLabel6.TabIndex = 12
         Me.MaterialLabel6.Text = "ID do Serviço"
         '
@@ -618,7 +675,7 @@ Partial Class frm_financeiro
         Me.MaterialTextBox23.SelectionLength = 0
         Me.MaterialTextBox23.SelectionStart = 0
         Me.MaterialTextBox23.ShortcutsEnabled = True
-        Me.MaterialTextBox23.Size = New System.Drawing.Size(149, 48)
+        Me.MaterialTextBox23.Size = New System.Drawing.Size(148, 48)
         Me.MaterialTextBox23.TabIndex = 2
         Me.MaterialTextBox23.TabStop = False
         Me.MaterialTextBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -640,28 +697,28 @@ Partial Class frm_financeiro
         '
         'BunifuCustomDataGrid3
         '
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.BunifuCustomDataGrid3.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.BunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid3.DoubleBuffered = True
         Me.BunifuCustomDataGrid3.EnableHeadersVisualStyles = False
         Me.BunifuCustomDataGrid3.HeaderBgColor = System.Drawing.Color.SeaGreen
         Me.BunifuCustomDataGrid3.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid3.Location = New System.Drawing.Point(57, 353)
+        Me.BunifuCustomDataGrid3.Location = New System.Drawing.Point(57, 180)
         Me.BunifuCustomDataGrid3.Name = "BunifuCustomDataGrid3"
         Me.BunifuCustomDataGrid3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid3.Size = New System.Drawing.Size(1755, 555)
+        Me.BunifuCustomDataGrid3.Size = New System.Drawing.Size(1755, 705)
         Me.BunifuCustomDataGrid3.TabIndex = 18
         '
         'GunaShadowPanel3
@@ -674,12 +731,12 @@ Partial Class frm_financeiro
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialButton3)
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialTextBox25)
         Me.GunaShadowPanel3.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.GunaShadowPanel3.Location = New System.Drawing.Point(57, 38)
+        Me.GunaShadowPanel3.Location = New System.Drawing.Point(57, 63)
         Me.GunaShadowPanel3.Name = "GunaShadowPanel3"
         Me.GunaShadowPanel3.Radius = 6
         Me.GunaShadowPanel3.ShadowColor = System.Drawing.Color.Black
         Me.GunaShadowPanel3.ShadowDepth = 255
-        Me.GunaShadowPanel3.Size = New System.Drawing.Size(1755, 284)
+        Me.GunaShadowPanel3.Size = New System.Drawing.Size(1755, 110)
         Me.GunaShadowPanel3.TabIndex = 17
         '
         'MaterialLabel5
@@ -815,63 +872,6 @@ Partial Class frm_financeiro
         Me.ImageList1.Images.SetKeyName(1, "clipboard.png")
         Me.ImageList1.Images.SetKeyName(2, "exit.png")
         Me.ImageList1.Images.SetKeyName(3, "crud pesquisar.png")
-        '
-        'txt_data
-        '
-        Me.txt_data.AllowPromptAsInput = True
-        Me.txt_data.AnimateReadOnly = False
-        Me.txt_data.AsciiOnly = False
-        Me.txt_data.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_data.BeepOnError = False
-        Me.txt_data.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.txt_data.Depth = 0
-        Me.txt_data.Font = New System.Drawing.Font("Roboto", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_data.HidePromptOnLeave = False
-        Me.txt_data.HideSelection = True
-        Me.txt_data.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
-        Me.txt_data.LeadingIcon = Nothing
-        Me.txt_data.Location = New System.Drawing.Point(960, 131)
-        Me.txt_data.Mask = "00/00/0000"
-        Me.txt_data.MaxLength = 32767
-        Me.txt_data.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_data.Name = "txt_data"
-        Me.txt_data.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_data.PrefixSuffixText = Nothing
-        Me.txt_data.PromptChar = Global.Microsoft.VisualBasic.ChrW(95)
-        Me.txt_data.ReadOnly = False
-        Me.txt_data.RejectInputOnFirstFailure = False
-        Me.txt_data.ResetOnPrompt = True
-        Me.txt_data.ResetOnSpace = True
-        Me.txt_data.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_data.SelectedText = ""
-        Me.txt_data.SelectionLength = 0
-        Me.txt_data.SelectionStart = 0
-        Me.txt_data.ShortcutsEnabled = True
-        Me.txt_data.Size = New System.Drawing.Size(250, 48)
-        Me.txt_data.SkipLiterals = True
-        Me.txt_data.TabIndex = 15
-        Me.txt_data.TabStop = False
-        Me.txt_data.Text = "  /  /"
-        Me.txt_data.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_data.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
-        Me.txt_data.TrailingIcon = Nothing
-        Me.txt_data.UseSystemPasswordChar = False
-        Me.txt_data.ValidatingType = Nothing
-        '
-        'MaterialLabel8
-        '
-        Me.MaterialLabel8.AutoSize = True
-        Me.MaterialLabel8.Depth = 0
-        Me.MaterialLabel8.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel8.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel8.Location = New System.Drawing.Point(960, 99)
-        Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel8.Name = "MaterialLabel8"
-        Me.MaterialLabel8.Size = New System.Drawing.Size(173, 29)
-        Me.MaterialLabel8.TabIndex = 16
-        Me.MaterialLabel8.Text = "Data de Criação"
         '
         'frm_financeiro
         '

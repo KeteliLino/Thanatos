@@ -48,4 +48,12 @@ Public Class frm_financeiro
     Private Sub btn_voltar2_Click(sender As Object, e As EventArgs) Handles btn_voltar2.Click
         Voltar()
     End Sub
+
+    Private Sub txt_data_Click(sender As Object, e As EventArgs) Handles txt_data.Click
+
+    End Sub
+
+    Private Sub MaterialLabel8_Click(sender As Object, e As EventArgs) Handles MaterialLabel8.Click
+
+    End Sub
 End Class
