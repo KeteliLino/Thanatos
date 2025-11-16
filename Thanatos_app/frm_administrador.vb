@@ -47,4 +47,8 @@ Public Class frm_administrador
             PictureBox3.BorderStyle = BorderStyle.None
         End If
     End Sub
+
+    Private Sub frm_administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

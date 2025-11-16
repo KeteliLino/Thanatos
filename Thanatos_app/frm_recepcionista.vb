@@ -30,17 +30,17 @@ Public Class frm_recepcionista
         End If
     End Sub
 
-    Private Sub btn_home_Click(sender As Object, e As EventArgs) Handles btn_home.Click
+    Private Sub btn_home_Click(sender As Object, e As EventArgs)
         frm_home.Show()
         Me.Hide()
     End Sub
 
-    Private Sub btn_administracao_Click(sender As Object, e As EventArgs) Handles btn_administracao.Click
+    Private Sub btn_administracao_Click(sender As Object, e As EventArgs)
         frm_administrador.Show()
         Me.Hide()
     End Sub
 
-    Private Sub btn_financeiro_Click(sender As Object, e As EventArgs) Handles btn_financeiro.Click
+    Private Sub btn_financeiro_Click(sender As Object, e As EventArgs)
         frm_financeiro.Show()
         Me.Hide()
     End Sub
