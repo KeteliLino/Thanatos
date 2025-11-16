@@ -41,4 +41,11 @@ Public Class frm_financeiro
         End If
     End Sub
 
+    Private Sub btn_incluir_Click(sender As Object, e As EventArgs) Handles btn_incluir.Click
+
+    End Sub
+
+    Private Sub btn_pesquisar_Click(sender As Object, e As EventArgs) Handles btn_pesquisar.Click
+
+    End Sub
 End Class

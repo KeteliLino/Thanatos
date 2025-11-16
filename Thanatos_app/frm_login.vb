@@ -52,4 +52,18 @@ Public Class frm_login
 
 
     End Sub
+
+
+
+    Private Sub chk_visualizar_CheckedChanged(sender As Object, e As EventArgs) Handles chk_visualizar.CheckedChanged
+        If chk_visualizar.Checked Then
+            ' Mostrar senha
+            txt_senha.UseSystemPasswordChar = False
+            txt_senha.PasswordChar = ChrW(0)
+        Else
+            ' Ocultar senha
+            txt_senha.UseSystemPasswordChar = True
+            txt_senha.PasswordChar = ChrW(9679) ' bolinha preta
+        End If
+    End Sub
 End Class

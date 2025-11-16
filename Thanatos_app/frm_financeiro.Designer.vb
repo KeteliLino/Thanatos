@@ -24,27 +24,29 @@ Partial Class frm_financeiro
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_financeiro))
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.MaterialTabControl1 = New MaterialSkin.Controls.MaterialTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_idfalecido = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_login = New MaterialSkin.Controls.MaterialLabel()
         Me.cmb_status = New MaterialSkin.Controls.MaterialComboBox()
-        Me.MaterialTextBox22 = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txt_valor = New MaterialSkin.Controls.MaterialTextBox2()
         Me.txt_descricao = New MaterialSkin.Controls.MaterialMultiLineTextBox2()
-        Me.MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialTextBox21 = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.btn_incluir = New MaterialSkin.Controls.MaterialButton()
+        Me.txt_id = New MaterialSkin.Controls.MaterialTextBox2()
         Me.btn_pesquisar = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.tab_voltar = New System.Windows.Forms.TabPage()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.lbl_login = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MaterialTabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -95,19 +97,19 @@ Partial Class frm_financeiro
         '
         'BunifuCustomDataGrid1
         '
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
         Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid1.DoubleBuffered = True
         Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
@@ -123,15 +125,17 @@ Partial Class frm_financeiro
         '
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.DimGray
+        Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel4)
+        Me.GunaShadowPanel1.Controls.Add(Me.txt_idfalecido)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel3)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel2)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel1)
         Me.GunaShadowPanel1.Controls.Add(Me.lbl_login)
         Me.GunaShadowPanel1.Controls.Add(Me.cmb_status)
-        Me.GunaShadowPanel1.Controls.Add(Me.MaterialTextBox22)
+        Me.GunaShadowPanel1.Controls.Add(Me.txt_valor)
         Me.GunaShadowPanel1.Controls.Add(Me.txt_descricao)
-        Me.GunaShadowPanel1.Controls.Add(Me.MaterialButton1)
-        Me.GunaShadowPanel1.Controls.Add(Me.MaterialTextBox21)
+        Me.GunaShadowPanel1.Controls.Add(Me.btn_incluir)
+        Me.GunaShadowPanel1.Controls.Add(Me.txt_id)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_pesquisar)
         Me.GunaShadowPanel1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel1.Location = New System.Drawing.Point(57, 38)
@@ -141,6 +145,109 @@ Partial Class frm_financeiro
         Me.GunaShadowPanel1.ShadowDepth = 255
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(1755, 284)
         Me.GunaShadowPanel1.TabIndex = 7
+        '
+        'MaterialLabel4
+        '
+        Me.MaterialLabel4.AutoSize = True
+        Me.MaterialLabel4.Depth = 0
+        Me.MaterialLabel4.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel4.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel4.Location = New System.Drawing.Point(1226, 187)
+        Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel4.Name = "MaterialLabel4"
+        Me.MaterialLabel4.Size = New System.Drawing.Size(154, 29)
+        Me.MaterialLabel4.TabIndex = 14
+        Me.MaterialLabel4.Text = "Id do Falecido"
+        '
+        'txt_idfalecido
+        '
+        Me.txt_idfalecido.AnimateReadOnly = False
+        Me.txt_idfalecido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idfalecido.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idfalecido.Depth = 0
+        Me.txt_idfalecido.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idfalecido.HideSelection = True
+        Me.txt_idfalecido.LeadingIcon = Nothing
+        Me.txt_idfalecido.Location = New System.Drawing.Point(1226, 219)
+        Me.txt_idfalecido.MaxLength = 32767
+        Me.txt_idfalecido.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idfalecido.Name = "txt_idfalecido"
+        Me.txt_idfalecido.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idfalecido.PrefixSuffixText = Nothing
+        Me.txt_idfalecido.ReadOnly = False
+        Me.txt_idfalecido.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idfalecido.SelectedText = ""
+        Me.txt_idfalecido.SelectionLength = 0
+        Me.txt_idfalecido.SelectionStart = 0
+        Me.txt_idfalecido.ShortcutsEnabled = True
+        Me.txt_idfalecido.Size = New System.Drawing.Size(250, 48)
+        Me.txt_idfalecido.TabIndex = 13
+        Me.txt_idfalecido.TabStop = False
+        Me.txt_idfalecido.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idfalecido.TrailingIcon = Nothing
+        Me.txt_idfalecido.UseSystemPasswordChar = False
+        '
+        'MaterialLabel3
+        '
+        Me.MaterialLabel3.AutoSize = True
+        Me.MaterialLabel3.Depth = 0
+        Me.MaterialLabel3.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel3.Location = New System.Drawing.Point(34, 14)
+        Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel3.Name = "MaterialLabel3"
+        Me.MaterialLabel3.Size = New System.Drawing.Size(184, 29)
+        Me.MaterialLabel3.TabIndex = 12
+        Me.MaterialLabel3.Text = "ID do Orçamento"
+        '
+        'MaterialLabel2
+        '
+        Me.MaterialLabel2.AutoSize = True
+        Me.MaterialLabel2.Depth = 0
+        Me.MaterialLabel2.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel2.Location = New System.Drawing.Point(1490, 186)
+        Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel2.Name = "MaterialLabel2"
+        Me.MaterialLabel2.Size = New System.Drawing.Size(69, 29)
+        Me.MaterialLabel2.TabIndex = 11
+        Me.MaterialLabel2.Text = "Status"
+        '
+        'MaterialLabel1
+        '
+        Me.MaterialLabel1.AutoSize = True
+        Me.MaterialLabel1.Depth = 0
+        Me.MaterialLabel1.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel1.Location = New System.Drawing.Point(960, 187)
+        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel1.Name = "MaterialLabel1"
+        Me.MaterialLabel1.Size = New System.Drawing.Size(118, 29)
+        Me.MaterialLabel1.TabIndex = 10
+        Me.MaterialLabel1.Text = "Valor Total"
+        '
+        'lbl_login
+        '
+        Me.lbl_login.AutoSize = True
+        Me.lbl_login.Depth = 0
+        Me.lbl_login.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.lbl_login.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_login.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.lbl_login.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lbl_login.Location = New System.Drawing.Point(34, 99)
+        Me.lbl_login.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_login.Name = "lbl_login"
+        Me.lbl_login.Size = New System.Drawing.Size(109, 29)
+        Me.lbl_login.TabIndex = 9
+        Me.lbl_login.Text = "Descrição"
         '
         'cmb_status
         '
@@ -157,7 +264,7 @@ Partial Class frm_financeiro
         Me.cmb_status.IntegralHeight = False
         Me.cmb_status.ItemHeight = 43
         Me.cmb_status.Items.AddRange(New Object() {"Aberto", "Finalizado", "Cancelado"})
-        Me.cmb_status.Location = New System.Drawing.Point(1234, 218)
+        Me.cmb_status.Location = New System.Drawing.Point(1489, 218)
         Me.cmb_status.MaxDropDownItems = 4
         Me.cmb_status.MouseState = MaterialSkin.MouseState.OUT
         Me.cmb_status.Name = "cmb_status"
@@ -165,33 +272,33 @@ Partial Class frm_financeiro
         Me.cmb_status.StartIndex = 0
         Me.cmb_status.TabIndex = 6
         '
-        'MaterialTextBox22
+        'txt_valor
         '
-        Me.MaterialTextBox22.AnimateReadOnly = False
-        Me.MaterialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox22.Depth = 0
-        Me.MaterialTextBox22.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox22.HideSelection = True
-        Me.MaterialTextBox22.LeadingIcon = Nothing
-        Me.MaterialTextBox22.Location = New System.Drawing.Point(960, 219)
-        Me.MaterialTextBox22.MaxLength = 32767
-        Me.MaterialTextBox22.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox22.Name = "MaterialTextBox22"
-        Me.MaterialTextBox22.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox22.PrefixSuffixText = Nothing
-        Me.MaterialTextBox22.ReadOnly = False
-        Me.MaterialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox22.SelectedText = ""
-        Me.MaterialTextBox22.SelectionLength = 0
-        Me.MaterialTextBox22.SelectionStart = 0
-        Me.MaterialTextBox22.ShortcutsEnabled = True
-        Me.MaterialTextBox22.Size = New System.Drawing.Size(250, 48)
-        Me.MaterialTextBox22.TabIndex = 5
-        Me.MaterialTextBox22.TabStop = False
-        Me.MaterialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox22.TrailingIcon = Nothing
-        Me.MaterialTextBox22.UseSystemPasswordChar = False
+        Me.txt_valor.AnimateReadOnly = False
+        Me.txt_valor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_valor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_valor.Depth = 0
+        Me.txt_valor.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_valor.HideSelection = True
+        Me.txt_valor.LeadingIcon = Nothing
+        Me.txt_valor.Location = New System.Drawing.Point(960, 219)
+        Me.txt_valor.MaxLength = 32767
+        Me.txt_valor.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_valor.Name = "txt_valor"
+        Me.txt_valor.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_valor.PrefixSuffixText = Nothing
+        Me.txt_valor.ReadOnly = False
+        Me.txt_valor.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_valor.SelectedText = ""
+        Me.txt_valor.SelectionLength = 0
+        Me.txt_valor.SelectionStart = 0
+        Me.txt_valor.ShortcutsEnabled = True
+        Me.txt_valor.Size = New System.Drawing.Size(250, 48)
+        Me.txt_valor.TabIndex = 5
+        Me.txt_valor.TabStop = False
+        Me.txt_valor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_valor.TrailingIcon = Nothing
+        Me.txt_valor.UseSystemPasswordChar = False
         '
         'txt_descricao
         '
@@ -218,53 +325,53 @@ Partial Class frm_financeiro
         Me.txt_descricao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txt_descricao.UseSystemPasswordChar = False
         '
-        'MaterialButton1
+        'btn_incluir
         '
-        Me.MaterialButton1.AutoSize = False
-        Me.MaterialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton1.Depth = 0
-        Me.MaterialButton1.HighEmphasis = True
-        Me.MaterialButton1.Icon = CType(resources.GetObject("MaterialButton1.Icon"), System.Drawing.Image)
-        Me.MaterialButton1.Location = New System.Drawing.Point(1600, 41)
-        Me.MaterialButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton1.Name = "MaterialButton1"
-        Me.MaterialButton1.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton1.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton1.TabIndex = 3
-        Me.MaterialButton1.Text = "Incluir"
-        Me.MaterialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton1.UseAccentColor = False
-        Me.MaterialButton1.UseVisualStyleBackColor = True
+        Me.btn_incluir.AutoSize = False
+        Me.btn_incluir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_incluir.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_incluir.Depth = 0
+        Me.btn_incluir.HighEmphasis = True
+        Me.btn_incluir.Icon = CType(resources.GetObject("btn_incluir.Icon"), System.Drawing.Image)
+        Me.btn_incluir.Location = New System.Drawing.Point(1607, 17)
+        Me.btn_incluir.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_incluir.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_incluir.Name = "btn_incluir"
+        Me.btn_incluir.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_incluir.Size = New System.Drawing.Size(131, 36)
+        Me.btn_incluir.TabIndex = 3
+        Me.btn_incluir.Text = "Incluir"
+        Me.btn_incluir.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_incluir.UseAccentColor = False
+        Me.btn_incluir.UseVisualStyleBackColor = True
         '
-        'MaterialTextBox21
+        'txt_id
         '
-        Me.MaterialTextBox21.AnimateReadOnly = False
-        Me.MaterialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox21.Depth = 0
-        Me.MaterialTextBox21.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox21.HideSelection = True
-        Me.MaterialTextBox21.LeadingIcon = Nothing
-        Me.MaterialTextBox21.Location = New System.Drawing.Point(34, 46)
-        Me.MaterialTextBox21.MaxLength = 32767
-        Me.MaterialTextBox21.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox21.Name = "MaterialTextBox21"
-        Me.MaterialTextBox21.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox21.PrefixSuffixText = Nothing
-        Me.MaterialTextBox21.ReadOnly = False
-        Me.MaterialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox21.SelectedText = ""
-        Me.MaterialTextBox21.SelectionLength = 0
-        Me.MaterialTextBox21.SelectionStart = 0
-        Me.MaterialTextBox21.ShortcutsEnabled = True
-        Me.MaterialTextBox21.Size = New System.Drawing.Size(250, 48)
-        Me.MaterialTextBox21.TabIndex = 2
-        Me.MaterialTextBox21.TabStop = False
-        Me.MaterialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox21.TrailingIcon = Nothing
-        Me.MaterialTextBox21.UseSystemPasswordChar = False
+        Me.txt_id.AnimateReadOnly = False
+        Me.txt_id.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_id.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_id.Depth = 0
+        Me.txt_id.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_id.HideSelection = True
+        Me.txt_id.LeadingIcon = Nothing
+        Me.txt_id.Location = New System.Drawing.Point(34, 46)
+        Me.txt_id.MaxLength = 32767
+        Me.txt_id.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_id.Name = "txt_id"
+        Me.txt_id.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_id.PrefixSuffixText = Nothing
+        Me.txt_id.ReadOnly = False
+        Me.txt_id.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_id.SelectedText = ""
+        Me.txt_id.SelectionLength = 0
+        Me.txt_id.SelectionStart = 0
+        Me.txt_id.ShortcutsEnabled = True
+        Me.txt_id.Size = New System.Drawing.Size(250, 48)
+        Me.txt_id.TabIndex = 2
+        Me.txt_id.TabStop = False
+        Me.txt_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_id.TrailingIcon = Nothing
+        Me.txt_id.UseSystemPasswordChar = False
         '
         'btn_pesquisar
         '
@@ -274,7 +381,7 @@ Partial Class frm_financeiro
         Me.btn_pesquisar.Depth = 0
         Me.btn_pesquisar.HighEmphasis = True
         Me.btn_pesquisar.Icon = CType(resources.GetObject("btn_pesquisar.Icon"), System.Drawing.Image)
-        Me.btn_pesquisar.Location = New System.Drawing.Point(325, 58)
+        Me.btn_pesquisar.Location = New System.Drawing.Point(1457, 17)
         Me.btn_pesquisar.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btn_pesquisar.MouseState = MaterialSkin.MouseState.HOVER
         Me.btn_pesquisar.Name = "btn_pesquisar"
@@ -326,66 +433,6 @@ Partial Class frm_financeiro
         Me.ImageList1.Images.SetKeyName(2, "exit.png")
         Me.ImageList1.Images.SetKeyName(3, "crud pesquisar.png")
         '
-        'lbl_login
-        '
-        Me.lbl_login.AutoSize = True
-        Me.lbl_login.Depth = 0
-        Me.lbl_login.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.lbl_login.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.lbl_login.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.lbl_login.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lbl_login.Location = New System.Drawing.Point(34, 99)
-        Me.lbl_login.MouseState = MaterialSkin.MouseState.HOVER
-        Me.lbl_login.Name = "lbl_login"
-        Me.lbl_login.Size = New System.Drawing.Size(109, 29)
-        Me.lbl_login.TabIndex = 9
-        Me.lbl_login.Text = "Descrição"
-        '
-        'MaterialLabel1
-        '
-        Me.MaterialLabel1.AutoSize = True
-        Me.MaterialLabel1.Depth = 0
-        Me.MaterialLabel1.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel1.Location = New System.Drawing.Point(960, 187)
-        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(118, 29)
-        Me.MaterialLabel1.TabIndex = 10
-        Me.MaterialLabel1.Text = "Valor Total"
-        '
-        'MaterialLabel2
-        '
-        Me.MaterialLabel2.AutoSize = True
-        Me.MaterialLabel2.Depth = 0
-        Me.MaterialLabel2.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel2.Location = New System.Drawing.Point(1235, 186)
-        Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel2.Name = "MaterialLabel2"
-        Me.MaterialLabel2.Size = New System.Drawing.Size(69, 29)
-        Me.MaterialLabel2.TabIndex = 11
-        Me.MaterialLabel2.Text = "Status"
-        '
-        'MaterialLabel3
-        '
-        Me.MaterialLabel3.AutoSize = True
-        Me.MaterialLabel3.Depth = 0
-        Me.MaterialLabel3.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel3.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel3.Location = New System.Drawing.Point(34, 14)
-        Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel3.Name = "MaterialLabel3"
-        Me.MaterialLabel3.Size = New System.Drawing.Size(24, 29)
-        Me.MaterialLabel3.TabIndex = 12
-        Me.MaterialLabel3.Text = "ID"
-        '
         'frm_financeiro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -417,10 +464,10 @@ Partial Class frm_financeiro
     Friend WithEvents tab_voltar As TabPage
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents BunifuCustomDataGrid1 As ns1.BunifuCustomDataGrid
-    Friend WithEvents MaterialTextBox21 As MaterialSkin.Controls.MaterialTextBox2
+    Friend WithEvents txt_id As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents btn_pesquisar As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialTextBox22 As MaterialSkin.Controls.MaterialTextBox2
+    Friend WithEvents btn_incluir As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents txt_valor As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents txt_descricao As MaterialSkin.Controls.MaterialMultiLineTextBox2
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents cmb_status As MaterialSkin.Controls.MaterialComboBox
@@ -428,4 +475,6 @@ Partial Class frm_financeiro
     Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents lbl_login As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents txt_idfalecido As MaterialSkin.Controls.MaterialTextBox2
 End Class

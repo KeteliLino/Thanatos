@@ -28,9 +28,9 @@ Partial Class frm_recepcionista
         Me.MaterialTabControl1 = New MaterialSkin.Controls.MaterialTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MaterialTabControl1.SuspendLayout()
         Me.SuspendLayout()
@@ -71,7 +71,7 @@ Partial Class frm_recepcionista
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(1906, 922)
         Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Consultar cremações"
+        Me.TabPage1.Text = "Consultar Cremações"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'TabPage2
@@ -82,8 +82,28 @@ Partial Class frm_recepcionista
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage2.Size = New System.Drawing.Size(1906, 922)
         Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Consultar falecidos"
+        Me.TabPage2.Text = "Consultar Falecidos"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'TabPage3
+        '
+        Me.TabPage3.ImageKey = "cross.png"
+        Me.TabPage3.Location = New System.Drawing.Point(4, 39)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Size = New System.Drawing.Size(1906, 922)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Consultar Jazigos"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'TabPage4
+        '
+        Me.TabPage4.ImageKey = "bouquet.png"
+        Me.TabPage4.Location = New System.Drawing.Point(4, 39)
+        Me.TabPage4.Name = "TabPage4"
+        Me.TabPage4.Size = New System.Drawing.Size(1906, 922)
+        Me.TabPage4.TabIndex = 3
+        Me.TabPage4.Text = "Consultar Velórios"
+        Me.TabPage4.UseVisualStyleBackColor = True
         '
         'ImageList1
         '
@@ -97,26 +117,6 @@ Partial Class frm_recepcionista
         Me.ImageList1.Images.SetKeyName(5, "bouquet.png")
         Me.ImageList1.Images.SetKeyName(6, "cross.png")
         Me.ImageList1.Images.SetKeyName(7, "exit.png")
-        '
-        'TabPage3
-        '
-        Me.TabPage3.ImageKey = "cross.png"
-        Me.TabPage3.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Consultar jazigos"
-        Me.TabPage3.UseVisualStyleBackColor = True
-        '
-        'TabPage4
-        '
-        Me.TabPage4.ImageKey = "bouquet.png"
-        Me.TabPage4.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Consultar Velórios"
-        Me.TabPage4.UseVisualStyleBackColor = True
         '
         'frm_recepcionista
         '

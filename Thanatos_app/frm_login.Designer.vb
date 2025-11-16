@@ -25,12 +25,12 @@ Partial Class frm_login
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_login))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.chk_visualizar = New MaterialSkin.Controls.MaterialCheckbox()
+        Me.txt_login = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txt_senha = New MaterialSkin.Controls.MaterialTextBox2()
         Me.btn_entrar = New MaterialSkin.Controls.MaterialButton()
         Me.lbl_senha = New MaterialSkin.Controls.MaterialLabel()
         Me.lbl_login = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_senha = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.txt_login = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.chk_visualizar = New MaterialSkin.Controls.MaterialCheckbox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
         Me.SuspendLayout()
@@ -65,6 +65,77 @@ Partial Class frm_login
         Me.GunaShadowPanel1.ShadowDepth = 255
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(668, 515)
         Me.GunaShadowPanel1.TabIndex = 1
+        '
+        'chk_visualizar
+        '
+        Me.chk_visualizar.AutoSize = True
+        Me.chk_visualizar.Depth = 0
+        Me.chk_visualizar.Location = New System.Drawing.Point(570, 269)
+        Me.chk_visualizar.Margin = New System.Windows.Forms.Padding(0)
+        Me.chk_visualizar.MouseLocation = New System.Drawing.Point(-1, -1)
+        Me.chk_visualizar.MouseState = MaterialSkin.MouseState.HOVER
+        Me.chk_visualizar.Name = "chk_visualizar"
+        Me.chk_visualizar.ReadOnly = False
+        Me.chk_visualizar.Ripple = True
+        Me.chk_visualizar.Size = New System.Drawing.Size(35, 37)
+        Me.chk_visualizar.TabIndex = 13
+        Me.chk_visualizar.UseVisualStyleBackColor = True
+        '
+        'txt_login
+        '
+        Me.txt_login.AnimateReadOnly = False
+        Me.txt_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_login.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_login.Depth = 0
+        Me.txt_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_login.HideSelection = True
+        Me.txt_login.LeadingIcon = Nothing
+        Me.txt_login.Location = New System.Drawing.Point(132, 131)
+        Me.txt_login.MaxLength = 32767
+        Me.txt_login.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_login.Name = "txt_login"
+        Me.txt_login.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_login.PrefixSuffixText = Nothing
+        Me.txt_login.ReadOnly = False
+        Me.txt_login.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_login.SelectedText = ""
+        Me.txt_login.SelectionLength = 0
+        Me.txt_login.SelectionStart = 0
+        Me.txt_login.ShortcutsEnabled = True
+        Me.txt_login.Size = New System.Drawing.Size(417, 48)
+        Me.txt_login.TabIndex = 12
+        Me.txt_login.TabStop = False
+        Me.txt_login.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_login.TrailingIcon = Nothing
+        Me.txt_login.UseSystemPasswordChar = False
+        '
+        'txt_senha
+        '
+        Me.txt_senha.AnimateReadOnly = False
+        Me.txt_senha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_senha.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_senha.Depth = 0
+        Me.txt_senha.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_senha.HideSelection = True
+        Me.txt_senha.LeadingIcon = Nothing
+        Me.txt_senha.Location = New System.Drawing.Point(133, 264)
+        Me.txt_senha.MaxLength = 32767
+        Me.txt_senha.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_senha.Name = "txt_senha"
+        Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
+        Me.txt_senha.PrefixSuffixText = Nothing
+        Me.txt_senha.ReadOnly = False
+        Me.txt_senha.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_senha.SelectedText = ""
+        Me.txt_senha.SelectionLength = 0
+        Me.txt_senha.SelectionStart = 0
+        Me.txt_senha.ShortcutsEnabled = True
+        Me.txt_senha.Size = New System.Drawing.Size(417, 48)
+        Me.txt_senha.TabIndex = 11
+        Me.txt_senha.TabStop = False
+        Me.txt_senha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_senha.TrailingIcon = Nothing
+        Me.txt_senha.UseSystemPasswordChar = True
         '
         'btn_entrar
         '
@@ -118,77 +189,6 @@ Partial Class frm_login
         Me.lbl_login.Size = New System.Drawing.Size(60, 29)
         Me.lbl_login.TabIndex = 8
         Me.lbl_login.Text = "Login"
-        '
-        'txt_senha
-        '
-        Me.txt_senha.AnimateReadOnly = False
-        Me.txt_senha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_senha.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_senha.Depth = 0
-        Me.txt_senha.Font = New System.Drawing.Font("Roboto", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_senha.HideSelection = True
-        Me.txt_senha.LeadingIcon = Nothing
-        Me.txt_senha.Location = New System.Drawing.Point(133, 264)
-        Me.txt_senha.MaxLength = 32767
-        Me.txt_senha.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_senha.Name = "txt_senha"
-        Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(9679)
-        Me.txt_senha.PrefixSuffixText = Nothing
-        Me.txt_senha.ReadOnly = False
-        Me.txt_senha.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_senha.SelectedText = ""
-        Me.txt_senha.SelectionLength = 0
-        Me.txt_senha.SelectionStart = 0
-        Me.txt_senha.ShortcutsEnabled = True
-        Me.txt_senha.Size = New System.Drawing.Size(417, 48)
-        Me.txt_senha.TabIndex = 11
-        Me.txt_senha.TabStop = False
-        Me.txt_senha.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_senha.TrailingIcon = Nothing
-        Me.txt_senha.UseSystemPasswordChar = True
-        '
-        'txt_login
-        '
-        Me.txt_login.AnimateReadOnly = False
-        Me.txt_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_login.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_login.Depth = 0
-        Me.txt_login.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_login.HideSelection = True
-        Me.txt_login.LeadingIcon = Nothing
-        Me.txt_login.Location = New System.Drawing.Point(132, 131)
-        Me.txt_login.MaxLength = 32767
-        Me.txt_login.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_login.Name = "txt_login"
-        Me.txt_login.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_login.PrefixSuffixText = Nothing
-        Me.txt_login.ReadOnly = False
-        Me.txt_login.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_login.SelectedText = ""
-        Me.txt_login.SelectionLength = 0
-        Me.txt_login.SelectionStart = 0
-        Me.txt_login.ShortcutsEnabled = True
-        Me.txt_login.Size = New System.Drawing.Size(417, 48)
-        Me.txt_login.TabIndex = 12
-        Me.txt_login.TabStop = False
-        Me.txt_login.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_login.TrailingIcon = Nothing
-        Me.txt_login.UseSystemPasswordChar = False
-        '
-        'chk_visualizar
-        '
-        Me.chk_visualizar.AutoSize = True
-        Me.chk_visualizar.Depth = 0
-        Me.chk_visualizar.Location = New System.Drawing.Point(570, 270)
-        Me.chk_visualizar.Margin = New System.Windows.Forms.Padding(0)
-        Me.chk_visualizar.MouseLocation = New System.Drawing.Point(-1, -1)
-        Me.chk_visualizar.MouseState = MaterialSkin.MouseState.HOVER
-        Me.chk_visualizar.Name = "chk_visualizar"
-        Me.chk_visualizar.ReadOnly = False
-        Me.chk_visualizar.Ripple = True
-        Me.chk_visualizar.Size = New System.Drawing.Size(35, 37)
-        Me.chk_visualizar.TabIndex = 13
-        Me.chk_visualizar.UseVisualStyleBackColor = True
         '
         'frm_login
         '
