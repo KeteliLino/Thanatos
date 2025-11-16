@@ -81,3 +81,4 @@ C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinFo
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.xml
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.pdb
 C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.config

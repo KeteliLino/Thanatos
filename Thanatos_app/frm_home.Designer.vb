@@ -70,7 +70,7 @@ Partial Class frm_home
         Me.cmb_tabelas.MaxDropDownItems = 4
         Me.cmb_tabelas.MouseState = MaterialSkin.MouseState.OUT
         Me.cmb_tabelas.Name = "cmb_tabelas"
-        Me.cmb_tabelas.Size = New System.Drawing.Size(477, 49)
+        Me.cmb_tabelas.Size = New System.Drawing.Size(926, 49)
         Me.cmb_tabelas.StartIndex = 0
         Me.cmb_tabelas.TabIndex = 3
         '
@@ -185,7 +185,7 @@ Partial Class frm_home
         Me.MaterialCard1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.MaterialCard1.Depth = 0
         Me.MaterialCard1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard1.Location = New System.Drawing.Point(677, 223)
+        Me.MaterialCard1.Location = New System.Drawing.Point(677, 195)
         Me.MaterialCard1.Margin = New System.Windows.Forms.Padding(14)
         Me.MaterialCard1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialCard1.Name = "MaterialCard1"
@@ -198,7 +198,7 @@ Partial Class frm_home
         Me.MaterialCard2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.MaterialCard2.Depth = 0
         Me.MaterialCard2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard2.Location = New System.Drawing.Point(1024, 223)
+        Me.MaterialCard2.Location = New System.Drawing.Point(1024, 195)
         Me.MaterialCard2.Margin = New System.Windows.Forms.Padding(14)
         Me.MaterialCard2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialCard2.Name = "MaterialCard2"
@@ -211,7 +211,7 @@ Partial Class frm_home
         Me.MaterialCard3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.MaterialCard3.Depth = 0
         Me.MaterialCard3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard3.Location = New System.Drawing.Point(1373, 223)
+        Me.MaterialCard3.Location = New System.Drawing.Point(1373, 195)
         Me.MaterialCard3.Margin = New System.Windows.Forms.Padding(14)
         Me.MaterialCard3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialCard3.Name = "MaterialCard3"
