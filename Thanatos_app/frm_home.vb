@@ -32,10 +32,6 @@ Public Class frm_home
 
     End Sub
 
-    Private Sub frm_home_Load(sender As Object, e As EventArgs) Handles Me.Load
-        cmb_tabelas.Items.Add("tb_velorios")
-    End Sub
-
     Private Sub btn_financeiro_Click(sender As Object, e As EventArgs) Handles btn_financeiro.Click
         frm_financeiro.Show()
         Me.Hide()

@@ -2,6 +2,7 @@
 Imports System.ComponentModel
 Imports MaterialSkin
 Imports MaterialSkin.Controls
+Imports System.Threading
 
 Public Class frm_administrador
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
@@ -25,30 +26,47 @@ Public Class frm_administrador
                 ColorTranslator.FromHtml("#802790"), ' Accent
                 TextShade.WHITE)
             ' wire no construtor ou no Load:
-            AddHandler MaterialTabControl1.SelectedIndexChanged, AddressOf TabControl_SelectedIndexChanged
-        End If
-    End Sub
 
-
-
-    Private Sub TabControl_SelectedIndexChanged(sender As Object, e As EventArgs)
-        Dim tc = DirectCast(sender, TabControl)
-        If tc.SelectedTab IsNot Nothing AndAlso tc.SelectedTab.Name = "tab_voltar" Then
-            ' Ação quando a aba "tab_voltar" for selecionada
-            frm_home.Show()
-            Me.Hide()
         End If
     End Sub
 
     Private Sub frm_administrador_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+
         If PictureBox3 IsNot Nothing Then
             PictureBox3.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
             PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
             PictureBox3.BorderStyle = BorderStyle.None
         End If
     End Sub
+    Private Sub Voltar()
+        frm_home.Show()
+        Me.Hide()
+    End Sub
+    Private Sub btn_voltar_Click(sender As Object, e As EventArgs) Handles btn_voltar.Click
+        Voltar()
+    End Sub
 
-    Private Sub frm_administrador_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub btn_voltar1_Click(sender As Object, e As EventArgs) Handles btn_voltar1.Click
+        Voltar()
+    End Sub
 
+    Private Sub btn_voltar2_Click(sender As Object, e As EventArgs) Handles btn_voltar2.Click
+        Voltar()
+    End Sub
+
+    Private Sub btn_voltar3_Click(sender As Object, e As EventArgs) Handles btn_voltar3.Click
+        Voltar()
+    End Sub
+
+    Private Sub btn_voltar4_Click(sender As Object, e As EventArgs) Handles btn_voltar4.Click
+        Voltar()
+    End Sub
+
+    Private Sub btn_voltar5_Click(sender As Object, e As EventArgs) Handles btn_voltar5.Click
+        Voltar()
+    End Sub
+
+    Private Sub btn_voltar6_Click(sender As Object, e As EventArgs) Handles btn_voltar6.Click
+        Voltar()
     End Sub
 End Class

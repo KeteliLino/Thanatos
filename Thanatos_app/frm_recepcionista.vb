@@ -20,6 +20,7 @@ Public Class frm_recepcionista
             ColorTranslator.FromHtml("#FFFFFF"), ' Light Primary
             ColorTranslator.FromHtml("#802790"), ' Accent
             TextShade.WHITE)
+
     End Sub
 
     Private Sub frm_recepcionista_Activated(sender As Object, e As EventArgs) Handles Me.Activated
@@ -29,19 +30,24 @@ Public Class frm_recepcionista
             PictureBox5.BorderStyle = BorderStyle.None
         End If
     End Sub
-
-    Private Sub btn_home_Click(sender As Object, e As EventArgs)
+    Private Sub Voltar()
         frm_home.Show()
         Me.Hide()
     End Sub
 
-    Private Sub btn_administracao_Click(sender As Object, e As EventArgs)
-        frm_administrador.Show()
-        Me.Hide()
+    Private Sub btn_voltar_Click(sender As Object, e As EventArgs) Handles btn_voltar.Click
+        Voltar()
     End Sub
 
-    Private Sub btn_financeiro_Click(sender As Object, e As EventArgs)
-        frm_financeiro.Show()
-        Me.Hide()
+    Private Sub btn_voltar1_Click(sender As Object, e As EventArgs) Handles btn_voltar1.Click
+        Voltar()
+    End Sub
+
+    Private Sub btn_voltar2_Click(sender As Object, e As EventArgs) Handles btn_voltar2.Click
+        Voltar()
+    End Sub
+
+    Private Sub btn_voltar3_Click(sender As Object, e As EventArgs) Handles btn_voltar3.Click
+        Voltar()
     End Sub
 End Class
