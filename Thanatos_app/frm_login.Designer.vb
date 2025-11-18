@@ -69,7 +69,9 @@ Partial Class frm_login
         'chk_visualizar
         '
         Me.chk_visualizar.AutoSize = True
+        Me.chk_visualizar.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.chk_visualizar.Depth = 0
+        Me.chk_visualizar.ForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.chk_visualizar.Location = New System.Drawing.Point(570, 269)
         Me.chk_visualizar.Margin = New System.Windows.Forms.Padding(0)
         Me.chk_visualizar.MouseLocation = New System.Drawing.Point(-1, -1)
@@ -79,7 +81,7 @@ Partial Class frm_login
         Me.chk_visualizar.Ripple = True
         Me.chk_visualizar.Size = New System.Drawing.Size(35, 37)
         Me.chk_visualizar.TabIndex = 13
-        Me.chk_visualizar.UseVisualStyleBackColor = True
+        Me.chk_visualizar.UseVisualStyleBackColor = False
         '
         'txt_login
         '

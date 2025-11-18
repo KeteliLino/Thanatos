@@ -115,3 +115,12 @@ C:\Users\Keteli\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos.589340
 C:\Users\Keteli\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe
 C:\Users\Keteli\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.xml
 C:\Users\Keteli\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.pdb
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.dll
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.dll
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.dll
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.pdb
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.xml
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.pdb
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.xml
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.pdb
+E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.xml

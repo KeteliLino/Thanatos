@@ -5,6 +5,8 @@ Imports MaterialSkin.Controls
 Imports System.Threading
 
 Public Class frm_administrador
+    Dim status, setor As String
+    Dim cont As Integer
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
 
     Public Sub New()
@@ -73,23 +75,57 @@ Public Class frm_administrador
 
     Private Sub btn_incluirFuncionario_Click(sender As Object, e As EventArgs) Handles btn_incluirFuncionario.Click
         Try
-            SQL = $"select * from tb_funcionarios where cpfFuncionario='{txt_cpfFuncionario.Text}'"
-            rs = db.Execute(SQL)
+            query = $"select * from tb_funcionarios where cpfFuncionario='{txt_cpfFuncionario.Text}'"
+            rs = db.Execute(query)
             If rs.EOF = True Then
-                SQL = $"insert into tb_funcionarios (cpfFuncionario,loginFuncionario,senhaFuncionario,nomeFuncionario,cepFuncionario) values (
-                        '{txt_cpfFuncionario.Text}', '{txt_login.Text}', '{txt_senha.Text}','{txt_nomeFuncionario.Text}','{txt_cep.Text}')"
-                rs = db.Execute(UCase(SQL))
+                query = $"insert into tb_funcionarios (cpfFuncionario,loginFuncionario,senhaFuncionario,nomeFuncionario,cepFuncionario,idStatus,idSetor) values (
+                        '{txt_cpfFuncionario.Text}', '{txt_login.Text}', '{txt_senha.Text}','{txt_nomeFuncionario.Text}','{txt_cep.Text}', {status}, {setor});"
+                rs = db.Execute(query)
                 MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
 
-            Else
-                SQL = $"update tb_funcionarios set loginFuncionario='{txt_login.Text}',
-                        senhaFuncionario='{txt_senha.Text}',
-                        nomeFuncionario='{txt_nomeFuncionario.Text}', cepFuncionario='{txt_cep.Text}'"
-                rs = db.Execute(UCase(SQL))
-                MsgBox("Dados alterados com sucesso!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
             End If
         Catch ex As Exception
             MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
+    End Sub
+    Private Sub carregar_dados()
+        Try
+            query = $"Select tb_funcionarios.cpfFuncionario, tb_funcionarios.loginFuncionario,tb_funcionarios.senhaFuncionario,tb_funcionarios.cepFuncionario, 
+                    tb_status.descricaoStatus, tb_setores.descricaoSetor from tb_funcionarios inner join tb_status on tb_funcionarios.idStatus = tb_status.idStatus 
+                    inner join tb_setores on tb_funcionarios.idSetor = tb_setores.idSetor"
+            rs = db.Execute(query)
+            With Me.dgv_funcionarios
+                .Rows.Clear()
+                Do While rs.EOF = False
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, Nothing, Nothing)
+                    rs.MoveNext()
+                Loop
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Private Sub frm_administrador_Load(sender As Object, e As EventArgs) Handles Me.Load
+        conecta_banco_mysql()
+        carregar_dados()
+    End Sub
+
+    Private Sub cmb_setor_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmb_setor.SelectedValueChanged
+        If cmb_setor.Text = "Administração" Then
+            setor = "1"
+        ElseIf cmb_setor.Text = "Financeiro" Then
+            setor = "2"
+        ElseIf cmb_setor.Text = "Recepção" Then
+            setor = "3"
+        End If
+    End Sub
+
+    Private Sub cmb_status_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmb_status.SelectedValueChanged
+        If cmb_status.Text = "Ativo" Then
+            status = "1"
+        ElseIf cmb_status.Text = "Inativo" Then
+            status = "2"
+        End If
     End Sub
 End Class
