@@ -73,7 +73,7 @@ Public Class frm_administrador
 
     Private Sub btn_incluirFuncionario_Click(sender As Object, e As EventArgs) Handles btn_incluirFuncionario.Click
         Try
-            SQL = $"select * from tb_funcionarios where cpfFuncionario='{txt_cpfFuncionario}'"
+            SQL = $"select * from tb_funcionarios where cpfFuncionario='{txt_cpfFuncionario.Text}'"
             rs = db.Execute(SQL)
             If rs.EOF = True Then
                 SQL = $"insert into tb_funcionarios (cpfFuncionario,loginFuncionario,senhaFuncionario,nomeFuncionario,cepFuncionario) values (
