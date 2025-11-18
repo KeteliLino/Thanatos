@@ -1,4 +1,5 @@
 ﻿Module banco_dados
+    Public diretorio, SQL, aux_cpf, resp As String
     Public query As String
     Public db As ADODB.Connection 'Variavel do banco
     Public rs As ADODB.Recordset 'Variavel das tabelas

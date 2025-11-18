@@ -24,20 +24,20 @@ Partial Class frm_administrador
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_administrador))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle25 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle26 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle27 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle28 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid4 = New ns1.BunifuCustomDataGrid()
@@ -52,8 +52,8 @@ Partial Class frm_administrador
         Me.MaterialLabel13 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_idVelorio = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel21 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton5 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton6 = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_incluirVelorios = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_pesquisarVelorios = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar6 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid6 = New ns1.BunifuCustomDataGrid()
@@ -68,8 +68,8 @@ Partial Class frm_administrador
         Me.MaterialLabel27 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_idJazigo = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel29 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton9 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton10 = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_incluirJazigo = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_pesquisarJazigo = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar5 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid7 = New ns1.BunifuCustomDataGrid()
@@ -80,12 +80,14 @@ Partial Class frm_administrador
         Me.MaterialLabel31 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_idServico = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel32 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton11 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton12 = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_incluirServicos = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_pesquisarServicos = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar4 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.txt_nomeFuncionario = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialLabel33 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_cidade = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_bairro = New MaterialSkin.Controls.MaterialTextBox2()
@@ -104,8 +106,8 @@ Partial Class frm_administrador
         Me.txt_cpfFuncionario = New MaterialSkin.Controls.MaterialMaskedTextBox()
         Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
         Me.lbl_login = New MaterialSkin.Controls.MaterialLabel()
-        Me.btn_incluir = New MaterialSkin.Controls.MaterialButton()
-        Me.btn_pesquisar = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_incluirFuncionario = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_pesquisarFuncionario = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar3 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid5 = New ns1.BunifuCustomDataGrid()
@@ -116,8 +118,8 @@ Partial Class frm_administrador
         Me.MaterialLabel24 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_idFalecido = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel26 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton7 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton8 = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_incluirFalecidos = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_pesquisarFalecidos = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar2 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid3 = New ns1.BunifuCustomDataGrid()
@@ -132,8 +134,8 @@ Partial Class frm_administrador
         Me.MaterialLabel18 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_idCremacao = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel20 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton3 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton4 = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_incluirCremacoes = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_pesquisarCremacoes = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar1 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.BunifuCustomDataGrid2 = New ns1.BunifuCustomDataGrid()
@@ -144,13 +146,11 @@ Partial Class frm_administrador
         Me.MaterialLabel15 = New MaterialSkin.Controls.MaterialLabel()
         Me.txt_idSala = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel17 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_incluirSalas = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_pesquisarSalas = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar = New MaterialSkin.Controls.MaterialButton()
         Me.MaterialTabControl1 = New MaterialSkin.Controls.MaterialTabControl()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.txt_nomeFuncionario = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel33 = New MaterialSkin.Controls.MaterialLabel()
         Me.TabPage7.SuspendLayout()
         CType(Me.BunifuCustomDataGrid4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel4.SuspendLayout()
@@ -204,19 +204,19 @@ Partial Class frm_administrador
         '
         'BunifuCustomDataGrid4
         '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle15
         Me.BunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle16
         Me.BunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid4.DoubleBuffered = True
         Me.BunifuCustomDataGrid4.EnableHeadersVisualStyles = False
@@ -242,8 +242,8 @@ Partial Class frm_administrador
         Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel13)
         Me.GunaShadowPanel4.Controls.Add(Me.txt_idVelorio)
         Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel21)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialButton5)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialButton6)
+        Me.GunaShadowPanel4.Controls.Add(Me.btn_incluirVelorios)
+        Me.GunaShadowPanel4.Controls.Add(Me.btn_pesquisarVelorios)
         Me.GunaShadowPanel4.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel4.Location = New System.Drawing.Point(57, 63)
         Me.GunaShadowPanel4.Name = "GunaShadowPanel4"
@@ -495,45 +495,45 @@ Partial Class frm_administrador
         Me.MaterialLabel21.TabIndex = 9
         Me.MaterialLabel21.Text = "ID do velório"
         '
-        'MaterialButton5
+        'btn_incluirVelorios
         '
-        Me.MaterialButton5.AutoSize = False
-        Me.MaterialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton5.Depth = 0
-        Me.MaterialButton5.HighEmphasis = True
-        Me.MaterialButton5.Icon = CType(resources.GetObject("MaterialButton5.Icon"), System.Drawing.Image)
-        Me.MaterialButton5.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton5.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton5.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton5.Name = "MaterialButton5"
-        Me.MaterialButton5.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton5.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton5.TabIndex = 3
-        Me.MaterialButton5.Text = "Incluir"
-        Me.MaterialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton5.UseAccentColor = False
-        Me.MaterialButton5.UseVisualStyleBackColor = True
+        Me.btn_incluirVelorios.AutoSize = False
+        Me.btn_incluirVelorios.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_incluirVelorios.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_incluirVelorios.Depth = 0
+        Me.btn_incluirVelorios.HighEmphasis = True
+        Me.btn_incluirVelorios.Icon = CType(resources.GetObject("btn_incluirVelorios.Icon"), System.Drawing.Image)
+        Me.btn_incluirVelorios.Location = New System.Drawing.Point(1607, 17)
+        Me.btn_incluirVelorios.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_incluirVelorios.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_incluirVelorios.Name = "btn_incluirVelorios"
+        Me.btn_incluirVelorios.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_incluirVelorios.Size = New System.Drawing.Size(131, 36)
+        Me.btn_incluirVelorios.TabIndex = 3
+        Me.btn_incluirVelorios.Text = "Incluir"
+        Me.btn_incluirVelorios.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_incluirVelorios.UseAccentColor = False
+        Me.btn_incluirVelorios.UseVisualStyleBackColor = True
         '
-        'MaterialButton6
+        'btn_pesquisarVelorios
         '
-        Me.MaterialButton6.AutoSize = False
-        Me.MaterialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton6.Depth = 0
-        Me.MaterialButton6.HighEmphasis = True
-        Me.MaterialButton6.Icon = CType(resources.GetObject("MaterialButton6.Icon"), System.Drawing.Image)
-        Me.MaterialButton6.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton6.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton6.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton6.Name = "MaterialButton6"
-        Me.MaterialButton6.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton6.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton6.TabIndex = 0
-        Me.MaterialButton6.Text = "Pesquisar"
-        Me.MaterialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton6.UseAccentColor = False
-        Me.MaterialButton6.UseVisualStyleBackColor = True
+        Me.btn_pesquisarVelorios.AutoSize = False
+        Me.btn_pesquisarVelorios.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_pesquisarVelorios.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_pesquisarVelorios.Depth = 0
+        Me.btn_pesquisarVelorios.HighEmphasis = True
+        Me.btn_pesquisarVelorios.Icon = CType(resources.GetObject("btn_pesquisarVelorios.Icon"), System.Drawing.Image)
+        Me.btn_pesquisarVelorios.Location = New System.Drawing.Point(1457, 17)
+        Me.btn_pesquisarVelorios.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_pesquisarVelorios.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_pesquisarVelorios.Name = "btn_pesquisarVelorios"
+        Me.btn_pesquisarVelorios.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_pesquisarVelorios.Size = New System.Drawing.Size(131, 36)
+        Me.btn_pesquisarVelorios.TabIndex = 0
+        Me.btn_pesquisarVelorios.Text = "Pesquisar"
+        Me.btn_pesquisarVelorios.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_pesquisarVelorios.UseAccentColor = False
+        Me.btn_pesquisarVelorios.UseVisualStyleBackColor = True
         '
         'btn_voltar6
         '
@@ -570,19 +570,19 @@ Partial Class frm_administrador
         '
         'BunifuCustomDataGrid6
         '
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid6.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid6.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle17
         Me.BunifuCustomDataGrid6.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid6.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid6.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid6.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid6.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle18
         Me.BunifuCustomDataGrid6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid6.DoubleBuffered = True
         Me.BunifuCustomDataGrid6.EnableHeadersVisualStyles = False
@@ -608,8 +608,8 @@ Partial Class frm_administrador
         Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel27)
         Me.GunaShadowPanel6.Controls.Add(Me.txt_idJazigo)
         Me.GunaShadowPanel6.Controls.Add(Me.MaterialLabel29)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialButton9)
-        Me.GunaShadowPanel6.Controls.Add(Me.MaterialButton10)
+        Me.GunaShadowPanel6.Controls.Add(Me.btn_incluirJazigo)
+        Me.GunaShadowPanel6.Controls.Add(Me.btn_pesquisarJazigo)
         Me.GunaShadowPanel6.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel6.Location = New System.Drawing.Point(57, 63)
         Me.GunaShadowPanel6.Name = "GunaShadowPanel6"
@@ -834,45 +834,45 @@ Partial Class frm_administrador
         Me.MaterialLabel29.TabIndex = 9
         Me.MaterialLabel29.Text = "ID do jazigo"
         '
-        'MaterialButton9
+        'btn_incluirJazigo
         '
-        Me.MaterialButton9.AutoSize = False
-        Me.MaterialButton9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton9.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton9.Depth = 0
-        Me.MaterialButton9.HighEmphasis = True
-        Me.MaterialButton9.Icon = CType(resources.GetObject("MaterialButton9.Icon"), System.Drawing.Image)
-        Me.MaterialButton9.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton9.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton9.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton9.Name = "MaterialButton9"
-        Me.MaterialButton9.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton9.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton9.TabIndex = 3
-        Me.MaterialButton9.Text = "Incluir"
-        Me.MaterialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton9.UseAccentColor = False
-        Me.MaterialButton9.UseVisualStyleBackColor = True
+        Me.btn_incluirJazigo.AutoSize = False
+        Me.btn_incluirJazigo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_incluirJazigo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_incluirJazigo.Depth = 0
+        Me.btn_incluirJazigo.HighEmphasis = True
+        Me.btn_incluirJazigo.Icon = CType(resources.GetObject("btn_incluirJazigo.Icon"), System.Drawing.Image)
+        Me.btn_incluirJazigo.Location = New System.Drawing.Point(1607, 17)
+        Me.btn_incluirJazigo.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_incluirJazigo.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_incluirJazigo.Name = "btn_incluirJazigo"
+        Me.btn_incluirJazigo.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_incluirJazigo.Size = New System.Drawing.Size(131, 36)
+        Me.btn_incluirJazigo.TabIndex = 3
+        Me.btn_incluirJazigo.Text = "Incluir"
+        Me.btn_incluirJazigo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_incluirJazigo.UseAccentColor = False
+        Me.btn_incluirJazigo.UseVisualStyleBackColor = True
         '
-        'MaterialButton10
+        'btn_pesquisarJazigo
         '
-        Me.MaterialButton10.AutoSize = False
-        Me.MaterialButton10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton10.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton10.Depth = 0
-        Me.MaterialButton10.HighEmphasis = True
-        Me.MaterialButton10.Icon = CType(resources.GetObject("MaterialButton10.Icon"), System.Drawing.Image)
-        Me.MaterialButton10.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton10.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton10.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton10.Name = "MaterialButton10"
-        Me.MaterialButton10.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton10.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton10.TabIndex = 0
-        Me.MaterialButton10.Text = "Pesquisar"
-        Me.MaterialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton10.UseAccentColor = False
-        Me.MaterialButton10.UseVisualStyleBackColor = True
+        Me.btn_pesquisarJazigo.AutoSize = False
+        Me.btn_pesquisarJazigo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_pesquisarJazigo.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_pesquisarJazigo.Depth = 0
+        Me.btn_pesquisarJazigo.HighEmphasis = True
+        Me.btn_pesquisarJazigo.Icon = CType(resources.GetObject("btn_pesquisarJazigo.Icon"), System.Drawing.Image)
+        Me.btn_pesquisarJazigo.Location = New System.Drawing.Point(1457, 17)
+        Me.btn_pesquisarJazigo.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_pesquisarJazigo.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_pesquisarJazigo.Name = "btn_pesquisarJazigo"
+        Me.btn_pesquisarJazigo.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_pesquisarJazigo.Size = New System.Drawing.Size(131, 36)
+        Me.btn_pesquisarJazigo.TabIndex = 0
+        Me.btn_pesquisarJazigo.Text = "Pesquisar"
+        Me.btn_pesquisarJazigo.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_pesquisarJazigo.UseAccentColor = False
+        Me.btn_pesquisarJazigo.UseVisualStyleBackColor = True
         '
         'btn_voltar5
         '
@@ -909,19 +909,19 @@ Partial Class frm_administrador
         '
         'BunifuCustomDataGrid7
         '
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid7.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle19.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid7.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle19
         Me.BunifuCustomDataGrid7.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid7.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid7.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid7.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid7.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle20
         Me.BunifuCustomDataGrid7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid7.DoubleBuffered = True
         Me.BunifuCustomDataGrid7.EnableHeadersVisualStyles = False
@@ -943,8 +943,8 @@ Partial Class frm_administrador
         Me.GunaShadowPanel7.Controls.Add(Me.MaterialLabel31)
         Me.GunaShadowPanel7.Controls.Add(Me.txt_idServico)
         Me.GunaShadowPanel7.Controls.Add(Me.MaterialLabel32)
-        Me.GunaShadowPanel7.Controls.Add(Me.MaterialButton11)
-        Me.GunaShadowPanel7.Controls.Add(Me.MaterialButton12)
+        Me.GunaShadowPanel7.Controls.Add(Me.btn_incluirServicos)
+        Me.GunaShadowPanel7.Controls.Add(Me.btn_pesquisarServicos)
         Me.GunaShadowPanel7.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel7.Location = New System.Drawing.Point(57, 63)
         Me.GunaShadowPanel7.Name = "GunaShadowPanel7"
@@ -1082,45 +1082,45 @@ Partial Class frm_administrador
         Me.MaterialLabel32.TabIndex = 9
         Me.MaterialLabel32.Text = "ID do serviço"
         '
-        'MaterialButton11
+        'btn_incluirServicos
         '
-        Me.MaterialButton11.AutoSize = False
-        Me.MaterialButton11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton11.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton11.Depth = 0
-        Me.MaterialButton11.HighEmphasis = True
-        Me.MaterialButton11.Icon = CType(resources.GetObject("MaterialButton11.Icon"), System.Drawing.Image)
-        Me.MaterialButton11.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton11.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton11.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton11.Name = "MaterialButton11"
-        Me.MaterialButton11.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton11.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton11.TabIndex = 3
-        Me.MaterialButton11.Text = "Incluir"
-        Me.MaterialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton11.UseAccentColor = False
-        Me.MaterialButton11.UseVisualStyleBackColor = True
+        Me.btn_incluirServicos.AutoSize = False
+        Me.btn_incluirServicos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_incluirServicos.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_incluirServicos.Depth = 0
+        Me.btn_incluirServicos.HighEmphasis = True
+        Me.btn_incluirServicos.Icon = CType(resources.GetObject("btn_incluirServicos.Icon"), System.Drawing.Image)
+        Me.btn_incluirServicos.Location = New System.Drawing.Point(1607, 17)
+        Me.btn_incluirServicos.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_incluirServicos.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_incluirServicos.Name = "btn_incluirServicos"
+        Me.btn_incluirServicos.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_incluirServicos.Size = New System.Drawing.Size(131, 36)
+        Me.btn_incluirServicos.TabIndex = 3
+        Me.btn_incluirServicos.Text = "Incluir"
+        Me.btn_incluirServicos.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_incluirServicos.UseAccentColor = False
+        Me.btn_incluirServicos.UseVisualStyleBackColor = True
         '
-        'MaterialButton12
+        'btn_pesquisarServicos
         '
-        Me.MaterialButton12.AutoSize = False
-        Me.MaterialButton12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton12.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton12.Depth = 0
-        Me.MaterialButton12.HighEmphasis = True
-        Me.MaterialButton12.Icon = CType(resources.GetObject("MaterialButton12.Icon"), System.Drawing.Image)
-        Me.MaterialButton12.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton12.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton12.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton12.Name = "MaterialButton12"
-        Me.MaterialButton12.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton12.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton12.TabIndex = 0
-        Me.MaterialButton12.Text = "Pesquisar"
-        Me.MaterialButton12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton12.UseAccentColor = False
-        Me.MaterialButton12.UseVisualStyleBackColor = True
+        Me.btn_pesquisarServicos.AutoSize = False
+        Me.btn_pesquisarServicos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_pesquisarServicos.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_pesquisarServicos.Depth = 0
+        Me.btn_pesquisarServicos.HighEmphasis = True
+        Me.btn_pesquisarServicos.Icon = CType(resources.GetObject("btn_pesquisarServicos.Icon"), System.Drawing.Image)
+        Me.btn_pesquisarServicos.Location = New System.Drawing.Point(1457, 17)
+        Me.btn_pesquisarServicos.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_pesquisarServicos.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_pesquisarServicos.Name = "btn_pesquisarServicos"
+        Me.btn_pesquisarServicos.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_pesquisarServicos.Size = New System.Drawing.Size(131, 36)
+        Me.btn_pesquisarServicos.TabIndex = 0
+        Me.btn_pesquisarServicos.Text = "Pesquisar"
+        Me.btn_pesquisarServicos.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_pesquisarServicos.UseAccentColor = False
+        Me.btn_pesquisarServicos.UseVisualStyleBackColor = True
         '
         'btn_voltar4
         '
@@ -1157,19 +1157,19 @@ Partial Class frm_administrador
         '
         'BunifuCustomDataGrid1
         '
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle21.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle21
         Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle22.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle22.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle22
         Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid1.DoubleBuffered = True
         Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
@@ -1205,8 +1205,8 @@ Partial Class frm_administrador
         Me.GunaShadowPanel1.Controls.Add(Me.txt_cpfFuncionario)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel3)
         Me.GunaShadowPanel1.Controls.Add(Me.lbl_login)
-        Me.GunaShadowPanel1.Controls.Add(Me.btn_incluir)
-        Me.GunaShadowPanel1.Controls.Add(Me.btn_pesquisar)
+        Me.GunaShadowPanel1.Controls.Add(Me.btn_incluirFuncionario)
+        Me.GunaShadowPanel1.Controls.Add(Me.btn_pesquisarFuncionario)
         Me.GunaShadowPanel1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel1.Location = New System.Drawing.Point(57, 38)
         Me.GunaShadowPanel1.Name = "GunaShadowPanel1"
@@ -1215,6 +1215,48 @@ Partial Class frm_administrador
         Me.GunaShadowPanel1.ShadowDepth = 255
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(1755, 284)
         Me.GunaShadowPanel1.TabIndex = 18
+        '
+        'txt_nomeFuncionario
+        '
+        Me.txt_nomeFuncionario.AnimateReadOnly = False
+        Me.txt_nomeFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_nomeFuncionario.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_nomeFuncionario.Depth = 0
+        Me.txt_nomeFuncionario.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_nomeFuncionario.HideSelection = True
+        Me.txt_nomeFuncionario.LeadingIcon = Nothing
+        Me.txt_nomeFuncionario.Location = New System.Drawing.Point(330, 46)
+        Me.txt_nomeFuncionario.MaxLength = 32767
+        Me.txt_nomeFuncionario.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_nomeFuncionario.Name = "txt_nomeFuncionario"
+        Me.txt_nomeFuncionario.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_nomeFuncionario.PrefixSuffixText = Nothing
+        Me.txt_nomeFuncionario.ReadOnly = False
+        Me.txt_nomeFuncionario.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_nomeFuncionario.SelectedText = ""
+        Me.txt_nomeFuncionario.SelectionLength = 0
+        Me.txt_nomeFuncionario.SelectionStart = 0
+        Me.txt_nomeFuncionario.ShortcutsEnabled = True
+        Me.txt_nomeFuncionario.Size = New System.Drawing.Size(250, 48)
+        Me.txt_nomeFuncionario.TabIndex = 35
+        Me.txt_nomeFuncionario.TabStop = False
+        Me.txt_nomeFuncionario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_nomeFuncionario.TrailingIcon = Nothing
+        Me.txt_nomeFuncionario.UseSystemPasswordChar = False
+        '
+        'MaterialLabel33
+        '
+        Me.MaterialLabel33.Depth = 0
+        Me.MaterialLabel33.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel33.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel33.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel33.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel33.Location = New System.Drawing.Point(330, 14)
+        Me.MaterialLabel33.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel33.Name = "MaterialLabel33"
+        Me.MaterialLabel33.Size = New System.Drawing.Size(232, 29)
+        Me.MaterialLabel33.TabIndex = 34
+        Me.MaterialLabel33.Text = "Nome do funcionário"
         '
         'txt_cidade
         '
@@ -1613,45 +1655,45 @@ Partial Class frm_administrador
         Me.lbl_login.TabIndex = 9
         Me.lbl_login.Text = "Login"
         '
-        'btn_incluir
+        'btn_incluirFuncionario
         '
-        Me.btn_incluir.AutoSize = False
-        Me.btn_incluir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.btn_incluir.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.btn_incluir.Depth = 0
-        Me.btn_incluir.HighEmphasis = True
-        Me.btn_incluir.Icon = CType(resources.GetObject("btn_incluir.Icon"), System.Drawing.Image)
-        Me.btn_incluir.Location = New System.Drawing.Point(1607, 17)
-        Me.btn_incluir.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.btn_incluir.MouseState = MaterialSkin.MouseState.HOVER
-        Me.btn_incluir.Name = "btn_incluir"
-        Me.btn_incluir.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.btn_incluir.Size = New System.Drawing.Size(131, 36)
-        Me.btn_incluir.TabIndex = 3
-        Me.btn_incluir.Text = "Incluir"
-        Me.btn_incluir.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.btn_incluir.UseAccentColor = False
-        Me.btn_incluir.UseVisualStyleBackColor = True
+        Me.btn_incluirFuncionario.AutoSize = False
+        Me.btn_incluirFuncionario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_incluirFuncionario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_incluirFuncionario.Depth = 0
+        Me.btn_incluirFuncionario.HighEmphasis = True
+        Me.btn_incluirFuncionario.Icon = CType(resources.GetObject("btn_incluirFuncionario.Icon"), System.Drawing.Image)
+        Me.btn_incluirFuncionario.Location = New System.Drawing.Point(1607, 17)
+        Me.btn_incluirFuncionario.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_incluirFuncionario.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_incluirFuncionario.Name = "btn_incluirFuncionario"
+        Me.btn_incluirFuncionario.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_incluirFuncionario.Size = New System.Drawing.Size(131, 36)
+        Me.btn_incluirFuncionario.TabIndex = 3
+        Me.btn_incluirFuncionario.Text = "Incluir"
+        Me.btn_incluirFuncionario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_incluirFuncionario.UseAccentColor = False
+        Me.btn_incluirFuncionario.UseVisualStyleBackColor = True
         '
-        'btn_pesquisar
+        'btn_pesquisarFuncionario
         '
-        Me.btn_pesquisar.AutoSize = False
-        Me.btn_pesquisar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.btn_pesquisar.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.btn_pesquisar.Depth = 0
-        Me.btn_pesquisar.HighEmphasis = True
-        Me.btn_pesquisar.Icon = CType(resources.GetObject("btn_pesquisar.Icon"), System.Drawing.Image)
-        Me.btn_pesquisar.Location = New System.Drawing.Point(1457, 17)
-        Me.btn_pesquisar.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.btn_pesquisar.MouseState = MaterialSkin.MouseState.HOVER
-        Me.btn_pesquisar.Name = "btn_pesquisar"
-        Me.btn_pesquisar.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.btn_pesquisar.Size = New System.Drawing.Size(131, 36)
-        Me.btn_pesquisar.TabIndex = 0
-        Me.btn_pesquisar.Text = "Pesquisar"
-        Me.btn_pesquisar.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.btn_pesquisar.UseAccentColor = False
-        Me.btn_pesquisar.UseVisualStyleBackColor = True
+        Me.btn_pesquisarFuncionario.AutoSize = False
+        Me.btn_pesquisarFuncionario.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_pesquisarFuncionario.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_pesquisarFuncionario.Depth = 0
+        Me.btn_pesquisarFuncionario.HighEmphasis = True
+        Me.btn_pesquisarFuncionario.Icon = CType(resources.GetObject("btn_pesquisarFuncionario.Icon"), System.Drawing.Image)
+        Me.btn_pesquisarFuncionario.Location = New System.Drawing.Point(1457, 17)
+        Me.btn_pesquisarFuncionario.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_pesquisarFuncionario.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_pesquisarFuncionario.Name = "btn_pesquisarFuncionario"
+        Me.btn_pesquisarFuncionario.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_pesquisarFuncionario.Size = New System.Drawing.Size(131, 36)
+        Me.btn_pesquisarFuncionario.TabIndex = 0
+        Me.btn_pesquisarFuncionario.Text = "Pesquisar"
+        Me.btn_pesquisarFuncionario.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_pesquisarFuncionario.UseAccentColor = False
+        Me.btn_pesquisarFuncionario.UseVisualStyleBackColor = True
         '
         'btn_voltar3
         '
@@ -1688,19 +1730,19 @@ Partial Class frm_administrador
         '
         'BunifuCustomDataGrid5
         '
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid5.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid5.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle23
         Me.BunifuCustomDataGrid5.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid5.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid5.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid5.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle24.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle24.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid5.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle24
         Me.BunifuCustomDataGrid5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid5.DoubleBuffered = True
         Me.BunifuCustomDataGrid5.EnableHeadersVisualStyles = False
@@ -1722,8 +1764,8 @@ Partial Class frm_administrador
         Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel24)
         Me.GunaShadowPanel5.Controls.Add(Me.txt_idFalecido)
         Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel26)
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialButton7)
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialButton8)
+        Me.GunaShadowPanel5.Controls.Add(Me.btn_incluirFalecidos)
+        Me.GunaShadowPanel5.Controls.Add(Me.btn_pesquisarFalecidos)
         Me.GunaShadowPanel5.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel5.Location = New System.Drawing.Point(57, 63)
         Me.GunaShadowPanel5.Name = "GunaShadowPanel5"
@@ -1856,45 +1898,45 @@ Partial Class frm_administrador
         Me.MaterialLabel26.TabIndex = 9
         Me.MaterialLabel26.Text = "ID do falecido"
         '
-        'MaterialButton7
+        'btn_incluirFalecidos
         '
-        Me.MaterialButton7.AutoSize = False
-        Me.MaterialButton7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton7.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton7.Depth = 0
-        Me.MaterialButton7.HighEmphasis = True
-        Me.MaterialButton7.Icon = CType(resources.GetObject("MaterialButton7.Icon"), System.Drawing.Image)
-        Me.MaterialButton7.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton7.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton7.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton7.Name = "MaterialButton7"
-        Me.MaterialButton7.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton7.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton7.TabIndex = 3
-        Me.MaterialButton7.Text = "Incluir"
-        Me.MaterialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton7.UseAccentColor = False
-        Me.MaterialButton7.UseVisualStyleBackColor = True
+        Me.btn_incluirFalecidos.AutoSize = False
+        Me.btn_incluirFalecidos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_incluirFalecidos.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_incluirFalecidos.Depth = 0
+        Me.btn_incluirFalecidos.HighEmphasis = True
+        Me.btn_incluirFalecidos.Icon = CType(resources.GetObject("btn_incluirFalecidos.Icon"), System.Drawing.Image)
+        Me.btn_incluirFalecidos.Location = New System.Drawing.Point(1607, 17)
+        Me.btn_incluirFalecidos.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_incluirFalecidos.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_incluirFalecidos.Name = "btn_incluirFalecidos"
+        Me.btn_incluirFalecidos.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_incluirFalecidos.Size = New System.Drawing.Size(131, 36)
+        Me.btn_incluirFalecidos.TabIndex = 3
+        Me.btn_incluirFalecidos.Text = "Incluir"
+        Me.btn_incluirFalecidos.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_incluirFalecidos.UseAccentColor = False
+        Me.btn_incluirFalecidos.UseVisualStyleBackColor = True
         '
-        'MaterialButton8
+        'btn_pesquisarFalecidos
         '
-        Me.MaterialButton8.AutoSize = False
-        Me.MaterialButton8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton8.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton8.Depth = 0
-        Me.MaterialButton8.HighEmphasis = True
-        Me.MaterialButton8.Icon = CType(resources.GetObject("MaterialButton8.Icon"), System.Drawing.Image)
-        Me.MaterialButton8.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton8.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton8.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton8.Name = "MaterialButton8"
-        Me.MaterialButton8.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton8.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton8.TabIndex = 0
-        Me.MaterialButton8.Text = "Pesquisar"
-        Me.MaterialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton8.UseAccentColor = False
-        Me.MaterialButton8.UseVisualStyleBackColor = True
+        Me.btn_pesquisarFalecidos.AutoSize = False
+        Me.btn_pesquisarFalecidos.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_pesquisarFalecidos.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_pesquisarFalecidos.Depth = 0
+        Me.btn_pesquisarFalecidos.HighEmphasis = True
+        Me.btn_pesquisarFalecidos.Icon = CType(resources.GetObject("btn_pesquisarFalecidos.Icon"), System.Drawing.Image)
+        Me.btn_pesquisarFalecidos.Location = New System.Drawing.Point(1457, 17)
+        Me.btn_pesquisarFalecidos.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_pesquisarFalecidos.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_pesquisarFalecidos.Name = "btn_pesquisarFalecidos"
+        Me.btn_pesquisarFalecidos.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_pesquisarFalecidos.Size = New System.Drawing.Size(131, 36)
+        Me.btn_pesquisarFalecidos.TabIndex = 0
+        Me.btn_pesquisarFalecidos.Text = "Pesquisar"
+        Me.btn_pesquisarFalecidos.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_pesquisarFalecidos.UseAccentColor = False
+        Me.btn_pesquisarFalecidos.UseVisualStyleBackColor = True
         '
         'btn_voltar2
         '
@@ -1932,19 +1974,19 @@ Partial Class frm_administrador
         '
         'BunifuCustomDataGrid3
         '
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle25
         Me.BunifuCustomDataGrid3.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle26.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle26.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle26.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle26.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle26.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle26.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle26
         Me.BunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid3.DoubleBuffered = True
         Me.BunifuCustomDataGrid3.EnableHeadersVisualStyles = False
@@ -1970,8 +2012,8 @@ Partial Class frm_administrador
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel18)
         Me.GunaShadowPanel3.Controls.Add(Me.txt_idCremacao)
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel20)
-        Me.GunaShadowPanel3.Controls.Add(Me.MaterialButton3)
-        Me.GunaShadowPanel3.Controls.Add(Me.MaterialButton4)
+        Me.GunaShadowPanel3.Controls.Add(Me.btn_incluirCremacoes)
+        Me.GunaShadowPanel3.Controls.Add(Me.btn_pesquisarCremacoes)
         Me.GunaShadowPanel3.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel3.Location = New System.Drawing.Point(57, 63)
         Me.GunaShadowPanel3.Name = "GunaShadowPanel3"
@@ -2223,45 +2265,45 @@ Partial Class frm_administrador
         Me.MaterialLabel20.TabIndex = 9
         Me.MaterialLabel20.Text = "ID da cremação"
         '
-        'MaterialButton3
+        'btn_incluirCremacoes
         '
-        Me.MaterialButton3.AutoSize = False
-        Me.MaterialButton3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton3.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton3.Depth = 0
-        Me.MaterialButton3.HighEmphasis = True
-        Me.MaterialButton3.Icon = CType(resources.GetObject("MaterialButton3.Icon"), System.Drawing.Image)
-        Me.MaterialButton3.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton3.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton3.Name = "MaterialButton3"
-        Me.MaterialButton3.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton3.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton3.TabIndex = 3
-        Me.MaterialButton3.Text = "Incluir"
-        Me.MaterialButton3.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton3.UseAccentColor = False
-        Me.MaterialButton3.UseVisualStyleBackColor = True
+        Me.btn_incluirCremacoes.AutoSize = False
+        Me.btn_incluirCremacoes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_incluirCremacoes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_incluirCremacoes.Depth = 0
+        Me.btn_incluirCremacoes.HighEmphasis = True
+        Me.btn_incluirCremacoes.Icon = CType(resources.GetObject("btn_incluirCremacoes.Icon"), System.Drawing.Image)
+        Me.btn_incluirCremacoes.Location = New System.Drawing.Point(1607, 17)
+        Me.btn_incluirCremacoes.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_incluirCremacoes.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_incluirCremacoes.Name = "btn_incluirCremacoes"
+        Me.btn_incluirCremacoes.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_incluirCremacoes.Size = New System.Drawing.Size(131, 36)
+        Me.btn_incluirCremacoes.TabIndex = 3
+        Me.btn_incluirCremacoes.Text = "Incluir"
+        Me.btn_incluirCremacoes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_incluirCremacoes.UseAccentColor = False
+        Me.btn_incluirCremacoes.UseVisualStyleBackColor = True
         '
-        'MaterialButton4
+        'btn_pesquisarCremacoes
         '
-        Me.MaterialButton4.AutoSize = False
-        Me.MaterialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton4.Depth = 0
-        Me.MaterialButton4.HighEmphasis = True
-        Me.MaterialButton4.Icon = CType(resources.GetObject("MaterialButton4.Icon"), System.Drawing.Image)
-        Me.MaterialButton4.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton4.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton4.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton4.Name = "MaterialButton4"
-        Me.MaterialButton4.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton4.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton4.TabIndex = 0
-        Me.MaterialButton4.Text = "Pesquisar"
-        Me.MaterialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton4.UseAccentColor = False
-        Me.MaterialButton4.UseVisualStyleBackColor = True
+        Me.btn_pesquisarCremacoes.AutoSize = False
+        Me.btn_pesquisarCremacoes.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_pesquisarCremacoes.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_pesquisarCremacoes.Depth = 0
+        Me.btn_pesquisarCremacoes.HighEmphasis = True
+        Me.btn_pesquisarCremacoes.Icon = CType(resources.GetObject("btn_pesquisarCremacoes.Icon"), System.Drawing.Image)
+        Me.btn_pesquisarCremacoes.Location = New System.Drawing.Point(1457, 17)
+        Me.btn_pesquisarCremacoes.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_pesquisarCremacoes.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_pesquisarCremacoes.Name = "btn_pesquisarCremacoes"
+        Me.btn_pesquisarCremacoes.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_pesquisarCremacoes.Size = New System.Drawing.Size(131, 36)
+        Me.btn_pesquisarCremacoes.TabIndex = 0
+        Me.btn_pesquisarCremacoes.Text = "Pesquisar"
+        Me.btn_pesquisarCremacoes.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_pesquisarCremacoes.UseAccentColor = False
+        Me.btn_pesquisarCremacoes.UseVisualStyleBackColor = True
         '
         'btn_voltar1
         '
@@ -2299,19 +2341,19 @@ Partial Class frm_administrador
         '
         'BunifuCustomDataGrid2
         '
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle27.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle27
         Me.BunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle28.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle28.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle28.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle28.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle28.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle28
         Me.BunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid2.DoubleBuffered = True
         Me.BunifuCustomDataGrid2.EnableHeadersVisualStyles = False
@@ -2333,8 +2375,8 @@ Partial Class frm_administrador
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel15)
         Me.GunaShadowPanel2.Controls.Add(Me.txt_idSala)
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel17)
-        Me.GunaShadowPanel2.Controls.Add(Me.MaterialButton1)
-        Me.GunaShadowPanel2.Controls.Add(Me.MaterialButton2)
+        Me.GunaShadowPanel2.Controls.Add(Me.btn_incluirSalas)
+        Me.GunaShadowPanel2.Controls.Add(Me.btn_pesquisarSalas)
         Me.GunaShadowPanel2.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel2.Location = New System.Drawing.Point(57, 63)
         Me.GunaShadowPanel2.Name = "GunaShadowPanel2"
@@ -2467,45 +2509,45 @@ Partial Class frm_administrador
         Me.MaterialLabel17.TabIndex = 9
         Me.MaterialLabel17.Text = "ID da sala"
         '
-        'MaterialButton1
+        'btn_incluirSalas
         '
-        Me.MaterialButton1.AutoSize = False
-        Me.MaterialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton1.Depth = 0
-        Me.MaterialButton1.HighEmphasis = True
-        Me.MaterialButton1.Icon = CType(resources.GetObject("MaterialButton1.Icon"), System.Drawing.Image)
-        Me.MaterialButton1.Location = New System.Drawing.Point(1607, 17)
-        Me.MaterialButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton1.Name = "MaterialButton1"
-        Me.MaterialButton1.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton1.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton1.TabIndex = 3
-        Me.MaterialButton1.Text = "Incluir"
-        Me.MaterialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton1.UseAccentColor = False
-        Me.MaterialButton1.UseVisualStyleBackColor = True
+        Me.btn_incluirSalas.AutoSize = False
+        Me.btn_incluirSalas.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_incluirSalas.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_incluirSalas.Depth = 0
+        Me.btn_incluirSalas.HighEmphasis = True
+        Me.btn_incluirSalas.Icon = CType(resources.GetObject("btn_incluirSalas.Icon"), System.Drawing.Image)
+        Me.btn_incluirSalas.Location = New System.Drawing.Point(1607, 17)
+        Me.btn_incluirSalas.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_incluirSalas.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_incluirSalas.Name = "btn_incluirSalas"
+        Me.btn_incluirSalas.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_incluirSalas.Size = New System.Drawing.Size(131, 36)
+        Me.btn_incluirSalas.TabIndex = 3
+        Me.btn_incluirSalas.Text = "Incluir"
+        Me.btn_incluirSalas.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_incluirSalas.UseAccentColor = False
+        Me.btn_incluirSalas.UseVisualStyleBackColor = True
         '
-        'MaterialButton2
+        'btn_pesquisarSalas
         '
-        Me.MaterialButton2.AutoSize = False
-        Me.MaterialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.MaterialButton2.Depth = 0
-        Me.MaterialButton2.HighEmphasis = True
-        Me.MaterialButton2.Icon = CType(resources.GetObject("MaterialButton2.Icon"), System.Drawing.Image)
-        Me.MaterialButton2.Location = New System.Drawing.Point(1457, 17)
-        Me.MaterialButton2.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialButton2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialButton2.Name = "MaterialButton2"
-        Me.MaterialButton2.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.MaterialButton2.Size = New System.Drawing.Size(131, 36)
-        Me.MaterialButton2.TabIndex = 0
-        Me.MaterialButton2.Text = "Pesquisar"
-        Me.MaterialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.MaterialButton2.UseAccentColor = False
-        Me.MaterialButton2.UseVisualStyleBackColor = True
+        Me.btn_pesquisarSalas.AutoSize = False
+        Me.btn_pesquisarSalas.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_pesquisarSalas.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_pesquisarSalas.Depth = 0
+        Me.btn_pesquisarSalas.HighEmphasis = True
+        Me.btn_pesquisarSalas.Icon = CType(resources.GetObject("btn_pesquisarSalas.Icon"), System.Drawing.Image)
+        Me.btn_pesquisarSalas.Location = New System.Drawing.Point(1457, 17)
+        Me.btn_pesquisarSalas.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_pesquisarSalas.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_pesquisarSalas.Name = "btn_pesquisarSalas"
+        Me.btn_pesquisarSalas.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_pesquisarSalas.Size = New System.Drawing.Size(131, 36)
+        Me.btn_pesquisarSalas.TabIndex = 0
+        Me.btn_pesquisarSalas.Text = "Pesquisar"
+        Me.btn_pesquisarSalas.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_pesquisarSalas.UseAccentColor = False
+        Me.btn_pesquisarSalas.UseVisualStyleBackColor = True
         '
         'btn_voltar
         '
@@ -2557,48 +2599,6 @@ Partial Class frm_administrador
         Me.PictureBox3.Size = New System.Drawing.Size(46, 43)
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
-        '
-        'txt_nomeFuncionario
-        '
-        Me.txt_nomeFuncionario.AnimateReadOnly = False
-        Me.txt_nomeFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_nomeFuncionario.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_nomeFuncionario.Depth = 0
-        Me.txt_nomeFuncionario.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_nomeFuncionario.HideSelection = True
-        Me.txt_nomeFuncionario.LeadingIcon = Nothing
-        Me.txt_nomeFuncionario.Location = New System.Drawing.Point(330, 46)
-        Me.txt_nomeFuncionario.MaxLength = 32767
-        Me.txt_nomeFuncionario.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_nomeFuncionario.Name = "txt_nomeFuncionario"
-        Me.txt_nomeFuncionario.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_nomeFuncionario.PrefixSuffixText = Nothing
-        Me.txt_nomeFuncionario.ReadOnly = False
-        Me.txt_nomeFuncionario.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_nomeFuncionario.SelectedText = ""
-        Me.txt_nomeFuncionario.SelectionLength = 0
-        Me.txt_nomeFuncionario.SelectionStart = 0
-        Me.txt_nomeFuncionario.ShortcutsEnabled = True
-        Me.txt_nomeFuncionario.Size = New System.Drawing.Size(250, 48)
-        Me.txt_nomeFuncionario.TabIndex = 35
-        Me.txt_nomeFuncionario.TabStop = False
-        Me.txt_nomeFuncionario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_nomeFuncionario.TrailingIcon = Nothing
-        Me.txt_nomeFuncionario.UseSystemPasswordChar = False
-        '
-        'MaterialLabel33
-        '
-        Me.MaterialLabel33.Depth = 0
-        Me.MaterialLabel33.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel33.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel33.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel33.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel33.Location = New System.Drawing.Point(330, 14)
-        Me.MaterialLabel33.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel33.Name = "MaterialLabel33"
-        Me.MaterialLabel33.Size = New System.Drawing.Size(232, 29)
-        Me.MaterialLabel33.TabIndex = 34
-        Me.MaterialLabel33.Text = "Nome do funcionário"
         '
         'frm_administrador
         '
@@ -2665,8 +2665,8 @@ Partial Class frm_administrador
     Friend WithEvents BunifuCustomDataGrid1 As ns1.BunifuCustomDataGrid
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents lbl_login As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents btn_incluir As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents btn_pesquisar As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_incluirFuncionario As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_pesquisarFuncionario As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_cpfFuncionario As MaterialSkin.Controls.MaterialMaskedTextBox
     Friend WithEvents txt_senha As MaterialSkin.Controls.MaterialTextBox2
@@ -2692,8 +2692,8 @@ Partial Class frm_administrador
     Friend WithEvents MaterialLabel15 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_idSala As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel17 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_incluirSalas As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_pesquisarSalas As MaterialSkin.Controls.MaterialButton
     Friend WithEvents BunifuCustomDataGrid3 As ns1.BunifuCustomDataGrid
     Friend WithEvents GunaShadowPanel3 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents txt_idFalecidoCremacao As MaterialSkin.Controls.MaterialTextBox2
@@ -2702,8 +2702,8 @@ Partial Class frm_administrador
     Friend WithEvents MaterialLabel18 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_idCremacao As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel20 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialButton3 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton4 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_incluirCremacoes As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_pesquisarCremacoes As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialLabel19 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_dataCremacao As MaterialSkin.Controls.MaterialMaskedTextBox
     Friend WithEvents txt_horaCremacao As MaterialSkin.Controls.MaterialMaskedTextBox
@@ -2720,8 +2720,8 @@ Partial Class frm_administrador
     Friend WithEvents MaterialLabel13 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_idVelorio As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel21 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialButton5 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton6 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_incluirVelorios As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_pesquisarVelorios As MaterialSkin.Controls.MaterialButton
     Friend WithEvents BunifuCustomDataGrid5 As ns1.BunifuCustomDataGrid
     Friend WithEvents GunaShadowPanel5 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents txt_nomeFalecido As MaterialSkin.Controls.MaterialTextBox2
@@ -2729,8 +2729,8 @@ Partial Class frm_administrador
     Friend WithEvents MaterialLabel24 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_idFalecido As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel26 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialButton7 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton8 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_incluirFalecidos As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_pesquisarFalecidos As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialComboBox1 As MaterialSkin.Controls.MaterialComboBox
     Friend WithEvents BunifuCustomDataGrid6 As ns1.BunifuCustomDataGrid
     Friend WithEvents GunaShadowPanel6 As Guna.UI.WinForms.GunaShadowPanel
@@ -2740,8 +2740,8 @@ Partial Class frm_administrador
     Friend WithEvents MaterialLabel27 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_idJazigo As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel29 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialButton9 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton10 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_incluirJazigo As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_pesquisarJazigo As MaterialSkin.Controls.MaterialButton
     Friend WithEvents txt_fileira As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel22 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_idFalecidoJazigo As MaterialSkin.Controls.MaterialTextBox2
@@ -2753,8 +2753,8 @@ Partial Class frm_administrador
     Friend WithEvents MaterialLabel31 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_idServico As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel32 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialButton11 As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialButton12 As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_incluirServicos As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_pesquisarServicos As MaterialSkin.Controls.MaterialButton
     Friend WithEvents txt_preco As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents txt_nomeFuncionario As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel33 As MaterialSkin.Controls.MaterialLabel

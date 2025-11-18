@@ -70,4 +70,26 @@ Public Class frm_administrador
     Private Sub btn_voltar6_Click(sender As Object, e As EventArgs) Handles btn_voltar6.Click
         Voltar()
     End Sub
+
+    Private Sub btn_incluirFuncionario_Click(sender As Object, e As EventArgs) Handles btn_incluirFuncionario.Click
+        Try
+            SQL = $"select * from tb_funcionarios where cpfFuncionario='{txt_cpfFuncionario}'"
+            rs = db.Execute(SQL)
+            If rs.EOF = True Then
+                SQL = $"insert into tb_funcionarios (cpfFuncionario,loginFuncionario,senhaFuncionario,nomeFuncionario,cepFuncionario) values (
+                        '{txt_cpfFuncionario.Text}', '{txt_login.Text}', '{txt_senha.Text}','{txt_nomeFuncionario.Text}','{txt_cep.Text}')"
+                rs = db.Execute(UCase(SQL))
+                MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+
+            Else
+                SQL = $"update tb_funcionarios set loginFuncionario='{txt_login.Text}',
+                        senhaFuncionario='{txt_senha.Text}',
+                        nomeFuncionario='{txt_nomeFuncionario.Text}', cepFuncionario='{txt_cep.Text}'"
+                rs = db.Execute(UCase(SQL))
+                MsgBox("Dados alterados com sucesso!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Atenção")
+            End If
+        Catch ex As Exception
+            MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
 End Class
