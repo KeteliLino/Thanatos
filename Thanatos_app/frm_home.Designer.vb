@@ -19,8 +19,8 @@ Partial Class frm_home
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_home))
         Me.cmb_tabelas = New MaterialSkin.Controls.MaterialComboBox()
         Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
@@ -32,11 +32,11 @@ Partial Class frm_home
         Me.MaterialCard2 = New MaterialSkin.Controls.MaterialCard()
         Me.MaterialCard3 = New MaterialSkin.Controls.MaterialCard()
         Me.MaterialCard4 = New MaterialSkin.Controls.MaterialCard()
-        Me.lbl_nome = New MaterialSkin.Controls.MaterialLabel()
-        Me.lbl_sair = New System.Windows.Forms.LinkLabel()
-        Me.lbl_logout = New System.Windows.Forms.LinkLabel()
         Me.CartesianChart1 = New LiveCharts.WinForms.CartesianChart()
+        Me.lbl_nome = New MaterialSkin.Controls.MaterialLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btn_logout = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_sair = New MaterialSkin.Controls.MaterialButton()
         CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
         Me.MaterialCard4.SuspendLayout()
@@ -68,19 +68,19 @@ Partial Class frm_home
         '
         'BunifuCustomDataGrid1
         '
-        DataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle17
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
         Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle18.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle18.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle18.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle18
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.BunifuCustomDataGrid1.DoubleBuffered = True
         Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
@@ -95,9 +95,9 @@ Partial Class frm_home
         'GunaShadowPanel1
         '
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.GunaShadowPanel1.Controls.Add(Me.lbl_sair)
-        Me.GunaShadowPanel1.Controls.Add(Me.lbl_logout)
+        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(27, Byte), Integer))
+        Me.GunaShadowPanel1.Controls.Add(Me.btn_sair)
+        Me.GunaShadowPanel1.Controls.Add(Me.btn_logout)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_administracao)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_recepcao)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_financeiro)
@@ -227,6 +227,15 @@ Partial Class frm_home
         Me.MaterialCard4.Size = New System.Drawing.Size(926, 325)
         Me.MaterialCard4.TabIndex = 10
         '
+        'CartesianChart1
+        '
+        Me.CartesianChart1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CartesianChart1.Location = New System.Drawing.Point(14, 14)
+        Me.CartesianChart1.Name = "CartesianChart1"
+        Me.CartesianChart1.Size = New System.Drawing.Size(898, 297)
+        Me.CartesianChart1.TabIndex = 0
+        Me.CartesianChart1.Text = "CartesianChart1"
+        '
         'lbl_nome
         '
         Me.lbl_nome.AutoSize = True
@@ -240,41 +249,6 @@ Partial Class frm_home
         Me.lbl_nome.TabIndex = 11
         Me.lbl_nome.Text = "nome do funcionario"
         '
-        'lbl_sair
-        '
-        Me.lbl_sair.ActiveLinkColor = System.Drawing.Color.White
-        Me.lbl_sair.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_sair.LinkColor = System.Drawing.Color.DarkViolet
-        Me.lbl_sair.Location = New System.Drawing.Point(125, 907)
-        Me.lbl_sair.Name = "lbl_sair"
-        Me.lbl_sair.Size = New System.Drawing.Size(62, 31)
-        Me.lbl_sair.TabIndex = 9
-        Me.lbl_sair.TabStop = True
-        Me.lbl_sair.Text = "Sair"
-        Me.lbl_sair.VisitedLinkColor = System.Drawing.Color.White
-        '
-        'lbl_logout
-        '
-        Me.lbl_logout.ActiveLinkColor = System.Drawing.Color.White
-        Me.lbl_logout.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_logout.LinkColor = System.Drawing.Color.DarkViolet
-        Me.lbl_logout.Location = New System.Drawing.Point(25, 907)
-        Me.lbl_logout.Name = "lbl_logout"
-        Me.lbl_logout.Size = New System.Drawing.Size(106, 31)
-        Me.lbl_logout.TabIndex = 8
-        Me.lbl_logout.TabStop = True
-        Me.lbl_logout.Text = "Log-out"
-        Me.lbl_logout.VisitedLinkColor = System.Drawing.Color.White
-        '
-        'CartesianChart1
-        '
-        Me.CartesianChart1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CartesianChart1.Location = New System.Drawing.Point(14, 14)
-        Me.CartesianChart1.Name = "CartesianChart1"
-        Me.CartesianChart1.Size = New System.Drawing.Size(898, 297)
-        Me.CartesianChart1.TabIndex = 0
-        Me.CartesianChart1.Text = "CartesianChart1"
-        '
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
@@ -285,6 +259,48 @@ Partial Class frm_home
         Me.PictureBox1.Size = New System.Drawing.Size(46, 43)
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
+        '
+        'btn_logout
+        '
+        Me.btn_logout.AutoSize = False
+        Me.btn_logout.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_logout.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_logout.Depth = 0
+        Me.btn_logout.ForeColor = System.Drawing.Color.White
+        Me.btn_logout.HighEmphasis = True
+        Me.btn_logout.Icon = CType(resources.GetObject("btn_logout.Icon"), System.Drawing.Image)
+        Me.btn_logout.Location = New System.Drawing.Point(26, 903)
+        Me.btn_logout.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_logout.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_logout.Name = "btn_logout"
+        Me.btn_logout.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_logout.Size = New System.Drawing.Size(108, 35)
+        Me.btn_logout.TabIndex = 8
+        Me.btn_logout.Text = "Logout"
+        Me.btn_logout.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_logout.UseAccentColor = False
+        Me.btn_logout.UseVisualStyleBackColor = True
+        '
+        'btn_sair
+        '
+        Me.btn_sair.AutoSize = False
+        Me.btn_sair.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_sair.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_sair.Depth = 0
+        Me.btn_sair.ForeColor = System.Drawing.Color.White
+        Me.btn_sair.HighEmphasis = True
+        Me.btn_sair.Icon = CType(resources.GetObject("btn_sair.Icon"), System.Drawing.Image)
+        Me.btn_sair.Location = New System.Drawing.Point(151, 903)
+        Me.btn_sair.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_sair.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_sair.Name = "btn_sair"
+        Me.btn_sair.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_sair.Size = New System.Drawing.Size(108, 35)
+        Me.btn_sair.TabIndex = 9
+        Me.btn_sair.Text = "Sair"
+        Me.btn_sair.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_sair.UseAccentColor = False
+        Me.btn_sair.UseVisualStyleBackColor = True
         '
         'frm_home
         '
@@ -323,9 +339,9 @@ Partial Class frm_home
     Friend WithEvents MaterialCard2 As MaterialSkin.Controls.MaterialCard
     Friend WithEvents MaterialCard3 As MaterialSkin.Controls.MaterialCard
     Friend WithEvents MaterialCard4 As MaterialSkin.Controls.MaterialCard
-    Friend WithEvents lbl_sair As LinkLabel
-    Friend WithEvents lbl_logout As LinkLabel
     Friend WithEvents lbl_nome As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents CartesianChart1 As LiveCharts.WinForms.CartesianChart
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btn_sair As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents btn_logout As MaterialSkin.Controls.MaterialButton
 End Class

@@ -160,16 +160,16 @@ Public Class frm_home
         Me.Hide()
     End Sub
 
-    Private Sub lbl_logout_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_logout.LinkClicked
-        resp = MsgBox("Tem certeza que deseja deslogar? ", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
+    Private Sub btn_logout_Click(sender As Object, e As EventArgs) Handles btn_logout.Click
+        resp = MsgBox("Tem certeza que deseja sair da conta? ", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
         If resp = MsgBoxResult.Yes Then
             frm_login.Show()
             Me.Hide()
         End If
     End Sub
 
-    Private Sub lbl_sair_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_sair.LinkClicked
-        resp = MsgBox("Deseja Sair do Sistema?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
+    Private Sub btn_sair_Click(sender As Object, e As EventArgs) Handles btn_sair.Click
+        resp = MsgBox("Deseja sair do sistema?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "AVISO")
         If resp = MsgBoxResult.Yes Then
             Application.Exit()
         End If

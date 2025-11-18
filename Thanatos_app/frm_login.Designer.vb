@@ -51,7 +51,7 @@ Partial Class frm_login
         Me.GunaShadowPanel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer), CType(CType(27, Byte), Integer))
         Me.GunaShadowPanel1.Controls.Add(Me.chk_visualizar)
         Me.GunaShadowPanel1.Controls.Add(Me.txt_login)
         Me.GunaShadowPanel1.Controls.Add(Me.txt_senha)
