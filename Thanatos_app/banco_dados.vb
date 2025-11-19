@@ -1,7 +1,7 @@
 ﻿Imports ns1
 
 Module banco_dados
-    Public query, qtdeVelorio, proxVelorio, restVelorio, qtdeCremacao, proxCremacao, restCremacao, qtdeAbertoOrcamento, finalizadoMesOrcamento, canceladoMesOrcamento As String
+    Public query, resp, aux_cpf, qtdeVelorio, proxVelorio, restVelorio, qtdeCremacao, proxCremacao, restCremacao, qtdeAbertoOrcamento, finalizadoMesOrcamento, canceladoMesOrcamento As String
     Public db As ADODB.Connection 'Variavel do bancoq
     Public rs As ADODB.Recordset 'Variavel das tabelas
 
@@ -16,14 +16,14 @@ Module banco_dados
 
     Public Sub carregar_dados_funcionario(dgv As BunifuCustomDataGrid)
         Try
-            query = $"Select tb_funcionarios.cpfFuncionario, tb_funcionarios.loginFuncionario,tb_funcionarios.senhaFuncionario,tb_funcionarios.cepFuncionario, 
+            query = $"Select tb_funcionarios.cpfFuncionario, tb_funcionarios.loginFuncionario,tb_funcionarios.senhaFuncionario, tb_funcionarios.nomeFuncionario, tb_funcionarios.cepFuncionario, 
                     tb_status.descricaoStatus, tb_setores.descricaoSetor from tb_funcionarios inner join tb_status on tb_funcionarios.idStatus = tb_status.idStatus 
                     inner join tb_setores on tb_funcionarios.idSetor = tb_setores.idSetor"
             rs = db.Execute(query)
             With dgv
                 .Rows.Clear()
                 Do While rs.EOF = False
-                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, Nothing, Nothing)
+                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, rs.Fields(6).Value, Nothing, Nothing)
                     rs.MoveNext()
                 Loop
             End With

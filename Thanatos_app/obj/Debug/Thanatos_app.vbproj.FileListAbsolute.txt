@@ -57,7 +57,6 @@ D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_administrador.resources
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_financeiro.resources
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_home.resources
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_recepcionista.resources
-D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.frm_manterAdministrador.resources
 D:\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.config
 E:\Thanatos\Thanatos_app\bin\Debug\MaterialSkin.dll
 E:\Thanatos\Thanatos_app\bin\Debug\Newtonsoft.Json.dll
@@ -124,3 +123,14 @@ E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.pdb
 E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.xml
 E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.pdb
 E:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.xml
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.dll
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.dll
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.dll
+D:\Thanatos\Thanatos_app\bin\Debug\Newtonsoft.Json.dll
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.pdb
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.xml
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.pdb
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.xml
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.pdb
+D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.xml
+D:\Thanatos\Thanatos_app\bin\Debug\Newtonsoft.Json.xml

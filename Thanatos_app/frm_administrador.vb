@@ -82,7 +82,16 @@ Public Class frm_administrador
                         '{txt_cpfFuncionario.Text}', '{txt_login.Text}', '{txt_senha.Text}','{txt_nomeFuncionario.Text}','{txt_cep.Text}', {status}, {setor});"
                 rs = db.Execute(query)
                 MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
-
+                carregar_dados_funcionario(Me.dgv_funcionarios)
+            Else
+                If resp = MsgBoxResult.Yes Then
+                    query = $"update tb_funcionarios set loginFuncionario='{txt_login.Text}', senhaFuncionario='{txt_senha.Text}', 
+                                nomeFuncionario='{txt_nomeFuncionario.Text}', cepFuncionario='{txt_cep.Text}', idStatus={status}, idSetor={setor} 
+                                where cpfFuncionario='{aux_cpf}'"
+                    rs = db.Execute(query)
+                    MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                    carregar_dados_funcionario(Me.dgv_funcionarios)
+                End If
             End If
         Catch ex As Exception
             MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
@@ -118,4 +127,41 @@ Public Class frm_administrador
             status = "2"
         End If
     End Sub
+
+    Private Sub dgv_funcionarios_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_funcionarios.CellContentClick
+        With dgv_funcionarios
+            If .CurrentRow.Cells(7).Selected = True Then
+                aux_cpf = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_funcionarios where cpfFuncionario='{aux_cpf}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    resp = MsgBox("Deseja excluir o cpf: " & aux_cpf & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                    If resp = MsgBoxResult.Yes Then
+                        query = $"Delete from tb_funcionarios where cpfFuncionario='{aux_cpf}'"
+                        rs = db.Execute(query)
+                        MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        carregar_dados_funcionario(Me.dgv_funcionarios)
+                    End If
+                End If
+            ElseIf .CurrentRow.Cells(8).Selected = True Then
+                aux_cpf = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_funcionarios where cpfFuncionario='{aux_cpf}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    txt_cpfFuncionario.Text = rs.Fields(0).Value
+                    txt_login.Text = rs.Fields(1).Value
+                    txt_senha.Text = rs.Fields(2).Value
+                    txt_nomeFuncionario.Text = rs.Fields(3).Value
+                    txt_cep.Text = rs.Fields(4).Value
+                    status = rs.Fields(5).Value
+                    setor = rs.Fields(6).Value
+
+                    resp = MsgBox("Deseja alterar os dados do cpf: " & aux_cpf & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                End If
+            Else
+                Exit Sub
+            End If
+        End With
+    End Sub
 End Class
+
