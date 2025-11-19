@@ -60,16 +60,8 @@ Partial Class frm_administrador
         Dim DataGridViewCellStyle69 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle70 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.BunifuCustomDataGrid3 = New ns1.BunifuCustomDataGrid()
-        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn5 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.tab_velorio = New System.Windows.Forms.TabPage()
+        Me.dgv_velorio = New ns1.BunifuCustomDataGrid()
         Me.GunaShadowPanel4 = New Guna.UI.WinForms.GunaShadowPanel()
         Me.txt_idSalaVelorio = New MaterialSkin.Controls.MaterialTextBox2()
         Me.txt_horaVelorio = New MaterialSkin.Controls.MaterialMaskedTextBox()
@@ -84,14 +76,13 @@ Partial Class frm_administrador
         Me.btn_incluirVelorios = New MaterialSkin.Controls.MaterialButton()
         Me.btn_pesquisarVelorios = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar6 = New MaterialSkin.Controls.MaterialButton()
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.BunifuCustomDataGrid5 = New ns1.BunifuCustomDataGrid()
-        Me.DataGridViewTextBoxColumn25 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn26 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn27 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn28 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn29 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn30 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tab_jazigo = New System.Windows.Forms.TabPage()
+        Me.dgv_jazigo = New ns1.BunifuCustomDataGrid()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn9 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn10 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GunaShadowPanel6 = New Guna.UI.WinForms.GunaShadowPanel()
@@ -108,14 +99,11 @@ Partial Class frm_administrador
         Me.btn_incluirJazigo = New MaterialSkin.Controls.MaterialButton()
         Me.btn_pesquisarJazigo = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar5 = New MaterialSkin.Controls.MaterialButton()
-        Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.BunifuCustomDataGrid6 = New ns1.BunifuCustomDataGrid()
-        Me.DataGridViewTextBoxColumn31 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn32 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn33 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn34 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn35 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn36 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tab_servico = New System.Windows.Forms.TabPage()
+        Me.dgv_servico = New ns1.BunifuCustomDataGrid()
+        Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn11 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn12 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GunaShadowPanel7 = New Guna.UI.WinForms.GunaShadowPanel()
@@ -128,7 +116,7 @@ Partial Class frm_administrador
         Me.btn_incluirServicos = New MaterialSkin.Controls.MaterialButton()
         Me.btn_pesquisarServicos = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar4 = New MaterialSkin.Controls.MaterialButton()
-        Me.TabPage4 = New System.Windows.Forms.TabPage()
+        Me.tab_funcionario = New System.Windows.Forms.TabPage()
         Me.dgv_funcionarios = New ns1.BunifuCustomDataGrid()
         Me.cpfFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.loginFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -162,14 +150,11 @@ Partial Class frm_administrador
         Me.btn_incluirFuncionario = New MaterialSkin.Controls.MaterialButton()
         Me.btn_pesquisarFuncionario = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar3 = New MaterialSkin.Controls.MaterialButton()
-        Me.TabPage3 = New System.Windows.Forms.TabPage()
-        Me.BunifuCustomDataGrid4 = New ns1.BunifuCustomDataGrid()
-        Me.DataGridViewTextBoxColumn19 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn20 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn21 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn23 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn24 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tab_falecido = New System.Windows.Forms.TabPage()
+        Me.dgv_falecido = New ns1.BunifuCustomDataGrid()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn7 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GunaShadowPanel5 = New Guna.UI.WinForms.GunaShadowPanel()
@@ -182,16 +167,8 @@ Partial Class frm_administrador
         Me.btn_incluirFalecidos = New MaterialSkin.Controls.MaterialButton()
         Me.btn_pesquisarFalecidos = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar2 = New MaterialSkin.Controls.MaterialButton()
-        Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.BunifuCustomDataGrid2 = New ns1.BunifuCustomDataGrid()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.DataGridViewImageColumn4 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.tab_cremacao = New System.Windows.Forms.TabPage()
+        Me.dgv_cremacao = New ns1.BunifuCustomDataGrid()
         Me.GunaShadowPanel3 = New Guna.UI.WinForms.GunaShadowPanel()
         Me.txt_idSalaCremacao = New MaterialSkin.Controls.MaterialTextBox2()
         Me.txt_horaCremacao = New MaterialSkin.Controls.MaterialMaskedTextBox()
@@ -206,14 +183,11 @@ Partial Class frm_administrador
         Me.btn_incluirCremacoes = New MaterialSkin.Controls.MaterialButton()
         Me.btn_pesquisarCremacoes = New MaterialSkin.Controls.MaterialButton()
         Me.btn_voltar1 = New MaterialSkin.Controls.MaterialButton()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.tab_sala = New System.Windows.Forms.TabPage()
+        Me.dgv_sala = New ns1.BunifuCustomDataGrid()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GunaShadowPanel2 = New Guna.UI.WinForms.GunaShadowPanel()
@@ -228,26 +202,40 @@ Partial Class frm_administrador
         Me.btn_voltar = New MaterialSkin.Controls.MaterialButton()
         Me.MaterialTabControl1 = New MaterialSkin.Controls.MaterialTabControl()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.TabPage7.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.idCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.horaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.diaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.salaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.falecidoCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn3 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn4 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewImageColumn5 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn6 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.tab_velorio.SuspendLayout()
+        CType(Me.dgv_velorio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel4.SuspendLayout()
-        Me.TabPage6.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid5, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tab_jazigo.SuspendLayout()
+        CType(Me.dgv_jazigo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel6.SuspendLayout()
-        Me.TabPage5.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tab_servico.SuspendLayout()
+        CType(Me.dgv_servico, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel7.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
+        Me.tab_funcionario.SuspendLayout()
         CType(Me.dgv_funcionarios, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
-        Me.TabPage3.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tab_falecido.SuspendLayout()
+        CType(Me.dgv_falecido, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel5.SuspendLayout()
-        Me.TabPage2.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tab_cremacao.SuspendLayout()
+        CType(Me.dgv_cremacao, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel3.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tab_sala.SuspendLayout()
+        CType(Me.dgv_sala, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel2.SuspendLayout()
         Me.MaterialTabControl1.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -266,30 +254,30 @@ Partial Class frm_administrador
         Me.ImageList1.Images.SetKeyName(6, "cross.png")
         Me.ImageList1.Images.SetKeyName(7, "exit.png")
         '
-        'TabPage7
+        'tab_velorio
         '
-        Me.TabPage7.Controls.Add(Me.BunifuCustomDataGrid3)
-        Me.TabPage7.Controls.Add(Me.GunaShadowPanel4)
-        Me.TabPage7.Controls.Add(Me.btn_voltar6)
-        Me.TabPage7.ImageKey = "bouquet.png"
-        Me.TabPage7.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage7.TabIndex = 6
-        Me.TabPage7.Text = "Velórios"
-        Me.TabPage7.UseVisualStyleBackColor = True
+        Me.tab_velorio.Controls.Add(Me.dgv_velorio)
+        Me.tab_velorio.Controls.Add(Me.GunaShadowPanel4)
+        Me.tab_velorio.Controls.Add(Me.btn_voltar6)
+        Me.tab_velorio.ImageKey = "bouquet.png"
+        Me.tab_velorio.Location = New System.Drawing.Point(4, 39)
+        Me.tab_velorio.Name = "tab_velorio"
+        Me.tab_velorio.Size = New System.Drawing.Size(1906, 922)
+        Me.tab_velorio.TabIndex = 6
+        Me.tab_velorio.Text = "Velórios"
+        Me.tab_velorio.UseVisualStyleBackColor = True
         '
-        'BunifuCustomDataGrid3
+        'dgv_velorio
         '
-        Me.BunifuCustomDataGrid3.AllowUserToAddRows = False
-        Me.BunifuCustomDataGrid3.AllowUserToDeleteRows = False
+        Me.dgv_velorio.AllowUserToAddRows = False
+        Me.dgv_velorio.AllowUserToDeleteRows = False
         DataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid3.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle36
-        Me.BunifuCustomDataGrid3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.BunifuCustomDataGrid3.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid3.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dgv_velorio.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle36
+        Me.dgv_velorio.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_velorio.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgv_velorio.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_velorio.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle37.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
         DataGridViewCellStyle37.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -297,9 +285,9 @@ Partial Class frm_administrador
         DataGridViewCellStyle37.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle37.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle37.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle37
-        Me.BunifuCustomDataGrid3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid3.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16, Me.DataGridViewTextBoxColumn17, Me.DataGridViewTextBoxColumn18, Me.DataGridViewImageColumn5, Me.DataGridViewImageColumn6})
+        Me.dgv_velorio.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle37
+        Me.dgv_velorio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_velorio.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewImageColumn5, Me.DataGridViewImageColumn6})
         DataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle38.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle38.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -307,14 +295,14 @@ Partial Class frm_administrador
         DataGridViewCellStyle38.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle38.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle38.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid3.DefaultCellStyle = DataGridViewCellStyle38
-        Me.BunifuCustomDataGrid3.DoubleBuffered = True
-        Me.BunifuCustomDataGrid3.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid3.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuCustomDataGrid3.HeaderForeColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid3.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid3.Name = "BunifuCustomDataGrid3"
-        Me.BunifuCustomDataGrid3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_velorio.DefaultCellStyle = DataGridViewCellStyle38
+        Me.dgv_velorio.DoubleBuffered = True
+        Me.dgv_velorio.EnableHeadersVisualStyles = False
+        Me.dgv_velorio.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.dgv_velorio.HeaderForeColor = System.Drawing.Color.White
+        Me.dgv_velorio.Location = New System.Drawing.Point(57, 180)
+        Me.dgv_velorio.Name = "dgv_velorio"
+        Me.dgv_velorio.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle39.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle39.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle39.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -322,58 +310,14 @@ Partial Class frm_administrador
         DataGridViewCellStyle39.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle39.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle39.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid3.RowHeadersDefaultCellStyle = DataGridViewCellStyle39
-        Me.BunifuCustomDataGrid3.RowHeadersWidth = 40
+        Me.dgv_velorio.RowHeadersDefaultCellStyle = DataGridViewCellStyle39
+        Me.dgv_velorio.RowHeadersWidth = 40
         DataGridViewCellStyle40.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle40.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle40.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomDataGrid3.RowsDefaultCellStyle = DataGridViewCellStyle40
-        Me.BunifuCustomDataGrid3.Size = New System.Drawing.Size(1755, 555)
-        Me.BunifuCustomDataGrid3.TabIndex = 23
-        '
-        'DataGridViewTextBoxColumn13
-        '
-        Me.DataGridViewTextBoxColumn13.HeaderText = "CPF"
-        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
-        '
-        'DataGridViewTextBoxColumn14
-        '
-        Me.DataGridViewTextBoxColumn14.HeaderText = "Login"
-        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
-        '
-        'DataGridViewTextBoxColumn15
-        '
-        Me.DataGridViewTextBoxColumn15.HeaderText = "Senha"
-        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
-        '
-        'DataGridViewTextBoxColumn16
-        '
-        Me.DataGridViewTextBoxColumn16.HeaderText = "CEP"
-        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
-        '
-        'DataGridViewTextBoxColumn17
-        '
-        Me.DataGridViewTextBoxColumn17.HeaderText = "DescStatus"
-        Me.DataGridViewTextBoxColumn17.Name = "DataGridViewTextBoxColumn17"
-        '
-        'DataGridViewTextBoxColumn18
-        '
-        Me.DataGridViewTextBoxColumn18.HeaderText = "DescSetor"
-        Me.DataGridViewTextBoxColumn18.Name = "DataGridViewTextBoxColumn18"
-        '
-        'DataGridViewImageColumn5
-        '
-        Me.DataGridViewImageColumn5.HeaderText = "Excluir"
-        Me.DataGridViewImageColumn5.Image = CType(resources.GetObject("DataGridViewImageColumn5.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.DataGridViewImageColumn5.Name = "DataGridViewImageColumn5"
-        '
-        'DataGridViewImageColumn6
-        '
-        Me.DataGridViewImageColumn6.HeaderText = "Alterar"
-        Me.DataGridViewImageColumn6.Image = CType(resources.GetObject("DataGridViewImageColumn6.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn6.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.DataGridViewImageColumn6.Name = "DataGridViewImageColumn6"
+        Me.dgv_velorio.RowsDefaultCellStyle = DataGridViewCellStyle40
+        Me.dgv_velorio.Size = New System.Drawing.Size(1755, 555)
+        Me.dgv_velorio.TabIndex = 39
         '
         'GunaShadowPanel4
         '
@@ -443,7 +387,7 @@ Partial Class frm_administrador
         Me.txt_horaVelorio.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
         Me.txt_horaVelorio.LeadingIcon = Nothing
         Me.txt_horaVelorio.Location = New System.Drawing.Point(302, 47)
-        Me.txt_horaVelorio.Mask = "00:00"
+        Me.txt_horaVelorio.Mask = "00:00:00"
         Me.txt_horaVelorio.MaxLength = 32767
         Me.txt_horaVelorio.MouseState = MaterialSkin.MouseState.OUT
         Me.txt_horaVelorio.Name = "txt_horaVelorio"
@@ -463,7 +407,7 @@ Partial Class frm_administrador
         Me.txt_horaVelorio.SkipLiterals = True
         Me.txt_horaVelorio.TabIndex = 36
         Me.txt_horaVelorio.TabStop = False
-        Me.txt_horaVelorio.Text = "  :"
+        Me.txt_horaVelorio.Text = "  :  :"
         Me.txt_horaVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txt_horaVelorio.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
         Me.txt_horaVelorio.TrailingIcon = Nothing
@@ -702,30 +646,30 @@ Partial Class frm_administrador
         Me.btn_voltar6.UseAccentColor = False
         Me.btn_voltar6.UseVisualStyleBackColor = True
         '
-        'TabPage6
+        'tab_jazigo
         '
-        Me.TabPage6.Controls.Add(Me.BunifuCustomDataGrid5)
-        Me.TabPage6.Controls.Add(Me.GunaShadowPanel6)
-        Me.TabPage6.Controls.Add(Me.btn_voltar5)
-        Me.TabPage6.ImageKey = "cross.png"
-        Me.TabPage6.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage6.TabIndex = 5
-        Me.TabPage6.Text = "Jazigos"
-        Me.TabPage6.UseVisualStyleBackColor = True
+        Me.tab_jazigo.Controls.Add(Me.dgv_jazigo)
+        Me.tab_jazigo.Controls.Add(Me.GunaShadowPanel6)
+        Me.tab_jazigo.Controls.Add(Me.btn_voltar5)
+        Me.tab_jazigo.ImageKey = "cross.png"
+        Me.tab_jazigo.Location = New System.Drawing.Point(4, 39)
+        Me.tab_jazigo.Name = "tab_jazigo"
+        Me.tab_jazigo.Size = New System.Drawing.Size(1906, 922)
+        Me.tab_jazigo.TabIndex = 5
+        Me.tab_jazigo.Text = "Jazigos"
+        Me.tab_jazigo.UseVisualStyleBackColor = True
         '
-        'BunifuCustomDataGrid5
+        'dgv_jazigo
         '
-        Me.BunifuCustomDataGrid5.AllowUserToAddRows = False
-        Me.BunifuCustomDataGrid5.AllowUserToDeleteRows = False
+        Me.dgv_jazigo.AllowUserToAddRows = False
+        Me.dgv_jazigo.AllowUserToDeleteRows = False
         DataGridViewCellStyle41.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle41.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid5.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle41
-        Me.BunifuCustomDataGrid5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.BunifuCustomDataGrid5.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid5.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid5.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dgv_jazigo.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle41
+        Me.dgv_jazigo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_jazigo.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgv_jazigo.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_jazigo.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle42.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle42.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
         DataGridViewCellStyle42.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -733,9 +677,9 @@ Partial Class frm_administrador
         DataGridViewCellStyle42.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle42.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle42.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid5.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle42
-        Me.BunifuCustomDataGrid5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid5.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn25, Me.DataGridViewTextBoxColumn26, Me.DataGridViewTextBoxColumn27, Me.DataGridViewTextBoxColumn28, Me.DataGridViewTextBoxColumn29, Me.DataGridViewTextBoxColumn30, Me.DataGridViewImageColumn9, Me.DataGridViewImageColumn10})
+        Me.dgv_jazigo.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle42
+        Me.dgv_jazigo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_jazigo.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column7, Me.Column8, Me.Column9, Me.Column10, Me.Column11, Me.DataGridViewImageColumn9, Me.DataGridViewImageColumn10})
         DataGridViewCellStyle43.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle43.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle43.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -743,14 +687,14 @@ Partial Class frm_administrador
         DataGridViewCellStyle43.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle43.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle43.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid5.DefaultCellStyle = DataGridViewCellStyle43
-        Me.BunifuCustomDataGrid5.DoubleBuffered = True
-        Me.BunifuCustomDataGrid5.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid5.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuCustomDataGrid5.HeaderForeColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid5.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid5.Name = "BunifuCustomDataGrid5"
-        Me.BunifuCustomDataGrid5.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_jazigo.DefaultCellStyle = DataGridViewCellStyle43
+        Me.dgv_jazigo.DoubleBuffered = True
+        Me.dgv_jazigo.EnableHeadersVisualStyles = False
+        Me.dgv_jazigo.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.dgv_jazigo.HeaderForeColor = System.Drawing.Color.White
+        Me.dgv_jazigo.Location = New System.Drawing.Point(57, 180)
+        Me.dgv_jazigo.Name = "dgv_jazigo"
+        Me.dgv_jazigo.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle44.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle44.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle44.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -758,44 +702,39 @@ Partial Class frm_administrador
         DataGridViewCellStyle44.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle44.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle44.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid5.RowHeadersDefaultCellStyle = DataGridViewCellStyle44
-        Me.BunifuCustomDataGrid5.RowHeadersWidth = 40
+        Me.dgv_jazigo.RowHeadersDefaultCellStyle = DataGridViewCellStyle44
+        Me.dgv_jazigo.RowHeadersWidth = 40
         DataGridViewCellStyle45.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle45.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle45.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomDataGrid5.RowsDefaultCellStyle = DataGridViewCellStyle45
-        Me.BunifuCustomDataGrid5.Size = New System.Drawing.Size(1755, 555)
-        Me.BunifuCustomDataGrid5.TabIndex = 25
+        Me.dgv_jazigo.RowsDefaultCellStyle = DataGridViewCellStyle45
+        Me.dgv_jazigo.Size = New System.Drawing.Size(1755, 555)
+        Me.dgv_jazigo.TabIndex = 25
         '
-        'DataGridViewTextBoxColumn25
+        'Column7
         '
-        Me.DataGridViewTextBoxColumn25.HeaderText = "CPF"
-        Me.DataGridViewTextBoxColumn25.Name = "DataGridViewTextBoxColumn25"
+        Me.Column7.HeaderText = "ID"
+        Me.Column7.Name = "Column7"
         '
-        'DataGridViewTextBoxColumn26
+        'Column8
         '
-        Me.DataGridViewTextBoxColumn26.HeaderText = "Login"
-        Me.DataGridViewTextBoxColumn26.Name = "DataGridViewTextBoxColumn26"
+        Me.Column8.HeaderText = "Quadrante"
+        Me.Column8.Name = "Column8"
         '
-        'DataGridViewTextBoxColumn27
+        'Column9
         '
-        Me.DataGridViewTextBoxColumn27.HeaderText = "Senha"
-        Me.DataGridViewTextBoxColumn27.Name = "DataGridViewTextBoxColumn27"
+        Me.Column9.HeaderText = "Linha"
+        Me.Column9.Name = "Column9"
         '
-        'DataGridViewTextBoxColumn28
+        'Column10
         '
-        Me.DataGridViewTextBoxColumn28.HeaderText = "CEP"
-        Me.DataGridViewTextBoxColumn28.Name = "DataGridViewTextBoxColumn28"
+        Me.Column10.HeaderText = "Coluna"
+        Me.Column10.Name = "Column10"
         '
-        'DataGridViewTextBoxColumn29
+        'Column11
         '
-        Me.DataGridViewTextBoxColumn29.HeaderText = "DescStatus"
-        Me.DataGridViewTextBoxColumn29.Name = "DataGridViewTextBoxColumn29"
-        '
-        'DataGridViewTextBoxColumn30
-        '
-        Me.DataGridViewTextBoxColumn30.HeaderText = "DescSetor"
-        Me.DataGridViewTextBoxColumn30.Name = "DataGridViewTextBoxColumn30"
+        Me.Column11.HeaderText = "Nome"
+        Me.Column11.Name = "Column11"
         '
         'DataGridViewImageColumn9
         '
@@ -918,9 +857,9 @@ Partial Class frm_administrador
         Me.MaterialLabel22.Location = New System.Drawing.Point(582, 14)
         Me.MaterialLabel22.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel22.Name = "MaterialLabel22"
-        Me.MaterialLabel22.Size = New System.Drawing.Size(66, 29)
+        Me.MaterialLabel22.Size = New System.Drawing.Size(59, 29)
         Me.MaterialLabel22.TabIndex = 38
-        Me.MaterialLabel22.Text = "Fileira"
+        Me.MaterialLabel22.Text = "Linha"
         '
         'txt_quadrante
         '
@@ -1111,30 +1050,30 @@ Partial Class frm_administrador
         Me.btn_voltar5.UseAccentColor = False
         Me.btn_voltar5.UseVisualStyleBackColor = True
         '
-        'TabPage5
+        'tab_servico
         '
-        Me.TabPage5.Controls.Add(Me.BunifuCustomDataGrid6)
-        Me.TabPage5.Controls.Add(Me.GunaShadowPanel7)
-        Me.TabPage5.Controls.Add(Me.btn_voltar4)
-        Me.TabPage5.ImageKey = "headphone.png"
-        Me.TabPage5.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "Serviços"
-        Me.TabPage5.UseVisualStyleBackColor = True
+        Me.tab_servico.Controls.Add(Me.dgv_servico)
+        Me.tab_servico.Controls.Add(Me.GunaShadowPanel7)
+        Me.tab_servico.Controls.Add(Me.btn_voltar4)
+        Me.tab_servico.ImageKey = "headphone.png"
+        Me.tab_servico.Location = New System.Drawing.Point(4, 39)
+        Me.tab_servico.Name = "tab_servico"
+        Me.tab_servico.Size = New System.Drawing.Size(1906, 922)
+        Me.tab_servico.TabIndex = 4
+        Me.tab_servico.Text = "Serviços"
+        Me.tab_servico.UseVisualStyleBackColor = True
         '
-        'BunifuCustomDataGrid6
+        'dgv_servico
         '
-        Me.BunifuCustomDataGrid6.AllowUserToAddRows = False
-        Me.BunifuCustomDataGrid6.AllowUserToDeleteRows = False
+        Me.dgv_servico.AllowUserToAddRows = False
+        Me.dgv_servico.AllowUserToDeleteRows = False
         DataGridViewCellStyle46.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle46.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid6.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle46
-        Me.BunifuCustomDataGrid6.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.BunifuCustomDataGrid6.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid6.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid6.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dgv_servico.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle46
+        Me.dgv_servico.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_servico.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgv_servico.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_servico.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
         DataGridViewCellStyle47.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1142,9 +1081,9 @@ Partial Class frm_administrador
         DataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid6.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle47
-        Me.BunifuCustomDataGrid6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid6.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn31, Me.DataGridViewTextBoxColumn32, Me.DataGridViewTextBoxColumn33, Me.DataGridViewTextBoxColumn34, Me.DataGridViewTextBoxColumn35, Me.DataGridViewTextBoxColumn36, Me.DataGridViewImageColumn11, Me.DataGridViewImageColumn12})
+        Me.dgv_servico.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle47
+        Me.dgv_servico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_servico.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column12, Me.Column13, Me.Column14, Me.DataGridViewImageColumn11, Me.DataGridViewImageColumn12})
         DataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle48.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle48.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1152,14 +1091,14 @@ Partial Class frm_administrador
         DataGridViewCellStyle48.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle48.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid6.DefaultCellStyle = DataGridViewCellStyle48
-        Me.BunifuCustomDataGrid6.DoubleBuffered = True
-        Me.BunifuCustomDataGrid6.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid6.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuCustomDataGrid6.HeaderForeColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid6.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid6.Name = "BunifuCustomDataGrid6"
-        Me.BunifuCustomDataGrid6.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_servico.DefaultCellStyle = DataGridViewCellStyle48
+        Me.dgv_servico.DoubleBuffered = True
+        Me.dgv_servico.EnableHeadersVisualStyles = False
+        Me.dgv_servico.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.dgv_servico.HeaderForeColor = System.Drawing.Color.White
+        Me.dgv_servico.Location = New System.Drawing.Point(57, 180)
+        Me.dgv_servico.Name = "dgv_servico"
+        Me.dgv_servico.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle49.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle49.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -1167,44 +1106,29 @@ Partial Class frm_administrador
         DataGridViewCellStyle49.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid6.RowHeadersDefaultCellStyle = DataGridViewCellStyle49
-        Me.BunifuCustomDataGrid6.RowHeadersWidth = 40
+        Me.dgv_servico.RowHeadersDefaultCellStyle = DataGridViewCellStyle49
+        Me.dgv_servico.RowHeadersWidth = 40
         DataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle50.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle50.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomDataGrid6.RowsDefaultCellStyle = DataGridViewCellStyle50
-        Me.BunifuCustomDataGrid6.Size = New System.Drawing.Size(1755, 555)
-        Me.BunifuCustomDataGrid6.TabIndex = 22
+        Me.dgv_servico.RowsDefaultCellStyle = DataGridViewCellStyle50
+        Me.dgv_servico.Size = New System.Drawing.Size(1755, 555)
+        Me.dgv_servico.TabIndex = 22
         '
-        'DataGridViewTextBoxColumn31
+        'Column12
         '
-        Me.DataGridViewTextBoxColumn31.HeaderText = "CPF"
-        Me.DataGridViewTextBoxColumn31.Name = "DataGridViewTextBoxColumn31"
+        Me.Column12.HeaderText = "ID"
+        Me.Column12.Name = "Column12"
         '
-        'DataGridViewTextBoxColumn32
+        'Column13
         '
-        Me.DataGridViewTextBoxColumn32.HeaderText = "Login"
-        Me.DataGridViewTextBoxColumn32.Name = "DataGridViewTextBoxColumn32"
+        Me.Column13.HeaderText = "Descrição"
+        Me.Column13.Name = "Column13"
         '
-        'DataGridViewTextBoxColumn33
+        'Column14
         '
-        Me.DataGridViewTextBoxColumn33.HeaderText = "Senha"
-        Me.DataGridViewTextBoxColumn33.Name = "DataGridViewTextBoxColumn33"
-        '
-        'DataGridViewTextBoxColumn34
-        '
-        Me.DataGridViewTextBoxColumn34.HeaderText = "CEP"
-        Me.DataGridViewTextBoxColumn34.Name = "DataGridViewTextBoxColumn34"
-        '
-        'DataGridViewTextBoxColumn35
-        '
-        Me.DataGridViewTextBoxColumn35.HeaderText = "DescStatus"
-        Me.DataGridViewTextBoxColumn35.Name = "DataGridViewTextBoxColumn35"
-        '
-        'DataGridViewTextBoxColumn36
-        '
-        Me.DataGridViewTextBoxColumn36.HeaderText = "DescSetor"
-        Me.DataGridViewTextBoxColumn36.Name = "DataGridViewTextBoxColumn36"
+        Me.Column14.HeaderText = "Preço"
+        Me.Column14.Name = "Column14"
         '
         'DataGridViewImageColumn11
         '
@@ -1429,18 +1353,18 @@ Partial Class frm_administrador
         Me.btn_voltar4.UseAccentColor = False
         Me.btn_voltar4.UseVisualStyleBackColor = True
         '
-        'TabPage4
+        'tab_funcionario
         '
-        Me.TabPage4.Controls.Add(Me.dgv_funcionarios)
-        Me.TabPage4.Controls.Add(Me.GunaShadowPanel1)
-        Me.TabPage4.Controls.Add(Me.btn_voltar3)
-        Me.TabPage4.ImageKey = "worker.png"
-        Me.TabPage4.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage4.TabIndex = 3
-        Me.TabPage4.Text = "Funcionários"
-        Me.TabPage4.UseVisualStyleBackColor = True
+        Me.tab_funcionario.Controls.Add(Me.dgv_funcionarios)
+        Me.tab_funcionario.Controls.Add(Me.GunaShadowPanel1)
+        Me.tab_funcionario.Controls.Add(Me.btn_voltar3)
+        Me.tab_funcionario.ImageKey = "worker.png"
+        Me.tab_funcionario.Location = New System.Drawing.Point(4, 39)
+        Me.tab_funcionario.Name = "tab_funcionario"
+        Me.tab_funcionario.Size = New System.Drawing.Size(1906, 922)
+        Me.tab_funcionario.TabIndex = 3
+        Me.tab_funcionario.Text = "Funcionários"
+        Me.tab_funcionario.UseVisualStyleBackColor = True
         '
         'dgv_funcionarios
         '
@@ -2066,30 +1990,30 @@ Partial Class frm_administrador
         Me.btn_voltar3.UseAccentColor = False
         Me.btn_voltar3.UseVisualStyleBackColor = True
         '
-        'TabPage3
+        'tab_falecido
         '
-        Me.TabPage3.Controls.Add(Me.BunifuCustomDataGrid4)
-        Me.TabPage3.Controls.Add(Me.GunaShadowPanel5)
-        Me.TabPage3.Controls.Add(Me.btn_voltar2)
-        Me.TabPage3.ImageKey = "coffin.png"
-        Me.TabPage3.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Falecidos"
-        Me.TabPage3.UseVisualStyleBackColor = True
+        Me.tab_falecido.Controls.Add(Me.dgv_falecido)
+        Me.tab_falecido.Controls.Add(Me.GunaShadowPanel5)
+        Me.tab_falecido.Controls.Add(Me.btn_voltar2)
+        Me.tab_falecido.ImageKey = "coffin.png"
+        Me.tab_falecido.Location = New System.Drawing.Point(4, 39)
+        Me.tab_falecido.Name = "tab_falecido"
+        Me.tab_falecido.Size = New System.Drawing.Size(1906, 922)
+        Me.tab_falecido.TabIndex = 2
+        Me.tab_falecido.Text = "Falecidos"
+        Me.tab_falecido.UseVisualStyleBackColor = True
         '
-        'BunifuCustomDataGrid4
+        'dgv_falecido
         '
-        Me.BunifuCustomDataGrid4.AllowUserToAddRows = False
-        Me.BunifuCustomDataGrid4.AllowUserToDeleteRows = False
+        Me.dgv_falecido.AllowUserToAddRows = False
+        Me.dgv_falecido.AllowUserToDeleteRows = False
         DataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle56.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid4.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle56
-        Me.BunifuCustomDataGrid4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.BunifuCustomDataGrid4.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid4.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dgv_falecido.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle56
+        Me.dgv_falecido.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_falecido.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgv_falecido.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_falecido.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle57.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
         DataGridViewCellStyle57.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2097,9 +2021,9 @@ Partial Class frm_administrador
         DataGridViewCellStyle57.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle57.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid4.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle57
-        Me.BunifuCustomDataGrid4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid4.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn19, Me.DataGridViewTextBoxColumn20, Me.DataGridViewTextBoxColumn21, Me.DataGridViewTextBoxColumn22, Me.DataGridViewTextBoxColumn23, Me.DataGridViewTextBoxColumn24, Me.DataGridViewImageColumn7, Me.DataGridViewImageColumn8})
+        Me.dgv_falecido.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle57
+        Me.dgv_falecido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_falecido.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column4, Me.Column5, Me.Column6, Me.DataGridViewImageColumn7, Me.DataGridViewImageColumn8})
         DataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle58.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2107,14 +2031,14 @@ Partial Class frm_administrador
         DataGridViewCellStyle58.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle58.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid4.DefaultCellStyle = DataGridViewCellStyle58
-        Me.BunifuCustomDataGrid4.DoubleBuffered = True
-        Me.BunifuCustomDataGrid4.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid4.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuCustomDataGrid4.HeaderForeColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid4.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid4.Name = "BunifuCustomDataGrid4"
-        Me.BunifuCustomDataGrid4.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_falecido.DefaultCellStyle = DataGridViewCellStyle58
+        Me.dgv_falecido.DoubleBuffered = True
+        Me.dgv_falecido.EnableHeadersVisualStyles = False
+        Me.dgv_falecido.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.dgv_falecido.HeaderForeColor = System.Drawing.Color.White
+        Me.dgv_falecido.Location = New System.Drawing.Point(57, 180)
+        Me.dgv_falecido.Name = "dgv_falecido"
+        Me.dgv_falecido.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle59.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2122,44 +2046,29 @@ Partial Class frm_administrador
         DataGridViewCellStyle59.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle59.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid4.RowHeadersDefaultCellStyle = DataGridViewCellStyle59
-        Me.BunifuCustomDataGrid4.RowHeadersWidth = 40
+        Me.dgv_falecido.RowHeadersDefaultCellStyle = DataGridViewCellStyle59
+        Me.dgv_falecido.RowHeadersWidth = 40
         DataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle60.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle60.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomDataGrid4.RowsDefaultCellStyle = DataGridViewCellStyle60
-        Me.BunifuCustomDataGrid4.Size = New System.Drawing.Size(1755, 555)
-        Me.BunifuCustomDataGrid4.TabIndex = 25
+        Me.dgv_falecido.RowsDefaultCellStyle = DataGridViewCellStyle60
+        Me.dgv_falecido.Size = New System.Drawing.Size(1755, 555)
+        Me.dgv_falecido.TabIndex = 25
         '
-        'DataGridViewTextBoxColumn19
+        'Column4
         '
-        Me.DataGridViewTextBoxColumn19.HeaderText = "CPF"
-        Me.DataGridViewTextBoxColumn19.Name = "DataGridViewTextBoxColumn19"
+        Me.Column4.HeaderText = "ID"
+        Me.Column4.Name = "Column4"
         '
-        'DataGridViewTextBoxColumn20
+        'Column5
         '
-        Me.DataGridViewTextBoxColumn20.HeaderText = "Login"
-        Me.DataGridViewTextBoxColumn20.Name = "DataGridViewTextBoxColumn20"
+        Me.Column5.HeaderText = "Nome"
+        Me.Column5.Name = "Column5"
         '
-        'DataGridViewTextBoxColumn21
+        'Column6
         '
-        Me.DataGridViewTextBoxColumn21.HeaderText = "Senha"
-        Me.DataGridViewTextBoxColumn21.Name = "DataGridViewTextBoxColumn21"
-        '
-        'DataGridViewTextBoxColumn22
-        '
-        Me.DataGridViewTextBoxColumn22.HeaderText = "CEP"
-        Me.DataGridViewTextBoxColumn22.Name = "DataGridViewTextBoxColumn22"
-        '
-        'DataGridViewTextBoxColumn23
-        '
-        Me.DataGridViewTextBoxColumn23.HeaderText = "DescStatus"
-        Me.DataGridViewTextBoxColumn23.Name = "DataGridViewTextBoxColumn23"
-        '
-        'DataGridViewTextBoxColumn24
-        '
-        Me.DataGridViewTextBoxColumn24.HeaderText = "DescSetor"
-        Me.DataGridViewTextBoxColumn24.Name = "DataGridViewTextBoxColumn24"
+        Me.Column6.HeaderText = "Status"
+        Me.Column6.Name = "Column6"
         '
         'DataGridViewImageColumn7
         '
@@ -2379,31 +2288,31 @@ Partial Class frm_administrador
         Me.btn_voltar2.UseAccentColor = False
         Me.btn_voltar2.UseVisualStyleBackColor = True
         '
-        'TabPage2
+        'tab_cremacao
         '
-        Me.TabPage2.Controls.Add(Me.BunifuCustomDataGrid2)
-        Me.TabPage2.Controls.Add(Me.GunaShadowPanel3)
-        Me.TabPage2.Controls.Add(Me.btn_voltar1)
-        Me.TabPage2.ImageKey = "jar.png"
-        Me.TabPage2.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "Cremações"
-        Me.TabPage2.UseVisualStyleBackColor = True
+        Me.tab_cremacao.Controls.Add(Me.dgv_cremacao)
+        Me.tab_cremacao.Controls.Add(Me.GunaShadowPanel3)
+        Me.tab_cremacao.Controls.Add(Me.btn_voltar1)
+        Me.tab_cremacao.ImageKey = "jar.png"
+        Me.tab_cremacao.Location = New System.Drawing.Point(4, 39)
+        Me.tab_cremacao.Name = "tab_cremacao"
+        Me.tab_cremacao.Padding = New System.Windows.Forms.Padding(3)
+        Me.tab_cremacao.Size = New System.Drawing.Size(1906, 922)
+        Me.tab_cremacao.TabIndex = 1
+        Me.tab_cremacao.Text = "Cremações"
+        Me.tab_cremacao.UseVisualStyleBackColor = True
         '
-        'BunifuCustomDataGrid2
+        'dgv_cremacao
         '
-        Me.BunifuCustomDataGrid2.AllowUserToAddRows = False
-        Me.BunifuCustomDataGrid2.AllowUserToDeleteRows = False
+        Me.dgv_cremacao.AllowUserToAddRows = False
+        Me.dgv_cremacao.AllowUserToDeleteRows = False
         DataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle61.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid2.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle61
-        Me.BunifuCustomDataGrid2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.BunifuCustomDataGrid2.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dgv_cremacao.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle61
+        Me.dgv_cremacao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_cremacao.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgv_cremacao.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_cremacao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle62.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
         DataGridViewCellStyle62.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2411,9 +2320,9 @@ Partial Class frm_administrador
         DataGridViewCellStyle62.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle62.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid2.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle62
-        Me.BunifuCustomDataGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewImageColumn3, Me.DataGridViewImageColumn4})
+        Me.dgv_cremacao.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle62
+        Me.dgv_cremacao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_cremacao.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.idCremacao, Me.horaCremacao, Me.diaCremacao, Me.salaCremacao, Me.falecidoCremacao, Me.DataGridViewImageColumn3, Me.DataGridViewImageColumn4})
         DataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle63.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle63.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2421,14 +2330,14 @@ Partial Class frm_administrador
         DataGridViewCellStyle63.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle63.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid2.DefaultCellStyle = DataGridViewCellStyle63
-        Me.BunifuCustomDataGrid2.DoubleBuffered = True
-        Me.BunifuCustomDataGrid2.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid2.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuCustomDataGrid2.HeaderForeColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid2.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid2.Name = "BunifuCustomDataGrid2"
-        Me.BunifuCustomDataGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_cremacao.DefaultCellStyle = DataGridViewCellStyle63
+        Me.dgv_cremacao.DoubleBuffered = True
+        Me.dgv_cremacao.EnableHeadersVisualStyles = False
+        Me.dgv_cremacao.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.dgv_cremacao.HeaderForeColor = System.Drawing.Color.White
+        Me.dgv_cremacao.Location = New System.Drawing.Point(57, 180)
+        Me.dgv_cremacao.Name = "dgv_cremacao"
+        Me.dgv_cremacao.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle64.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle64.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2436,58 +2345,14 @@ Partial Class frm_administrador
         DataGridViewCellStyle64.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle64.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid2.RowHeadersDefaultCellStyle = DataGridViewCellStyle64
-        Me.BunifuCustomDataGrid2.RowHeadersWidth = 40
+        Me.dgv_cremacao.RowHeadersDefaultCellStyle = DataGridViewCellStyle64
+        Me.dgv_cremacao.RowHeadersWidth = 40
         DataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle65.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle65.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomDataGrid2.RowsDefaultCellStyle = DataGridViewCellStyle65
-        Me.BunifuCustomDataGrid2.Size = New System.Drawing.Size(1755, 555)
-        Me.BunifuCustomDataGrid2.TabIndex = 21
-        '
-        'DataGridViewTextBoxColumn7
-        '
-        Me.DataGridViewTextBoxColumn7.HeaderText = "CPF"
-        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
-        '
-        'DataGridViewTextBoxColumn8
-        '
-        Me.DataGridViewTextBoxColumn8.HeaderText = "Login"
-        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
-        '
-        'DataGridViewTextBoxColumn9
-        '
-        Me.DataGridViewTextBoxColumn9.HeaderText = "Senha"
-        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
-        '
-        'DataGridViewTextBoxColumn10
-        '
-        Me.DataGridViewTextBoxColumn10.HeaderText = "CEP"
-        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
-        '
-        'DataGridViewTextBoxColumn11
-        '
-        Me.DataGridViewTextBoxColumn11.HeaderText = "DescStatus"
-        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
-        '
-        'DataGridViewTextBoxColumn12
-        '
-        Me.DataGridViewTextBoxColumn12.HeaderText = "DescSetor"
-        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
-        '
-        'DataGridViewImageColumn3
-        '
-        Me.DataGridViewImageColumn3.HeaderText = "Excluir"
-        Me.DataGridViewImageColumn3.Image = CType(resources.GetObject("DataGridViewImageColumn3.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
-        '
-        'DataGridViewImageColumn4
-        '
-        Me.DataGridViewImageColumn4.HeaderText = "Alterar"
-        Me.DataGridViewImageColumn4.Image = CType(resources.GetObject("DataGridViewImageColumn4.Image"), System.Drawing.Image)
-        Me.DataGridViewImageColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.DataGridViewImageColumn4.Name = "DataGridViewImageColumn4"
+        Me.dgv_cremacao.RowsDefaultCellStyle = DataGridViewCellStyle65
+        Me.dgv_cremacao.Size = New System.Drawing.Size(1755, 555)
+        Me.dgv_cremacao.TabIndex = 38
         '
         'GunaShadowPanel3
         '
@@ -2557,7 +2422,7 @@ Partial Class frm_administrador
         Me.txt_horaCremacao.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
         Me.txt_horaCremacao.LeadingIcon = Nothing
         Me.txt_horaCremacao.Location = New System.Drawing.Point(302, 47)
-        Me.txt_horaCremacao.Mask = "00:00"
+        Me.txt_horaCremacao.Mask = "00:00:00"
         Me.txt_horaCremacao.MaxLength = 32767
         Me.txt_horaCremacao.MouseState = MaterialSkin.MouseState.OUT
         Me.txt_horaCremacao.Name = "txt_horaCremacao"
@@ -2577,7 +2442,7 @@ Partial Class frm_administrador
         Me.txt_horaCremacao.SkipLiterals = True
         Me.txt_horaCremacao.TabIndex = 36
         Me.txt_horaCremacao.TabStop = False
-        Me.txt_horaCremacao.Text = "  :"
+        Me.txt_horaCremacao.Text = "  :  :"
         Me.txt_horaCremacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txt_horaCremacao.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
         Me.txt_horaCremacao.TrailingIcon = Nothing
@@ -2595,9 +2460,9 @@ Partial Class frm_administrador
         Me.MaterialLabel19.Location = New System.Drawing.Point(576, 15)
         Me.MaterialLabel19.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel19.Name = "MaterialLabel19"
-        Me.MaterialLabel19.Size = New System.Drawing.Size(198, 29)
+        Me.MaterialLabel19.Size = New System.Drawing.Size(201, 29)
         Me.MaterialLabel19.TabIndex = 35
-        Me.MaterialLabel19.Text = "Data da cremação"
+        Me.MaterialLabel19.Text = "Data da Cremação"
         '
         'txt_dataCremacao
         '
@@ -2711,7 +2576,7 @@ Partial Class frm_administrador
         Me.MaterialLabel18.Name = "MaterialLabel18"
         Me.MaterialLabel18.Size = New System.Drawing.Size(211, 29)
         Me.MaterialLabel18.TabIndex = 19
-        Me.MaterialLabel18.Text = "Hora da cremação"
+        Me.MaterialLabel18.Text = "Hora da Cremação"
         '
         'txt_idCremacao
         '
@@ -2752,9 +2617,9 @@ Partial Class frm_administrador
         Me.MaterialLabel20.Location = New System.Drawing.Point(24, 15)
         Me.MaterialLabel20.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel20.Name = "MaterialLabel20"
-        Me.MaterialLabel20.Size = New System.Drawing.Size(171, 29)
+        Me.MaterialLabel20.Size = New System.Drawing.Size(174, 29)
         Me.MaterialLabel20.TabIndex = 9
-        Me.MaterialLabel20.Text = "ID da cremação"
+        Me.MaterialLabel20.Text = "ID da Cremação"
         '
         'btn_incluirCremacoes
         '
@@ -2816,31 +2681,31 @@ Partial Class frm_administrador
         Me.btn_voltar1.UseAccentColor = False
         Me.btn_voltar1.UseVisualStyleBackColor = True
         '
-        'TabPage1
+        'tab_sala
         '
-        Me.TabPage1.Controls.Add(Me.BunifuCustomDataGrid1)
-        Me.TabPage1.Controls.Add(Me.GunaShadowPanel2)
-        Me.TabPage1.Controls.Add(Me.btn_voltar)
-        Me.TabPage1.ImageKey = "door.png"
-        Me.TabPage1.Location = New System.Drawing.Point(4, 39)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1906, 922)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Salas"
-        Me.TabPage1.UseVisualStyleBackColor = True
+        Me.tab_sala.Controls.Add(Me.dgv_sala)
+        Me.tab_sala.Controls.Add(Me.GunaShadowPanel2)
+        Me.tab_sala.Controls.Add(Me.btn_voltar)
+        Me.tab_sala.ImageKey = "door.png"
+        Me.tab_sala.Location = New System.Drawing.Point(4, 39)
+        Me.tab_sala.Name = "tab_sala"
+        Me.tab_sala.Padding = New System.Windows.Forms.Padding(3)
+        Me.tab_sala.Size = New System.Drawing.Size(1906, 922)
+        Me.tab_sala.TabIndex = 0
+        Me.tab_sala.Text = "Salas"
+        Me.tab_sala.UseVisualStyleBackColor = True
         '
-        'BunifuCustomDataGrid1
+        'dgv_sala
         '
-        Me.BunifuCustomDataGrid1.AllowUserToAddRows = False
-        Me.BunifuCustomDataGrid1.AllowUserToDeleteRows = False
+        Me.dgv_sala.AllowUserToAddRows = False
+        Me.dgv_sala.AllowUserToDeleteRows = False
         DataGridViewCellStyle66.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle66.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle66
-        Me.BunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
+        Me.dgv_sala.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle66
+        Me.dgv_sala.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_sala.BackgroundColor = System.Drawing.Color.Gainsboro
+        Me.dgv_sala.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.dgv_sala.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
         DataGridViewCellStyle67.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle67.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
         DataGridViewCellStyle67.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2848,9 +2713,9 @@ Partial Class frm_administrador
         DataGridViewCellStyle67.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle67.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle67.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle67
-        Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewImageColumn1, Me.DataGridViewImageColumn2})
+        Me.dgv_sala.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle67
+        Me.dgv_sala.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_sala.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.DataGridViewImageColumn1, Me.DataGridViewImageColumn2})
         DataGridViewCellStyle68.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle68.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle68.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2858,14 +2723,14 @@ Partial Class frm_administrador
         DataGridViewCellStyle68.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle68.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle68.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.BunifuCustomDataGrid1.DefaultCellStyle = DataGridViewCellStyle68
-        Me.BunifuCustomDataGrid1.DoubleBuffered = True
-        Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
-        Me.BunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.White
-        Me.BunifuCustomDataGrid1.Location = New System.Drawing.Point(57, 180)
-        Me.BunifuCustomDataGrid1.Name = "BunifuCustomDataGrid1"
-        Me.BunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.dgv_sala.DefaultCellStyle = DataGridViewCellStyle68
+        Me.dgv_sala.DoubleBuffered = True
+        Me.dgv_sala.EnableHeadersVisualStyles = False
+        Me.dgv_sala.HeaderBgColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(39, Byte), Integer), CType(CType(144, Byte), Integer))
+        Me.dgv_sala.HeaderForeColor = System.Drawing.Color.White
+        Me.dgv_sala.Location = New System.Drawing.Point(57, 180)
+        Me.dgv_sala.Name = "dgv_sala"
+        Me.dgv_sala.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle69.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle69.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle69.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2873,44 +2738,29 @@ Partial Class frm_administrador
         DataGridViewCellStyle69.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle69.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle69.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.RowHeadersDefaultCellStyle = DataGridViewCellStyle69
-        Me.BunifuCustomDataGrid1.RowHeadersWidth = 40
+        Me.dgv_sala.RowHeadersDefaultCellStyle = DataGridViewCellStyle69
+        Me.dgv_sala.RowHeadersWidth = 40
         DataGridViewCellStyle70.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter
         DataGridViewCellStyle70.Font = New System.Drawing.Font("Arial Narrow", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle70.ForeColor = System.Drawing.Color.Black
-        Me.BunifuCustomDataGrid1.RowsDefaultCellStyle = DataGridViewCellStyle70
-        Me.BunifuCustomDataGrid1.Size = New System.Drawing.Size(1755, 555)
-        Me.BunifuCustomDataGrid1.TabIndex = 20
+        Me.dgv_sala.RowsDefaultCellStyle = DataGridViewCellStyle70
+        Me.dgv_sala.Size = New System.Drawing.Size(1755, 555)
+        Me.dgv_sala.TabIndex = 20
         '
-        'DataGridViewTextBoxColumn1
+        'Column1
         '
-        Me.DataGridViewTextBoxColumn1.HeaderText = "CPF"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        Me.Column1.HeaderText = "ID"
+        Me.Column1.Name = "Column1"
         '
-        'DataGridViewTextBoxColumn2
+        'Column2
         '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Login"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        Me.Column2.HeaderText = "Descrição"
+        Me.Column2.Name = "Column2"
         '
-        'DataGridViewTextBoxColumn3
+        'Column3
         '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Senha"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.HeaderText = "CEP"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "DescStatus"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
-        '
-        'DataGridViewTextBoxColumn6
-        '
-        Me.DataGridViewTextBoxColumn6.HeaderText = "DescSetor"
-        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
+        Me.Column3.HeaderText = "Tipo da Sala"
+        Me.Column3.Name = "Column3"
         '
         'DataGridViewImageColumn1
         '
@@ -3132,13 +2982,13 @@ Partial Class frm_administrador
         '
         'MaterialTabControl1
         '
-        Me.MaterialTabControl1.Controls.Add(Me.TabPage4)
-        Me.MaterialTabControl1.Controls.Add(Me.TabPage1)
-        Me.MaterialTabControl1.Controls.Add(Me.TabPage2)
-        Me.MaterialTabControl1.Controls.Add(Me.TabPage7)
-        Me.MaterialTabControl1.Controls.Add(Me.TabPage3)
-        Me.MaterialTabControl1.Controls.Add(Me.TabPage6)
-        Me.MaterialTabControl1.Controls.Add(Me.TabPage5)
+        Me.MaterialTabControl1.Controls.Add(Me.tab_funcionario)
+        Me.MaterialTabControl1.Controls.Add(Me.tab_sala)
+        Me.MaterialTabControl1.Controls.Add(Me.tab_cremacao)
+        Me.MaterialTabControl1.Controls.Add(Me.tab_velorio)
+        Me.MaterialTabControl1.Controls.Add(Me.tab_falecido)
+        Me.MaterialTabControl1.Controls.Add(Me.tab_jazigo)
+        Me.MaterialTabControl1.Controls.Add(Me.tab_servico)
         Me.MaterialTabControl1.Depth = 0
         Me.MaterialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.MaterialTabControl1.ImageList = Me.ImageList1
@@ -3161,6 +3011,84 @@ Partial Class frm_administrador
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
         '
+        'idCremacao
+        '
+        Me.idCremacao.HeaderText = "ID"
+        Me.idCremacao.Name = "idCremacao"
+        '
+        'horaCremacao
+        '
+        Me.horaCremacao.HeaderText = "Hora"
+        Me.horaCremacao.Name = "horaCremacao"
+        '
+        'diaCremacao
+        '
+        Me.diaCremacao.HeaderText = "Data"
+        Me.diaCremacao.Name = "diaCremacao"
+        '
+        'salaCremacao
+        '
+        Me.salaCremacao.HeaderText = "Sala"
+        Me.salaCremacao.Name = "salaCremacao"
+        '
+        'falecidoCremacao
+        '
+        Me.falecidoCremacao.HeaderText = "Falecido"
+        Me.falecidoCremacao.Name = "falecidoCremacao"
+        '
+        'DataGridViewImageColumn3
+        '
+        Me.DataGridViewImageColumn3.HeaderText = "Excluir"
+        Me.DataGridViewImageColumn3.Image = CType(resources.GetObject("DataGridViewImageColumn3.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn3.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.DataGridViewImageColumn3.Name = "DataGridViewImageColumn3"
+        '
+        'DataGridViewImageColumn4
+        '
+        Me.DataGridViewImageColumn4.HeaderText = "Alterar"
+        Me.DataGridViewImageColumn4.Image = CType(resources.GetObject("DataGridViewImageColumn4.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn4.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.DataGridViewImageColumn4.Name = "DataGridViewImageColumn4"
+        '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Hora"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Data"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Sala"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Falecido"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
+        'DataGridViewImageColumn5
+        '
+        Me.DataGridViewImageColumn5.HeaderText = "Excluir"
+        Me.DataGridViewImageColumn5.Image = CType(resources.GetObject("DataGridViewImageColumn5.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn5.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.DataGridViewImageColumn5.Name = "DataGridViewImageColumn5"
+        '
+        'DataGridViewImageColumn6
+        '
+        Me.DataGridViewImageColumn6.HeaderText = "Alterar"
+        Me.DataGridViewImageColumn6.Image = CType(resources.GetObject("DataGridViewImageColumn6.Image"), System.Drawing.Image)
+        Me.DataGridViewImageColumn6.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.DataGridViewImageColumn6.Name = "DataGridViewImageColumn6"
+        '
         'frm_administrador
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -3174,32 +3102,32 @@ Partial Class frm_administrador
         Me.Name = "frm_administrador"
         Me.Text = "           Thanatos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.TabPage7.ResumeLayout(False)
-        CType(Me.BunifuCustomDataGrid3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tab_velorio.ResumeLayout(False)
+        CType(Me.dgv_velorio, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel4.ResumeLayout(False)
         Me.GunaShadowPanel4.PerformLayout()
-        Me.TabPage6.ResumeLayout(False)
-        CType(Me.BunifuCustomDataGrid5, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tab_jazigo.ResumeLayout(False)
+        CType(Me.dgv_jazigo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel6.ResumeLayout(False)
         Me.GunaShadowPanel6.PerformLayout()
-        Me.TabPage5.ResumeLayout(False)
-        CType(Me.BunifuCustomDataGrid6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tab_servico.ResumeLayout(False)
+        CType(Me.dgv_servico, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel7.ResumeLayout(False)
         Me.GunaShadowPanel7.PerformLayout()
-        Me.TabPage4.ResumeLayout(False)
+        Me.tab_funcionario.ResumeLayout(False)
         CType(Me.dgv_funcionarios, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel1.ResumeLayout(False)
         Me.GunaShadowPanel1.PerformLayout()
-        Me.TabPage3.ResumeLayout(False)
-        CType(Me.BunifuCustomDataGrid4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tab_falecido.ResumeLayout(False)
+        CType(Me.dgv_falecido, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel5.ResumeLayout(False)
         Me.GunaShadowPanel5.PerformLayout()
-        Me.TabPage2.ResumeLayout(False)
-        CType(Me.BunifuCustomDataGrid2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tab_cremacao.ResumeLayout(False)
+        CType(Me.dgv_cremacao, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel3.ResumeLayout(False)
         Me.GunaShadowPanel3.PerformLayout()
-        Me.TabPage1.ResumeLayout(False)
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tab_sala.ResumeLayout(False)
+        CType(Me.dgv_sala, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel2.ResumeLayout(False)
         Me.GunaShadowPanel2.PerformLayout()
         Me.MaterialTabControl1.ResumeLayout(False)
@@ -3208,13 +3136,13 @@ Partial Class frm_administrador
 
     End Sub
     Friend WithEvents ImageList1 As ImageList
-    Friend WithEvents TabPage7 As TabPage
-    Friend WithEvents TabPage6 As TabPage
-    Friend WithEvents TabPage5 As TabPage
-    Friend WithEvents TabPage4 As TabPage
-    Friend WithEvents TabPage3 As TabPage
-    Friend WithEvents TabPage2 As TabPage
-    Friend WithEvents TabPage1 As TabPage
+    Friend WithEvents tab_velorio As TabPage
+    Friend WithEvents tab_jazigo As TabPage
+    Friend WithEvents tab_servico As TabPage
+    Friend WithEvents tab_funcionario As TabPage
+    Friend WithEvents tab_falecido As TabPage
+    Friend WithEvents tab_cremacao As TabPage
+    Friend WithEvents tab_sala As TabPage
     Friend WithEvents MaterialTabControl1 As MaterialSkin.Controls.MaterialTabControl
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents btn_voltar As MaterialSkin.Controls.MaterialButton
@@ -3322,58 +3250,46 @@ Partial Class frm_administrador
     Friend WithEvents setorFuncionario As DataGridViewTextBoxColumn
     Friend WithEvents img_excluir As DataGridViewImageColumn
     Friend WithEvents img_alterar As DataGridViewImageColumn
-    Friend WithEvents BunifuCustomDataGrid3 As ns1.BunifuCustomDataGrid
-    Friend WithEvents DataGridViewTextBoxColumn13 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn14 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn15 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn16 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn17 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn18 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn5 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn6 As DataGridViewImageColumn
-    Friend WithEvents BunifuCustomDataGrid5 As ns1.BunifuCustomDataGrid
-    Friend WithEvents DataGridViewTextBoxColumn25 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn26 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn27 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn28 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn29 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn30 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn9 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn10 As DataGridViewImageColumn
-    Friend WithEvents BunifuCustomDataGrid6 As ns1.BunifuCustomDataGrid
-    Friend WithEvents DataGridViewTextBoxColumn31 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn32 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn33 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn34 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn35 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn36 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn11 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn12 As DataGridViewImageColumn
-    Friend WithEvents BunifuCustomDataGrid4 As ns1.BunifuCustomDataGrid
-    Friend WithEvents DataGridViewTextBoxColumn19 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn20 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn21 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn22 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn23 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn24 As DataGridViewTextBoxColumn
+    Friend WithEvents dgv_jazigo As ns1.BunifuCustomDataGrid
+    Friend WithEvents dgv_servico As ns1.BunifuCustomDataGrid
+    Friend WithEvents dgv_falecido As ns1.BunifuCustomDataGrid
+    Friend WithEvents dgv_sala As ns1.BunifuCustomDataGrid
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
+    Friend WithEvents dgv_cremacao As ns1.BunifuCustomDataGrid
+    Friend WithEvents dgv_velorio As ns1.BunifuCustomDataGrid
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewImageColumn7 As DataGridViewImageColumn
     Friend WithEvents DataGridViewImageColumn8 As DataGridViewImageColumn
-    Friend WithEvents BunifuCustomDataGrid2 As ns1.BunifuCustomDataGrid
-    Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
+    Friend WithEvents Column10 As DataGridViewTextBoxColumn
+    Friend WithEvents Column11 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn9 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn10 As DataGridViewImageColumn
+    Friend WithEvents Column12 As DataGridViewTextBoxColumn
+    Friend WithEvents Column13 As DataGridViewTextBoxColumn
+    Friend WithEvents Column14 As DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewImageColumn11 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn12 As DataGridViewImageColumn
+    Friend WithEvents idCremacao As DataGridViewTextBoxColumn
+    Friend WithEvents horaCremacao As DataGridViewTextBoxColumn
+    Friend WithEvents diaCremacao As DataGridViewTextBoxColumn
+    Friend WithEvents salaCremacao As DataGridViewTextBoxColumn
+    Friend WithEvents falecidoCremacao As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewImageColumn3 As DataGridViewImageColumn
     Friend WithEvents DataGridViewImageColumn4 As DataGridViewImageColumn
-    Friend WithEvents BunifuCustomDataGrid1 As ns1.BunifuCustomDataGrid
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn4 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn5 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
-    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn5 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn6 As DataGridViewImageColumn
 End Class

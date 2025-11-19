@@ -53,4 +53,11 @@ Public Class frm_recepcionista
         Voltar()
     End Sub
 
+    Private Sub frm_recepcionista_Load(sender As Object, e As EventArgs) Handles Me.Load
+        conecta_banco_mysql()
+        carregar_dados_cremacao(Me.dgv_cremacao)
+        carregar_dados_velorio(Me.dgv_velorio)
+        carregar_dados_falecido(Me.dgv_falecido)
+        carregar_dados_jazigo(Me.dgv_jazigo)
+    End Sub
 End Class

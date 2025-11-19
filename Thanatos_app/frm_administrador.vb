@@ -88,27 +88,17 @@ Public Class frm_administrador
             MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
     End Sub
-    Private Sub carregar_dados()
-        Try
-            query = $"Select tb_funcionarios.cpfFuncionario, tb_funcionarios.loginFuncionario,tb_funcionarios.senhaFuncionario,tb_funcionarios.cepFuncionario, 
-                    tb_status.descricaoStatus, tb_setores.descricaoSetor from tb_funcionarios inner join tb_status on tb_funcionarios.idStatus = tb_status.idStatus 
-                    inner join tb_setores on tb_funcionarios.idSetor = tb_setores.idSetor"
-            rs = db.Execute(query)
-            With Me.dgv_funcionarios
-                .Rows.Clear()
-                Do While rs.EOF = False
-                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, rs.Fields(5).Value, Nothing, Nothing)
-                    rs.MoveNext()
-                Loop
-            End With
-        Catch ex As Exception
-            Exit Sub
-        End Try
-    End Sub
+
 
     Private Sub frm_administrador_Load(sender As Object, e As EventArgs) Handles Me.Load
         conecta_banco_mysql()
-        carregar_dados()
+        carregar_dados_funcionario(Me.dgv_funcionarios)
+        carregar_dados_sala(Me.dgv_sala)
+        carregar_dados_cremacao(Me.dgv_cremacao)
+        carregar_dados_velorio(Me.dgv_velorio)
+        carregar_dados_falecido(Me.dgv_falecido)
+        carregar_dados_jazigo(Me.dgv_jazigo)
+        carregar_dados_servico(Me.dgv_servico)
     End Sub
 
     Private Sub cmb_setor_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmb_setor.SelectedValueChanged

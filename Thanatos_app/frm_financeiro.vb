@@ -57,4 +57,11 @@ Public Class frm_financeiro
     Private Sub MaterialLabel8_Click(sender As Object, e As EventArgs) Handles MaterialLabel8.Click
 
     End Sub
+
+    Private Sub frm_financeiro_Load(sender As Object, e As EventArgs) Handles Me.Load
+        conecta_banco_mysql()
+        carregar_dados_orcamento(Me.dgv_orcamento)
+        carregar_dados_servico(Me.dgv_servico)
+        carregar_dados_falecido(Me.dgv_falecido)
+    End Sub
 End Class

@@ -19,12 +19,11 @@ Partial Class frm_home
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_home))
         Me.cmb_tabelas = New MaterialSkin.Controls.MaterialComboBox()
-        Me.BunifuCustomDataGrid1 = New ns1.BunifuCustomDataGrid()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.btn_sair = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_logout = New MaterialSkin.Controls.MaterialButton()
         Me.btn_administracao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_recepcao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_financeiro = New MaterialSkin.Controls.MaterialButton()
@@ -35,10 +34,16 @@ Partial Class frm_home
         Me.CartesianChart1 = New LiveCharts.WinForms.CartesianChart()
         Me.lbl_nome = New MaterialSkin.Controls.MaterialLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btn_logout = New MaterialSkin.Controls.MaterialButton()
-        Me.btn_sair = New MaterialSkin.Controls.MaterialButton()
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.lbl_titulo1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_dado1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_titulo2 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_dado2 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_titulo3 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_dado3 = New MaterialSkin.Controls.MaterialLabel()
         Me.GunaShadowPanel1.SuspendLayout()
+        Me.MaterialCard1.SuspendLayout()
+        Me.MaterialCard2.SuspendLayout()
+        Me.MaterialCard3.SuspendLayout()
         Me.MaterialCard4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -58,39 +63,13 @@ Partial Class frm_home
         Me.cmb_tabelas.IntegralHeight = False
         Me.cmb_tabelas.ItemHeight = 43
         Me.cmb_tabelas.Items.AddRange(New Object() {"", "Velórios", "Cremações", "Orçamentos"})
-        Me.cmb_tabelas.Location = New System.Drawing.Point(677, 97)
+        Me.cmb_tabelas.Location = New System.Drawing.Point(677, 103)
         Me.cmb_tabelas.MaxDropDownItems = 4
         Me.cmb_tabelas.MouseState = MaterialSkin.MouseState.OUT
         Me.cmb_tabelas.Name = "cmb_tabelas"
         Me.cmb_tabelas.Size = New System.Drawing.Size(926, 49)
         Me.cmb_tabelas.StartIndex = 0
         Me.cmb_tabelas.TabIndex = 3
-        '
-        'BunifuCustomDataGrid1
-        '
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.BunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.BunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Gainsboro
-        Me.BunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.BunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.BunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.BunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.BunifuCustomDataGrid1.DoubleBuffered = True
-        Me.BunifuCustomDataGrid1.EnableHeadersVisualStyles = False
-        Me.BunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.SeaGreen
-        Me.BunifuCustomDataGrid1.Location = New System.Drawing.Point(677, 703)
-        Me.BunifuCustomDataGrid1.Name = "BunifuCustomDataGrid1"
-        Me.BunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.BunifuCustomDataGrid1.Size = New System.Drawing.Size(926, 299)
-        Me.BunifuCustomDataGrid1.TabIndex = 5
         '
         'GunaShadowPanel1
         '
@@ -110,6 +89,48 @@ Partial Class frm_home
         Me.GunaShadowPanel1.ShadowDepth = 255
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(284, 965)
         Me.GunaShadowPanel1.TabIndex = 6
+        '
+        'btn_sair
+        '
+        Me.btn_sair.AutoSize = False
+        Me.btn_sair.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_sair.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_sair.Depth = 0
+        Me.btn_sair.ForeColor = System.Drawing.Color.White
+        Me.btn_sair.HighEmphasis = True
+        Me.btn_sair.Icon = CType(resources.GetObject("btn_sair.Icon"), System.Drawing.Image)
+        Me.btn_sair.Location = New System.Drawing.Point(151, 903)
+        Me.btn_sair.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_sair.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_sair.Name = "btn_sair"
+        Me.btn_sair.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_sair.Size = New System.Drawing.Size(108, 35)
+        Me.btn_sair.TabIndex = 9
+        Me.btn_sair.Text = "Sair"
+        Me.btn_sair.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_sair.UseAccentColor = False
+        Me.btn_sair.UseVisualStyleBackColor = True
+        '
+        'btn_logout
+        '
+        Me.btn_logout.AutoSize = False
+        Me.btn_logout.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btn_logout.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
+        Me.btn_logout.Depth = 0
+        Me.btn_logout.ForeColor = System.Drawing.Color.White
+        Me.btn_logout.HighEmphasis = True
+        Me.btn_logout.Icon = CType(resources.GetObject("btn_logout.Icon"), System.Drawing.Image)
+        Me.btn_logout.Location = New System.Drawing.Point(26, 903)
+        Me.btn_logout.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.btn_logout.MouseState = MaterialSkin.MouseState.HOVER
+        Me.btn_logout.Name = "btn_logout"
+        Me.btn_logout.NoAccentTextColor = System.Drawing.Color.Empty
+        Me.btn_logout.Size = New System.Drawing.Size(108, 35)
+        Me.btn_logout.TabIndex = 8
+        Me.btn_logout.Text = "Logout"
+        Me.btn_logout.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
+        Me.btn_logout.UseAccentColor = False
+        Me.btn_logout.UseVisualStyleBackColor = True
         '
         'btn_administracao
         '
@@ -177,9 +198,11 @@ Partial Class frm_home
         'MaterialCard1
         '
         Me.MaterialCard1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard1.Controls.Add(Me.lbl_dado1)
+        Me.MaterialCard1.Controls.Add(Me.lbl_titulo1)
         Me.MaterialCard1.Depth = 0
         Me.MaterialCard1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard1.Location = New System.Drawing.Point(677, 195)
+        Me.MaterialCard1.Location = New System.Drawing.Point(677, 342)
         Me.MaterialCard1.Margin = New System.Windows.Forms.Padding(14)
         Me.MaterialCard1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialCard1.Name = "MaterialCard1"
@@ -190,9 +213,11 @@ Partial Class frm_home
         'MaterialCard2
         '
         Me.MaterialCard2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard2.Controls.Add(Me.lbl_dado2)
+        Me.MaterialCard2.Controls.Add(Me.lbl_titulo2)
         Me.MaterialCard2.Depth = 0
         Me.MaterialCard2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard2.Location = New System.Drawing.Point(1024, 195)
+        Me.MaterialCard2.Location = New System.Drawing.Point(1024, 342)
         Me.MaterialCard2.Margin = New System.Windows.Forms.Padding(14)
         Me.MaterialCard2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialCard2.Name = "MaterialCard2"
@@ -203,9 +228,11 @@ Partial Class frm_home
         'MaterialCard3
         '
         Me.MaterialCard3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialCard3.Controls.Add(Me.lbl_dado3)
+        Me.MaterialCard3.Controls.Add(Me.lbl_titulo3)
         Me.MaterialCard3.Depth = 0
         Me.MaterialCard3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard3.Location = New System.Drawing.Point(1373, 195)
+        Me.MaterialCard3.Location = New System.Drawing.Point(1373, 342)
         Me.MaterialCard3.Margin = New System.Windows.Forms.Padding(14)
         Me.MaterialCard3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialCard3.Name = "MaterialCard3"
@@ -219,7 +246,7 @@ Partial Class frm_home
         Me.MaterialCard4.Controls.Add(Me.CartesianChart1)
         Me.MaterialCard4.Depth = 0
         Me.MaterialCard4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialCard4.Location = New System.Drawing.Point(677, 351)
+        Me.MaterialCard4.Location = New System.Drawing.Point(677, 498)
         Me.MaterialCard4.Margin = New System.Windows.Forms.Padding(14)
         Me.MaterialCard4.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialCard4.Name = "MaterialCard4"
@@ -260,47 +287,80 @@ Partial Class frm_home
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
         '
-        'btn_logout
+        'lbl_titulo1
         '
-        Me.btn_logout.AutoSize = False
-        Me.btn_logout.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.btn_logout.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.btn_logout.Depth = 0
-        Me.btn_logout.ForeColor = System.Drawing.Color.White
-        Me.btn_logout.HighEmphasis = True
-        Me.btn_logout.Icon = CType(resources.GetObject("btn_logout.Icon"), System.Drawing.Image)
-        Me.btn_logout.Location = New System.Drawing.Point(26, 903)
-        Me.btn_logout.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.btn_logout.MouseState = MaterialSkin.MouseState.HOVER
-        Me.btn_logout.Name = "btn_logout"
-        Me.btn_logout.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.btn_logout.Size = New System.Drawing.Size(108, 35)
-        Me.btn_logout.TabIndex = 8
-        Me.btn_logout.Text = "Logout"
-        Me.btn_logout.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.btn_logout.UseAccentColor = False
-        Me.btn_logout.UseVisualStyleBackColor = True
+        Me.lbl_titulo1.AutoSize = True
+        Me.lbl_titulo1.Depth = 0
+        Me.lbl_titulo1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_titulo1.Location = New System.Drawing.Point(8, 8)
+        Me.lbl_titulo1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_titulo1.Name = "lbl_titulo1"
+        Me.lbl_titulo1.Size = New System.Drawing.Size(13, 19)
+        Me.lbl_titulo1.TabIndex = 0
+        Me.lbl_titulo1.Text = "..."
         '
-        'btn_sair
+        'lbl_dado1
         '
-        Me.btn_sair.AutoSize = False
-        Me.btn_sair.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.btn_sair.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.[Default]
-        Me.btn_sair.Depth = 0
-        Me.btn_sair.ForeColor = System.Drawing.Color.White
-        Me.btn_sair.HighEmphasis = True
-        Me.btn_sair.Icon = CType(resources.GetObject("btn_sair.Icon"), System.Drawing.Image)
-        Me.btn_sair.Location = New System.Drawing.Point(151, 903)
-        Me.btn_sair.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.btn_sair.MouseState = MaterialSkin.MouseState.HOVER
-        Me.btn_sair.Name = "btn_sair"
-        Me.btn_sair.NoAccentTextColor = System.Drawing.Color.Empty
-        Me.btn_sair.Size = New System.Drawing.Size(108, 35)
-        Me.btn_sair.TabIndex = 9
-        Me.btn_sair.Text = "Sair"
-        Me.btn_sair.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained
-        Me.btn_sair.UseAccentColor = False
-        Me.btn_sair.UseVisualStyleBackColor = True
+        Me.lbl_dado1.AutoSize = True
+        Me.lbl_dado1.Depth = 0
+        Me.lbl_dado1.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_dado1.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
+        Me.lbl_dado1.Location = New System.Drawing.Point(108, 64)
+        Me.lbl_dado1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_dado1.Name = "lbl_dado1"
+        Me.lbl_dado1.Size = New System.Drawing.Size(13, 17)
+        Me.lbl_dado1.TabIndex = 1
+        Me.lbl_dado1.Text = "..."
+        '
+        'lbl_titulo2
+        '
+        Me.lbl_titulo2.AutoSize = True
+        Me.lbl_titulo2.Depth = 0
+        Me.lbl_titulo2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_titulo2.Location = New System.Drawing.Point(7, 8)
+        Me.lbl_titulo2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_titulo2.Name = "lbl_titulo2"
+        Me.lbl_titulo2.Size = New System.Drawing.Size(13, 19)
+        Me.lbl_titulo2.TabIndex = 0
+        Me.lbl_titulo2.Text = "..."
+        '
+        'lbl_dado2
+        '
+        Me.lbl_dado2.AutoSize = True
+        Me.lbl_dado2.Depth = 0
+        Me.lbl_dado2.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_dado2.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
+        Me.lbl_dado2.Location = New System.Drawing.Point(108, 64)
+        Me.lbl_dado2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_dado2.Name = "lbl_dado2"
+        Me.lbl_dado2.Size = New System.Drawing.Size(13, 17)
+        Me.lbl_dado2.TabIndex = 1
+        Me.lbl_dado2.Text = "..."
+        '
+        'lbl_titulo3
+        '
+        Me.lbl_titulo3.AutoSize = True
+        Me.lbl_titulo3.Depth = 0
+        Me.lbl_titulo3.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_titulo3.Location = New System.Drawing.Point(7, 7)
+        Me.lbl_titulo3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_titulo3.Name = "lbl_titulo3"
+        Me.lbl_titulo3.Size = New System.Drawing.Size(13, 19)
+        Me.lbl_titulo3.TabIndex = 0
+        Me.lbl_titulo3.Text = "..."
+        '
+        'lbl_dado3
+        '
+        Me.lbl_dado3.AutoSize = True
+        Me.lbl_dado3.Depth = 0
+        Me.lbl_dado3.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_dado3.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
+        Me.lbl_dado3.Location = New System.Drawing.Point(108, 64)
+        Me.lbl_dado3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_dado3.Name = "lbl_dado3"
+        Me.lbl_dado3.Size = New System.Drawing.Size(13, 17)
+        Me.lbl_dado3.TabIndex = 1
+        Me.lbl_dado3.Text = "..."
         '
         'frm_home
         '
@@ -314,15 +374,19 @@ Partial Class frm_home
         Me.Controls.Add(Me.MaterialCard2)
         Me.Controls.Add(Me.MaterialCard1)
         Me.Controls.Add(Me.GunaShadowPanel1)
-        Me.Controls.Add(Me.BunifuCustomDataGrid1)
         Me.Controls.Add(Me.cmb_tabelas)
         Me.ForeColor = System.Drawing.SystemColors.ButtonShadow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frm_home"
         Me.Text = "           Thanatos"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        CType(Me.BunifuCustomDataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GunaShadowPanel1.ResumeLayout(False)
+        Me.MaterialCard1.ResumeLayout(False)
+        Me.MaterialCard1.PerformLayout()
+        Me.MaterialCard2.ResumeLayout(False)
+        Me.MaterialCard2.PerformLayout()
+        Me.MaterialCard3.ResumeLayout(False)
+        Me.MaterialCard3.PerformLayout()
         Me.MaterialCard4.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -330,7 +394,6 @@ Partial Class frm_home
 
     End Sub
     Friend WithEvents cmb_tabelas As MaterialSkin.Controls.MaterialComboBox
-    Friend WithEvents BunifuCustomDataGrid1 As ns1.BunifuCustomDataGrid
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents btn_administracao As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_recepcao As MaterialSkin.Controls.MaterialButton
@@ -344,4 +407,10 @@ Partial Class frm_home
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btn_sair As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_logout As MaterialSkin.Controls.MaterialButton
+    Friend WithEvents lbl_dado1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents lbl_titulo1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents lbl_dado2 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents lbl_titulo2 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents lbl_dado3 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents lbl_titulo3 As MaterialSkin.Controls.MaterialLabel
 End Class

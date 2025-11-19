@@ -39,6 +39,7 @@ Public Class frm_home
     End Sub
 
     Private Sub frm_home_Load(sender As Object, e As EventArgs) Handles Me.Load
+        conecta_banco_mysql()
         lbl_nome.Text = "Bem-vindo, " + frm_login.nomeFuncionario
         If frm_login.idSetor = "1" Then
             With Me
@@ -174,4 +175,36 @@ Public Class frm_home
             Application.Exit()
         End If
     End Sub
+
+    Private Sub cmb_tabelas_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmb_tabelas.SelectedValueChanged
+        coletar_dados_home(cmb_tabelas.Text)
+        If cmb_tabelas.Text = "Velórios" Then
+            lbl_titulo1.Text = "Qtde de Velórios Hoje"
+            lbl_titulo2.Text = "Hora do Próximo Velório"
+            lbl_titulo3.Text = "Velórios Restantes Hoje"
+            lbl_dado1.Text = qtdeVelorio
+            lbl_dado2.Text = proxVelorio
+            lbl_dado3.Text = restVelorio
+
+        ElseIf cmb_tabelas.Text = "Cremações" Then
+            lbl_titulo1.Text = "Qtde de Cremações Hoje"
+            lbl_titulo2.Text = "Hora do Próxima Cremação"
+            lbl_titulo3.Text = "Cremações Restantes Hoje"
+            lbl_dado1.Text = qtdeCremacao
+            lbl_dado2.Text = proxCremacao
+            lbl_dado3.Text = restCremacao
+
+        ElseIf cmb_tabelas.Text = "Orçamentos" Then
+            lbl_titulo1.Text = "Orçamentos em Aberto"
+            lbl_titulo2.Text = "Finalizados no Mês"
+            lbl_titulo3.Text = "Cancelados no Mês"
+            lbl_dado1.Text = qtdeAbertoOrcamento
+            lbl_dado2.Text = finalizadoMesOrcamento
+            lbl_dado3.Text = canceladoMesOrcamento
+        End If
+
+    End Sub
+
+
 End Class
+
