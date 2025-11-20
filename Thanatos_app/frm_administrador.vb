@@ -5,7 +5,7 @@ Imports MaterialSkin.Controls
 Imports System.Threading
 
 Public Class frm_administrador
-    Dim status, setor, tipoSala, id_sala, id_cremacao As String
+    Dim status, setor, tipoSala, id_sala, id_cremacao, id_velorio, StatusFalecido, id_falecido, id_jazigo, id_servico As String
     Dim cont As Integer
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
 
@@ -157,7 +157,7 @@ Public Class frm_administrador
             Dim dataCerta As String = Format(CDate(txt_dataCremacao.Text), "yyyy-MM-dd")
             If txt_idCremacao.Text = "" Then
                 query = $"insert into tb_cremacoes 
-                     (horaCremacao, diaCremacao, idSala, idFalecido)
+                     (horaCremacao, dataCremacao, idSala, idFalecido)
                      values ('{txt_horaCremacao.Text}', 
                              '{dataCerta}', 
                              '{txt_idSalaCremacao.Text}', 
@@ -167,7 +167,7 @@ Public Class frm_administrador
             Else
                 query = $"update tb_cremacoes set
                         horaCremacao='{txt_horaCremacao.Text}',
-                        diaCremacao='{dataCerta}',
+                        dataCremacao='{dataCerta}',
                         idSala='{txt_idSalaCremacao.Text}',
                         idFalecido='{txt_idFalecidoCremacao.Text}'
                      where idCremacao='{txt_idCremacao.Text}'"
@@ -188,7 +188,7 @@ Public Class frm_administrador
             Dim dataCertaVelorio As String = Format(CDate(txt_dataVelorio.Text), "yyyy-MM-dd")
             If txt_idVelorio.Text = "" Then
                 query = $"insert into tb_velorios 
-                     (horaVelorio, diaVelorio, idSala, idFalecido)
+                     (horaVelorio, dataVelorio, idSala, idFalecido)
                      values ('{txt_horaVelorio.Text}', 
                              '{dataCertaVelorio}', 
                              '{txt_idSalaVelorio.Text}', 
@@ -198,7 +198,7 @@ Public Class frm_administrador
             Else
                 query = $"update tb_velorios set
                         horaVelorio='{txt_horaVelorio.Text}',
-                        diaVelorio='{dataCertaVelorio}',
+                        dataVelorio='{dataCertaVelorio}',
                         idSala='{txt_idSalaVelorio.Text}',
                         idFalecido='{txt_idFalecidoVelorio.Text}'
                      where idVelorio='{txt_idVelorio.Text}'"
@@ -209,6 +209,84 @@ Public Class frm_administrador
         Catch ex As Exception
             MsgBox("Erro ao gravar!", MsgBoxStyle.Critical)
         End Try
+    End Sub
+
+    Private Sub btn_incluirFalecidos_Click(sender As Object, e As EventArgs) Handles btn_incluirFalecidos.Click
+        Try
+            query = $"select * from tb_falecidos where idFalecido='{txt_idFalecido.Text}'"
+            rs = db.Execute(query)
+            If rs.EOF = True Then
+                query = $"insert into tb_falecidos (nomeFalecido, idStatus) values (
+                        '{txt_nomeFalecido.Text}', '{StatusFalecido}');"
+                rs = db.Execute(query)
+                MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                carregar_dados_falecido(Me.dgv_falecido)
+            Else
+                If resp = MsgBoxResult.Yes Then
+                    query = $"update tb_falecidos set nomeFalecido='{txt_nomeFalecido.Text}', idStatus='{StatusFalecido}' where idFalecido='{txt_idFalecido.Text}'"
+                    rs = db.Execute(query)
+                    MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                    carregar_dados_falecido(Me.dgv_falecido)
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Private Sub btn_incluirJazigo_Click(sender As Object, e As EventArgs) Handles btn_incluirJazigo.Click
+        Try
+            query = $"select * from tb_jazigos where idJazigo='{txt_idJazigo.Text}'"
+            rs = db.Execute(query)
+            If rs.EOF = True Then
+                query = $"insert into tb_jazigos (quadranteJazigo,fileiraJazigo,colunaJazigo,idFalecido) values (
+                        '{txt_quadrante.Text}', '{txt_fileira.Text}', '{txt_coluna.Text}','{txt_idFalecidoJazigo.Text}');"
+                rs = db.Execute(query)
+                MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                carregar_dados_jazigo(Me.dgv_jazigo)
+            Else
+                If resp = MsgBoxResult.Yes Then
+                    query = $"update tb_jazigos set quadranteJazigo='{txt_quadrante.Text}', fileiraJazigo='{txt_fileira.Text}', 
+                                colunaJazigo='{txt_coluna.Text}', idFalecido='{txt_idFalecidoJazigo.Text}' where idJazigo='{id_jazigo}'"
+                    rs = db.Execute(query)
+                    MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                    carregar_dados_jazigo(Me.dgv_jazigo)
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Private Sub btn_incluirServicos_Click(sender As Object, e As EventArgs) Handles btn_incluirServicos.Click
+        Try
+            query = $"select * from tb_servicos where idServico='{txt_idServico.Text}'"
+            rs = db.Execute(query)
+            If rs.EOF = True Then
+                query = $"insert into tb_servicos (descricaoServico,valorServico) values (
+                        '{txt_descricaoServicos.Text}', '{txt_preco.Text}');"
+                rs = db.Execute(query)
+                MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                carregar_dados_servico(Me.dgv_servico)
+            Else
+                If resp = MsgBoxResult.Yes Then
+                    query = $"update tb_servicos set descricaoServico='{txt_descricaoServicos.Text}', valorServico='{txt_preco.Text}' where idServico='{id_servico}'"
+                    rs = db.Execute(query)
+                    MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                    carregar_dados_servico(Me.dgv_servico)
+                End If
+            End If
+        Catch ex As Exception
+            MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
+        End Try
+    End Sub
+
+    Private Sub cmb_statusFalecido_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmb_statusFalecido.SelectedValueChanged
+        If cmb_statusFalecido.Text = "Sepultado" Then
+            StatusFalecido = "6"
+        ElseIf cmb_tipoSala.Text = "Cremado" Then
+            tipoSala = "7"
+        End If
     End Sub
 
     Private Sub cmb_tipoSala_SelectedValueChanged(sender As Object, e As EventArgs) Handles cmb_tipoSala.SelectedValueChanged
@@ -322,6 +400,138 @@ Public Class frm_administrador
                     txt_idFalecidoCremacao.Text = rs.Fields(4).Value
 
                     resp = MsgBox("Deseja alterar os dados do ID: " & id_cremacao & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                End If
+            Else
+                Exit Sub
+            End If
+        End With
+    End Sub
+
+    Private Sub dgv_velorio_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_velorio.CellContentClick
+        With dgv_velorio
+            If .CurrentRow.Cells(5).Selected = True Then
+                id_velorio = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_velorios where idVelorio='{id_velorio}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    resp = MsgBox("Deseja excluir o velório com ID: " & id_velorio & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                    If resp = MsgBoxResult.Yes Then
+                        query = $"Delete from tb_velorios where idVelorios='{id_velorio}'"
+                        rs = db.Execute(query)
+                        MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        carregar_dados_velorio(Me.dgv_velorio)
+                    End If
+                End If
+            ElseIf .CurrentRow.Cells(6).Selected = True Then
+                id_velorio = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_velorios where idVelorio='{id_velorio}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    txt_idVelorio.Text = rs.Fields(0).Value
+                    txt_horaVelorio.Text = rs.Fields(1).Value
+                    txt_dataVelorio.Text = rs.Fields(2).Value
+                    txt_idSalaVelorio.Text = rs.Fields(3).Value
+                    txt_idFalecidoVelorio.Text = rs.Fields(4).Value
+
+                    resp = MsgBox("Deseja alterar os dados do ID: " & id_velorio & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                End If
+            Else
+                Exit Sub
+            End If
+        End With
+    End Sub
+
+    Private Sub dgv_falecido_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_falecido.CellContentClick
+        With dgv_falecido
+            If .CurrentRow.Cells(3).Selected = True Then
+                id_falecido = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_falecidos where idFalecido='{id_falecido}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    resp = MsgBox("Deseja excluir o falecido com ID: " & id_falecido & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                    If resp = MsgBoxResult.Yes Then
+                        query = $"Delete from tb_falecidos where idFalecido='{id_falecido}'"
+                        rs = db.Execute(query)
+                        MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        carregar_dados_falecido(Me.dgv_falecido)
+                    End If
+                End If
+            ElseIf .CurrentRow.Cells(4).Selected = True Then
+                id_falecido = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_falecidos where idFalecido='{id_falecido}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    txt_idFalecido.Text = rs.Fields(0).Value
+                    txt_nomeFalecido.Text = rs.Fields(1).Value
+                    StatusFalecido = rs.Fields(2).Value
+
+                    resp = MsgBox("Deseja alterar os dados do ID: " & id_falecido & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                End If
+            Else
+                Exit Sub
+            End If
+        End With
+    End Sub
+
+    Private Sub dgv_jazigo_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_jazigo.CellContentClick
+        With dgv_jazigo
+            If .CurrentRow.Cells(5).Selected = True Then
+                id_jazigo = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_jazigos where idJazigo='{id_jazigo}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    resp = MsgBox("Deseja excluir o jazigo com ID: " & id_jazigo & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                    If resp = MsgBoxResult.Yes Then
+                        query = $"Delete from tb_jazigos where idJazigo='{id_jazigo}'"
+                        rs = db.Execute(query)
+                        MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        carregar_dados_jazigo(Me.dgv_jazigo)
+                    End If
+                End If
+            ElseIf .CurrentRow.Cells(6).Selected = True Then
+                id_jazigo = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_jazigos where idJazigo='{id_jazigo}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    txt_idJazigo.Text = rs.Fields(0).Value
+                    txt_quadrante.Text = rs.Fields(1).Value
+                    txt_fileira.Text = rs.Fields(2).Value
+                    txt_coluna.Text = rs.Fields(3).Value
+                    txt_idFalecidoJazigo.Text = rs.Fields(4).Value
+
+                    resp = MsgBox("Deseja alterar os dados do ID: " & id_jazigo & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                End If
+            Else
+                Exit Sub
+            End If
+        End With
+    End Sub
+
+    Private Sub dgv_servico_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_servico.CellContentClick
+        With dgv_servico
+            If .CurrentRow.Cells(3).Selected = True Then
+                id_servico = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_servicos where idServico='{id_servico}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    resp = MsgBox("Deseja excluir o servico com ID: " & id_servico & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
+                    If resp = MsgBoxResult.Yes Then
+                        query = $"Delete from tb_servicos where idServico='{id_servico}'"
+                        rs = db.Execute(query)
+                        MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        carregar_dados_servico(Me.dgv_servico)
+                    End If
+                End If
+            ElseIf .CurrentRow.Cells(4).Selected = True Then
+                id_servico = .CurrentRow.Cells(0).Value
+                query = $"select * from tb_servicos where idServico='{id_servico}'"
+                rs = db.Execute(query)
+                If rs.EOF = False Then
+                    txt_idServico.Text = rs.Fields(0).Value
+                    txt_descricaoServicos.Text = rs.Fields(1).Value
+                    txt_preco.Text = rs.Fields(2).Value
+
+                    resp = MsgBox("Deseja alterar os dados do ID: " & id_servico & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
                 End If
             Else
                 Exit Sub
