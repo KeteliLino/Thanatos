@@ -43,6 +43,14 @@ Partial Class frm_financeiro
         Me.btn_pesquisar2 = New MaterialSkin.Controls.MaterialTabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.dgv_orcamento = New ns1.BunifuCustomDataGrid()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.img_excluir = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.img_alterar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.btn_voltar = New MaterialSkin.Controls.MaterialButton()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
         Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
@@ -55,9 +63,9 @@ Partial Class frm_financeiro
         Me.lbl_login = New MaterialSkin.Controls.MaterialLabel()
         Me.cmb_status = New MaterialSkin.Controls.MaterialComboBox()
         Me.txt_valor = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.txt_descricao = New MaterialSkin.Controls.MaterialMultiLineTextBox2()
+        Me.txt_descricaoOrcamento = New MaterialSkin.Controls.MaterialMultiLineTextBox2()
         Me.btn_incluir = New MaterialSkin.Controls.MaterialButton()
-        Me.txt_id = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.txt_idOrcamento = New MaterialSkin.Controls.MaterialTextBox2()
         Me.btn_pesquisar = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.dgv_servico = New ns1.BunifuCustomDataGrid()
@@ -84,14 +92,6 @@ Partial Class frm_financeiro
         Me.MaterialTextBox25 = New MaterialSkin.Controls.MaterialTextBox2()
         Me.btn_voltar2 = New MaterialSkin.Controls.MaterialButton()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
-        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.img_excluir = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.img_alterar = New System.Windows.Forms.DataGridViewImageColumn()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.btn_pesquisar2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -198,6 +198,50 @@ Partial Class frm_financeiro
         Me.dgv_orcamento.Size = New System.Drawing.Size(1755, 555)
         Me.dgv_orcamento.TabIndex = 20
         '
+        'Column8
+        '
+        Me.Column8.HeaderText = "ID"
+        Me.Column8.Name = "Column8"
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Descrição"
+        Me.Column7.Name = "Column7"
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Valor"
+        Me.Column3.Name = "Column3"
+        '
+        'Column9
+        '
+        Me.Column9.HeaderText = "Data"
+        Me.Column9.Name = "Column9"
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Nome"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "Status"
+        Me.Column2.Name = "Column2"
+        '
+        'img_excluir
+        '
+        Me.img_excluir.HeaderText = "Excluir"
+        Me.img_excluir.Image = CType(resources.GetObject("img_excluir.Image"), System.Drawing.Image)
+        Me.img_excluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.img_excluir.Name = "img_excluir"
+        '
+        'img_alterar
+        '
+        Me.img_alterar.HeaderText = "Alterar"
+        Me.img_alterar.Image = CType(resources.GetObject("img_alterar.Image"), System.Drawing.Image)
+        Me.img_alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.img_alterar.Name = "img_alterar"
+        '
         'btn_voltar
         '
         Me.btn_voltar.AutoSize = False
@@ -232,9 +276,9 @@ Partial Class frm_financeiro
         Me.GunaShadowPanel1.Controls.Add(Me.lbl_login)
         Me.GunaShadowPanel1.Controls.Add(Me.cmb_status)
         Me.GunaShadowPanel1.Controls.Add(Me.txt_valor)
-        Me.GunaShadowPanel1.Controls.Add(Me.txt_descricao)
+        Me.GunaShadowPanel1.Controls.Add(Me.txt_descricaoOrcamento)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_incluir)
-        Me.GunaShadowPanel1.Controls.Add(Me.txt_id)
+        Me.GunaShadowPanel1.Controls.Add(Me.txt_idOrcamento)
         Me.GunaShadowPanel1.Controls.Add(Me.btn_pesquisar)
         Me.GunaShadowPanel1.ForeColor = System.Drawing.SystemColors.Desktop
         Me.GunaShadowPanel1.Location = New System.Drawing.Point(57, 38)
@@ -456,30 +500,30 @@ Partial Class frm_financeiro
         Me.txt_valor.TrailingIcon = Nothing
         Me.txt_valor.UseSystemPasswordChar = False
         '
-        'txt_descricao
+        'txt_descricaoOrcamento
         '
-        Me.txt_descricao.AnimateReadOnly = False
-        Me.txt_descricao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_descricao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_descricao.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.txt_descricao.Depth = 0
-        Me.txt_descricao.HideSelection = True
-        Me.txt_descricao.Location = New System.Drawing.Point(34, 131)
-        Me.txt_descricao.MaxLength = 32767
-        Me.txt_descricao.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_descricao.Name = "txt_descricao"
-        Me.txt_descricao.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_descricao.ReadOnly = False
-        Me.txt_descricao.ScrollBars = System.Windows.Forms.ScrollBars.None
-        Me.txt_descricao.SelectedText = ""
-        Me.txt_descricao.SelectionLength = 0
-        Me.txt_descricao.SelectionStart = 0
-        Me.txt_descricao.ShortcutsEnabled = True
-        Me.txt_descricao.Size = New System.Drawing.Size(899, 136)
-        Me.txt_descricao.TabIndex = 4
-        Me.txt_descricao.TabStop = False
-        Me.txt_descricao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_descricao.UseSystemPasswordChar = False
+        Me.txt_descricaoOrcamento.AnimateReadOnly = False
+        Me.txt_descricaoOrcamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_descricaoOrcamento.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_descricaoOrcamento.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.txt_descricaoOrcamento.Depth = 0
+        Me.txt_descricaoOrcamento.HideSelection = True
+        Me.txt_descricaoOrcamento.Location = New System.Drawing.Point(34, 131)
+        Me.txt_descricaoOrcamento.MaxLength = 32767
+        Me.txt_descricaoOrcamento.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_descricaoOrcamento.Name = "txt_descricaoOrcamento"
+        Me.txt_descricaoOrcamento.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_descricaoOrcamento.ReadOnly = False
+        Me.txt_descricaoOrcamento.ScrollBars = System.Windows.Forms.ScrollBars.None
+        Me.txt_descricaoOrcamento.SelectedText = ""
+        Me.txt_descricaoOrcamento.SelectionLength = 0
+        Me.txt_descricaoOrcamento.SelectionStart = 0
+        Me.txt_descricaoOrcamento.ShortcutsEnabled = True
+        Me.txt_descricaoOrcamento.Size = New System.Drawing.Size(899, 136)
+        Me.txt_descricaoOrcamento.TabIndex = 4
+        Me.txt_descricaoOrcamento.TabStop = False
+        Me.txt_descricaoOrcamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_descricaoOrcamento.UseSystemPasswordChar = False
         '
         'btn_incluir
         '
@@ -501,33 +545,33 @@ Partial Class frm_financeiro
         Me.btn_incluir.UseAccentColor = False
         Me.btn_incluir.UseVisualStyleBackColor = True
         '
-        'txt_id
+        'txt_idOrcamento
         '
-        Me.txt_id.AnimateReadOnly = False
-        Me.txt_id.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.txt_id.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.txt_id.Depth = 0
-        Me.txt_id.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.txt_id.HideSelection = True
-        Me.txt_id.LeadingIcon = Nothing
-        Me.txt_id.Location = New System.Drawing.Point(34, 46)
-        Me.txt_id.MaxLength = 32767
-        Me.txt_id.MouseState = MaterialSkin.MouseState.OUT
-        Me.txt_id.Name = "txt_id"
-        Me.txt_id.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.txt_id.PrefixSuffixText = Nothing
-        Me.txt_id.ReadOnly = False
-        Me.txt_id.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.txt_id.SelectedText = ""
-        Me.txt_id.SelectionLength = 0
-        Me.txt_id.SelectionStart = 0
-        Me.txt_id.ShortcutsEnabled = True
-        Me.txt_id.Size = New System.Drawing.Size(184, 48)
-        Me.txt_id.TabIndex = 2
-        Me.txt_id.TabStop = False
-        Me.txt_id.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.txt_id.TrailingIcon = Nothing
-        Me.txt_id.UseSystemPasswordChar = False
+        Me.txt_idOrcamento.AnimateReadOnly = False
+        Me.txt_idOrcamento.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.txt_idOrcamento.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
+        Me.txt_idOrcamento.Depth = 0
+        Me.txt_idOrcamento.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.txt_idOrcamento.HideSelection = True
+        Me.txt_idOrcamento.LeadingIcon = Nothing
+        Me.txt_idOrcamento.Location = New System.Drawing.Point(34, 46)
+        Me.txt_idOrcamento.MaxLength = 32767
+        Me.txt_idOrcamento.MouseState = MaterialSkin.MouseState.OUT
+        Me.txt_idOrcamento.Name = "txt_idOrcamento"
+        Me.txt_idOrcamento.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.txt_idOrcamento.PrefixSuffixText = Nothing
+        Me.txt_idOrcamento.ReadOnly = False
+        Me.txt_idOrcamento.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.txt_idOrcamento.SelectedText = ""
+        Me.txt_idOrcamento.SelectionLength = 0
+        Me.txt_idOrcamento.SelectionStart = 0
+        Me.txt_idOrcamento.ShortcutsEnabled = True
+        Me.txt_idOrcamento.Size = New System.Drawing.Size(184, 48)
+        Me.txt_idOrcamento.TabIndex = 2
+        Me.txt_idOrcamento.TabStop = False
+        Me.txt_idOrcamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.txt_idOrcamento.TrailingIcon = Nothing
+        Me.txt_idOrcamento.UseSystemPasswordChar = False
         '
         'btn_pesquisar
         '
@@ -1006,50 +1050,6 @@ Partial Class frm_financeiro
         Me.ImageList1.Images.SetKeyName(4, "headphone.png")
         Me.ImageList1.Images.SetKeyName(5, "coffin.png")
         '
-        'Column8
-        '
-        Me.Column8.HeaderText = "ID"
-        Me.Column8.Name = "Column8"
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Descrição"
-        Me.Column7.Name = "Column7"
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Valor"
-        Me.Column3.Name = "Column3"
-        '
-        'Column9
-        '
-        Me.Column9.HeaderText = "Data"
-        Me.Column9.Name = "Column9"
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Nome"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "Status"
-        Me.Column2.Name = "Column2"
-        '
-        'img_excluir
-        '
-        Me.img_excluir.HeaderText = "Excluir"
-        Me.img_excluir.Image = CType(resources.GetObject("img_excluir.Image"), System.Drawing.Image)
-        Me.img_excluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.img_excluir.Name = "img_excluir"
-        '
-        'img_alterar
-        '
-        Me.img_alterar.HeaderText = "Alterar"
-        Me.img_alterar.Image = CType(resources.GetObject("img_alterar.Image"), System.Drawing.Image)
-        Me.img_alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.img_alterar.Name = "img_alterar"
-        '
         'frm_financeiro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1086,11 +1086,11 @@ Partial Class frm_financeiro
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
-    Friend WithEvents txt_id As MaterialSkin.Controls.MaterialTextBox2
+    Friend WithEvents txt_idOrcamento As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents btn_pesquisar As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_incluir As MaterialSkin.Controls.MaterialButton
     Friend WithEvents txt_valor As MaterialSkin.Controls.MaterialTextBox2
-    Friend WithEvents txt_descricao As MaterialSkin.Controls.MaterialMultiLineTextBox2
+    Friend WithEvents txt_descricaoOrcamento As MaterialSkin.Controls.MaterialMultiLineTextBox2
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents cmb_status As MaterialSkin.Controls.MaterialComboBox
     Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel

@@ -166,7 +166,7 @@ Partial Class frm_administrador
         Me.DataGridViewImageColumn7 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn8 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GunaShadowPanel5 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.MaterialComboBox1 = New MaterialSkin.Controls.MaterialComboBox()
+        Me.cmb_statusFalecido = New MaterialSkin.Controls.MaterialComboBox()
         Me.txt_nomeFalecido = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel23 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialLabel24 = New MaterialSkin.Controls.MaterialLabel()
@@ -427,7 +427,7 @@ Partial Class frm_administrador
         Me.txt_horaVelorio.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
         Me.txt_horaVelorio.LeadingIcon = Nothing
         Me.txt_horaVelorio.Location = New System.Drawing.Point(302, 47)
-        Me.txt_horaVelorio.Mask = "00:00:00"
+        Me.txt_horaVelorio.Mask = "00:00"
         Me.txt_horaVelorio.MaxLength = 32767
         Me.txt_horaVelorio.MouseState = MaterialSkin.MouseState.OUT
         Me.txt_horaVelorio.Name = "txt_horaVelorio"
@@ -447,7 +447,7 @@ Partial Class frm_administrador
         Me.txt_horaVelorio.SkipLiterals = True
         Me.txt_horaVelorio.TabIndex = 36
         Me.txt_horaVelorio.TabStop = False
-        Me.txt_horaVelorio.Text = "  :  :"
+        Me.txt_horaVelorio.Text = "  :"
         Me.txt_horaVelorio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txt_horaVelorio.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
         Me.txt_horaVelorio.TrailingIcon = Nothing
@@ -2133,7 +2133,7 @@ Partial Class frm_administrador
         '
         Me.GunaShadowPanel5.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel5.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel5.Controls.Add(Me.MaterialComboBox1)
+        Me.GunaShadowPanel5.Controls.Add(Me.cmb_statusFalecido)
         Me.GunaShadowPanel5.Controls.Add(Me.txt_nomeFalecido)
         Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel23)
         Me.GunaShadowPanel5.Controls.Add(Me.MaterialLabel24)
@@ -2150,28 +2150,28 @@ Partial Class frm_administrador
         Me.GunaShadowPanel5.Size = New System.Drawing.Size(1755, 110)
         Me.GunaShadowPanel5.TabIndex = 24
         '
-        'MaterialComboBox1
+        'cmb_statusFalecido
         '
-        Me.MaterialComboBox1.AutoResize = False
-        Me.MaterialComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.MaterialComboBox1.Depth = 0
-        Me.MaterialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
-        Me.MaterialComboBox1.DropDownHeight = 174
-        Me.MaterialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.MaterialComboBox1.DropDownWidth = 121
-        Me.MaterialComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialComboBox1.FormattingEnabled = True
-        Me.MaterialComboBox1.IntegralHeight = False
-        Me.MaterialComboBox1.ItemHeight = 43
-        Me.MaterialComboBox1.Items.AddRange(New Object() {"", "Sepultado" & Global.Microsoft.VisualBasic.ChrW(9), "Cremado"})
-        Me.MaterialComboBox1.Location = New System.Drawing.Point(566, 46)
-        Me.MaterialComboBox1.MaxDropDownItems = 4
-        Me.MaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialComboBox1.Name = "MaterialComboBox1"
-        Me.MaterialComboBox1.Size = New System.Drawing.Size(250, 49)
-        Me.MaterialComboBox1.StartIndex = 0
-        Me.MaterialComboBox1.TabIndex = 38
+        Me.cmb_statusFalecido.AutoResize = False
+        Me.cmb_statusFalecido.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.cmb_statusFalecido.Depth = 0
+        Me.cmb_statusFalecido.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.cmb_statusFalecido.DropDownHeight = 174
+        Me.cmb_statusFalecido.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_statusFalecido.DropDownWidth = 121
+        Me.cmb_statusFalecido.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.cmb_statusFalecido.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.cmb_statusFalecido.FormattingEnabled = True
+        Me.cmb_statusFalecido.IntegralHeight = False
+        Me.cmb_statusFalecido.ItemHeight = 43
+        Me.cmb_statusFalecido.Items.AddRange(New Object() {"", "Sepultado", "Cremado"})
+        Me.cmb_statusFalecido.Location = New System.Drawing.Point(566, 46)
+        Me.cmb_statusFalecido.MaxDropDownItems = 4
+        Me.cmb_statusFalecido.MouseState = MaterialSkin.MouseState.OUT
+        Me.cmb_statusFalecido.Name = "cmb_statusFalecido"
+        Me.cmb_statusFalecido.Size = New System.Drawing.Size(250, 49)
+        Me.cmb_statusFalecido.StartIndex = 0
+        Me.cmb_statusFalecido.TabIndex = 38
         '
         'txt_nomeFalecido
         '
@@ -3221,7 +3221,7 @@ Partial Class frm_administrador
     Friend WithEvents MaterialLabel26 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents btn_incluirFalecidos As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_pesquisarFalecidos As MaterialSkin.Controls.MaterialButton
-    Friend WithEvents MaterialComboBox1 As MaterialSkin.Controls.MaterialComboBox
+    Friend WithEvents cmb_statusFalecido As MaterialSkin.Controls.MaterialComboBox
     Friend WithEvents GunaShadowPanel6 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents txt_quadrante As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents txt_coluna As MaterialSkin.Controls.MaterialTextBox2
