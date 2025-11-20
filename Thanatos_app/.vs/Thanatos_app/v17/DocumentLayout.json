@@ -3,36 +3,16 @@
   "WorkspaceRootPath": "D:\\Thanatos\\Thanatos_app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\banco_dados.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:banco_dados.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|d:\\thanatos\\thanatos_app\\frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|D:\\Thanatos\\Thanatos_app\\frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_login.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|d:\\thanatos\\thanatos_app\\banco_dados.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:banco_dados.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,15 +30,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frm_financeiro.vb [Design]",
-              "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\frm_financeiro.vb",
-              "RelativeDocumentMoniker": "frm_financeiro.vb",
-              "ToolTip": "D:\\Thanatos\\Thanatos_app\\frm_financeiro.vb [Design]",
-              "RelativeToolTip": "frm_financeiro.vb [Design]",
+              "DocumentIndex": 2,
+              "Title": "banco_dados.vb",
+              "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\banco_dados.vb",
+              "RelativeDocumentMoniker": "banco_dados.vb",
+              "ToolTip": "D:\\Thanatos\\Thanatos_app\\banco_dados.vb",
+              "RelativeToolTip": "banco_dados.vb",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAIwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-19T02:07:21.925Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-11-18T03:46:16.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,14 +49,14 @@
               "RelativeDocumentMoniker": "frm_administrador.vb",
               "ToolTip": "D:\\Thanatos\\Thanatos_app\\frm_administrador.vb",
               "RelativeToolTip": "frm_administrador.vb",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAswI4AAABHAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAAwM8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-19T02:06:21.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "frm_administrador.vb [Design]",
               "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\frm_administrador.vb",
               "RelativeDocumentMoniker": "frm_administrador.vb",
@@ -84,63 +65,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-19T02:06:11.358Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frm_home.vb",
-              "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\frm_home.vb",
-              "RelativeDocumentMoniker": "frm_home.vb",
-              "ToolTip": "D:\\Thanatos\\Thanatos_app\\frm_home.vb",
-              "RelativeToolTip": "frm_home.vb",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAswL4AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-19T01:23:10.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frm_login.vb",
-              "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\frm_login.vb",
-              "RelativeDocumentMoniker": "frm_login.vb",
-              "ToolTip": "D:\\Thanatos\\Thanatos_app\\frm_login.vb",
-              "RelativeToolTip": "frm_login.vb",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwCYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-19T01:11:05.837Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frm_login.vb [Design]",
-              "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\frm_login.vb",
-              "RelativeDocumentMoniker": "frm_login.vb",
-              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_login.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-19T01:11:04.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "banco_dados.vb",
-              "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\banco_dados.vb",
-              "RelativeDocumentMoniker": "banco_dados.vb",
-              "ToolTip": "D:\\Thanatos\\Thanatos_app\\banco_dados.vb",
-              "RelativeToolTip": "banco_dados.vb",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwBkAAAChAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-18T03:46:16.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frm_home.vb [Design]",
-              "DocumentMoniker": "D:\\Thanatos\\Thanatos_app\\frm_home.vb",
-              "RelativeDocumentMoniker": "frm_home.vb",
-              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2025-11-19T00:30:54.606Z"
             }
           ]
         }

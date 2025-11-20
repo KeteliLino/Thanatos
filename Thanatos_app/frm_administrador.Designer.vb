@@ -125,6 +125,15 @@ Partial Class frm_administrador
         Me.btn_voltar4 = New MaterialSkin.Controls.MaterialButton()
         Me.tab_funcionario = New System.Windows.Forms.TabPage()
         Me.dgv_funcionarios = New ns1.BunifuCustomDataGrid()
+        Me.cpfFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.loginFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.senhaFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.nomeFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.cepFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.statusFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.setorFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.img_excluir = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.img_alterar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
         Me.cmb_setor = New MaterialSkin.Controls.MaterialComboBox()
         Me.txt_nomeFuncionario = New MaterialSkin.Controls.MaterialTextBox2()
@@ -208,15 +217,6 @@ Partial Class frm_administrador
         Me.btn_voltar = New MaterialSkin.Controls.MaterialButton()
         Me.MaterialTabControl1 = New MaterialSkin.Controls.MaterialTabControl()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.cpfFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.loginFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.senhaFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.nomeFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.cepFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.statusFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.setorFuncionario = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.img_excluir = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.img_alterar = New System.Windows.Forms.DataGridViewImageColumn()
         Me.tab_velorio.SuspendLayout()
         CType(Me.dgv_velorio, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel4.SuspendLayout()
@@ -1458,6 +1458,55 @@ Partial Class frm_administrador
         Me.dgv_funcionarios.Size = New System.Drawing.Size(1755, 555)
         Me.dgv_funcionarios.TabIndex = 19
         '
+        'cpfFuncionario
+        '
+        Me.cpfFuncionario.HeaderText = "CPF"
+        Me.cpfFuncionario.Name = "cpfFuncionario"
+        '
+        'loginFuncionario
+        '
+        Me.loginFuncionario.HeaderText = "Login"
+        Me.loginFuncionario.Name = "loginFuncionario"
+        '
+        'senhaFuncionario
+        '
+        Me.senhaFuncionario.HeaderText = "Senha"
+        Me.senhaFuncionario.Name = "senhaFuncionario"
+        '
+        'nomeFuncionario
+        '
+        Me.nomeFuncionario.HeaderText = "Nome"
+        Me.nomeFuncionario.Name = "nomeFuncionario"
+        '
+        'cepFuncionario
+        '
+        Me.cepFuncionario.HeaderText = "CEP"
+        Me.cepFuncionario.Name = "cepFuncionario"
+        '
+        'statusFuncionario
+        '
+        Me.statusFuncionario.HeaderText = "DescStatus"
+        Me.statusFuncionario.Name = "statusFuncionario"
+        '
+        'setorFuncionario
+        '
+        Me.setorFuncionario.HeaderText = "DescSetor"
+        Me.setorFuncionario.Name = "setorFuncionario"
+        '
+        'img_excluir
+        '
+        Me.img_excluir.HeaderText = "Excluir"
+        Me.img_excluir.Image = CType(resources.GetObject("img_excluir.Image"), System.Drawing.Image)
+        Me.img_excluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.img_excluir.Name = "img_excluir"
+        '
+        'img_alterar
+        '
+        Me.img_alterar.HeaderText = "Alterar"
+        Me.img_alterar.Image = CType(resources.GetObject("img_alterar.Image"), System.Drawing.Image)
+        Me.img_alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
+        Me.img_alterar.Name = "img_alterar"
+        '
         'GunaShadowPanel1
         '
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
@@ -1507,7 +1556,7 @@ Partial Class frm_administrador
         Me.cmb_setor.FormattingEnabled = True
         Me.cmb_setor.IntegralHeight = False
         Me.cmb_setor.ItemHeight = 43
-        Me.cmb_setor.Items.AddRange(New Object() {"", "Administração", "Financeiro" & Global.Microsoft.VisualBasic.ChrW(9), "Recepção"})
+        Me.cmb_setor.Items.AddRange(New Object() {"", "Administração", "Financeiro", "Recepção"})
         Me.cmb_setor.Location = New System.Drawing.Point(330, 219)
         Me.cmb_setor.MaxDropDownItems = 4
         Me.cmb_setor.MouseState = MaterialSkin.MouseState.OUT
@@ -2457,7 +2506,7 @@ Partial Class frm_administrador
         Me.txt_horaCremacao.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
         Me.txt_horaCremacao.LeadingIcon = Nothing
         Me.txt_horaCremacao.Location = New System.Drawing.Point(302, 47)
-        Me.txt_horaCremacao.Mask = "00:00:00"
+        Me.txt_horaCremacao.Mask = "00:00"
         Me.txt_horaCremacao.MaxLength = 32767
         Me.txt_horaCremacao.MouseState = MaterialSkin.MouseState.OUT
         Me.txt_horaCremacao.Name = "txt_horaCremacao"
@@ -2477,7 +2526,7 @@ Partial Class frm_administrador
         Me.txt_horaCremacao.SkipLiterals = True
         Me.txt_horaCremacao.TabIndex = 36
         Me.txt_horaCremacao.TabStop = False
-        Me.txt_horaCremacao.Text = "  :  :"
+        Me.txt_horaCremacao.Text = "  :"
         Me.txt_horaCremacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         Me.txt_horaCremacao.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals
         Me.txt_horaCremacao.TrailingIcon = Nothing
@@ -3045,55 +3094,6 @@ Partial Class frm_administrador
         Me.PictureBox3.Size = New System.Drawing.Size(46, 43)
         Me.PictureBox3.TabIndex = 2
         Me.PictureBox3.TabStop = False
-        '
-        'cpfFuncionario
-        '
-        Me.cpfFuncionario.HeaderText = "CPF"
-        Me.cpfFuncionario.Name = "cpfFuncionario"
-        '
-        'loginFuncionario
-        '
-        Me.loginFuncionario.HeaderText = "Login"
-        Me.loginFuncionario.Name = "loginFuncionario"
-        '
-        'senhaFuncionario
-        '
-        Me.senhaFuncionario.HeaderText = "Senha"
-        Me.senhaFuncionario.Name = "senhaFuncionario"
-        '
-        'nomeFuncionario
-        '
-        Me.nomeFuncionario.HeaderText = "Nome"
-        Me.nomeFuncionario.Name = "nomeFuncionario"
-        '
-        'cepFuncionario
-        '
-        Me.cepFuncionario.HeaderText = "CEP"
-        Me.cepFuncionario.Name = "cepFuncionario"
-        '
-        'statusFuncionario
-        '
-        Me.statusFuncionario.HeaderText = "DescStatus"
-        Me.statusFuncionario.Name = "statusFuncionario"
-        '
-        'setorFuncionario
-        '
-        Me.setorFuncionario.HeaderText = "DescSetor"
-        Me.setorFuncionario.Name = "setorFuncionario"
-        '
-        'img_excluir
-        '
-        Me.img_excluir.HeaderText = "Excluir"
-        Me.img_excluir.Image = CType(resources.GetObject("img_excluir.Image"), System.Drawing.Image)
-        Me.img_excluir.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.img_excluir.Name = "img_excluir"
-        '
-        'img_alterar
-        '
-        Me.img_alterar.HeaderText = "Alterar"
-        Me.img_alterar.Image = CType(resources.GetObject("img_alterar.Image"), System.Drawing.Image)
-        Me.img_alterar.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom
-        Me.img_alterar.Name = "img_alterar"
         '
         'frm_administrador
         '

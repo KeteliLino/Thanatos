@@ -50,13 +50,36 @@ Module banco_dados
 
     Public Sub carregar_dados_cremacao(dgv As BunifuCustomDataGrid)
         Try
-            query = $"select tb_cremacoes.idCremacao, tb_cremacoes.horaCremacao, tb_cremacoes.dataCremacao, tb_salas.descricaoSala, tb_falecidos.nomeFalecido from tb_cremacoes inner join
-                    tb_salas on tb_cremacoes.idSala = tb_salas.idSala inner join tb_falecidos on tb_cremacoes.idFalecido = tb_falecidos.idFalecido"
+            query = $"select tb_cremacoes.idCremacao, tb_cremacoes.horaCremacao, tb_cremacoes.diaCremacao,
+                 tb_salas.descricaoSala, tb_falecidos.nomeFalecido 
+                 from tb_cremacoes 
+                 inner join tb_salas on tb_cremacoes.idSala = tb_salas.idSala 
+                 inner join tb_falecidos on tb_cremacoes.idFalecido = tb_falecidos.idFalecido"
             rs = db.Execute(query)
             With dgv
                 .Rows.Clear()
                 Do While rs.EOF = False
-                    .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, Nothing, Nothing)
+                    Dim hora As String = rs.Fields("horaCremacao").Value.ToString()
+                    If DateTime.TryParse(hora, Nothing) Then
+                        hora = DateTime.Parse(hora).ToString("HH:mm")
+                    End If
+                    Dim data As String = ""
+                    If Not IsDBNull(rs.Fields("diaCremacao").Value) AndAlso rs.Fields("diaCremacao").Value.ToString <> "" Then
+                        Try
+                            data = Format(CDate(rs.Fields("diaCremacao").Value), "dd/MM/yyyy")
+                        Catch
+                            data = rs.Fields("diaCremacao").Value.ToString()
+                        End Try
+                    End If
+                    .Rows.Add(
+                    rs.Fields("idCremacao").Value,
+                    hora,
+                    data,
+                    rs.Fields("descricaoSala").Value,
+                    rs.Fields("nomeFalecido").Value,
+                    Nothing,
+                    Nothing
+                )
                     rs.MoveNext()
                 Loop
             End With
@@ -67,7 +90,7 @@ Module banco_dados
 
     Public Sub carregar_dados_velorio(dgv As BunifuCustomDataGrid)
         Try
-            query = $"select tb_velorios.idVelorio, tb_velorios.horaVelorio, tb_velorios.dataVelorio, tb_salas.descricaoSala, tb_falecidos.nomeFalecido from tb_velorios inner join
+            query = $"select tb_velorios.idVelorio, tb_velorios.horaVelorio, tb_velorios.diaVelorio, tb_salas.descricaoSala, tb_falecidos.nomeFalecido from tb_velorios inner join
                     tb_salas on tb_velorios.idSala = tb_salas.idSala inner join tb_falecidos on tb_velorios.idFalecido = tb_falecidos.idFalecido"
             rs = db.Execute(query)
             With dgv
