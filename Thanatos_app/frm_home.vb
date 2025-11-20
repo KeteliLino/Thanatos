@@ -1,12 +1,14 @@
 ﻿Imports System.Drawing
 Imports System.Globalization
-Imports MaterialSkin
-Imports MaterialSkin.Controls
+Imports System.Runtime.Remoting.Messaging
+Imports System.Windows.Ink
+Imports System.Windows.Media
 Imports LiveCharts
-Imports LiveCharts.Wpf
 Imports LiveCharts.Defaults
 Imports LiveCharts.WinForms
-Imports System.Runtime.Remoting.Messaging
+Imports LiveCharts.Wpf
+Imports MaterialSkin
+Imports MaterialSkin.Controls
 
 Public Class frm_home
     Dim resp
@@ -118,8 +120,9 @@ Public Class frm_home
         Dim series As New LineSeries With {
             .Values = values,
             .PointGeometry = DefaultGeometries.Circle,
-            .PointGeometrySize = 6,
-            .StrokeThickness = 2,
+            .PointGeometrySize = 15,
+            .StrokeThickness = 6,
+            .Stroke = New System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(128, 39, 144)),
             .Fill = System.Windows.Media.Brushes.Transparent ' sem preenchimento abaixo da linha
         }
 
