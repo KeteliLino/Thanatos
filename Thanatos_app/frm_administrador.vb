@@ -6,7 +6,7 @@ Imports System.Threading
 
 Public Class frm_administrador
     Dim status, setor, tipoSala, id_sala, id_cremacao As String
-    Dim cont As Integer
+
     Private ReadOnly materialSkinManager As MaterialSkinManager = MaterialSkinManager.Instance
 
     Public Sub New()

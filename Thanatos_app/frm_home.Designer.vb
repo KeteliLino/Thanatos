@@ -28,18 +28,19 @@ Partial Class frm_home
         Me.btn_recepcao = New MaterialSkin.Controls.MaterialButton()
         Me.btn_financeiro = New MaterialSkin.Controls.MaterialButton()
         Me.MaterialCard1 = New MaterialSkin.Controls.MaterialCard()
+        Me.lbl_dado1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_titulo1 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialCard2 = New MaterialSkin.Controls.MaterialCard()
+        Me.lbl_dado2 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_titulo2 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialCard3 = New MaterialSkin.Controls.MaterialCard()
+        Me.lbl_dado3 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_titulo3 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialCard4 = New MaterialSkin.Controls.MaterialCard()
         Me.CartesianChart1 = New LiveCharts.WinForms.CartesianChart()
         Me.lbl_nome = New MaterialSkin.Controls.MaterialLabel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.lbl_titulo1 = New MaterialSkin.Controls.MaterialLabel()
-        Me.lbl_dado1 = New MaterialSkin.Controls.MaterialLabel()
-        Me.lbl_titulo2 = New MaterialSkin.Controls.MaterialLabel()
-        Me.lbl_dado2 = New MaterialSkin.Controls.MaterialLabel()
-        Me.lbl_titulo3 = New MaterialSkin.Controls.MaterialLabel()
-        Me.lbl_dado3 = New MaterialSkin.Controls.MaterialLabel()
+        Me.lbl_titulo4 = New MaterialSkin.Controls.MaterialLabel()
         Me.GunaShadowPanel1.SuspendLayout()
         Me.MaterialCard1.SuspendLayout()
         Me.MaterialCard2.SuspendLayout()
@@ -210,6 +211,31 @@ Partial Class frm_home
         Me.MaterialCard1.Size = New System.Drawing.Size(230, 100)
         Me.MaterialCard1.TabIndex = 7
         '
+        'lbl_dado1
+        '
+        Me.lbl_dado1.AutoSize = True
+        Me.lbl_dado1.Depth = 0
+        Me.lbl_dado1.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_dado1.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
+        Me.lbl_dado1.Location = New System.Drawing.Point(108, 64)
+        Me.lbl_dado1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_dado1.Name = "lbl_dado1"
+        Me.lbl_dado1.Size = New System.Drawing.Size(13, 17)
+        Me.lbl_dado1.TabIndex = 1
+        Me.lbl_dado1.Text = "..."
+        '
+        'lbl_titulo1
+        '
+        Me.lbl_titulo1.AutoSize = True
+        Me.lbl_titulo1.Depth = 0
+        Me.lbl_titulo1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_titulo1.Location = New System.Drawing.Point(8, 8)
+        Me.lbl_titulo1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_titulo1.Name = "lbl_titulo1"
+        Me.lbl_titulo1.Size = New System.Drawing.Size(13, 19)
+        Me.lbl_titulo1.TabIndex = 0
+        Me.lbl_titulo1.Text = "..."
+        '
         'MaterialCard2
         '
         Me.MaterialCard2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -224,6 +250,31 @@ Partial Class frm_home
         Me.MaterialCard2.Padding = New System.Windows.Forms.Padding(14)
         Me.MaterialCard2.Size = New System.Drawing.Size(230, 100)
         Me.MaterialCard2.TabIndex = 8
+        '
+        'lbl_dado2
+        '
+        Me.lbl_dado2.AutoSize = True
+        Me.lbl_dado2.Depth = 0
+        Me.lbl_dado2.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_dado2.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
+        Me.lbl_dado2.Location = New System.Drawing.Point(108, 64)
+        Me.lbl_dado2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_dado2.Name = "lbl_dado2"
+        Me.lbl_dado2.Size = New System.Drawing.Size(13, 17)
+        Me.lbl_dado2.TabIndex = 1
+        Me.lbl_dado2.Text = "..."
+        '
+        'lbl_titulo2
+        '
+        Me.lbl_titulo2.AutoSize = True
+        Me.lbl_titulo2.Depth = 0
+        Me.lbl_titulo2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_titulo2.Location = New System.Drawing.Point(7, 8)
+        Me.lbl_titulo2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_titulo2.Name = "lbl_titulo2"
+        Me.lbl_titulo2.Size = New System.Drawing.Size(13, 19)
+        Me.lbl_titulo2.TabIndex = 0
+        Me.lbl_titulo2.Text = "..."
         '
         'MaterialCard3
         '
@@ -240,6 +291,31 @@ Partial Class frm_home
         Me.MaterialCard3.Size = New System.Drawing.Size(230, 100)
         Me.MaterialCard3.TabIndex = 9
         '
+        'lbl_dado3
+        '
+        Me.lbl_dado3.AutoSize = True
+        Me.lbl_dado3.Depth = 0
+        Me.lbl_dado3.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_dado3.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
+        Me.lbl_dado3.Location = New System.Drawing.Point(108, 64)
+        Me.lbl_dado3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_dado3.Name = "lbl_dado3"
+        Me.lbl_dado3.Size = New System.Drawing.Size(13, 17)
+        Me.lbl_dado3.TabIndex = 1
+        Me.lbl_dado3.Text = "..."
+        '
+        'lbl_titulo3
+        '
+        Me.lbl_titulo3.AutoSize = True
+        Me.lbl_titulo3.Depth = 0
+        Me.lbl_titulo3.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_titulo3.Location = New System.Drawing.Point(7, 7)
+        Me.lbl_titulo3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_titulo3.Name = "lbl_titulo3"
+        Me.lbl_titulo3.Size = New System.Drawing.Size(13, 19)
+        Me.lbl_titulo3.TabIndex = 0
+        Me.lbl_titulo3.Text = "..."
+        '
         'MaterialCard4
         '
         Me.MaterialCard4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
@@ -251,7 +327,7 @@ Partial Class frm_home
         Me.MaterialCard4.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialCard4.Name = "MaterialCard4"
         Me.MaterialCard4.Padding = New System.Windows.Forms.Padding(14)
-        Me.MaterialCard4.Size = New System.Drawing.Size(926, 325)
+        Me.MaterialCard4.Size = New System.Drawing.Size(926, 426)
         Me.MaterialCard4.TabIndex = 10
         '
         'CartesianChart1
@@ -259,7 +335,7 @@ Partial Class frm_home
         Me.CartesianChart1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CartesianChart1.Location = New System.Drawing.Point(14, 14)
         Me.CartesianChart1.Name = "CartesianChart1"
-        Me.CartesianChart1.Size = New System.Drawing.Size(898, 297)
+        Me.CartesianChart1.Size = New System.Drawing.Size(898, 398)
         Me.CartesianChart1.TabIndex = 0
         Me.CartesianChart1.Text = "CartesianChart1"
         '
@@ -287,86 +363,25 @@ Partial Class frm_home
         Me.PictureBox1.TabIndex = 12
         Me.PictureBox1.TabStop = False
         '
-        'lbl_titulo1
+        'lbl_titulo4
         '
-        Me.lbl_titulo1.AutoSize = True
-        Me.lbl_titulo1.Depth = 0
-        Me.lbl_titulo1.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.lbl_titulo1.Location = New System.Drawing.Point(8, 8)
-        Me.lbl_titulo1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.lbl_titulo1.Name = "lbl_titulo1"
-        Me.lbl_titulo1.Size = New System.Drawing.Size(13, 19)
-        Me.lbl_titulo1.TabIndex = 0
-        Me.lbl_titulo1.Text = "..."
-        '
-        'lbl_dado1
-        '
-        Me.lbl_dado1.AutoSize = True
-        Me.lbl_dado1.Depth = 0
-        Me.lbl_dado1.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.lbl_dado1.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
-        Me.lbl_dado1.Location = New System.Drawing.Point(108, 64)
-        Me.lbl_dado1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.lbl_dado1.Name = "lbl_dado1"
-        Me.lbl_dado1.Size = New System.Drawing.Size(13, 17)
-        Me.lbl_dado1.TabIndex = 1
-        Me.lbl_dado1.Text = "..."
-        '
-        'lbl_titulo2
-        '
-        Me.lbl_titulo2.AutoSize = True
-        Me.lbl_titulo2.Depth = 0
-        Me.lbl_titulo2.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.lbl_titulo2.Location = New System.Drawing.Point(7, 8)
-        Me.lbl_titulo2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.lbl_titulo2.Name = "lbl_titulo2"
-        Me.lbl_titulo2.Size = New System.Drawing.Size(13, 19)
-        Me.lbl_titulo2.TabIndex = 0
-        Me.lbl_titulo2.Text = "..."
-        '
-        'lbl_dado2
-        '
-        Me.lbl_dado2.AutoSize = True
-        Me.lbl_dado2.Depth = 0
-        Me.lbl_dado2.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.lbl_dado2.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
-        Me.lbl_dado2.Location = New System.Drawing.Point(108, 64)
-        Me.lbl_dado2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.lbl_dado2.Name = "lbl_dado2"
-        Me.lbl_dado2.Size = New System.Drawing.Size(13, 17)
-        Me.lbl_dado2.TabIndex = 1
-        Me.lbl_dado2.Text = "..."
-        '
-        'lbl_titulo3
-        '
-        Me.lbl_titulo3.AutoSize = True
-        Me.lbl_titulo3.Depth = 0
-        Me.lbl_titulo3.Font = New System.Drawing.Font("Roboto", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.lbl_titulo3.Location = New System.Drawing.Point(7, 7)
-        Me.lbl_titulo3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.lbl_titulo3.Name = "lbl_titulo3"
-        Me.lbl_titulo3.Size = New System.Drawing.Size(13, 19)
-        Me.lbl_titulo3.TabIndex = 0
-        Me.lbl_titulo3.Text = "..."
-        '
-        'lbl_dado3
-        '
-        Me.lbl_dado3.AutoSize = True
-        Me.lbl_dado3.Depth = 0
-        Me.lbl_dado3.Font = New System.Drawing.Font("Roboto", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.lbl_dado3.FontType = MaterialSkin.MaterialSkinManager.fontType.Body2
-        Me.lbl_dado3.Location = New System.Drawing.Point(108, 64)
-        Me.lbl_dado3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.lbl_dado3.Name = "lbl_dado3"
-        Me.lbl_dado3.Size = New System.Drawing.Size(13, 17)
-        Me.lbl_dado3.TabIndex = 1
-        Me.lbl_dado3.Text = "..."
+        Me.lbl_titulo4.AutoSize = True
+        Me.lbl_titulo4.Depth = 0
+        Me.lbl_titulo4.Font = New System.Drawing.Font("Roboto", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
+        Me.lbl_titulo4.FontType = MaterialSkin.MaterialSkinManager.fontType.Subtitle1
+        Me.lbl_titulo4.Location = New System.Drawing.Point(680, 478)
+        Me.lbl_titulo4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.lbl_titulo4.Name = "lbl_titulo4"
+        Me.lbl_titulo4.Size = New System.Drawing.Size(13, 19)
+        Me.lbl_titulo4.TabIndex = 2
+        Me.lbl_titulo4.Text = "..."
         '
         'frm_home
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1920, 1032)
+        Me.Controls.Add(Me.lbl_titulo4)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lbl_nome)
         Me.Controls.Add(Me.MaterialCard4)
@@ -413,4 +428,5 @@ Partial Class frm_home
     Friend WithEvents lbl_titulo2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents lbl_dado3 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents lbl_titulo3 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents lbl_titulo4 As MaterialSkin.Controls.MaterialLabel
 End Class

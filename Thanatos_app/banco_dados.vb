@@ -4,6 +4,10 @@ Module banco_dados
     Public query, resp, aux_cpf, qtdeVelorio, proxVelorio, restVelorio, qtdeCremacao, proxCremacao, restCremacao, qtdeAbertoOrcamento, finalizadoMesOrcamento, canceladoMesOrcamento As String
     Public db As ADODB.Connection 'Variavel do bancoq
     Public rs As ADODB.Recordset 'Variavel das tabelas
+    Public datas() As Date
+    Public valores() As Double
+    Public dados_grafico As New List(Of KeyValuePair(Of Date, Double))
+    Dim cont = 0
 
     Sub conecta_banco_mysql()
         Try
@@ -186,6 +190,22 @@ Module banco_dados
             rs = db.Execute(query)
             restVelorio = rs.Fields(0).Value.ToString()
 
+            query = "SELECT DATE_FORMAT(dataVelorio, '%d/%m/%Y') AS dataFormatada, COUNT(*) AS qtde FROM tb_velorios 
+                    WHERE dataVelorio BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 10 DAY) GROUP BY dataVelorio ORDER BY dataVelorio;"
+            rs = db.Execute(query)
+
+
+            dados_grafico.Clear()
+
+            Do While Not rs.EOF
+                Dim d As Date = rs.Fields(0).Value
+                Dim v As Double = rs.Fields(1).Value
+
+                dados_grafico.Add(New KeyValuePair(Of Date, Double)(d, v))
+
+                rs.MoveNext()
+            Loop
+
         ElseIf tabela = "Cremações" Then
             query = $"SELECT COUNT(*) FROM tb_cremacoes WHERE dataCremacao = CURDATE();"
             rs = db.Execute(query)
@@ -199,6 +219,21 @@ Module banco_dados
             rs = db.Execute(query)
             restCremacao = rs.Fields(0).Value.ToString()
 
+            query = "SELECT DATE_FORMAT(dataCremacao, '%d/%m/%Y') AS dataFormatada, COUNT(*) AS qtde FROM tb_cremacoes 
+                        WHERE dataCremacao BETWEEN CURDATE() AND DATE_ADD(CURDATE(), INTERVAL 10 DAY) GROUP BY dataCremacao ORDER BY dataCremacao;"
+            rs = db.Execute(query)
+
+            dados_grafico.Clear()
+
+            Do While Not rs.EOF
+                Dim d As Date = rs.Fields(0).Value
+                Dim v As Double = rs.Fields(1).Value
+
+                dados_grafico.Add(New KeyValuePair(Of Date, Double)(d, v))
+
+                rs.MoveNext()
+            Loop
+
         ElseIf tabela = "Orçamentos" Then
             query = $"Select COUNT(*)From tb_orcamentos Where idStatus = 3;"
             rs = db.Execute(query)
@@ -209,6 +244,22 @@ Module banco_dados
             query = $"SELECT COUNT(*) FROM tb_orcamentos WHERE idStatus = 4 AND MONTH(dataOrcamento) = MONTH(CURDATE()) AND YEAR(dataOrcamento) = YEAR(CURDATE());"
             rs = db.Execute(query)
             canceladoMesOrcamento = rs.Fields(0).Value.ToString()
+
+            query = "SELECT DATE_FORMAT(dataOrcamento, '%d/%m/%Y') AS dataFormatada, SUM(valorOrcamento) AS soma FROM tb_orcamentos 
+                    WHERE idStatus = 5 AND dataOrcamento BETWEEN DATE_SUB(CURDATE(), INTERVAL 10 DAY) AND CURDATE() GROUP BY dataOrcamento ORDER BY dataOrcamento;"
+            rs = db.Execute(query)
+
+            dados_grafico.Clear()
+
+            Do While Not rs.EOF
+                Dim d As Date = rs.Fields(0).Value
+                Dim v As Double = rs.Fields(1).Value
+
+                dados_grafico.Add(New KeyValuePair(Of Date, Double)(d, v))
+
+                rs.MoveNext()
+            Loop
+
         End If
     End Sub
 End Module

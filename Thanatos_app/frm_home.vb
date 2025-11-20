@@ -40,6 +40,7 @@ Public Class frm_home
 
     Private Sub frm_home_Load(sender As Object, e As EventArgs) Handles Me.Load
         conecta_banco_mysql()
+
         lbl_nome.Text = "Bem-vindo, " + frm_login.nomeFuncionario
         If frm_login.idSetor = "1" Then
             With Me
@@ -69,21 +70,11 @@ Public Class frm_home
         ' Inicializa e popula o gráfico (garanta que o controle se chame cartesianChart1 no Designer)
         SetupLineChart()
 
-        ' Exemplo de dados: múltiplos pontos no tempo
-        Dim amostra As New List(Of KeyValuePair(Of DateTime, Double)) From {
-            New KeyValuePair(Of DateTime, Double)(DateTime.Today.AddDays(-6), 1200.5),
-            New KeyValuePair(Of DateTime, Double)(DateTime.Today.AddDays(-5), 1500),
-            New KeyValuePair(Of DateTime, Double)(DateTime.Today.AddDays(-4), 1100.75),
-            New KeyValuePair(Of DateTime, Double)(DateTime.Today.AddDays(-3), 1750),
-            New KeyValuePair(Of DateTime, Double)(DateTime.Today.AddDays(-2), 900),
-            New KeyValuePair(Of DateTime, Double)(DateTime.Today.AddDays(-1), 2050.25),
-            New KeyValuePair(Of DateTime, Double)(DateTime.Today, 1600)
-        }
-        PopulateLineChart(amostra)
     End Sub
 
     ' Configurações iniciais do gráfico
     Private Sub SetupLineChart()
+
         ' Verifica se o controle existe
         Dim found() As Control = Me.Controls.Find("cartesianChart1", True)
         If found.Length = 0 Then Return
@@ -95,7 +86,7 @@ Public Class frm_home
         ' eixo X com formatação de datas
         chart.AxisX.Clear()
         chart.AxisX.Add(New Axis With {
-            .LabelFormatter = Function(value) DateTime.FromOADate(value).ToString("dd/MM/yyyy"),
+            .LabelFormatter = Function(value) Date.FromOADate(value).ToString("dd/MM/yyyy"),
             .Separator = New Separator With {.Step = 1, .IsEnabled = True}
         })
 
@@ -111,7 +102,7 @@ Public Class frm_home
     End Sub
 
     ' Popula o gráfico com uma única série de linha (muitos pontos no tempo)
-    Public Sub PopulateLineChart(dados As List(Of KeyValuePair(Of DateTime, Double)))
+    Public Sub PopulateLineChart(dados As List(Of KeyValuePair(Of Date, Double)))
         Dim found() As Control = Me.Controls.Find("cartesianChart1", True)
         If found.Length = 0 Then Return
         Dim chart = TryCast(found(0), LiveCharts.WinForms.CartesianChart)
@@ -182,6 +173,7 @@ Public Class frm_home
             lbl_titulo1.Text = "Qtde de Velórios Hoje"
             lbl_titulo2.Text = "Hora do Próximo Velório"
             lbl_titulo3.Text = "Velórios Restantes Hoje"
+            lbl_titulo4.Text = "Quantidade de velórios nos próximos 10 dias"
             lbl_dado1.Text = qtdeVelorio
             lbl_dado2.Text = proxVelorio
             lbl_dado3.Text = restVelorio
@@ -190,6 +182,7 @@ Public Class frm_home
             lbl_titulo1.Text = "Qtde de Cremações Hoje"
             lbl_titulo2.Text = "Hora do Próxima Cremação"
             lbl_titulo3.Text = "Cremações Restantes Hoje"
+            lbl_titulo4.Text = "Quantidade de cremações nos próximos 10 dias"
             lbl_dado1.Text = qtdeCremacao
             lbl_dado2.Text = proxCremacao
             lbl_dado3.Text = restCremacao
@@ -198,11 +191,20 @@ Public Class frm_home
             lbl_titulo1.Text = "Orçamentos em Aberto"
             lbl_titulo2.Text = "Finalizados no Mês"
             lbl_titulo3.Text = "Cancelados no Mês"
+            lbl_titulo4.Text = "Faturamento dos últimos nos últimos 10 dias"
             lbl_dado1.Text = qtdeAbertoOrcamento
             lbl_dado2.Text = finalizadoMesOrcamento
             lbl_dado3.Text = canceladoMesOrcamento
+        Else
+            lbl_titulo1.Text = "..."
+            lbl_titulo2.Text = "..."
+            lbl_titulo3.Text = "..."
+            lbl_titulo4.Text = "..."
+            lbl_dado1.Text = "..."
+            lbl_dado2.Text = "..."
+            lbl_dado3.Text = "..."
         End If
-
+        PopulateLineChart(dados_grafico)
     End Sub
 
 
