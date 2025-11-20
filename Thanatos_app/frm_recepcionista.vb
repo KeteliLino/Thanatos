@@ -60,4 +60,5 @@ Public Class frm_recepcionista
         carregar_dados_falecido(Me.dgv_falecido)
         carregar_dados_jazigo(Me.dgv_jazigo)
     End Sub
+
 End Class

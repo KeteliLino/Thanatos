@@ -106,6 +106,62 @@ Public Class frm_financeiro
         End If
     End Sub
 
+    Private Sub cmb_setor_SelectedValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_incluirFuncionario_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_voltar3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub cmb_tipoSala_SelectedValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_incluirSalas_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_incluirCremacoes_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_incluirVelorios_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_voltar6_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub cmb_statusFalecido_SelectedValueChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_incluirFalecidos_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_incluirJazigo_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_voltar5_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_incluirServicos_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub btn_voltar4_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
     Private Sub dgv_orcamento_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_orcamento.CellContentClick
         With dgv_orcamento
             If .CurrentRow.Cells(6).Selected = True Then

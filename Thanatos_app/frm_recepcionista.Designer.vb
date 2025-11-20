@@ -54,15 +54,8 @@ Partial Class frm_recepcionista
         Me.Column10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GunaShadowPanel3 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.MaterialTextBox212 = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel14 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialTextBox211 = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel13 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel12 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialTextBox210 = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialTextBox25 = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialButton2 = New MaterialSkin.Controls.MaterialButton()
         Me.MaterialTextBox26 = New MaterialSkin.Controls.MaterialTextBox2()
         Me.btn_voltar2 = New MaterialSkin.Controls.MaterialButton()
@@ -72,8 +65,8 @@ Partial Class frm_recepcionista
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GunaShadowPanel2 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.MaterialLabel11 = New MaterialSkin.Controls.MaterialLabel()
-        Me.cmb_status = New MaterialSkin.Controls.MaterialComboBox()
+        Me.MaterialLabel38 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialComboBox4 = New MaterialSkin.Controls.MaterialComboBox()
         Me.MaterialTextBox21 = New MaterialSkin.Controls.MaterialTextBox2()
         Me.MaterialLabel6 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialLabel9 = New MaterialSkin.Controls.MaterialLabel()
@@ -82,41 +75,40 @@ Partial Class frm_recepcionista
         Me.btn_voltar1 = New MaterialSkin.Controls.MaterialButton()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.dgv_velorio = New ns1.BunifuCustomDataGrid()
-        Me.GunaShadowPanel4 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialTextBox27 = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel7 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_data1 = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.MaterialTextBox28 = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel15 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel16 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialTextBox213 = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialButton3 = New MaterialSkin.Controls.MaterialButton()
-        Me.btn_voltar3 = New MaterialSkin.Controls.MaterialButton()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
-        Me.dgv_cremacao = New ns1.BunifuCustomDataGrid()
-        Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.MaterialLabel10 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialTextBox29 = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
-        Me.txt_data = New MaterialSkin.Controls.MaterialMaskedTextBox()
-        Me.MaterialTextBox22 = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
-        Me.MaterialTextBox24 = New MaterialSkin.Controls.MaterialTextBox2()
-        Me.btn_voltar = New MaterialSkin.Controls.MaterialButton()
-        Me.Tab4 = New MaterialSkin.Controls.MaterialTabControl()
-        Me.idCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.horaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.diaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.salaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.falecidoCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GunaShadowPanel4 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialComboBox1 = New MaterialSkin.Controls.MaterialComboBox()
+        Me.MaterialLabel7 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_data1 = New MaterialSkin.Controls.MaterialMaskedTextBox()
+        Me.MaterialLabel15 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialTextBox213 = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.MaterialButton3 = New MaterialSkin.Controls.MaterialButton()
+        Me.btn_voltar3 = New MaterialSkin.Controls.MaterialButton()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.dgv_cremacao = New ns1.BunifuCustomDataGrid()
+        Me.idCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.horaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.diaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.salaCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.falecidoCremacao = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.GunaShadowPanel1 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.MaterialLabel36 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialComboBox2 = New MaterialSkin.Controls.MaterialComboBox()
+        Me.MaterialLabel8 = New MaterialSkin.Controls.MaterialLabel()
+        Me.txt_data = New MaterialSkin.Controls.MaterialMaskedTextBox()
+        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialButton1 = New MaterialSkin.Controls.MaterialButton()
+        Me.MaterialTextBox24 = New MaterialSkin.Controls.MaterialTextBox2()
+        Me.btn_voltar = New MaterialSkin.Controls.MaterialButton()
+        Me.Tab4 = New MaterialSkin.Controls.MaterialTabControl()
+        Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialComboBox3 = New MaterialSkin.Controls.MaterialComboBox()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage3.SuspendLayout()
         CType(Me.dgv_jazigo, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -251,12 +243,8 @@ Partial Class frm_recepcionista
         '
         Me.GunaShadowPanel3.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel3.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel3.Controls.Add(Me.MaterialTextBox212)
-        Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel14)
-        Me.GunaShadowPanel3.Controls.Add(Me.MaterialTextBox211)
-        Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel13)
-        Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel12)
-        Me.GunaShadowPanel3.Controls.Add(Me.MaterialTextBox210)
+        Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel5)
+        Me.GunaShadowPanel3.Controls.Add(Me.MaterialComboBox3)
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialTextBox25)
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel3)
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel4)
@@ -270,135 +258,6 @@ Partial Class frm_recepcionista
         Me.GunaShadowPanel3.ShadowDepth = 255
         Me.GunaShadowPanel3.Size = New System.Drawing.Size(1755, 110)
         Me.GunaShadowPanel3.TabIndex = 19
-        '
-        'MaterialTextBox212
-        '
-        Me.MaterialTextBox212.AnimateReadOnly = False
-        Me.MaterialTextBox212.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox212.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox212.Depth = 0
-        Me.MaterialTextBox212.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox212.HideSelection = True
-        Me.MaterialTextBox212.LeadingIcon = Nothing
-        Me.MaterialTextBox212.Location = New System.Drawing.Point(782, 46)
-        Me.MaterialTextBox212.MaxLength = 32767
-        Me.MaterialTextBox212.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox212.Name = "MaterialTextBox212"
-        Me.MaterialTextBox212.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox212.PrefixSuffixText = Nothing
-        Me.MaterialTextBox212.ReadOnly = False
-        Me.MaterialTextBox212.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox212.SelectedText = ""
-        Me.MaterialTextBox212.SelectionLength = 0
-        Me.MaterialTextBox212.SelectionStart = 0
-        Me.MaterialTextBox212.ShortcutsEnabled = True
-        Me.MaterialTextBox212.Size = New System.Drawing.Size(113, 48)
-        Me.MaterialTextBox212.TabIndex = 20
-        Me.MaterialTextBox212.TabStop = False
-        Me.MaterialTextBox212.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox212.TrailingIcon = Nothing
-        Me.MaterialTextBox212.UseSystemPasswordChar = False
-        '
-        'MaterialLabel14
-        '
-        Me.MaterialLabel14.AutoSize = True
-        Me.MaterialLabel14.Depth = 0
-        Me.MaterialLabel14.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel14.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel14.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel14.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel14.Location = New System.Drawing.Point(782, 14)
-        Me.MaterialLabel14.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel14.Name = "MaterialLabel14"
-        Me.MaterialLabel14.Size = New System.Drawing.Size(76, 29)
-        Me.MaterialLabel14.TabIndex = 19
-        Me.MaterialLabel14.Text = "Coluna"
-        '
-        'MaterialTextBox211
-        '
-        Me.MaterialTextBox211.AnimateReadOnly = False
-        Me.MaterialTextBox211.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox211.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox211.Depth = 0
-        Me.MaterialTextBox211.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox211.HideSelection = True
-        Me.MaterialTextBox211.LeadingIcon = Nothing
-        Me.MaterialTextBox211.Location = New System.Drawing.Point(638, 46)
-        Me.MaterialTextBox211.MaxLength = 32767
-        Me.MaterialTextBox211.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox211.Name = "MaterialTextBox211"
-        Me.MaterialTextBox211.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox211.PrefixSuffixText = Nothing
-        Me.MaterialTextBox211.ReadOnly = False
-        Me.MaterialTextBox211.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox211.SelectedText = ""
-        Me.MaterialTextBox211.SelectionLength = 0
-        Me.MaterialTextBox211.SelectionStart = 0
-        Me.MaterialTextBox211.ShortcutsEnabled = True
-        Me.MaterialTextBox211.Size = New System.Drawing.Size(113, 48)
-        Me.MaterialTextBox211.TabIndex = 18
-        Me.MaterialTextBox211.TabStop = False
-        Me.MaterialTextBox211.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox211.TrailingIcon = Nothing
-        Me.MaterialTextBox211.UseSystemPasswordChar = False
-        '
-        'MaterialLabel13
-        '
-        Me.MaterialLabel13.AutoSize = True
-        Me.MaterialLabel13.Depth = 0
-        Me.MaterialLabel13.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel13.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel13.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel13.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel13.Location = New System.Drawing.Point(638, 14)
-        Me.MaterialLabel13.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel13.Name = "MaterialLabel13"
-        Me.MaterialLabel13.Size = New System.Drawing.Size(66, 29)
-        Me.MaterialLabel13.TabIndex = 17
-        Me.MaterialLabel13.Text = "Fileira"
-        '
-        'MaterialLabel12
-        '
-        Me.MaterialLabel12.AutoSize = True
-        Me.MaterialLabel12.Depth = 0
-        Me.MaterialLabel12.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel12.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel12.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel12.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel12.Location = New System.Drawing.Point(495, 14)
-        Me.MaterialLabel12.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel12.Name = "MaterialLabel12"
-        Me.MaterialLabel12.Size = New System.Drawing.Size(113, 29)
-        Me.MaterialLabel12.TabIndex = 15
-        Me.MaterialLabel12.Text = "Quadrante"
-        '
-        'MaterialTextBox210
-        '
-        Me.MaterialTextBox210.AnimateReadOnly = False
-        Me.MaterialTextBox210.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox210.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox210.Depth = 0
-        Me.MaterialTextBox210.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox210.HideSelection = True
-        Me.MaterialTextBox210.LeadingIcon = Nothing
-        Me.MaterialTextBox210.Location = New System.Drawing.Point(495, 46)
-        Me.MaterialTextBox210.MaxLength = 32767
-        Me.MaterialTextBox210.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox210.Name = "MaterialTextBox210"
-        Me.MaterialTextBox210.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox210.PrefixSuffixText = Nothing
-        Me.MaterialTextBox210.ReadOnly = False
-        Me.MaterialTextBox210.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox210.SelectedText = ""
-        Me.MaterialTextBox210.SelectionLength = 0
-        Me.MaterialTextBox210.SelectionStart = 0
-        Me.MaterialTextBox210.ShortcutsEnabled = True
-        Me.MaterialTextBox210.Size = New System.Drawing.Size(113, 48)
-        Me.MaterialTextBox210.TabIndex = 14
-        Me.MaterialTextBox210.TabStop = False
-        Me.MaterialTextBox210.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox210.TrailingIcon = Nothing
-        Me.MaterialTextBox210.UseSystemPasswordChar = False
         '
         'MaterialTextBox25
         '
@@ -442,21 +301,6 @@ Partial Class frm_recepcionista
         Me.MaterialLabel3.Size = New System.Drawing.Size(135, 29)
         Me.MaterialLabel3.TabIndex = 12
         Me.MaterialLabel3.Text = "ID do Jazigo"
-        '
-        'MaterialLabel4
-        '
-        Me.MaterialLabel4.AutoSize = True
-        Me.MaterialLabel4.Depth = 0
-        Me.MaterialLabel4.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel4.Location = New System.Drawing.Point(197, 14)
-        Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel4.Name = "MaterialLabel4"
-        Me.MaterialLabel4.Size = New System.Drawing.Size(198, 29)
-        Me.MaterialLabel4.TabIndex = 9
-        Me.MaterialLabel4.Text = "Nome do Falecido"
         '
         'MaterialButton2
         '
@@ -611,8 +455,8 @@ Partial Class frm_recepcionista
         '
         Me.GunaShadowPanel2.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel2.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel11)
-        Me.GunaShadowPanel2.Controls.Add(Me.cmb_status)
+        Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel38)
+        Me.GunaShadowPanel2.Controls.Add(Me.MaterialComboBox4)
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialTextBox21)
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel6)
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel9)
@@ -627,43 +471,42 @@ Partial Class frm_recepcionista
         Me.GunaShadowPanel2.Size = New System.Drawing.Size(1755, 110)
         Me.GunaShadowPanel2.TabIndex = 18
         '
-        'MaterialLabel11
+        'MaterialLabel38
         '
-        Me.MaterialLabel11.AutoSize = True
-        Me.MaterialLabel11.Depth = 0
-        Me.MaterialLabel11.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel11.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel11.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel11.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel11.Location = New System.Drawing.Point(507, 12)
-        Me.MaterialLabel11.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel11.Name = "MaterialLabel11"
-        Me.MaterialLabel11.Size = New System.Drawing.Size(69, 29)
-        Me.MaterialLabel11.TabIndex = 15
-        Me.MaterialLabel11.Text = "Status"
+        Me.MaterialLabel38.Depth = 0
+        Me.MaterialLabel38.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel38.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel38.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel38.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel38.Location = New System.Drawing.Point(1184, 17)
+        Me.MaterialLabel38.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel38.Name = "MaterialLabel38"
+        Me.MaterialLabel38.Size = New System.Drawing.Size(160, 29)
+        Me.MaterialLabel38.TabIndex = 44
+        Me.MaterialLabel38.Text = "Pesquisar por:"
         '
-        'cmb_status
+        'MaterialComboBox4
         '
-        Me.cmb_status.AutoResize = False
-        Me.cmb_status.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.cmb_status.Depth = 0
-        Me.cmb_status.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
-        Me.cmb_status.DropDownHeight = 174
-        Me.cmb_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_status.DropDownWidth = 121
-        Me.cmb_status.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.cmb_status.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.cmb_status.FormattingEnabled = True
-        Me.cmb_status.IntegralHeight = False
-        Me.cmb_status.ItemHeight = 43
-        Me.cmb_status.Items.AddRange(New Object() {"", "Cremado", "Sepultado"})
-        Me.cmb_status.Location = New System.Drawing.Point(506, 44)
-        Me.cmb_status.MaxDropDownItems = 4
-        Me.cmb_status.MouseState = MaterialSkin.MouseState.OUT
-        Me.cmb_status.Name = "cmb_status"
-        Me.cmb_status.Size = New System.Drawing.Size(250, 49)
-        Me.cmb_status.StartIndex = 0
-        Me.cmb_status.TabIndex = 14
+        Me.MaterialComboBox4.AutoResize = False
+        Me.MaterialComboBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialComboBox4.Depth = 0
+        Me.MaterialComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.MaterialComboBox4.DropDownHeight = 174
+        Me.MaterialComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.MaterialComboBox4.DropDownWidth = 121
+        Me.MaterialComboBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialComboBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialComboBox4.FormattingEnabled = True
+        Me.MaterialComboBox4.IntegralHeight = False
+        Me.MaterialComboBox4.ItemHeight = 43
+        Me.MaterialComboBox4.Items.AddRange(New Object() {"", "ID", "Nome"})
+        Me.MaterialComboBox4.Location = New System.Drawing.Point(1350, 17)
+        Me.MaterialComboBox4.MaxDropDownItems = 4
+        Me.MaterialComboBox4.MouseState = MaterialSkin.MouseState.OUT
+        Me.MaterialComboBox4.Name = "MaterialComboBox4"
+        Me.MaterialComboBox4.Size = New System.Drawing.Size(250, 49)
+        Me.MaterialComboBox4.StartIndex = 0
+        Me.MaterialComboBox4.TabIndex = 43
         '
         'MaterialTextBox21
         '
@@ -856,17 +699,40 @@ Partial Class frm_recepcionista
         Me.dgv_velorio.Size = New System.Drawing.Size(1755, 555)
         Me.dgv_velorio.TabIndex = 21
         '
+        'DataGridViewTextBoxColumn1
+        '
+        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
+        '
+        'DataGridViewTextBoxColumn2
+        '
+        Me.DataGridViewTextBoxColumn2.HeaderText = "Hora"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
+        '
+        'DataGridViewTextBoxColumn3
+        '
+        Me.DataGridViewTextBoxColumn3.HeaderText = "Data"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
+        '
+        'DataGridViewTextBoxColumn4
+        '
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Sala"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
+        '
+        'DataGridViewTextBoxColumn5
+        '
+        Me.DataGridViewTextBoxColumn5.HeaderText = "Falecido"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        '
         'GunaShadowPanel4
         '
         Me.GunaShadowPanel4.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel4.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel5)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialTextBox27)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel2)
+        Me.GunaShadowPanel4.Controls.Add(Me.MaterialComboBox1)
         Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel7)
         Me.GunaShadowPanel4.Controls.Add(Me.txt_data1)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialTextBox28)
         Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel15)
-        Me.GunaShadowPanel4.Controls.Add(Me.MaterialLabel16)
         Me.GunaShadowPanel4.Controls.Add(Me.MaterialTextBox213)
         Me.GunaShadowPanel4.Controls.Add(Me.MaterialButton3)
         Me.GunaShadowPanel4.ForeColor = System.Drawing.SystemColors.Desktop
@@ -878,48 +744,42 @@ Partial Class frm_recepcionista
         Me.GunaShadowPanel4.Size = New System.Drawing.Size(1755, 110)
         Me.GunaShadowPanel4.TabIndex = 19
         '
-        'MaterialLabel5
+        'MaterialLabel2
         '
-        Me.MaterialLabel5.AutoSize = True
-        Me.MaterialLabel5.Depth = 0
-        Me.MaterialLabel5.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel5.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel5.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel5.Location = New System.Drawing.Point(763, 14)
-        Me.MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel5.Name = "MaterialLabel5"
-        Me.MaterialLabel5.Size = New System.Drawing.Size(109, 29)
-        Me.MaterialLabel5.TabIndex = 28
-        Me.MaterialLabel5.Text = "ID da Sala"
+        Me.MaterialLabel2.Depth = 0
+        Me.MaterialLabel2.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel2.Location = New System.Drawing.Point(1184, 14)
+        Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel2.Name = "MaterialLabel2"
+        Me.MaterialLabel2.Size = New System.Drawing.Size(160, 29)
+        Me.MaterialLabel2.TabIndex = 42
+        Me.MaterialLabel2.Text = "Pesquisar por:"
         '
-        'MaterialTextBox27
+        'MaterialComboBox1
         '
-        Me.MaterialTextBox27.AnimateReadOnly = False
-        Me.MaterialTextBox27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox27.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox27.Depth = 0
-        Me.MaterialTextBox27.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox27.HideSelection = True
-        Me.MaterialTextBox27.LeadingIcon = Nothing
-        Me.MaterialTextBox27.Location = New System.Drawing.Point(763, 46)
-        Me.MaterialTextBox27.MaxLength = 32767
-        Me.MaterialTextBox27.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox27.Name = "MaterialTextBox27"
-        Me.MaterialTextBox27.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox27.PrefixSuffixText = Nothing
-        Me.MaterialTextBox27.ReadOnly = False
-        Me.MaterialTextBox27.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox27.SelectedText = ""
-        Me.MaterialTextBox27.SelectionLength = 0
-        Me.MaterialTextBox27.SelectionStart = 0
-        Me.MaterialTextBox27.ShortcutsEnabled = True
-        Me.MaterialTextBox27.Size = New System.Drawing.Size(109, 48)
-        Me.MaterialTextBox27.TabIndex = 27
-        Me.MaterialTextBox27.TabStop = False
-        Me.MaterialTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox27.TrailingIcon = Nothing
-        Me.MaterialTextBox27.UseSystemPasswordChar = False
+        Me.MaterialComboBox1.AutoResize = False
+        Me.MaterialComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialComboBox1.Depth = 0
+        Me.MaterialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.MaterialComboBox1.DropDownHeight = 174
+        Me.MaterialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.MaterialComboBox1.DropDownWidth = 121
+        Me.MaterialComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialComboBox1.FormattingEnabled = True
+        Me.MaterialComboBox1.IntegralHeight = False
+        Me.MaterialComboBox1.ItemHeight = 43
+        Me.MaterialComboBox1.Items.AddRange(New Object() {"", "ID", "Data"})
+        Me.MaterialComboBox1.Location = New System.Drawing.Point(1350, 14)
+        Me.MaterialComboBox1.MaxDropDownItems = 4
+        Me.MaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT
+        Me.MaterialComboBox1.Name = "MaterialComboBox1"
+        Me.MaterialComboBox1.Size = New System.Drawing.Size(250, 49)
+        Me.MaterialComboBox1.StartIndex = 0
+        Me.MaterialComboBox1.TabIndex = 41
         '
         'MaterialLabel7
         '
@@ -929,7 +789,7 @@ Partial Class frm_recepcionista
         Me.MaterialLabel7.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
         Me.MaterialLabel7.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
         Me.MaterialLabel7.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel7.Location = New System.Drawing.Point(492, 14)
+        Me.MaterialLabel7.Location = New System.Drawing.Point(196, 14)
         Me.MaterialLabel7.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel7.Name = "MaterialLabel7"
         Me.MaterialLabel7.Size = New System.Drawing.Size(167, 29)
@@ -950,7 +810,7 @@ Partial Class frm_recepcionista
         Me.txt_data1.HideSelection = True
         Me.txt_data1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
         Me.txt_data1.LeadingIcon = Nothing
-        Me.txt_data1.Location = New System.Drawing.Point(492, 46)
+        Me.txt_data1.Location = New System.Drawing.Point(196, 46)
         Me.txt_data1.Mask = "00/00/0000"
         Me.txt_data1.MaxLength = 32767
         Me.txt_data1.MouseState = MaterialSkin.MouseState.OUT
@@ -978,34 +838,6 @@ Partial Class frm_recepcionista
         Me.txt_data1.UseSystemPasswordChar = False
         Me.txt_data1.ValidatingType = Nothing
         '
-        'MaterialTextBox28
-        '
-        Me.MaterialTextBox28.AnimateReadOnly = False
-        Me.MaterialTextBox28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox28.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox28.Depth = 0
-        Me.MaterialTextBox28.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox28.HideSelection = True
-        Me.MaterialTextBox28.LeadingIcon = Nothing
-        Me.MaterialTextBox28.Location = New System.Drawing.Point(198, 46)
-        Me.MaterialTextBox28.MaxLength = 32767
-        Me.MaterialTextBox28.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox28.Name = "MaterialTextBox28"
-        Me.MaterialTextBox28.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox28.PrefixSuffixText = Nothing
-        Me.MaterialTextBox28.ReadOnly = False
-        Me.MaterialTextBox28.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox28.SelectedText = ""
-        Me.MaterialTextBox28.SelectionLength = 0
-        Me.MaterialTextBox28.SelectionStart = 0
-        Me.MaterialTextBox28.ShortcutsEnabled = True
-        Me.MaterialTextBox28.Size = New System.Drawing.Size(272, 48)
-        Me.MaterialTextBox28.TabIndex = 24
-        Me.MaterialTextBox28.TabStop = False
-        Me.MaterialTextBox28.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox28.TrailingIcon = Nothing
-        Me.MaterialTextBox28.UseSystemPasswordChar = False
-        '
         'MaterialLabel15
         '
         Me.MaterialLabel15.AutoSize = True
@@ -1020,21 +852,6 @@ Partial Class frm_recepcionista
         Me.MaterialLabel15.Size = New System.Drawing.Size(139, 29)
         Me.MaterialLabel15.TabIndex = 23
         Me.MaterialLabel15.Text = "ID da Velório"
-        '
-        'MaterialLabel16
-        '
-        Me.MaterialLabel16.AutoSize = True
-        Me.MaterialLabel16.Depth = 0
-        Me.MaterialLabel16.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel16.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel16.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel16.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel16.Location = New System.Drawing.Point(198, 14)
-        Me.MaterialLabel16.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel16.Name = "MaterialLabel16"
-        Me.MaterialLabel16.Size = New System.Drawing.Size(198, 29)
-        Me.MaterialLabel16.TabIndex = 22
-        Me.MaterialLabel16.Text = "Nome do Falecido"
         '
         'MaterialTextBox213
         '
@@ -1170,18 +987,41 @@ Partial Class frm_recepcionista
         Me.dgv_cremacao.Size = New System.Drawing.Size(1755, 555)
         Me.dgv_cremacao.TabIndex = 20
         '
+        'idCremacao
+        '
+        Me.idCremacao.HeaderText = "ID"
+        Me.idCremacao.Name = "idCremacao"
+        '
+        'horaCremacao
+        '
+        Me.horaCremacao.HeaderText = "Hora"
+        Me.horaCremacao.Name = "horaCremacao"
+        '
+        'diaCremacao
+        '
+        Me.diaCremacao.HeaderText = "Data"
+        Me.diaCremacao.Name = "diaCremacao"
+        '
+        'salaCremacao
+        '
+        Me.salaCremacao.HeaderText = "Sala"
+        Me.salaCremacao.Name = "salaCremacao"
+        '
+        'falecidoCremacao
+        '
+        Me.falecidoCremacao.HeaderText = "Falecido"
+        Me.falecidoCremacao.Name = "falecidoCremacao"
+        '
         'GunaShadowPanel1
         '
         Me.GunaShadowPanel1.AutoSize = True
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.DimGray
-        Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel10)
-        Me.GunaShadowPanel1.Controls.Add(Me.MaterialTextBox29)
+        Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel36)
+        Me.GunaShadowPanel1.Controls.Add(Me.MaterialComboBox2)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel8)
         Me.GunaShadowPanel1.Controls.Add(Me.txt_data)
-        Me.GunaShadowPanel1.Controls.Add(Me.MaterialTextBox22)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel1)
-        Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel2)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialButton1)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialTextBox24)
         Me.GunaShadowPanel1.ForeColor = System.Drawing.SystemColors.Desktop
@@ -1193,48 +1033,42 @@ Partial Class frm_recepcionista
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(1755, 110)
         Me.GunaShadowPanel1.TabIndex = 17
         '
-        'MaterialLabel10
+        'MaterialLabel36
         '
-        Me.MaterialLabel10.AutoSize = True
-        Me.MaterialLabel10.Depth = 0
-        Me.MaterialLabel10.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel10.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel10.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel10.Location = New System.Drawing.Point(800, 14)
-        Me.MaterialLabel10.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel10.Name = "MaterialLabel10"
-        Me.MaterialLabel10.Size = New System.Drawing.Size(109, 29)
-        Me.MaterialLabel10.TabIndex = 20
-        Me.MaterialLabel10.Text = "ID da Sala"
+        Me.MaterialLabel36.Depth = 0
+        Me.MaterialLabel36.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel36.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel36.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel36.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel36.Location = New System.Drawing.Point(1184, 14)
+        Me.MaterialLabel36.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel36.Name = "MaterialLabel36"
+        Me.MaterialLabel36.Size = New System.Drawing.Size(160, 29)
+        Me.MaterialLabel36.TabIndex = 42
+        Me.MaterialLabel36.Text = "Pesquisar por:"
         '
-        'MaterialTextBox29
+        'MaterialComboBox2
         '
-        Me.MaterialTextBox29.AnimateReadOnly = False
-        Me.MaterialTextBox29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox29.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox29.Depth = 0
-        Me.MaterialTextBox29.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox29.HideSelection = True
-        Me.MaterialTextBox29.LeadingIcon = Nothing
-        Me.MaterialTextBox29.Location = New System.Drawing.Point(800, 46)
-        Me.MaterialTextBox29.MaxLength = 32767
-        Me.MaterialTextBox29.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox29.Name = "MaterialTextBox29"
-        Me.MaterialTextBox29.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox29.PrefixSuffixText = Nothing
-        Me.MaterialTextBox29.ReadOnly = False
-        Me.MaterialTextBox29.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox29.SelectedText = ""
-        Me.MaterialTextBox29.SelectionLength = 0
-        Me.MaterialTextBox29.SelectionStart = 0
-        Me.MaterialTextBox29.ShortcutsEnabled = True
-        Me.MaterialTextBox29.Size = New System.Drawing.Size(109, 48)
-        Me.MaterialTextBox29.TabIndex = 19
-        Me.MaterialTextBox29.TabStop = False
-        Me.MaterialTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox29.TrailingIcon = Nothing
-        Me.MaterialTextBox29.UseSystemPasswordChar = False
+        Me.MaterialComboBox2.AutoResize = False
+        Me.MaterialComboBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialComboBox2.Depth = 0
+        Me.MaterialComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.MaterialComboBox2.DropDownHeight = 174
+        Me.MaterialComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.MaterialComboBox2.DropDownWidth = 121
+        Me.MaterialComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialComboBox2.FormattingEnabled = True
+        Me.MaterialComboBox2.IntegralHeight = False
+        Me.MaterialComboBox2.ItemHeight = 43
+        Me.MaterialComboBox2.Items.AddRange(New Object() {"", "ID", "Data"})
+        Me.MaterialComboBox2.Location = New System.Drawing.Point(1350, 14)
+        Me.MaterialComboBox2.MaxDropDownItems = 4
+        Me.MaterialComboBox2.MouseState = MaterialSkin.MouseState.OUT
+        Me.MaterialComboBox2.Name = "MaterialComboBox2"
+        Me.MaterialComboBox2.Size = New System.Drawing.Size(250, 49)
+        Me.MaterialComboBox2.StartIndex = 0
+        Me.MaterialComboBox2.TabIndex = 41
         '
         'MaterialLabel8
         '
@@ -1244,7 +1078,7 @@ Partial Class frm_recepcionista
         Me.MaterialLabel8.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
         Me.MaterialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
         Me.MaterialLabel8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel8.Location = New System.Drawing.Point(529, 14)
+        Me.MaterialLabel8.Location = New System.Drawing.Point(235, 14)
         Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel8.Name = "MaterialLabel8"
         Me.MaterialLabel8.Size = New System.Drawing.Size(201, 29)
@@ -1265,7 +1099,7 @@ Partial Class frm_recepcionista
         Me.txt_data.HideSelection = True
         Me.txt_data.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
         Me.txt_data.LeadingIcon = Nothing
-        Me.txt_data.Location = New System.Drawing.Point(529, 46)
+        Me.txt_data.Location = New System.Drawing.Point(235, 46)
         Me.txt_data.Mask = "00/00/0000"
         Me.txt_data.MaxLength = 32767
         Me.txt_data.MouseState = MaterialSkin.MouseState.OUT
@@ -1293,34 +1127,6 @@ Partial Class frm_recepcionista
         Me.txt_data.UseSystemPasswordChar = False
         Me.txt_data.ValidatingType = Nothing
         '
-        'MaterialTextBox22
-        '
-        Me.MaterialTextBox22.AnimateReadOnly = False
-        Me.MaterialTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.MaterialTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal
-        Me.MaterialTextBox22.Depth = 0
-        Me.MaterialTextBox22.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialTextBox22.HideSelection = True
-        Me.MaterialTextBox22.LeadingIcon = Nothing
-        Me.MaterialTextBox22.Location = New System.Drawing.Point(235, 46)
-        Me.MaterialTextBox22.MaxLength = 32767
-        Me.MaterialTextBox22.MouseState = MaterialSkin.MouseState.OUT
-        Me.MaterialTextBox22.Name = "MaterialTextBox22"
-        Me.MaterialTextBox22.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.MaterialTextBox22.PrefixSuffixText = Nothing
-        Me.MaterialTextBox22.ReadOnly = False
-        Me.MaterialTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.MaterialTextBox22.SelectedText = ""
-        Me.MaterialTextBox22.SelectionLength = 0
-        Me.MaterialTextBox22.SelectionStart = 0
-        Me.MaterialTextBox22.ShortcutsEnabled = True
-        Me.MaterialTextBox22.Size = New System.Drawing.Size(272, 48)
-        Me.MaterialTextBox22.TabIndex = 13
-        Me.MaterialTextBox22.TabStop = False
-        Me.MaterialTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
-        Me.MaterialTextBox22.TrailingIcon = Nothing
-        Me.MaterialTextBox22.UseSystemPasswordChar = False
-        '
         'MaterialLabel1
         '
         Me.MaterialLabel1.AutoSize = True
@@ -1335,21 +1141,6 @@ Partial Class frm_recepcionista
         Me.MaterialLabel1.Size = New System.Drawing.Size(174, 29)
         Me.MaterialLabel1.TabIndex = 12
         Me.MaterialLabel1.Text = "ID da Cremação"
-        '
-        'MaterialLabel2
-        '
-        Me.MaterialLabel2.AutoSize = True
-        Me.MaterialLabel2.Depth = 0
-        Me.MaterialLabel2.FlatStyle = System.Windows.Forms.FlatStyle.System
-        Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
-        Me.MaterialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
-        Me.MaterialLabel2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel2.Location = New System.Drawing.Point(235, 14)
-        Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel2.Name = "MaterialLabel2"
-        Me.MaterialLabel2.Size = New System.Drawing.Size(198, 29)
-        Me.MaterialLabel2.TabIndex = 9
-        Me.MaterialLabel2.Text = "Nome do Falecido"
         '
         'MaterialButton1
         '
@@ -1437,55 +1228,57 @@ Partial Class frm_recepcionista
         Me.Tab4.Size = New System.Drawing.Size(1914, 965)
         Me.Tab4.TabIndex = 3
         '
-        'idCremacao
+        'MaterialLabel4
         '
-        Me.idCremacao.HeaderText = "ID"
-        Me.idCremacao.Name = "idCremacao"
+        Me.MaterialLabel4.AutoSize = True
+        Me.MaterialLabel4.Depth = 0
+        Me.MaterialLabel4.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel4.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel4.Location = New System.Drawing.Point(197, 14)
+        Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel4.Name = "MaterialLabel4"
+        Me.MaterialLabel4.Size = New System.Drawing.Size(156, 29)
+        Me.MaterialLabel4.TabIndex = 9
+        Me.MaterialLabel4.Text = "ID do Falecido"
         '
-        'horaCremacao
+        'MaterialLabel5
         '
-        Me.horaCremacao.HeaderText = "Hora"
-        Me.horaCremacao.Name = "horaCremacao"
+        Me.MaterialLabel5.Depth = 0
+        Me.MaterialLabel5.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel5.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel5.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel5.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel5.Location = New System.Drawing.Point(1184, 17)
+        Me.MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel5.Name = "MaterialLabel5"
+        Me.MaterialLabel5.Size = New System.Drawing.Size(160, 29)
+        Me.MaterialLabel5.TabIndex = 44
+        Me.MaterialLabel5.Text = "Pesquisar por:"
         '
-        'diaCremacao
+        'MaterialComboBox3
         '
-        Me.diaCremacao.HeaderText = "Data"
-        Me.diaCremacao.Name = "diaCremacao"
-        '
-        'salaCremacao
-        '
-        Me.salaCremacao.HeaderText = "Sala"
-        Me.salaCremacao.Name = "salaCremacao"
-        '
-        'falecidoCremacao
-        '
-        Me.falecidoCremacao.HeaderText = "Falecido"
-        Me.falecidoCremacao.Name = "falecidoCremacao"
-        '
-        'DataGridViewTextBoxColumn1
-        '
-        Me.DataGridViewTextBoxColumn1.HeaderText = "ID"
-        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
-        '
-        'DataGridViewTextBoxColumn2
-        '
-        Me.DataGridViewTextBoxColumn2.HeaderText = "Hora"
-        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
-        '
-        'DataGridViewTextBoxColumn3
-        '
-        Me.DataGridViewTextBoxColumn3.HeaderText = "Data"
-        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
-        '
-        'DataGridViewTextBoxColumn4
-        '
-        Me.DataGridViewTextBoxColumn4.HeaderText = "Sala"
-        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
-        '
-        'DataGridViewTextBoxColumn5
-        '
-        Me.DataGridViewTextBoxColumn5.HeaderText = "Falecido"
-        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
+        Me.MaterialComboBox3.AutoResize = False
+        Me.MaterialComboBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialComboBox3.Depth = 0
+        Me.MaterialComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.MaterialComboBox3.DropDownHeight = 174
+        Me.MaterialComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.MaterialComboBox3.DropDownWidth = 121
+        Me.MaterialComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialComboBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialComboBox3.FormattingEnabled = True
+        Me.MaterialComboBox3.IntegralHeight = False
+        Me.MaterialComboBox3.ItemHeight = 43
+        Me.MaterialComboBox3.Items.AddRange(New Object() {"", "ID", "ID do Falecido"})
+        Me.MaterialComboBox3.Location = New System.Drawing.Point(1350, 17)
+        Me.MaterialComboBox3.MaxDropDownItems = 4
+        Me.MaterialComboBox3.MouseState = MaterialSkin.MouseState.OUT
+        Me.MaterialComboBox3.Name = "MaterialComboBox3"
+        Me.MaterialComboBox3.Size = New System.Drawing.Size(250, 49)
+        Me.MaterialComboBox3.StartIndex = 0
+        Me.MaterialComboBox3.TabIndex = 43
         '
         'frm_recepcionista
         '
@@ -1527,22 +1320,13 @@ Partial Class frm_recepcionista
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents GunaShadowPanel3 As Guna.UI.WinForms.GunaShadowPanel
-    Friend WithEvents MaterialTextBox212 As MaterialSkin.Controls.MaterialTextBox2
-    Friend WithEvents MaterialLabel14 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialTextBox211 As MaterialSkin.Controls.MaterialTextBox2
-    Friend WithEvents MaterialLabel13 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialLabel12 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialTextBox210 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialTextBox25 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialButton2 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialTextBox26 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents btn_voltar2 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents TabPage2 As TabPage
     Friend WithEvents GunaShadowPanel2 As Guna.UI.WinForms.GunaShadowPanel
-    Friend WithEvents MaterialLabel11 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents cmb_status As MaterialSkin.Controls.MaterialComboBox
     Friend WithEvents MaterialTextBox21 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel6 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialLabel9 As MaterialSkin.Controls.MaterialLabel
@@ -1551,25 +1335,17 @@ Partial Class frm_recepcionista
     Friend WithEvents btn_voltar1 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents TabPage4 As TabPage
     Friend WithEvents GunaShadowPanel4 As Guna.UI.WinForms.GunaShadowPanel
-    Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialTextBox27 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel7 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_data1 As MaterialSkin.Controls.MaterialMaskedTextBox
-    Friend WithEvents MaterialTextBox28 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel15 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialLabel16 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialTextBox213 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialButton3 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents btn_voltar3 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents GunaShadowPanel1 As Guna.UI.WinForms.GunaShadowPanel
-    Friend WithEvents MaterialLabel10 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialTextBox29 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel8 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents txt_data As MaterialSkin.Controls.MaterialMaskedTextBox
-    Friend WithEvents MaterialTextBox22 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialButton1 As MaterialSkin.Controls.MaterialButton
     Friend WithEvents MaterialTextBox24 As MaterialSkin.Controls.MaterialTextBox2
     Friend WithEvents btn_voltar As MaterialSkin.Controls.MaterialButton
@@ -1596,4 +1372,13 @@ Partial Class frm_recepcionista
     Friend WithEvents diaCremacao As DataGridViewTextBoxColumn
     Friend WithEvents salaCremacao As DataGridViewTextBoxColumn
     Friend WithEvents falecidoCremacao As DataGridViewTextBoxColumn
+    Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialComboBox1 As MaterialSkin.Controls.MaterialComboBox
+    Friend WithEvents MaterialLabel36 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialComboBox2 As MaterialSkin.Controls.MaterialComboBox
+    Friend WithEvents MaterialLabel38 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialComboBox4 As MaterialSkin.Controls.MaterialComboBox
+    Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialComboBox3 As MaterialSkin.Controls.MaterialComboBox
+    Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
 End Class

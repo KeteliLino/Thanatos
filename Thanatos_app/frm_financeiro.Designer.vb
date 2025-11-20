@@ -92,6 +92,12 @@ Partial Class frm_financeiro
         Me.MaterialTextBox25 = New MaterialSkin.Controls.MaterialTextBox2()
         Me.btn_voltar2 = New MaterialSkin.Controls.MaterialButton()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.MaterialLabel37 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialComboBox3 = New MaterialSkin.Controls.MaterialComboBox()
+        Me.MaterialLabel40 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialComboBox6 = New MaterialSkin.Controls.MaterialComboBox()
+        Me.MaterialLabel10 = New MaterialSkin.Controls.MaterialLabel()
+        Me.MaterialComboBox1 = New MaterialSkin.Controls.MaterialComboBox()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.btn_pesquisar2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
@@ -266,6 +272,8 @@ Partial Class frm_financeiro
         '
         Me.GunaShadowPanel1.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel1.BaseColor = System.Drawing.Color.DimGray
+        Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel37)
+        Me.GunaShadowPanel1.Controls.Add(Me.MaterialComboBox3)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel8)
         Me.GunaShadowPanel1.Controls.Add(Me.txt_data)
         Me.GunaShadowPanel1.Controls.Add(Me.MaterialLabel4)
@@ -297,7 +305,7 @@ Partial Class frm_financeiro
         Me.MaterialLabel8.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
         Me.MaterialLabel8.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
         Me.MaterialLabel8.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel8.Location = New System.Drawing.Point(960, 99)
+        Me.MaterialLabel8.Location = New System.Drawing.Point(741, 99)
         Me.MaterialLabel8.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel8.Name = "MaterialLabel8"
         Me.MaterialLabel8.Size = New System.Drawing.Size(173, 29)
@@ -318,7 +326,7 @@ Partial Class frm_financeiro
         Me.txt_data.HideSelection = True
         Me.txt_data.InsertKeyMode = System.Windows.Forms.InsertKeyMode.[Default]
         Me.txt_data.LeadingIcon = Nothing
-        Me.txt_data.Location = New System.Drawing.Point(960, 131)
+        Me.txt_data.Location = New System.Drawing.Point(741, 131)
         Me.txt_data.Mask = "00/00/0000"
         Me.txt_data.MaxLength = 32767
         Me.txt_data.MouseState = MaterialSkin.MouseState.OUT
@@ -354,7 +362,7 @@ Partial Class frm_financeiro
         Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
         Me.MaterialLabel4.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
         Me.MaterialLabel4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel4.Location = New System.Drawing.Point(1247, 99)
+        Me.MaterialLabel4.Location = New System.Drawing.Point(1028, 99)
         Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel4.Name = "MaterialLabel4"
         Me.MaterialLabel4.Size = New System.Drawing.Size(154, 29)
@@ -370,7 +378,7 @@ Partial Class frm_financeiro
         Me.txt_idfalecido.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txt_idfalecido.HideSelection = True
         Me.txt_idfalecido.LeadingIcon = Nothing
-        Me.txt_idfalecido.Location = New System.Drawing.Point(1247, 131)
+        Me.txt_idfalecido.Location = New System.Drawing.Point(1028, 131)
         Me.txt_idfalecido.MaxLength = 32767
         Me.txt_idfalecido.MouseState = MaterialSkin.MouseState.OUT
         Me.txt_idfalecido.Name = "txt_idfalecido"
@@ -412,7 +420,7 @@ Partial Class frm_financeiro
         Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
         Me.MaterialLabel2.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
         Me.MaterialLabel2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel2.Location = New System.Drawing.Point(1247, 187)
+        Me.MaterialLabel2.Location = New System.Drawing.Point(1028, 187)
         Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel2.Name = "MaterialLabel2"
         Me.MaterialLabel2.Size = New System.Drawing.Size(69, 29)
@@ -427,7 +435,7 @@ Partial Class frm_financeiro
         Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
         Me.MaterialLabel1.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
         Me.MaterialLabel1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.MaterialLabel1.Location = New System.Drawing.Point(960, 187)
+        Me.MaterialLabel1.Location = New System.Drawing.Point(741, 187)
         Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel1.Name = "MaterialLabel1"
         Me.MaterialLabel1.Size = New System.Drawing.Size(118, 29)
@@ -464,7 +472,7 @@ Partial Class frm_financeiro
         Me.cmb_status.IntegralHeight = False
         Me.cmb_status.ItemHeight = 43
         Me.cmb_status.Items.AddRange(New Object() {"Aberto", "Finalizado", "Cancelado"})
-        Me.cmb_status.Location = New System.Drawing.Point(1246, 219)
+        Me.cmb_status.Location = New System.Drawing.Point(1027, 219)
         Me.cmb_status.MaxDropDownItems = 4
         Me.cmb_status.MouseState = MaterialSkin.MouseState.OUT
         Me.cmb_status.Name = "cmb_status"
@@ -481,7 +489,7 @@ Partial Class frm_financeiro
         Me.txt_valor.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel)
         Me.txt_valor.HideSelection = True
         Me.txt_valor.LeadingIcon = Nothing
-        Me.txt_valor.Location = New System.Drawing.Point(960, 219)
+        Me.txt_valor.Location = New System.Drawing.Point(741, 219)
         Me.txt_valor.MaxLength = 32767
         Me.txt_valor.MouseState = MaterialSkin.MouseState.OUT
         Me.txt_valor.Name = "txt_valor"
@@ -519,7 +527,7 @@ Partial Class frm_financeiro
         Me.txt_descricaoOrcamento.SelectionLength = 0
         Me.txt_descricaoOrcamento.SelectionStart = 0
         Me.txt_descricaoOrcamento.ShortcutsEnabled = True
-        Me.txt_descricaoOrcamento.Size = New System.Drawing.Size(899, 136)
+        Me.txt_descricaoOrcamento.Size = New System.Drawing.Size(685, 136)
         Me.txt_descricaoOrcamento.TabIndex = 4
         Me.txt_descricaoOrcamento.TabStop = False
         Me.txt_descricaoOrcamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
@@ -698,6 +706,8 @@ Partial Class frm_financeiro
         '
         Me.GunaShadowPanel2.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel2.BaseColor = System.Drawing.Color.DimGray
+        Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel40)
+        Me.GunaShadowPanel2.Controls.Add(Me.MaterialComboBox6)
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialTextBox21)
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel6)
         Me.GunaShadowPanel2.Controls.Add(Me.MaterialLabel9)
@@ -900,6 +910,8 @@ Partial Class frm_financeiro
         '
         Me.GunaShadowPanel3.BackColor = System.Drawing.Color.Transparent
         Me.GunaShadowPanel3.BaseColor = System.Drawing.Color.DimGray
+        Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel10)
+        Me.GunaShadowPanel3.Controls.Add(Me.MaterialComboBox1)
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel5)
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialTextBox22)
         Me.GunaShadowPanel3.Controls.Add(Me.MaterialLabel7)
@@ -1050,6 +1062,117 @@ Partial Class frm_financeiro
         Me.ImageList1.Images.SetKeyName(4, "headphone.png")
         Me.ImageList1.Images.SetKeyName(5, "coffin.png")
         '
+        'MaterialLabel37
+        '
+        Me.MaterialLabel37.Depth = 0
+        Me.MaterialLabel37.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel37.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel37.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel37.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel37.Location = New System.Drawing.Point(1034, 17)
+        Me.MaterialLabel37.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel37.Name = "MaterialLabel37"
+        Me.MaterialLabel37.Size = New System.Drawing.Size(160, 29)
+        Me.MaterialLabel37.TabIndex = 44
+        Me.MaterialLabel37.Text = "Pesquisar por:"
+        '
+        'MaterialComboBox3
+        '
+        Me.MaterialComboBox3.AutoResize = False
+        Me.MaterialComboBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialComboBox3.Depth = 0
+        Me.MaterialComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.MaterialComboBox3.DropDownHeight = 174
+        Me.MaterialComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.MaterialComboBox3.DropDownWidth = 121
+        Me.MaterialComboBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialComboBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialComboBox3.FormattingEnabled = True
+        Me.MaterialComboBox3.IntegralHeight = False
+        Me.MaterialComboBox3.ItemHeight = 43
+        Me.MaterialComboBox3.Items.AddRange(New Object() {"", "ID", "Data"})
+        Me.MaterialComboBox3.Location = New System.Drawing.Point(1200, 17)
+        Me.MaterialComboBox3.MaxDropDownItems = 4
+        Me.MaterialComboBox3.MouseState = MaterialSkin.MouseState.OUT
+        Me.MaterialComboBox3.Name = "MaterialComboBox3"
+        Me.MaterialComboBox3.Size = New System.Drawing.Size(250, 49)
+        Me.MaterialComboBox3.StartIndex = 0
+        Me.MaterialComboBox3.TabIndex = 43
+        '
+        'MaterialLabel40
+        '
+        Me.MaterialLabel40.Depth = 0
+        Me.MaterialLabel40.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel40.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel40.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel40.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel40.Location = New System.Drawing.Point(1184, 17)
+        Me.MaterialLabel40.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel40.Name = "MaterialLabel40"
+        Me.MaterialLabel40.Size = New System.Drawing.Size(160, 29)
+        Me.MaterialLabel40.TabIndex = 46
+        Me.MaterialLabel40.Text = "Pesquisar por:"
+        '
+        'MaterialComboBox6
+        '
+        Me.MaterialComboBox6.AutoResize = False
+        Me.MaterialComboBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialComboBox6.Depth = 0
+        Me.MaterialComboBox6.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.MaterialComboBox6.DropDownHeight = 174
+        Me.MaterialComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.MaterialComboBox6.DropDownWidth = 121
+        Me.MaterialComboBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialComboBox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialComboBox6.FormattingEnabled = True
+        Me.MaterialComboBox6.IntegralHeight = False
+        Me.MaterialComboBox6.ItemHeight = 43
+        Me.MaterialComboBox6.Items.AddRange(New Object() {"", "ID", "Descrição"})
+        Me.MaterialComboBox6.Location = New System.Drawing.Point(1350, 17)
+        Me.MaterialComboBox6.MaxDropDownItems = 4
+        Me.MaterialComboBox6.MouseState = MaterialSkin.MouseState.OUT
+        Me.MaterialComboBox6.Name = "MaterialComboBox6"
+        Me.MaterialComboBox6.Size = New System.Drawing.Size(250, 49)
+        Me.MaterialComboBox6.StartIndex = 0
+        Me.MaterialComboBox6.TabIndex = 45
+        '
+        'MaterialLabel10
+        '
+        Me.MaterialLabel10.Depth = 0
+        Me.MaterialLabel10.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.MaterialLabel10.Font = New System.Drawing.Font("Roboto", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialLabel10.FontType = MaterialSkin.MaterialSkinManager.fontType.H5
+        Me.MaterialLabel10.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MaterialLabel10.Location = New System.Drawing.Point(1184, 17)
+        Me.MaterialLabel10.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel10.Name = "MaterialLabel10"
+        Me.MaterialLabel10.Size = New System.Drawing.Size(160, 29)
+        Me.MaterialLabel10.TabIndex = 46
+        Me.MaterialLabel10.Text = "Pesquisar por:"
+        '
+        'MaterialComboBox1
+        '
+        Me.MaterialComboBox1.AutoResize = False
+        Me.MaterialComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialComboBox1.Depth = 0
+        Me.MaterialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable
+        Me.MaterialComboBox1.DropDownHeight = 174
+        Me.MaterialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.MaterialComboBox1.DropDownWidth = 121
+        Me.MaterialComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel)
+        Me.MaterialComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialComboBox1.FormattingEnabled = True
+        Me.MaterialComboBox1.IntegralHeight = False
+        Me.MaterialComboBox1.ItemHeight = 43
+        Me.MaterialComboBox1.Items.AddRange(New Object() {"", "ID", "Nome"})
+        Me.MaterialComboBox1.Location = New System.Drawing.Point(1350, 17)
+        Me.MaterialComboBox1.MaxDropDownItems = 4
+        Me.MaterialComboBox1.MouseState = MaterialSkin.MouseState.OUT
+        Me.MaterialComboBox1.Name = "MaterialComboBox1"
+        Me.MaterialComboBox1.Size = New System.Drawing.Size(250, 49)
+        Me.MaterialComboBox1.StartIndex = 0
+        Me.MaterialComboBox1.TabIndex = 45
+        '
         'frm_financeiro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1133,4 +1256,10 @@ Partial Class frm_financeiro
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents img_excluir As DataGridViewImageColumn
     Friend WithEvents img_alterar As DataGridViewImageColumn
+    Friend WithEvents MaterialLabel37 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialComboBox3 As MaterialSkin.Controls.MaterialComboBox
+    Friend WithEvents MaterialLabel40 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialComboBox6 As MaterialSkin.Controls.MaterialComboBox
+    Friend WithEvents MaterialLabel10 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MaterialComboBox1 As MaterialSkin.Controls.MaterialComboBox
 End Class
