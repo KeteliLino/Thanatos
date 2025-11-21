@@ -321,5 +321,125 @@ Module banco_dados
 
         End If
     End Sub
+
+    Sub limpar_cadastro_funcionarios()
+        Try
+            With frm_administrador
+                .txt_cpfFuncionario.Clear()
+                .txt_nomeFuncionario.Clear()
+                .txt_login.Clear()
+                .txt_senha.Clear()
+                .cmb_status.SelectedIndex = -1
+                .cmb_setor.SelectedIndex = -1
+                .txt_cep.Clear()
+                .txt_logradouro.Clear()
+                .txt_bairro.Clear()
+                .txt_cidade.Clear()
+                .txt_cpfFuncionario.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpar_cadastro_salas()
+        Try
+            With frm_administrador
+                .txt_idSala.Clear()
+                .txt_descricaoSala.Clear()
+                .cmb_tipoSala.SelectedIndex = -1
+                .txt_descricaoSala.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpar_cadastro_cremacao()
+        Try
+            With frm_administrador
+                .txt_idCremacao.Clear()
+                .txt_horaCremacao.Clear()
+                .txt_dataCremacao.Clear()
+                .txt_idSalaCremacao.Clear()
+                .txt_idFalecido.Clear()
+                .txt_horaCremacao.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpar_cadastro_velorio()
+        Try
+            With frm_administrador
+                .txt_idVelorio.Clear()
+                .txt_horaVelorio.Clear()
+                .txt_dataVelorio.Clear()
+                .txt_idSalaVelorio.Clear()
+                .txt_idFalecidoVelorio.Clear()
+                .txt_horaVelorio.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpar_cadastro_falecido()
+        Try
+            With frm_administrador
+                .txt_idFalecido.Clear()
+                .txt_nomeFalecido.Clear()
+                .cmb_statusFalecido.SelectedIndex = -1
+                .txt_nomeFalecido.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpar_cadastro_jazigo()
+        Try
+            With frm_administrador
+                .txt_idJazigo.Clear()
+                .txt_quadrante.Clear()
+                .txt_fileira.Clear()
+                .txt_coluna.Clear()
+                .txt_idFalecidoJazigo.Clear()
+                .txt_quadrante.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpar_cadastro_servico()
+        Try
+            With frm_administrador
+                .txt_idServico.Clear()
+                .txt_descricaoServicos.Clear()
+                .txt_preco.Clear()
+                .txt_descricaoServicos.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
+
+    Sub limpar_cadastro_orcamento()
+        Try
+            With frm_financeiro
+                .txt_idOrcamento.Clear()
+                .txt_descricaoOrcamento.Clear()
+                .txt_data.Clear()
+                .txt_valor.Clear()
+                .txt_idfalecido.Clear()
+                .cmb_status.SelectedIndex = -1
+                .txt_descricaoOrcamento.Focus()
+            End With
+        Catch ex As Exception
+            Exit Sub
+        End Try
+    End Sub
 End Module
 
