@@ -33,6 +33,9 @@ Public Class frm_financeiro
             PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
             PictureBox3.BorderStyle = BorderStyle.None
         End If
+        carregar_dados_orcamento(Me.dgv_orcamento)
+        carregar_dados_servico(Me.dgv_servico)
+        carregar_dados_falecido(Me.dgv_falecido)
     End Sub
 
     Private Sub Voltar()
@@ -51,19 +54,9 @@ Public Class frm_financeiro
         Voltar()
     End Sub
 
-    Private Sub txt_data_Click(sender As Object, e As EventArgs) Handles txt_data.Click
-
-    End Sub
-
-    Private Sub MaterialLabel8_Click(sender As Object, e As EventArgs) Handles MaterialLabel8.Click
-
-    End Sub
 
     Private Sub frm_financeiro_Load(sender As Object, e As EventArgs) Handles Me.Load
         conecta_banco_mysql()
-        carregar_dados_orcamento(Me.dgv_orcamento)
-        carregar_dados_servico(Me.dgv_servico)
-        carregar_dados_falecido(Me.dgv_falecido)
     End Sub
 
     Private Sub btn_incluir_Click(sender As Object, e As EventArgs) Handles btn_incluir.Click
@@ -106,61 +99,94 @@ Public Class frm_financeiro
             status = "4"
         End If
     End Sub
+    Private Sub btn_pesquisar_Click(sender As Object, e As EventArgs) Handles btn_pesquisar.Click
+        If cmb_pesquisar.Text = "ID" Then
+            query = $"SELECT tb_orcamentos.idOrcamento, tb_orcamentos.descricaoOrcamento, tb_orcamentos.valorOrcamento, tb_orcamentos.dataOrcamento, tb_falecidos.nomeFalecido, tb_status.descricaoStatus
+                    FROM tb_orcamentos
+                    INNER JOIN tb_falecidos ON tb_orcamentos.idFalecido = tb_falecidos.idFalecido
+                    INNER JOIN tb_status ON tb_orcamentos.idStatus = tb_status.idStatus
+                    WHERE idOrcamento ={txt_idOrcamento.Text}"
 
-    Private Sub cmb_setor_SelectedValueChanged(sender As Object, e As EventArgs)
+        ElseIf cmb_pesquisar.Text = "Data" Then
+            query = $"SELECT tb_orcamentos.idOrcamento, tb_orcamentos.descricaoOrcamento, tb_orcamentos.valorOrcamento, tb_orcamentos.dataOrcamento, tb_falecidos.nomeFalecido, tb_status.descricaoStatus
+                    FROM tb_orcamentos
+                    INNER JOIN tb_falecidos ON tb_orcamentos.idFalecido = tb_falecidos.idFalecido
+                    INNER JOIN tb_status ON tb_orcamentos.idStatus = tb_status.idStatus
+                    WHERE dataOrcamento = STR_TO_DATE( '{txt_data.Text}', '%d/%m/%Y' )"
 
-    End Sub
-
-    Private Sub btn_incluirFuncionario_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn_voltar3_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub cmb_tipoSala_SelectedValueChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn_incluirSalas_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn_incluirCremacoes_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn_incluirVelorios_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn_voltar6_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub cmb_statusFalecido_SelectedValueChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn_incluirFalecidos_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn_incluirJazigo_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub btn_voltar5_Click(sender As Object, e As EventArgs)
+        Else
+            MsgBox("Selecione um filtro de pesquisa!", MsgBoxStyle.Exclamation + vbOKOnly, "Atenção")
+            Exit Sub
+        End If
+        rs = db.Execute(query)
+        With dgv_orcamento
+            .Rows.Clear()
+            Do While rs.EOF = False
+                Dim data As String = ""
+                If Not IsDBNull(rs.Fields("dataOrcamento").Value) AndAlso rs.Fields("dataOrcamento").Value.ToString <> "" Then
+                    Try
+                        data = Format(CDate(rs.Fields("dataOrcamento").Value), "dd/MM/yyyy")
+                    Catch
+                        data = rs.Fields("dataOrcamento").Value.ToString()
+                    End Try
+                End If
+                .Rows.Add(
+                rs.Fields("idOrcamento").Value,
+                rs.Fields("descricaoOrcamento").Value,
+                rs.Fields("valorOrcamento").Value,
+                data,
+                rs.Fields("nomeFalecido").Value,
+                rs.Fields("descricaoStatus").Value,
+                Nothing,
+                Nothing
+            )
+                rs.MoveNext()
+            Loop
+        End With
 
     End Sub
 
-    Private Sub btn_incluirServicos_Click(sender As Object, e As EventArgs)
+    Private Sub btn_pesquisar1_Click(sender As Object, e As EventArgs) Handles btn_pesquisar1.Click
+        If cmb_pesquisar1.Text = "ID" Then
+            query = $"select * from tb_servicos where idServico = {txt_idServico.Text}"
 
+        ElseIf cmb_pesquisar1.Text = "Descrição" Then
+            query = $"select * from tb_servicos where descricaoServico like '%{txt_descServico.Text}%'"
+
+        Else
+            MsgBox("Selecione um filtro de pesquisa!", MsgBoxStyle.Exclamation + vbOKOnly, "Atenção")
+            Exit Sub
+        End If
+        rs = db.Execute(query)
+        With dgv_servico
+            .Rows.Clear()
+            Do While rs.EOF = False
+                .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, Nothing, Nothing)
+                rs.MoveNext()
+            Loop
+        End With
     End Sub
 
-    Private Sub btn_voltar4_Click(sender As Object, e As EventArgs)
+    Private Sub btn_pesquisar2_Click(sender As Object, e As EventArgs) Handles btn_pesquisar2.Click
+        If cmb_pesquisar2.Text = "ID" Then
+            query = $"select tb_falecidos.idFalecido, tb_falecidos.nomeFalecido, tb_status.descricaoStatus from tb_falecidos inner join
+                    tb_status on tb_falecidos.idStatus = tb_status.idStatus where idFalecido = {txt_idFalecido1.Text}"
 
+        ElseIf cmb_pesquisar2.Text = "Nome" Then
+            query = $"select tb_falecidos.idFalecido, tb_falecidos.nomeFalecido, tb_status.descricaoStatus from tb_falecidos inner join
+                    tb_status on tb_falecidos.idStatus = tb_status.idStatus where nomeFalecido like '%{txt_nomeFalecido.Text}%'"
+        Else
+            MsgBox("Selecione um filtro de pesquisa!", MsgBoxStyle.Exclamation + vbOKOnly, "Atenção")
+            Exit Sub
+        End If
+        rs = db.Execute(query)
+        With dgv_falecido
+            .Rows.Clear()
+            Do While rs.EOF = False
+                .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, Nothing, Nothing)
+                rs.MoveNext()
+            Loop
+        End With
     End Sub
 
     Private Sub dgv_orcamento_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_orcamento.CellContentClick
