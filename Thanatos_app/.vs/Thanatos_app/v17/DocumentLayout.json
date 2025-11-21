@@ -4,10 +4,30 @@
   "Documents": [
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_recepcionista.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_recepcionista.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\frm_recepcionista.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_recepcionista.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_financeiro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -56,11 +76,16 @@
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_administrador.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Thanatos_app||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     },
     {
@@ -69,9 +94,12 @@
     },
     {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_recepcionista.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_recepcionista.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
 =======
+=======
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|solutionrelative:frm_home.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
@@ -85,6 +113,9 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{4362B6E4-9D1D-46EE-9D8A-FA5AA2237E44}|Thanatos_app.vbproj|c:\\users\\diogo\\documents\\github\\thanatos\\thanatos_app\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|8998e48e-b89a-4034-b66e-353d8c1fdc2e"
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     }
   ],
@@ -96,7 +127,11 @@
         {
           "DockedWidth": 200,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           "SelectedChildIndex": 8,
+=======
+          "SelectedChildIndex": 2,
+>>>>>>> Stashed changes
 =======
           "SelectedChildIndex": 2,
 >>>>>>> Stashed changes
@@ -105,6 +140,7 @@
               "$type": "Document",
               "DocumentIndex": 2,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "Title": "frm_login.vb",
               "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_login.vb",
               "RelativeDocumentMoniker": "frm_login.vb",
@@ -112,12 +148,16 @@
               "RelativeToolTip": "frm_login.vb",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwCgAAABiAAAAAAAAAA==",
 =======
+=======
+>>>>>>> Stashed changes
               "Title": "frm_financeiro.vb",
               "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb",
               "RelativeDocumentMoniker": "frm_financeiro.vb",
               "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_financeiro.vb",
               "RelativeToolTip": "frm_financeiro.vb",
               "ViewState": "AgIAACwAAAAAAAAAAAAIwEEAAAAJAAAAAAAAAA==",
+<<<<<<< Updated upstream
+=======
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2025-11-21T00:57:11.477Z",
               "EditorCaption": ""
@@ -136,6 +176,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frm_recepcionista.vb",
+              "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_recepcionista.vb",
+              "RelativeDocumentMoniker": "frm_recepcionista.vb",
+              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_recepcionista.vb",
+              "RelativeToolTip": "frm_recepcionista.vb",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwDwAAAAJAAAAAAAAAA==",
+>>>>>>> Stashed changes
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-11-21T00:57:11.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Thanatos_app",
+              "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\Thanatos_app.vbproj",
+              "RelativeDocumentMoniker": "Thanatos_app.vbproj",
+              "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\Thanatos_app.vbproj*",
+              "RelativeToolTip": "Thanatos_app.vbproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-21T00:40:57.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
               "Title": "frm_recepcionista.vb",
               "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_recepcionista.vb",
@@ -180,6 +247,9 @@
 =======
               "DocumentIndex": 1,
 >>>>>>> Stashed changes
+=======
+              "DocumentIndex": 1,
+>>>>>>> Stashed changes
               "Title": "frm_recepcionista.vb [Design]",
               "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_recepcionista.vb",
               "RelativeDocumentMoniker": "frm_recepcionista.vb",
@@ -192,7 +262,11 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 8,
+=======
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 3,
 >>>>>>> Stashed changes
@@ -214,7 +288,11 @@
               "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_home.vb",
               "RelativeToolTip": "frm_home.vb",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "ViewState": "AgIAAM0AAAAAAAAAAAAAAHoAAAAjAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAALEAAAAAAAAAAAAwwNEAAAAqAAAAAAAAAA==",
+>>>>>>> Stashed changes
 =======
               "ViewState": "AgIAALEAAAAAAAAAAAAwwNEAAAAqAAAAAAAAAA==",
 >>>>>>> Stashed changes
@@ -225,7 +303,11 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 4,
+=======
+              "DocumentIndex": 8,
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 8,
 >>>>>>> Stashed changes
@@ -242,7 +324,10 @@
               "$type": "Document",
               "DocumentIndex": 9,
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
               "Title": "Module1.vb",
               "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\Module1.vb",
               "RelativeDocumentMoniker": "Module1.vb",
@@ -254,6 +339,9 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
               "Title": "banco_dados.vb",
               "DocumentMoniker": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\banco_dados.vb",
@@ -261,7 +349,11 @@
               "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\banco_dados.vb",
               "RelativeToolTip": "banco_dados.vb",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAPgAAAAUAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAABEBAAAAAAAAAAAAAEMBAAAAAAAAAAAAAA==",
+>>>>>>> Stashed changes
 =======
               "ViewState": "AgIAABEBAAAAAAAAAAAAAEMBAAAAAAAAAAAAAA==",
 >>>>>>> Stashed changes
@@ -272,7 +364,11 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 0,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 4,
 >>>>>>> Stashed changes
@@ -282,7 +378,11 @@
               "ToolTip": "C:\\Users\\diogo\\Documents\\GitHub\\Thanatos\\Thanatos_app\\frm_administrador.vb",
               "RelativeToolTip": "frm_administrador.vb",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "ViewState": "AgIAAB4CAAAAAAAAAAAAADkCAAASAAAAAAAAAA==",
+=======
+              "ViewState": "AgIAAFwAAAAAAAAAAAAqwG0AAAAJAAAAAAAAAA==",
+>>>>>>> Stashed changes
 =======
               "ViewState": "AgIAAFwAAAAAAAAAAAAqwG0AAAAJAAAAAAAAAA==",
 >>>>>>> Stashed changes
@@ -293,7 +393,11 @@
             {
               "$type": "Document",
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               "DocumentIndex": 7,
+=======
+              "DocumentIndex": 10,
+>>>>>>> Stashed changes
 =======
               "DocumentIndex": 10,
 >>>>>>> Stashed changes
