@@ -90,6 +90,7 @@ Public Class frm_financeiro
                 db.Execute(query)
                 MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information)
             End If
+            limpar_cadastro_orcamento()
             carregar_dados_orcamento(Me.dgv_orcamento)
         Catch ex As Exception
             MsgBox("Erro ao gravar!", MsgBoxStyle.Critical)
@@ -118,6 +119,7 @@ Public Class frm_financeiro
                         query = $"Delete from tb_orcamentos where idOrcamento='{id_orcamento}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        limpar_cadastro_orcamento()
                         carregar_dados_orcamento(Me.dgv_orcamento)
                     End If
                 End If

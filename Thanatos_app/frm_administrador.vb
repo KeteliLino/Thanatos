@@ -93,6 +93,7 @@ Public Class frm_administrador
                     carregar_dados_funcionario(Me.dgv_funcionarios)
                 End If
             End If
+            limpar_cadastro_funcionarios()
         Catch ex As Exception
             MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
@@ -147,6 +148,7 @@ Public Class frm_administrador
                     carregar_dados_sala(Me.dgv_sala)
                 End If
             End If
+            limpar_cadastro_salas()
         Catch ex As Exception
             MsgBox("Erro ao gravar!", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "ATENÇÃO")
         End Try
@@ -176,6 +178,7 @@ Public Class frm_administrador
                 MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information)
             End If
 
+            limpar_cadastro_cremacao()
             carregar_dados_cremacao(Me.dgv_cremacao)
 
         Catch ex As Exception
@@ -205,6 +208,7 @@ Public Class frm_administrador
                 db.Execute(query)
                 MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information)
             End If
+            limpar_cadastro_velorio()
             carregar_dados_velorio(Me.dgv_velorio)
         Catch ex As Exception
             MsgBox("Erro ao gravar!", MsgBoxStyle.Critical)
@@ -220,12 +224,14 @@ Public Class frm_administrador
                         '{txt_nomeFalecido.Text}', '{StatusFalecido}');"
                 rs = db.Execute(query)
                 MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                limpar_cadastro_falecido()
                 carregar_dados_falecido(Me.dgv_falecido)
             Else
                 If resp = MsgBoxResult.Yes Then
                     query = $"update tb_falecidos set nomeFalecido='{txt_nomeFalecido.Text}', idStatus='{StatusFalecido}' where idFalecido='{txt_idFalecido.Text}'"
                     rs = db.Execute(query)
                     MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                    limpar_cadastro_falecido()
                     carregar_dados_falecido(Me.dgv_falecido)
                 End If
             End If
@@ -239,17 +245,19 @@ Public Class frm_administrador
             query = $"select * from tb_jazigos where idJazigo='{txt_idJazigo.Text}'"
             rs = db.Execute(query)
             If rs.EOF = True Then
-                query = $"insert into tb_jazigos (quadranteJazigo,fileiraJazigo,colunaJazigo,idFalecido) values (
+                query = $"insert into tb_jazigos (quadranteJazigo,linhaJazigo,colunaJazigo,idFalecido) values (
                         '{txt_quadrante.Text}', '{txt_fileira.Text}', '{txt_coluna.Text}','{txt_idFalecidoJazigo.Text}');"
                 rs = db.Execute(query)
                 MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                limpar_cadastro_jazigo()
                 carregar_dados_jazigo(Me.dgv_jazigo)
             Else
                 If resp = MsgBoxResult.Yes Then
-                    query = $"update tb_jazigos set quadranteJazigo='{txt_quadrante.Text}', fileiraJazigo='{txt_fileira.Text}', 
+                    query = $"update tb_jazigos set quadranteJazigo='{txt_quadrante.Text}', linhaJazigo='{txt_fileira.Text}', 
                                 colunaJazigo='{txt_coluna.Text}', idFalecido='{txt_idFalecidoJazigo.Text}' where idJazigo='{id_jazigo}'"
                     rs = db.Execute(query)
                     MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                    limpar_cadastro_jazigo()
                     carregar_dados_jazigo(Me.dgv_jazigo)
                 End If
             End If
@@ -267,12 +275,14 @@ Public Class frm_administrador
                         '{txt_descricaoServicos.Text}', '{txt_preco.Text}');"
                 rs = db.Execute(query)
                 MsgBox("Dados Gravados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                limpar_cadastro_servico()
                 carregar_dados_servico(Me.dgv_servico)
             Else
                 If resp = MsgBoxResult.Yes Then
                     query = $"update tb_servicos set descricaoServico='{txt_descricaoServicos.Text}', valorServico='{txt_preco.Text}' where idServico='{id_servico}'"
                     rs = db.Execute(query)
                     MsgBox("Dados Alterados com Sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "ATENÇÃO")
+                    limpar_cadastro_servico()
                     carregar_dados_servico(Me.dgv_servico)
                 End If
             End If
@@ -309,6 +319,7 @@ Public Class frm_administrador
                         query = $"Delete from tb_funcionarios where cpfFuncionario='{aux_cpf}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        limpar_cadastro_funcionarios()
                         carregar_dados_funcionario(Me.dgv_funcionarios)
                     End If
                 End If
@@ -353,6 +364,7 @@ Public Class frm_administrador
                         query = $"Delete from tb_salas where idSala='{id_sala}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        limpar_cadastro_salas()
                         carregar_dados_sala(Me.dgv_sala)
                     End If
                 End If
@@ -385,6 +397,7 @@ Public Class frm_administrador
                         query = $"Delete from tb_cremacoes where idCremacao='{id_cremacao}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        limpar_cadastro_cremacao()
                         carregar_dados_cremacao(Me.dgv_cremacao)
                     End If
                 End If
@@ -419,6 +432,7 @@ Public Class frm_administrador
                         query = $"Delete from tb_velorios where idVelorios='{id_velorio}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        limpar_cadastro_velorio()
                         carregar_dados_velorio(Me.dgv_velorio)
                     End If
                 End If
@@ -453,6 +467,7 @@ Public Class frm_administrador
                         query = $"Delete from tb_falecidos where idFalecido='{id_falecido}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        limpar_cadastro_falecido()
                         carregar_dados_falecido(Me.dgv_falecido)
                     End If
                 End If
@@ -485,6 +500,7 @@ Public Class frm_administrador
                         query = $"Delete from tb_jazigos where idJazigo='{id_jazigo}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        limpar_cadastro_jazigo()
                         carregar_dados_jazigo(Me.dgv_jazigo)
                     End If
                 End If
@@ -519,6 +535,7 @@ Public Class frm_administrador
                         query = $"Delete from tb_servicos where idServico='{id_servico}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
+                        limpar_cadastro_servico()
                         carregar_dados_servico(Me.dgv_servico)
                     End If
                 End If
