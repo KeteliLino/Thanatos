@@ -24,8 +24,8 @@ Public Class frm_recepcionista
     End Sub
 
     Private Sub frm_recepcionista_Activated(sender As Object, e As EventArgs) Handles Me.Activated
-        txt_data.Text = DateTime.Now.ToString("dd/MM/yyyy")
-        txt_data1.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        txt_dataCremacao.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        txt_dataVelorio.Text = DateTime.Now.ToString("dd/MM/yyyy")
         If PictureBox5 IsNot Nothing Then
             PictureBox5.BackColor = ColorTranslator.FromHtml("#802790") ' ajuste o HEX aqui
             PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
@@ -61,4 +61,118 @@ Public Class frm_recepcionista
         carregar_dados_jazigo(Me.dgv_jazigo)
     End Sub
 
+    Private Sub btn_pesquisar_Click(sender As Object, e As EventArgs) Handles btn_pesquisar.Click
+        If cmb_pesquisar.Text = "ID" Then
+            query = $"select tb_cremacoes.idCremacao, tb_cremacoes.horaCremacao, tb_cremacoes.dataCremacao,
+                 tb_salas.descricaoSala, tb_falecidos.nomeFalecido 
+                 from tb_cremacoes 
+                 inner join tb_salas on tb_cremacoes.idSala = tb_salas.idSala 
+                 inner join tb_falecidos on tb_cremacoes.idFalecido = tb_falecidos.idFalecido where idCremacao = {txt_idCremacao.Text}"
+        ElseIf cmb_pesquisar.Text = "Data" Then
+            query = $"select tb_cremacoes.idCremacao, tb_cremacoes.horaCremacao, tb_cremacoes.dataCremacao,
+                 tb_salas.descricaoSala, tb_falecidos.nomeFalecido 
+                 from tb_cremacoes 
+                 inner join tb_salas on tb_cremacoes.idSala = tb_salas.idSala 
+                 inner join tb_falecidos on tb_cremacoes.idFalecido = tb_falecidos.idFalecido where dataCremacao = STR_TO_DATE( '{txt_dataCremacao.Text}', '%d/%m/%Y' )"
+        Else
+            MsgBox("Selecione um filtro de pesquisa!", MsgBoxStyle.Exclamation + vbOKOnly, "Atenção")
+            Exit Sub
+        End If
+        rs = db.Execute(query)
+        With dgv_cremacao
+            .Rows.Clear()
+            Do While rs.EOF = False
+                Dim hora As String = rs.Fields("horaCremacao").Value.ToString()
+                If DateTime.TryParse(hora, Nothing) Then
+                    hora = DateTime.Parse(hora).ToString("HH:mm")
+                End If
+                Dim data As String = ""
+                If Not IsDBNull(rs.Fields("dataCremacao").Value) AndAlso rs.Fields("dataCremacao").Value.ToString <> "" Then
+                    Try
+                        data = Format(CDate(rs.Fields("dataCremacao").Value), "dd/MM/yyyy")
+                    Catch
+                        data = rs.Fields("dataCremacao").Value.ToString()
+                    End Try
+                End If
+                .Rows.Add(
+                rs.Fields("idCremacao").Value,
+                hora,
+                data,
+                rs.Fields("descricaoSala").Value,
+                rs.Fields("nomeFalecido").Value,
+                Nothing,
+                Nothing
+            )
+                rs.MoveNext()
+            Loop
+        End With
+    End Sub
+
+    Private Sub btn_pesquisar1_Click(sender As Object, e As EventArgs) Handles btn_pesquisar1.Click
+        If cmb_pesquisar1.Text = "ID" Then
+            query = $"select 
+                    tb_velorios.idVelorio, 
+                    tb_velorios.horaVelorio, 
+                    tb_velorios.dataVelorio,
+                    tb_salas.descricaoSala, 
+                    tb_falecidos.nomeFalecido 
+                 from tb_velorios 
+                 inner join tb_salas 
+                    on tb_velorios.idSala = tb_salas.idSala 
+                 inner join tb_falecidos 
+                    on tb_velorios.idFalecido = tb_falecidos.idFalecido where idVelorio = {txt_idVelorio.Text}"
+
+        ElseIf cmb_pesquisar1.Text = "Data" Then
+            query = $"select 
+                    tb_velorios.idVelorio, 
+                    tb_velorios.horaVelorio, 
+                    tb_velorios.dataVelorio,
+                    tb_salas.descricaoSala, 
+                    tb_falecidos.nomeFalecido 
+                 from tb_velorios 
+                 inner join tb_salas 
+                    on tb_velorios.idSala = tb_salas.idSala 
+                 inner join tb_falecidos 
+                    on tb_velorios.idFalecido = tb_falecidos.idFalecido where dataVelorio = STR_TO_DATE( '{txt_dataVelorio.Text}', '%d/%m/%Y' )"
+        Else
+            MsgBox("Selecione um filtro de pesquisa!", MsgBoxStyle.Exclamation + vbOKOnly, "Atenção")
+            Exit Sub
+        End If
+        rs = db.Execute(query)
+        With dgv_velorio
+            .Rows.Clear()
+            Do While rs.EOF = False
+                Dim hora As String = rs.Fields("horaVelorio").Value.ToString()
+                If DateTime.TryParse(hora, Nothing) Then
+                    hora = DateTime.Parse(hora).ToString("HH:mm")
+                End If
+                Dim data As String = ""
+                If Not IsDBNull(rs.Fields("dataVelorio").Value) AndAlso rs.Fields("dataVelorio").Value.ToString <> "" Then
+                    Try
+                        data = Format(CDate(rs.Fields("dataVelorio").Value), "dd/MM/yyyy")
+                    Catch
+                        data = rs.Fields("dataVelorio").Value.ToString()
+                    End Try
+                End If
+                .Rows.Add(
+                rs.Fields("idVelorio").Value,
+                hora,
+                data,
+                rs.Fields("descricaoSala").Value,
+                rs.Fields("nomeFalecido").Value,
+                Nothing,
+                Nothing
+            )
+                rs.MoveNext()
+            Loop
+        End With
+    End Sub
+
+    Private Sub btn_pesquisar2_Click(sender As Object, e As EventArgs) Handles btn_pesquisar2.Click
+
+    End Sub
+
+    Private Sub btn_pesquisar3_Click(sender As Object, e As EventArgs) Handles btn_pesquisar3.Click
+
+    End Sub
 End Class
