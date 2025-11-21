@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Thanatos_app.frm_home
+            Me.MainForm = Global.Thanatos_app.frm_administrador
         End Sub
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _

@@ -1,4 +1,6 @@
-﻿Imports ns1
+﻿Imports LiveCharts.Definitions.Series
+Imports LiveCharts.WinForms
+Imports ns1
 
 Module banco_dados
     Public query, resp, aux_cpf, qtdeVelorio, proxVelorio, restVelorio, qtdeCremacao, proxCremacao, restCremacao, qtdeAbertoOrcamento, finalizadoMesOrcamento, canceladoMesOrcamento As String
@@ -318,6 +320,7 @@ Module banco_dados
 
                 rs.MoveNext()
             Loop
+        Else
 
         End If
     End Sub

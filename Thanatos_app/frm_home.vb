@@ -180,7 +180,7 @@ Public Class frm_home
             lbl_dado1.Text = qtdeVelorio
             lbl_dado2.Text = proxVelorio
             lbl_dado3.Text = restVelorio
-
+            PopulateLineChart(dados_grafico)
         ElseIf cmb_tabelas.Text = "Cremações" Then
             lbl_titulo1.Text = "Qtde de Cremações Hoje"
             lbl_titulo2.Text = "Hora do Próxima Cremação"
@@ -189,7 +189,7 @@ Public Class frm_home
             lbl_dado1.Text = qtdeCremacao
             lbl_dado2.Text = proxCremacao
             lbl_dado3.Text = restCremacao
-
+            PopulateLineChart(dados_grafico)
         ElseIf cmb_tabelas.Text = "Orçamentos" Then
             lbl_titulo1.Text = "Orçamentos em Aberto"
             lbl_titulo2.Text = "Finalizados no Mês"
@@ -198,6 +198,7 @@ Public Class frm_home
             lbl_dado1.Text = qtdeAbertoOrcamento
             lbl_dado2.Text = finalizadoMesOrcamento
             lbl_dado3.Text = canceladoMesOrcamento
+            PopulateLineChart(dados_grafico)
         Else
             lbl_titulo1.Text = "..."
             lbl_titulo2.Text = "..."
@@ -206,8 +207,9 @@ Public Class frm_home
             lbl_dado1.Text = "..."
             lbl_dado2.Text = "..."
             lbl_dado3.Text = "..."
+            CartesianChart1.Series.Clear()
         End If
-        PopulateLineChart(dados_grafico)
+
     End Sub
 
 

@@ -4,6 +4,8 @@ Imports MaterialSkin
 Imports MaterialSkin.Controls
 Imports System.Threading
 
+
+
 Public Class frm_administrador
     Dim status, setor, tipoSala, id_sala, id_cremacao, id_velorio, StatusFalecido, id_falecido, id_jazigo, id_servico As String
     Dim cont As Integer
@@ -554,6 +556,19 @@ Public Class frm_administrador
                 Exit Sub
             End If
         End With
+    End Sub
+
+    Private Async Sub txt_cep_LostFocus(sender As Object, e As EventArgs) Handles txt_cep.LostFocus
+        Try
+            Dim dados = Await CEP.BuscarCEP(txt_cep.Text)
+
+            txt_logradouro.Text = dados.logradouro
+            txt_bairro.Text = dados.bairro
+            txt_cidade.Text = dados.localidade
+
+        Catch ex As Exception
+            MsgBox("Erro ao buscar CEP", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "AVISO")
+        End Try
     End Sub
 End Class
 

@@ -103,6 +103,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="banco_dados.vb" />
+    <Compile Include="CEP.vb" />
     <Compile Include="frm_financeiro.Designer.vb">
       <DependentUpon>frm_financeiro.vb</DependentUpon>
     </Compile>
