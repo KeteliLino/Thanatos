@@ -31,6 +31,10 @@ Public Class frm_recepcionista
             PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
             PictureBox5.BorderStyle = BorderStyle.None
         End If
+        carregar_dados_cremacao(Me.dgv_cremacao)
+        carregar_dados_velorio(Me.dgv_velorio)
+        carregar_dados_falecido(Me.dgv_falecido)
+        carregar_dados_jazigo(Me.dgv_jazigo)
     End Sub
     Private Sub Voltar()
         frm_home.Show()
@@ -55,10 +59,7 @@ Public Class frm_recepcionista
 
     Private Sub frm_recepcionista_Load(sender As Object, e As EventArgs) Handles Me.Load
         conecta_banco_mysql()
-        carregar_dados_cremacao(Me.dgv_cremacao)
-        carregar_dados_velorio(Me.dgv_velorio)
-        carregar_dados_falecido(Me.dgv_falecido)
-        carregar_dados_jazigo(Me.dgv_jazigo)
+
     End Sub
 
     Private Sub btn_pesquisar_Click(sender As Object, e As EventArgs) Handles btn_pesquisar.Click
@@ -169,10 +170,47 @@ Public Class frm_recepcionista
     End Sub
 
     Private Sub btn_pesquisar2_Click(sender As Object, e As EventArgs) Handles btn_pesquisar2.Click
+        If cmb_pesquisar2.Text = "ID" Then
+            query = $"select tb_falecidos.idFalecido, tb_falecidos.nomeFalecido, tb_status.descricaoStatus from tb_falecidos inner join
+                    tb_status on tb_falecidos.idStatus = tb_status.idStatus where idFalecido = {txt_idFalecido.Text}"
 
+        ElseIf cmb_pesquisar2.Text = "Nome" Then
+            query = $"select tb_falecidos.idFalecido, tb_falecidos.nomeFalecido, tb_status.descricaoStatus from tb_falecidos inner join
+                    tb_status on tb_falecidos.idStatus = tb_status.idStatus where nomeFalecido like '%{txt_nomeFalecido.Text}%'"
+        Else
+            MsgBox("Selecione um filtro de pesquisa!", MsgBoxStyle.Exclamation + vbOKOnly, "Atenção")
+            Exit Sub
+        End If
+        rs = db.Execute(query)
+        With dgv_falecido
+            .Rows.Clear()
+            Do While rs.EOF = False
+                .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, Nothing, Nothing)
+                rs.MoveNext()
+            Loop
+        End With
     End Sub
 
     Private Sub btn_pesquisar3_Click(sender As Object, e As EventArgs) Handles btn_pesquisar3.Click
+        If cmb_pesquisar3.Text = "ID" Then
+            query = $"SELECT tb_jazigos.idJazigo, tb_jazigos.quadranteJazigo, tb_jazigos.linhaJazigo, tb_jazigos.colunaJazigo, tb_falecidos.nomeFalecido 
+                    FROM tb_jazigos LEFT JOIN tb_falecidos ON tb_jazigos.idFalecido = tb_falecidos.idFalecido where idJazigo = {txt_idJazigo.Text}"
+
+        ElseIf cmb_pesquisar3.Text = "ID do Falecido" Then
+            query = $"SELECT tb_jazigos.idJazigo, tb_jazigos.quadranteJazigo, tb_jazigos.linhaJazigo, tb_jazigos.colunaJazigo, tb_falecidos.nomeFalecido 
+                    FROM tb_jazigos LEFT JOIN tb_falecidos ON tb_jazigos.idFalecido = tb_falecidos.idFalecido where tb_jazigos.idFalecido= {txt_idFalecido1.Text}"
+        Else
+            MsgBox("Selecione um filtro de pesquisa!", MsgBoxStyle.Exclamation + vbOKOnly, "Atenção")
+            Exit Sub
+        End If
+        rs = db.Execute(query)
+        With dgv_jazigo
+            .Rows.Clear()
+            Do While rs.EOF = False
+                .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, rs.Fields(4).Value, Nothing, Nothing)
+                rs.MoveNext()
+            Loop
+        End With
 
     End Sub
 End Class

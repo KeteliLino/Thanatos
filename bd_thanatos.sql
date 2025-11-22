@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 20-Nov-2025 às 21:59
+-- Data de Criação: 22-Nov-2025 às 04:31
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -423,8 +423,8 @@ CREATE TABLE IF NOT EXISTS `tb_setores` (
 INSERT INTO `tb_setores` (`idSetor`, `descricaoSetor`) VALUES
 (1, 'Administração'),
 (2, 'Financeiro'),
-(3, 'Recepção'),
-(4, 'TI');
+(4, 'Gerente'),
+(3, 'Recepção');
 
 -- --------------------------------------------------------
 
