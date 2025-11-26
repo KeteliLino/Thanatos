@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 22-Nov-2025 às 04:31
+-- Data de Criação: 26-Nov-2025 às 02:00
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
