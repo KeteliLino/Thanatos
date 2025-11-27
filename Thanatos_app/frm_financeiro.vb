@@ -61,6 +61,22 @@ Public Class frm_financeiro
 
     Private Sub btn_incluir_Click(sender As Object, e As EventArgs) Handles btn_incluir.Click
         Try
+            If txt_idOrcamento.Text <> "" Then
+                MsgBox("O campo ID não pode ser preenchido manualmente!", MsgBoxStyle.Exclamation, "Atenção")
+                txt_idServico.Clear()
+                Exit Sub
+            End If
+
+            If txt_descricaoOrcamento.Text = "" Or
+               txt_data.Text = "" Or
+               txt_valor.Text = "" Or
+               txt_idfalecido.Text Or
+               cmb_status.Text = "" Or
+               status = "" Then
+                MsgBox("Todos os campos devem ser preenchidos!", MsgBoxStyle.Exclamation, "Atenção")
+                Exit Sub
+            End If
+
             Dim dataCertaOrcamento As String = Format(CDate(txt_data.Text), "yyyy-MM-dd")
             If txt_idOrcamento.Text = "" Then
                 query = $"insert into tb_orcamentos 

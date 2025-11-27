@@ -85,6 +85,13 @@ Public Class frm_administrador
 
     Private Sub btn_incluirFuncionario_Click(sender As Object, e As EventArgs) Handles btn_incluirFuncionario.Click
         Try
+            If txt_login.Text = "" Or
+               txt_senha.Text = "" Or
+               txt_nomeFuncionario.Text = "" Or
+               txt_cep.Text = "" Then
+                MsgBox("Todos os campos devem ser preenchidos!", MsgBoxStyle.Exclamation, "Atenção")
+                Exit Sub
+            End If
             query = $"select * from tb_funcionarios where cpfFuncionario='{txt_cpfFuncionario.Text}'"
             rs = db.Execute(query)
             If rs.EOF = True Then
@@ -136,6 +143,19 @@ Public Class frm_administrador
 
     Private Sub btn_incluirSalas_Click(sender As Object, e As EventArgs) Handles btn_incluirSalas.Click
         Try
+            If txt_idSala.Text <> "" Then
+                MsgBox("O campo ID não pode ser preenchido manualmente!", MsgBoxStyle.Exclamation, "Atenção")
+                txt_idServico.Clear()
+                Exit Sub
+            End If
+
+            If txt_descricaoSala.Text = "" Or
+               cmb_tipoSala.Text = "" Or
+               tipoSala = "" Then
+                MsgBox("Todos os campos devem ser preenchidos!", MsgBoxStyle.Exclamation, "Atenção")
+                Exit Sub
+            End If
+
             query = $"select * from tb_salas where descricaoSala='{txt_descricaoSala.Text}'"
             rs = db.Execute(query)
             If rs.EOF = True Then
@@ -160,7 +180,28 @@ Public Class frm_administrador
 
     Private Sub btn_incluirCremacoes_Click(sender As Object, e As EventArgs) Handles btn_incluirCremacoes.Click
         Try
+            If txt_idCremacao.Text <> "" Then
+                MsgBox("O campo ID não pode ser preenchido manualmente!", MsgBoxStyle.Exclamation, "Atenção")
+                txt_idServico.Clear()
+                Exit Sub
+            End If
+
+            If txt_horaCremacao.Text = "" Or
+               txt_dataCremacao.Text = "" Or
+               txt_idSalaCremacao.Text = "" Or
+               txt_idFalecidoCremacao.Text = "" Then
+                MsgBox("Todos os campos devem ser preenchidos!", MsgBoxStyle.Exclamation, "Atenção")
+                Exit Sub
+            End If
+
             Dim dataCerta As String = Format(CDate(txt_dataCremacao.Text), "yyyy-MM-dd")
+            query = $"SELECT * FROM tb_cremacoes WHERE idSala = '{txt_idSalaCremacao.Text}' AND dataCremacao = '{dataCerta}' AND horaCremacao = '{txt_horaCremacao.Text}'"
+            rs = db.Execute(query)
+            If rs.EOF = False Then
+                MsgBox("Este horário já está reservado para esta sala!", MsgBoxStyle.Critical, "AVISO")
+                Exit Sub
+            End If
+
             If txt_idCremacao.Text = "" Then
                 query = $"insert into tb_cremacoes 
                      (horaCremacao, dataCremacao, idSala, idFalecido)
@@ -192,7 +233,29 @@ Public Class frm_administrador
 
     Private Sub btn_incluirVelorios_Click(sender As Object, e As EventArgs) Handles btn_incluirVelorios.Click
         Try
+            If txt_idVelorio.Text <> "" Then
+                MsgBox("O campo ID não pode ser preenchido manualmente!", MsgBoxStyle.Exclamation, "Atenção")
+                txt_idServico.Clear()
+                Exit Sub
+            End If
+
+            If txt_horaVelorio.Text = "" Or
+               txt_dataVelorio.Text = "" Or
+               txt_idSalaVelorio.Text = "" Or
+               txt_idFalecidoVelorio.Text = "" Then
+                MsgBox("Todos os campos devem ser preenchidos!", MsgBoxStyle.Exclamation, "Atenção")
+                Exit Sub
+            End If
+
             Dim dataCertaVelorio As String = Format(CDate(txt_dataVelorio.Text), "yyyy-MM-dd")
+
+            query = $"SELECT * FROM tb_velorios WHERE idSala = '{txt_idSalaVelorio.Text}' AND dataVelorio = '{dataCertaVelorio}' AND horaVelorio = '{txt_horaVelorio.Text}'"
+            rs = db.Execute(query)
+            If rs.EOF = False Then
+                MsgBox("ERRO: Esta sala já está reservada neste horário!", MsgBoxStyle.Critical, "Horário Indisponível")
+                Exit Sub
+            End If
+
             If txt_idVelorio.Text = "" Then
                 query = $"insert into tb_velorios 
                      (horaVelorio, dataVelorio, idSala, idFalecido)
@@ -221,6 +284,19 @@ Public Class frm_administrador
 
     Private Sub btn_incluirFalecidos_Click(sender As Object, e As EventArgs) Handles btn_incluirFalecidos.Click
         Try
+            If txt_idFalecido.Text <> "" Then
+                MsgBox("O campo ID não pode ser preenchido manualmente!", MsgBoxStyle.Exclamation, "Atenção")
+                txt_idServico.Clear()
+                Exit Sub
+            End If
+
+            If txt_nomeFalecido.Text = "" Or
+               cmb_statusFalecido.Text = "" Or
+               StatusFalecido = "" Then
+                MsgBox("Todos os campos devem ser preenchidos!", MsgBoxStyle.Exclamation, "Atenção")
+                Exit Sub
+            End If
+
             query = $"select * from tb_falecidos where idFalecido='{txt_idFalecido.Text}'"
             rs = db.Execute(query)
             If rs.EOF = True Then
@@ -246,6 +322,20 @@ Public Class frm_administrador
 
     Private Sub btn_incluirJazigo_Click(sender As Object, e As EventArgs) Handles btn_incluirJazigo.Click
         Try
+            If txt_idJazigo.Text <> "" Then
+                MsgBox("O campo ID não pode ser preenchido manualmente!", MsgBoxStyle.Exclamation, "Atenção")
+                txt_idServico.Clear()
+                Exit Sub
+            End If
+
+            If txt_quadrante.Text = "" Or
+               txt_fileira.Text = "" Or
+               txt_idFalecidoJazigo.Text = "" Or
+               txt_coluna.Text = "" Then
+                MsgBox("Todos os campos devem ser preenchidos!", MsgBoxStyle.Exclamation, "Atenção")
+                Exit Sub
+            End If
+
             query = $"select * from tb_jazigos where idJazigo='{txt_idJazigo.Text}'"
             rs = db.Execute(query)
             If rs.EOF = True Then
@@ -272,6 +362,17 @@ Public Class frm_administrador
 
     Private Sub btn_incluirServicos_Click(sender As Object, e As EventArgs) Handles btn_incluirServicos.Click
         Try
+            If txt_idServico.Text <> "" Then
+                MsgBox("O campo ID não pode ser preenchido manualmente!", MsgBoxStyle.Exclamation, "Atenção")
+                txt_idServico.Clear()
+                Exit Sub
+            End If
+
+            If txt_descricaoServicos.Text = "" Or txt_preco.Text = "" Then
+                MsgBox("Todos os campos devem ser preenchidos!", MsgBoxStyle.Exclamation, "Atenção")
+                Exit Sub
+            End If
+
             query = $"select * from tb_servicos where idServico='{txt_idServico.Text}'"
             rs = db.Execute(query)
             If rs.EOF = True Then
@@ -646,7 +747,7 @@ Public Class frm_administrador
                 If rs.EOF = False Then
                     resp = MsgBox("Deseja excluir o velório com ID: " & id_velorio & "?", MsgBoxStyle.Question + MsgBoxStyle.YesNo, "ATENÇÃO")
                     If resp = MsgBoxResult.Yes Then
-                        query = $"Delete from tb_velorios where idVelorios='{id_velorio}'"
+                        query = $"Delete from tb_velorios where idVelorio='{id_velorio}'"
                         rs = db.Execute(query)
                         MsgBox("Dados deletados com Sucesso", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Aviso")
                         limpar_cadastro_velorio()
