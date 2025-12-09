@@ -55,6 +55,12 @@ O objetivo é reduzir erros, evitar retrabalho, aumentar a eficiência e garanti
 
 <img width="944" height="697" alt="Screenshot 2025-12-08 230225" src="https://github.com/user-attachments/assets/1240a0b9-a4c0-45be-8791-7b9161a25d33" />
 
+---
+
+## Documentação Completa
+[Thanatos.DOC](https://github.com/user-attachments/files/24044990/Thanatos.DOC)
+
+---
 
 
 
