@@ -3,7 +3,7 @@
 ---
 
 ## Introdução
-O Thánatos é um sistema desenvolvido em VB.NET com foco em agilizar, organizar e centralizar processos comuns em funerárias e cemitérios, unificando tudo em uma interface moderna, intuitiva e prática.
+O Thanatos é um sistema desenvolvido em VB.NET com foco em agilizar, organizar e centralizar processos comuns em funerárias e cemitérios, unificando tudo em uma interface moderna, intuitiva e prática.
 
 O objetivo é reduzir erros, evitar retrabalho, aumentar a eficiência e garantir que as informações estejam sempre organizadas e acessíveis.
 
