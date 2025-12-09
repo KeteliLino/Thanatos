@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Máquina: localhost
--- Data de Criação: 26-Nov-2025 às 02:00
+-- Data de Criação: 09-Dez-2025 às 01:39
 -- Versão do servidor: 5.6.13
 -- versão do PHP: 5.4.17
 
@@ -157,6 +157,7 @@ CREATE TABLE IF NOT EXISTS `tb_jazigos` (
   `colunaJazigo` char(1) COLLATE utf8_unicode_ci NOT NULL,
   `idFalecido` int(11) DEFAULT NULL,
   PRIMARY KEY (`idJazigo`),
+  UNIQUE KEY `idFalecido_2` (`idFalecido`),
   KEY `idFalecido` (`idFalecido`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=101 ;
 
