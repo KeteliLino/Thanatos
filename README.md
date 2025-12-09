@@ -31,23 +31,23 @@ O objetivo é reduzir erros, evitar retrabalho, aumentar a eficiência e garanti
 
 ## Tecnologias Utilizadas
 
-**VB.Net** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" width="30"/> <br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" width="30"/>  **VB.Net**
 
-**MySQL** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="30"/> <br/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="30"/>  **MySQL**
 
-**Visual Studio** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" width="30"/> <br/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" width="30"/>  **Visual Studio**
 
-**LiveCharts** <img width="30" height="30" alt="livecharts-icon-128x128" src="https://github.com/user-attachments/assets/8cfeeaa5-7a48-4fb2-b930-2c6a4aca756c" />
+<img width="30" height="30" alt="livecharts-icon-128x128" src="https://github.com/user-attachments/assets/8cfeeaa5-7a48-4fb2-b930-2c6a4aca756c" />  **LiveCharts**
 
-**ViaCEP** <img width="30" height="30" alt="viacep icon" src="https://github.com/user-attachments/assets/6e38cb0f-7534-4e6a-8239-3ec16ad58ff9" />
+<img width="30" height="30" alt="viacep icon" src="https://github.com/user-attachments/assets/6e38cb0f-7534-4e6a-8239-3ec16ad58ff9" />  **ViaCEP** 
 
-**MaterialSkin** <img width="30" height="30" alt="material skin icon" src="https://github.com/user-attachments/assets/e0374f64-8a00-4ad2-bbc3-e3b933379a33" />
+<img width="30" height="30" alt="material skin icon" src="https://github.com/user-attachments/assets/e0374f64-8a00-4ad2-bbc3-e3b933379a33" />  **MaterialSkin** 
 
-**Guna UI** <img width="30" height="30" alt="guna icon" src="https://github.com/user-attachments/assets/a5a78d35-a323-40c3-b2a2-4eba18eb548a" />
+<img width="30" height="30" alt="guna icon" src="https://github.com/user-attachments/assets/a5a78d35-a323-40c3-b2a2-4eba18eb548a" />  **Guna UI** 
 
-**Bunifu UI** <img width="30" height="30" alt="bunifu icon" src="https://github.com/user-attachments/assets/4d5b7a94-797f-4c01-9dd1-f7d8916231af" />
+<img width="30" height="30" alt="bunifu icon" src="https://github.com/user-attachments/assets/4d5b7a94-797f-4c01-9dd1-f7d8916231af" />  **Bunifu UI** 
 
-**Newtonsoft.Json** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/json/json-original.svg" width="30"/> <br/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/json/json-original.svg" width="30"/>  **Newtonsoft.Json** 
 
 ---
 
