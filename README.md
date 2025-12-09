@@ -31,15 +31,16 @@ O objetivo é reduzir erros, evitar retrabalho, aumentar a eficiência e garanti
 
 ## Tecnologias Utilizadas
 
-**VB.Net** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vbnet/vbnet-original.svg" width="30"/> <br/>
-**MySQL** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg" width="30"/> <br/>
-**Visual Studio** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" width="30"/> <br/>
-**LiveCharts** <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linegraph/linegraph-plain.svg" width="30"/> <br/>
-**ViaCEP** <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" width="30"/> <br/>
-**MaterialSkin** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" width="30"/> <br/>
-**Guna UI** <img src="https://img.icons8.com/?size=512&id=l9fIuHtH1p1s&format=png" width="30"/> <br/>
-**Bunifu UI** <img src="https://img.icons8.com/?size=512&id=98957&format=png" width="30"/> <br/>
-**Newtonsoft.Json** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/json/json-original.svg" width="30"/> <br/>
+![VB.NET](https://img.shields.io/badge/VB.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white)
+![LiveCharts](https://img.shields.io/badge/LiveCharts-4285F4?style=for-the-badge&logo=chartdotjs&logoColor=white)
+![ViaCEP](https://img.shields.io/badge/ViaCEP-0A66C2?style=for-the-badge&logo=google-maps&logoColor=white)
+![MaterialSkin](https://img.shields.io/badge/MaterialSkin-0081CB?style=for-the-badge&logo=materialdesign&logoColor=white)
+![Guna UI](https://img.shields.io/badge/Guna%20UI-4B4B4B?style=for-the-badge&logo=windows&logoColor=white)
+![Bunifu UI](https://img.shields.io/badge/Bunifu%20UI-00A9E0?style=for-the-badge&logo=framework&logoColor=white)
+![Newtonsoft.Json](https://img.shields.io/badge/Newtonsoft.Json-000000?style=for-the-badge&logo=json&logoColor=white)
+
 
 ---
 
