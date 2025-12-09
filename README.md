@@ -37,20 +37,17 @@ O objetivo é reduzir erros, evitar retrabalho, aumentar a eficiência e garanti
 
 **Visual Studio** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/visualstudio/visualstudio-plain.svg" width="30"/> <br/>
 
-**LiveCharts** <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="30"/> <br/>
+**LiveCharts** <img width="30" height="30" alt="livecharts-icon-128x128" src="https://github.com/user-attachments/assets/8cfeeaa5-7a48-4fb2-b930-2c6a4aca756c" />
 
-**ViaCEP** <img src="https://cdn-icons-png.flaticon.com/512/606/606797.png" width="30"/> <br/>
+**ViaCEP** <img width="30" height="30" alt="viacep icon" src="https://github.com/user-attachments/assets/6e38cb0f-7534-4e6a-8239-3ec16ad58ff9" />
 
-**MaterialSkin** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg" width="30"/> <br/>
+**MaterialSkin** <img width="30" height="30" alt="material skin icon" src="https://github.com/user-attachments/assets/e0374f64-8a00-4ad2-bbc3-e3b933379a33" />
 
-**Guna UI** <img src="https://img.icons8.com/?size=512&id=23264&format=png" width="30"/> <br/>
+**Guna UI** <img width="30" height="30" alt="guna icon" src="https://github.com/user-attachments/assets/a5a78d35-a323-40c3-b2a2-4eba18eb548a" />
 
-**Bunifu UI** <img src="https://img.icons8.com/?size=512&id=98957&format=png" width="30"/> <br/>
+**Bunifu UI** <img width="30" height="30" alt="bunifu icon" src="https://github.com/user-attachments/assets/4d5b7a94-797f-4c01-9dd1-f7d8916231af" />
 
 **Newtonsoft.Json** <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/json/json-original.svg" width="30"/> <br/>
-
-
-
 
 ---
 
