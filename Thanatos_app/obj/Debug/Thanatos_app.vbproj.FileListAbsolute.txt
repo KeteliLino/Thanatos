@@ -134,3 +134,7 @@ D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.WinForms.xml
 D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.pdb
 D:\Thanatos\Thanatos_app\bin\Debug\LiveCharts.Wpf.xml
 D:\Thanatos\Thanatos_app\bin\Debug\Newtonsoft.Json.xml
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\Thanatos_app.exe.manifest
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\bin\Debug\Thanatos_app.application
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.exe.manifest
+C:\Users\diogo\Documents\GitHub\Thanatos\Thanatos_app\obj\Debug\Thanatos_app.application
